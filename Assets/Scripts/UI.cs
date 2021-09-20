@@ -1,16 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UI : MonoBehaviour
 {
-    //array
+    //arrays
     [SerializeField] private GameObject[] rooms;
     [SerializeField] private GameObject[] pets;
+    [SerializeField] private GameObject[] stats;
 
-    //single
+    //Ui and canvas
     [SerializeField] private GameObject social;
     [SerializeField] private GameObject menu;
+
+    //Vectors to move objects out of view
+    [SerializeField] private Vector2 onScreen;
+    [SerializeField] private Vector2 onScreenStats;
+    [SerializeField] private Vector2 offScreen;
 
     private int index = 0;
     private int indexSafe;
@@ -33,28 +40,61 @@ public class UI : MonoBehaviour
 
         if (index == 0)
         {
-            pets[0].SetActive(true);
-            pets[1].SetActive(false);
-            pets[2].SetActive(false);
+            pets[0].transform.position = onScreen;
+            pets[1].transform.position = offScreen;
+            pets[2].transform.position = offScreen;
+
+            stats[0].transform.position = onScreenStats;
+            stats[1].transform.position = offScreen;
+            stats[2].transform.position = offScreen;
         }
         if (index == 1)
         {
-            pets[0].SetActive(false);
-            pets[1].SetActive(true);
-            pets[2].SetActive(false);
+            pets[0].transform.position = offScreen;
+            pets[1].transform.position = onScreen;
+            pets[2].transform.position = offScreen;
+
+            stats[0].transform.position = offScreen;
+            stats[1].transform.position = onScreenStats;
+            stats[2].transform.position = offScreen;
         }
         if (index == 2)
         {
-            pets[0].SetActive(false);
-            pets[1].SetActive(false);
-            pets[2].SetActive(true);
+            pets[0].transform.position = offScreen;
+            pets[1].transform.position = offScreen;
+            pets[2].transform.position = onScreen;
+
+            stats[0].transform.position = offScreen;
+            stats[1].transform.position = offScreen;
+            stats[2].transform.position = onScreenStats;
         }
         if (index == 3)
         {
-            pets[0].SetActive(false);
-            pets[1].SetActive(false);
-            pets[2].SetActive(false);
+            pets[0].transform.position = offScreen;
+            pets[1].transform.position = offScreen;
+            pets[2].transform.position = offScreen;
+
+            stats[0].transform.position = offScreen;
+            stats[1].transform.position = offScreen;
+            stats[2].transform.position = offScreen;
         }
+    }
+
+    public void Menu()
+    {
+        menu.SetActive(true);
+        Time.timeScale = 0;
+    }
+
+    public void CloseMenu()
+    {
+        menu.SetActive(false);
+        Time.timeScale = 1;
+    }
+
+    public void ExitApplication()
+    {
+        Application.Quit();
     }
 
     public void Social()
