@@ -1,9 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class UI : MonoBehaviour
+public class UICanvas : MonoBehaviour
 {
     //arrays
     [SerializeField] private GameObject[] rooms;
@@ -13,6 +12,7 @@ public class UI : MonoBehaviour
     //Ui and canvas
     [SerializeField] private GameObject social;
     [SerializeField] private GameObject menu;
+    [SerializeField] private GameObject adoption;
 
     //Vectors to move objects out of view
     [SerializeField] private Vector2 onScreen;
@@ -22,9 +22,11 @@ public class UI : MonoBehaviour
     private int index = 0;
     private int indexSafe;
 
+    public static bool adoptionDestroy;
+
     private void Start()
     {
-        
+
     }
 
     private void Update()
@@ -80,6 +82,8 @@ public class UI : MonoBehaviour
         }
     }
 
+
+    //UI
     public void Menu()
     {
         menu.SetActive(true);
@@ -109,6 +113,19 @@ public class UI : MonoBehaviour
         index = indexSafe;
     }
 
+    public void Adoption()
+    {
+        adoption.SetActive(true);
+    }
+
+    public void closeAdoption()
+    {
+        adoptionDestroy = true;
+        adoption.SetActive(false);
+    }
+
+
+    //PETS
     public void PetOne()
     {
         index = 0;
@@ -160,3 +177,4 @@ public class UI : MonoBehaviour
         rooms[3].SetActive(true);
     }
 }
+
