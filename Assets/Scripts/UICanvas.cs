@@ -5,24 +5,27 @@ using UnityEngine;
 public class UICanvas : MonoBehaviour
 {
     //arrays
+    [Header("Arrays")]
     [SerializeField] private GameObject[] rooms;
     [SerializeField] private GameObject[] pets;
     [SerializeField] private GameObject[] stats;
 
     //Ui and canvas
+    [Header("Panels")]
     [SerializeField] private GameObject social;
     [SerializeField] private GameObject menu;
     [SerializeField] private GameObject adoption;
+    [SerializeField] private GameObject store;
+    [SerializeField] private GameObject book;
 
     //Vectors to move objects out of view
+    [Header("Postition change")]
     [SerializeField] private Vector2 onScreen;
     [SerializeField] private Vector2 onScreenStats;
     [SerializeField] private Vector2 offScreen;
 
     private int index = 0;
     private int indexSafe;
-
-    public static bool adoptionDestroy;
 
     private void Start()
     {
@@ -113,14 +116,33 @@ public class UICanvas : MonoBehaviour
         index = indexSafe;
     }
 
+    public void Book()
+    {
+        book.SetActive(true);
+    }
+    public void CloseBook()
+    {
+        book.SetActive(false);
+    }
+
+    public void Store()
+    {
+        store.SetActive(true);
+    }
+    public void CloseStore()
+    {
+        store.SetActive(false);
+    }
+
     public void Adoption()
     {
         adoption.SetActive(true);
+        FillSlot.instance.SpwanAllpet();
     }
 
-    public void closeAdoption()
+    public void CloseAdoption()
     {
-        adoptionDestroy = true;
+        FillSlot.instance.DestoyPets();
         adoption.SetActive(false);
     }
 

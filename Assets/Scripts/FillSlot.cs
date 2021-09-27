@@ -9,6 +9,16 @@ public class FillSlot : MonoBehaviour
 
     private GameObject PetPrefab, PetPrefabOne, PetPrefabTwo, PetPrefabTheer;
 
+    public static FillSlot instance;
+
+    public void OnEnable()
+    {
+        if(instance == null)
+        {
+            instance = this;
+        }
+    }
+
     private void Start()
     {
         
@@ -16,14 +26,7 @@ public class FillSlot : MonoBehaviour
 
     private void Update()
     {
-        if (UICanvas.adoptionDestroy)
-        {
-            Destroy(PetPrefab);
-            Destroy(PetPrefabOne);
-            Destroy(PetPrefabTwo);
-            Destroy(PetPrefabTheer);
-            UICanvas.adoptionDestroy = false;
-        }
+
     }
 
     public void SpwanAllpet()
@@ -42,5 +45,13 @@ public class FillSlot : MonoBehaviour
             PetPrefabOne = Instantiate(petPrefab[petOne], slots[1]);
             PetPrefabTwo = Instantiate(petPrefab[petTwo], slots[2]);
             PetPrefabTheer = Instantiate(petPrefab[petThree], slots[3]);
+    }
+
+    public void DestoyPets()
+    {
+        Destroy(PetPrefab);
+        Destroy(PetPrefabOne);
+        Destroy(PetPrefabTwo);
+        Destroy(PetPrefabTheer);
     }
 }
