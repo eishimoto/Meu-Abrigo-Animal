@@ -34,9 +34,9 @@ public class FillSlot : MonoBehaviour
         int petZero = Random.Range(0, petPrefab.Length);
         int petOne  = Random.Range(0, petPrefab.Length);
         int petTwo = Random.Range(0, petPrefab.Length);
-        int petThree = Random.Range(0, petPrefab.Length);
+        //int petThree = Random.Range(0, petPrefab.Length);
 
-        if (slots[0].childCount != 0|| slots[1].childCount != 0 || slots[2].childCount != 0 || slots[3].childCount != 0)
+        if (slots[0].childCount != 0|| slots[1].childCount != 0 || slots[2].childCount != 0) //|| slots[3].childCount != 0)
         {
             SpwanAllpet();
             return;
@@ -44,7 +44,7 @@ public class FillSlot : MonoBehaviour
             PetPrefab = Instantiate(petPrefab[petZero], slots[0]);
             PetPrefabOne = Instantiate(petPrefab[petOne], slots[1]);
             PetPrefabTwo = Instantiate(petPrefab[petTwo], slots[2]);
-            PetPrefabTheer = Instantiate(petPrefab[petThree], slots[3]);
+            //PetPrefabTheer = Instantiate(petPrefab[petThree], slots[3]);
     }
 
     public void DestoyPets()
@@ -52,6 +52,6 @@ public class FillSlot : MonoBehaviour
         Destroy(PetPrefab);
         Destroy(PetPrefabOne);
         Destroy(PetPrefabTwo);
-        Destroy(PetPrefabTheer);
+       // Destroy(PetPrefabTheer);
     }
 }
