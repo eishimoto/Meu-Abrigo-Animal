@@ -32,7 +32,6 @@ public class MixPills : MonoBehaviour
     private void Update()
     {
         CheckMix();
-        UsedPill();
     }
        
     private void OnTriggerEnter2D(Collider2D collision)
@@ -64,7 +63,7 @@ public class MixPills : MonoBehaviour
 
     public void UsedPill()
     {
-        newPill.transform.position =starPosition;
+        newPill.transform.position = starPosition;
         newPill.SetActive(false);
     }
 

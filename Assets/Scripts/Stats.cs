@@ -74,10 +74,10 @@ public class Stats : MonoBehaviour
             }
         }
 
-        //if(collision.CompareTag("Pills"))
-        //{
-            //MixPills.instance.UsedPill();
-        //}
+        if(collision.CompareTag("Pills"))
+        {
+            MixPills.instance.UsedPill();
+        }
     }
 
 }
