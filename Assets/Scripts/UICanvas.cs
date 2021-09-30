@@ -17,6 +17,7 @@ public class UICanvas : MonoBehaviour
     [SerializeField] private GameObject adoption;
     [SerializeField] private GameObject store;
     [SerializeField] private GameObject book;
+    [SerializeField] private GameObject mixPills;
 
     //Vectors to move objects out of view
     [Header("Postition change")]
@@ -144,6 +145,17 @@ public class UICanvas : MonoBehaviour
     {
         FillSlot.instance.DestoyPets();
         adoption.SetActive(false);
+    }
+
+    public void Pill()
+    {
+        mixPills.SetActive(true);
+    }
+
+    public void ClosePill()
+    {
+        MixPills.instance.PillAsset();
+        mixPills.SetActive(false);
     }
 
 

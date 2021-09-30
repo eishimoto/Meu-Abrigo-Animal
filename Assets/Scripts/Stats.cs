@@ -73,6 +73,11 @@ public class Stats : MonoBehaviour
                 hygineStats = 100;
             }
         }
+
+        //if(collision.CompareTag("Pills"))
+        //{
+            //MixPills.instance.UsedPill();
+        //}
     }
 
 }

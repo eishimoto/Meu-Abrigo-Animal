@@ -7,6 +7,10 @@ TagManager:
   - Food
   - Fun
   - Clean
+  - Pills
+  - BluePill
+  - RedPill
+  - GreenPill
   layers:
   - Default
   - TransparentFX

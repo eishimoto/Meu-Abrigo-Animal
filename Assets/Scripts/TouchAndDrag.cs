@@ -8,15 +8,18 @@ public class TouchAndDrag : MonoBehaviour
     private Collider2D myCollider;
     private Vector2 _startPosition;
 
+    private Camera maincamera;
+
     private void Start()
     {
         myCollider = GetComponent<Collider2D>();
         _startPosition = transform.position;
+        maincamera = Camera.main;
     }
 
     private void Update()
     {
-        MoveTool();
+        //MoveTool();
     }
 
     private void MoveTool()
@@ -52,4 +55,17 @@ public class TouchAndDrag : MonoBehaviour
             }
         }
     }
+    
+    private void OnMouseDrag()
+    {
+        Vector3 mouseP = new Vector3(Input.mousePosition.x, Input.mousePosition.y, Input.mousePosition.z + 10f);
+        Vector3 worldP = maincamera.ScreenToWorldPoint(mouseP);
+        transform.position = worldP;
+    }
+
+    private void OnMouseUp()
+    {
+        transform.position = _startPosition;
+    }
+
 }
