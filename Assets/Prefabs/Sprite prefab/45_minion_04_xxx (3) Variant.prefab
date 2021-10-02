@@ -55,9 +55,13 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: fbfe21fa006d09845a309460b7e5a13c, type: 3}
+    - target: {fileID: 5610046737026591580, guid: 559fd216ec2e77e44a3ae904c7f3404f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 8501785796440302739, guid: 559fd216ec2e77e44a3ae904c7f3404f, type: 3}
       propertyPath: m_Name
-      value: 45_minion_04_xxx (3)
+      value: 45_minion_04_xxx (3) Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 559fd216ec2e77e44a3ae904c7f3404f, type: 3}

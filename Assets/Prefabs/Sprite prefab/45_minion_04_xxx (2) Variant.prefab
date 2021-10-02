@@ -57,7 +57,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 31d930ee1b9c2514181add7f78465c17, type: 3}
     - target: {fileID: 8501785796440302739, guid: 559fd216ec2e77e44a3ae904c7f3404f, type: 3}
       propertyPath: m_Name
-      value: 45_minion_04_xxx (2)
+      value: 45_minion_04_xxx (2) Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 559fd216ec2e77e44a3ae904c7f3404f, type: 3}
