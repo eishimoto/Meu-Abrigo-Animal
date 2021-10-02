@@ -9,10 +9,9 @@ public class MixPills : MonoBehaviour
 
     public bool redPill, bluePill, greenPill;
 
-    public static MixPills instance;
-
     private Vector2 starPosition;
 
+    public static MixPills instance;
     private void OnEnable()
     {
         if(instance == null)
