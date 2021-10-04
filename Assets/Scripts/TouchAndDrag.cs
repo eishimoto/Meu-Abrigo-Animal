@@ -19,7 +19,7 @@ public class TouchAndDrag : MonoBehaviour
 
     private void Update()
     {
-        //MoveTool();
+        MoveTool();
     }
 
     private void MoveTool()
