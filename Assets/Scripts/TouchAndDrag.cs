@@ -56,6 +56,8 @@ public class TouchAndDrag : MonoBehaviour
         }
     }
     
+
+    // Mouse as touch control
     private void OnMouseDrag()
     {
         Vector3 mouseP = new Vector3(Input.mousePosition.x, Input.mousePosition.y, Input.mousePosition.z + 10f);
@@ -67,5 +69,4 @@ public class TouchAndDrag : MonoBehaviour
     {
         transform.position = _startPosition;
     }
-
 }

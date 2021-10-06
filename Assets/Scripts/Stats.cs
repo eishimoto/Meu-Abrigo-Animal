@@ -67,11 +67,7 @@ public class Stats : MonoBehaviour
 
         if (collision.CompareTag("Clean"))
         {
-            hygineStats = hygineStats + 50;
-            if (hygineStats >= 100)
-            {
-                hygineStats = 100;
-            }
+            Invoke("IsClean", 3f);
         }
 
         if(collision.CompareTag("Pills"))
@@ -80,4 +76,13 @@ public class Stats : MonoBehaviour
         }
     }
 
+    // funcions to Invoke
+    private void IsClean()
+    {
+        hygineStats = hygineStats + 50;
+        if (hygineStats >= 100)
+        {
+            hygineStats = 100;
+        }
+    }
 }
