@@ -20,6 +20,8 @@ public class Stats : MonoBehaviour
 
     private float hungerStats, affectionStats, hygineStats;
 
+    private bool canClean;
+
     private void Start()
     {
         hungerStats = maxHunger;
@@ -30,6 +32,7 @@ public class Stats : MonoBehaviour
     private void Update()
     {
         Diminish();
+        HoldToClean();
     }
 
     private void Diminish()
@@ -65,10 +68,6 @@ public class Stats : MonoBehaviour
             }
         }
 
-        if (collision.CompareTag("Clean"))
-        {
-            Invoke("IsClean", 3f);
-        }
 
         if(collision.CompareTag("Pills"))
         {
@@ -76,13 +75,40 @@ public class Stats : MonoBehaviour
         }
     }
 
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+
+        if (collision.CompareTag("Clean"))
+        {
+            canClean = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if(collision.CompareTag("Clean"))
+        {
+            canClean = false;
+        }
+    }
+
     // funcions to Invoke
     private void IsClean()
-    {
+    { 
         hygineStats = hygineStats + 50;
         if (hygineStats >= 100)
         {
             hygineStats = 100;
         }
+    }
+
+    private void HoldToClean()
+    {
+        if (canClean)
+        {
+            Invoke("IsClean", 2f);
+        }
+        else
+            CancelInvoke("IsClean");
     }
 }

@@ -13,11 +13,23 @@ public class TouchSwipe : MonoBehaviour
     public static bool swipeDown;
     public static bool swipeUp;
 
+    [SerializeField] private float moveDistance;
     [SerializeField] private float minSwipelenght;
 
     private void Update()
     {
         SwipeDetection();
+
+        if(swipeLeft)
+        {
+            transform.position = new Vector3(transform.position.x - moveDistance, 0, transform.position.z * 0);
+            swipeLeft = false;
+        }
+        if(swipeRight)
+        {
+            transform.position = new Vector3(transform.position.x + moveDistance, 0, transform.position.z * 0);
+            swipeRight = false;
+        }
     }
 
     private void SwipeDetection()
@@ -70,5 +82,4 @@ public class TouchSwipe : MonoBehaviour
             }
         }
     }
-
 }
