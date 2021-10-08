@@ -13,8 +13,11 @@ public class TouchSwipe : MonoBehaviour
     public static bool swipeDown;
     public static bool swipeUp;
 
-    [SerializeField] private float moveDistance;
     [SerializeField] private float minSwipelenght;
+    [SerializeField] private Vector3[] positions;
+    [SerializeField] private GameObject[] page;
+    int index = 0;
+
 
     private void Update()
     {
@@ -22,13 +25,15 @@ public class TouchSwipe : MonoBehaviour
 
         if(swipeLeft)
         {
-            transform.position = new Vector3(transform.position.x - moveDistance, 0, transform.position.z * 0);
-            swipeLeft = false;
+            for (int i = 0; i < page.Length; i++)
+            {
+                page[i].transform.position = positions[index];
+                index++;
+            }
         }
         if(swipeRight)
         {
-            transform.position = new Vector3(transform.position.x + moveDistance, 0, transform.position.z * 0);
-            swipeRight = false;
+
         }
     }
 
