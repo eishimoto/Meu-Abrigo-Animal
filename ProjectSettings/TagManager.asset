@@ -11,6 +11,9 @@ TagManager:
   - BluePill
   - RedPill
   - GreenPill
+  - PurplePill
+  - YellowPill
+  - CyanPill
   layers:
   - Default
   - TransparentFX

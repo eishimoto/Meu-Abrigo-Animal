@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class MixPills : MonoBehaviour
 {
-    [SerializeField] private GameObject newPill;
-    [SerializeField] private GameObject pillAsset;
+    [SerializeField] private GameObject[] pillToUse;
+    [SerializeField] private GameObject[] pillAsset;
 
     public bool redPill, bluePill, greenPill;
 
-    private Vector2 starPosition;
+    private Vector2[]starPosition;
 
     public static MixPills instance;
     private void OnEnable()
@@ -26,7 +26,9 @@ public class MixPills : MonoBehaviour
         bluePill = false;
         greenPill = false;
 
-        starPosition = newPill.transform.position;
+        starPosition[0]= pillToUse[0].transform.position;
+        starPosition[1] = pillToUse[1].transform.position;
+        starPosition[2] = pillToUse[2].transform.position;
     }
     private void Update()
     {
@@ -53,21 +55,51 @@ public class MixPills : MonoBehaviour
     {
         if(redPill == true && bluePill == true)
         {
-            newPill.SetActive(true);
-            pillAsset.SetActive(true);
+            pillToUse[0].SetActive(true);
+            pillAsset[0].SetActive(true);
             redPill = false;
+            bluePill = false;
+        }
+
+        if (redPill == true && greenPill == true)
+        {
+            pillToUse[1].SetActive(true);
+            pillAsset[1].SetActive(true);
+            redPill = false;
+            greenPill = false;
+        }
+
+        if(greenPill == true && bluePill == true)
+        {
+            pillToUse[2].SetActive(true);
+            pillAsset[2].SetActive(true);
+            greenPill = false;
             bluePill = false;
         }
     }
 
-    public void UsedPill()
+    public void PurplePill()
     {
-        newPill.transform.position = starPosition;
-        newPill.SetActive(false);
+        pillToUse[0].transform.position = starPosition[0];
+        pillToUse[0].SetActive(false);
+    }
+
+    public void YellowPill()
+    {
+        pillToUse[1].transform.position = starPosition[1];
+        pillToUse[1].SetActive(false);
+    }
+
+    public void CyanPill()
+    {
+        pillToUse[2].transform.position = starPosition[2];
+        pillToUse[2].SetActive(false);
     }
 
     public void PillAsset()
     {
-        pillAsset.SetActive(false);
+        pillAsset[0].SetActive(false);
+        pillAsset[1].SetActive(false);
+        pillAsset[2].SetActive(false);
     }
 }

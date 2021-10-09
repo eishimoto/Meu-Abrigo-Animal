@@ -943,22 +943,21 @@ MonoBehaviour:
     et perspiciatis sunt et dolores omnis! Est ullam sequi sed temporibus mollitia
     qui rerum rerum.
 
-    
 
-    Et ipsa repellendus non commodi dolore ut unde
-    itaque qui officia voluptatem et maxime eaque 33 aliquam aspernatur non ipsum
-    quia. Sed laudantium quis et repudiandae suscipit est fugiat Quis et galisum
-    nostrum non ratione ducimus cum rerum voluptatem. Aut itaque dolorem ex ipsa
-    saepe non adipisci beatae et voluptas consequatur ut delectus illo quo iusto
-    placeat. Et tempore quia non neque architecto et odit eaque cum nesciunt sunt
-    ab illum blanditiis aut dolores minima.
 
-    
+    Et ipsa repellendus non commodi dolore ut unde itaque
+    qui officia voluptatem et maxime eaque 33 aliquam aspernatur non ipsum quia.
+    Sed laudantium quis et repudiandae suscipit est fugiat Quis et galisum nostrum
+    non ratione ducimus cum rerum voluptatem. Aut itaque dolorem ex ipsa saepe non
+    adipisci beatae et voluptas consequatur ut delectus illo quo iusto placeat. Et
+    tempore quia non neque architecto et odit eaque cum nesciunt sunt ab illum blanditiis
+    aut dolores minima.
 
-    Quo consequatur culpa hic
-    quod vitae et soluta quos eos natus omnis. Ad quia asperiores aut beatae et sequi
-    quisquam eos aspernatur nobis ut quia consequuntur est commodi ipsum ad magni
-    quibusdam.'
+
+
+    Quo consequatur culpa hic quod vitae et soluta quos
+    eos natus omnis. Ad quia asperiores aut beatae et sequi quisquam eos aspernatur
+    nobis ut quia consequuntur est commodi ipsum ad magni quibusdam.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1373,6 +1372,100 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 170210958}
   m_CullTransparentMesh: 1
+--- !u!1001 &182175123
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 115471125}
+    m_Modifications:
+    - target: {fileID: 1230288523604253306, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
+      propertyPath: m_Name
+      value: Pill_Yellow
+      objectReference: {fileID: 0}
+    - target: {fileID: 1230288523604253306, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1230288523604253306, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
+      propertyPath: m_TagString
+      value: YellowPill
+      objectReference: {fileID: 0}
+    - target: {fileID: 1386256755277596987, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e454bd132d324374a8cd45203f9b5ef6, type: 3}
+    - target: {fileID: 1386256755277596987, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1386256755277596987, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1386256755277596987, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1386256755277596987, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1386256755277596987, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7547095073067819709, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7547095073067819709, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 7547095073067819709, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 7547095073067819709, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7547095073067819709, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7547095073067819709, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7547095073067819709, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7547095073067819709, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7547095073067819709, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7547095073067819709, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7547095073067819709, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
+--- !u!1 &182175124 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1230288523604253306, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
+  m_PrefabInstance: {fileID: 182175123}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &189148268
 GameObject:
   m_ObjectHideFlags: 0
@@ -3755,6 +3848,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 479735039}
   m_CullTransparentMesh: 1
+--- !u!1 &479860626
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 479860627}
+  - component: {fileID: 479860629}
+  - component: {fileID: 479860628}
+  m_Layer: 5
+  m_Name: Yellow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &479860627
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479860626}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1143811208}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 103.2, y: 172}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &479860628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479860626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: e454bd132d324374a8cd45203f9b5ef6, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &479860629
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479860626}
+  m_CullTransparentMesh: 1
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -4198,6 +4366,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 883256704}
     m_Modifications:
     - target: {fileID: 748465272694209521, guid: 53dcdacc4bc6c2e42957d9b45372e443, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 748465272694209521, guid: 53dcdacc4bc6c2e42957d9b45372e443, type: 3}
       propertyPath: m_LocalPosition.y
       value: -3.3
       objectReference: {fileID: 0}
@@ -4208,7 +4380,7 @@ PrefabInstance:
     - target: {fileID: 1832242348065090607, guid: 53dcdacc4bc6c2e42957d9b45372e443, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 607a12cbb45ddb343a24a82c49aab54b, type: 3}
+      objectReference: {fileID: 21300000, guid: b1e77a1a27562084798e9387f6d79482, type: 3}
     - target: {fileID: 1832242348065090607, guid: 53dcdacc4bc6c2e42957d9b45372e443, type: 3}
       propertyPath: m_SortingOrder
       value: 200
@@ -4224,7 +4396,7 @@ PrefabInstance:
     - target: {fileID: 3392431448893745994, guid: 53dcdacc4bc6c2e42957d9b45372e443, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: e795044ebe33d054c87787c7d61a5864, type: 3}
+      objectReference: {fileID: 21300000, guid: a63bc3b8f619cd54f95dc3b20a4bf4d6, type: 3}
     - target: {fileID: 3392431448893745994, guid: 53dcdacc4bc6c2e42957d9b45372e443, type: 3}
       propertyPath: m_SortingOrder
       value: 200
@@ -4234,8 +4406,16 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6094502495410487500, guid: 53dcdacc4bc6c2e42957d9b45372e443, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.44999993
+      objectReference: {fileID: 0}
+    - target: {fileID: 6094502495410487500, guid: 53dcdacc4bc6c2e42957d9b45372e443, type: 3}
       propertyPath: m_LocalPosition.y
       value: -3.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7128421277242001321, guid: 53dcdacc4bc6c2e42957d9b45372e443, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.1999999
       objectReference: {fileID: 0}
     - target: {fileID: 7128421277242001321, guid: 53dcdacc4bc6c2e42957d9b45372e443, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4248,7 +4428,7 @@ PrefabInstance:
     - target: {fileID: 8206480892074856567, guid: 53dcdacc4bc6c2e42957d9b45372e443, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 69ab3f9dfb578d8478dd198cae09ca80, type: 3}
+      objectReference: {fileID: 21300000, guid: e56684693bf747a42a54b42f74ed8ed6, type: 3}
     - target: {fileID: 8206480892074856567, guid: 53dcdacc4bc6c2e42957d9b45372e443, type: 3}
       propertyPath: m_SortingOrder
       value: 200
@@ -4275,7 +4455,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8826688311115220869, guid: 53dcdacc4bc6c2e42957d9b45372e443, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8826688311115220870, guid: 53dcdacc4bc6c2e42957d9b45372e443, type: 3}
       propertyPath: m_RootOrder
@@ -6431,22 +6611,21 @@ MonoBehaviour:
     et perspiciatis sunt et dolores omnis! Est ullam sequi sed temporibus mollitia
     qui rerum rerum.
 
-    
 
-    Et ipsa repellendus non commodi dolore ut unde
-    itaque qui officia voluptatem et maxime eaque 33 aliquam aspernatur non ipsum
-    quia. Sed laudantium quis et repudiandae suscipit est fugiat Quis et galisum
-    nostrum non ratione ducimus cum rerum voluptatem. Aut itaque dolorem ex ipsa
-    saepe non adipisci beatae et voluptas consequatur ut delectus illo quo iusto
-    placeat. Et tempore quia non neque architecto et odit eaque cum nesciunt sunt
-    ab illum blanditiis aut dolores minima.
 
-    
+    Et ipsa repellendus non commodi dolore ut unde itaque
+    qui officia voluptatem et maxime eaque 33 aliquam aspernatur non ipsum quia.
+    Sed laudantium quis et repudiandae suscipit est fugiat Quis et galisum nostrum
+    non ratione ducimus cum rerum voluptatem. Aut itaque dolorem ex ipsa saepe non
+    adipisci beatae et voluptas consequatur ut delectus illo quo iusto placeat. Et
+    tempore quia non neque architecto et odit eaque cum nesciunt sunt ab illum blanditiis
+    aut dolores minima.
 
-    Quo consequatur culpa hic
-    quod vitae et soluta quos eos natus omnis. Ad quia asperiores aut beatae et sequi
-    quisquam eos aspernatur nobis ut quia consequuntur est commodi ipsum ad magni
-    quibusdam.'
+
+
+    Quo consequatur culpa hic quod vitae et soluta quos
+    eos natus omnis. Ad quia asperiores aut beatae et sequi quisquam eos aspernatur
+    nobis ut quia consequuntur est commodi ipsum ad magni quibusdam.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6584,22 +6763,21 @@ MonoBehaviour:
     et perspiciatis sunt et dolores omnis! Est ullam sequi sed temporibus mollitia
     qui rerum rerum.
 
-    
 
-    Et ipsa repellendus non commodi dolore ut unde
-    itaque qui officia voluptatem et maxime eaque 33 aliquam aspernatur non ipsum
-    quia. Sed laudantium quis et repudiandae suscipit est fugiat Quis et galisum
-    nostrum non ratione ducimus cum rerum voluptatem. Aut itaque dolorem ex ipsa
-    saepe non adipisci beatae et voluptas consequatur ut delectus illo quo iusto
-    placeat. Et tempore quia non neque architecto et odit eaque cum nesciunt sunt
-    ab illum blanditiis aut dolores minima.
 
-    
+    Et ipsa repellendus non commodi dolore ut unde itaque
+    qui officia voluptatem et maxime eaque 33 aliquam aspernatur non ipsum quia.
+    Sed laudantium quis et repudiandae suscipit est fugiat Quis et galisum nostrum
+    non ratione ducimus cum rerum voluptatem. Aut itaque dolorem ex ipsa saepe non
+    adipisci beatae et voluptas consequatur ut delectus illo quo iusto placeat. Et
+    tempore quia non neque architecto et odit eaque cum nesciunt sunt ab illum blanditiis
+    aut dolores minima.
 
-    Quo consequatur culpa hic
-    quod vitae et soluta quos eos natus omnis. Ad quia asperiores aut beatae et sequi
-    quisquam eos aspernatur nobis ut quia consequuntur est commodi ipsum ad magni
-    quibusdam.'
+
+
+    Quo consequatur culpa hic quod vitae et soluta quos
+    eos natus omnis. Ad quia asperiores aut beatae et sequi quisquam eos aspernatur
+    nobis ut quia consequuntur est commodi ipsum ad magni quibusdam.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7947,22 +8125,21 @@ MonoBehaviour:
     et perspiciatis sunt et dolores omnis! Est ullam sequi sed temporibus mollitia
     qui rerum rerum.
 
-    
 
-    Et ipsa repellendus non commodi dolore ut unde
-    itaque qui officia voluptatem et maxime eaque 33 aliquam aspernatur non ipsum
-    quia. Sed laudantium quis et repudiandae suscipit est fugiat Quis et galisum
-    nostrum non ratione ducimus cum rerum voluptatem. Aut itaque dolorem ex ipsa
-    saepe non adipisci beatae et voluptas consequatur ut delectus illo quo iusto
-    placeat. Et tempore quia non neque architecto et odit eaque cum nesciunt sunt
-    ab illum blanditiis aut dolores minima.
 
-    
+    Et ipsa repellendus non commodi dolore ut unde itaque
+    qui officia voluptatem et maxime eaque 33 aliquam aspernatur non ipsum quia.
+    Sed laudantium quis et repudiandae suscipit est fugiat Quis et galisum nostrum
+    non ratione ducimus cum rerum voluptatem. Aut itaque dolorem ex ipsa saepe non
+    adipisci beatae et voluptas consequatur ut delectus illo quo iusto placeat. Et
+    tempore quia non neque architecto et odit eaque cum nesciunt sunt ab illum blanditiis
+    aut dolores minima.
 
-    Quo consequatur culpa hic
-    quod vitae et soluta quos eos natus omnis. Ad quia asperiores aut beatae et sequi
-    quisquam eos aspernatur nobis ut quia consequuntur est commodi ipsum ad magni
-    quibusdam.'
+
+
+    Quo consequatur culpa hic quod vitae et soluta quos
+    eos natus omnis. Ad quia asperiores aut beatae et sequi quisquam eos aspernatur
+    nobis ut quia consequuntur est commodi ipsum ad magni quibusdam.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8254,22 +8431,21 @@ MonoBehaviour:
     et perspiciatis sunt et dolores omnis! Est ullam sequi sed temporibus mollitia
     qui rerum rerum.
 
-    
 
-    Et ipsa repellendus non commodi dolore ut unde
-    itaque qui officia voluptatem et maxime eaque 33 aliquam aspernatur non ipsum
-    quia. Sed laudantium quis et repudiandae suscipit est fugiat Quis et galisum
-    nostrum non ratione ducimus cum rerum voluptatem. Aut itaque dolorem ex ipsa
-    saepe non adipisci beatae et voluptas consequatur ut delectus illo quo iusto
-    placeat. Et tempore quia non neque architecto et odit eaque cum nesciunt sunt
-    ab illum blanditiis aut dolores minima.
 
-    
+    Et ipsa repellendus non commodi dolore ut unde itaque
+    qui officia voluptatem et maxime eaque 33 aliquam aspernatur non ipsum quia.
+    Sed laudantium quis et repudiandae suscipit est fugiat Quis et galisum nostrum
+    non ratione ducimus cum rerum voluptatem. Aut itaque dolorem ex ipsa saepe non
+    adipisci beatae et voluptas consequatur ut delectus illo quo iusto placeat. Et
+    tempore quia non neque architecto et odit eaque cum nesciunt sunt ab illum blanditiis
+    aut dolores minima.
 
-    Quo consequatur culpa hic
-    quod vitae et soluta quos eos natus omnis. Ad quia asperiores aut beatae et sequi
-    quisquam eos aspernatur nobis ut quia consequuntur est commodi ipsum ad magni
-    quibusdam.'
+
+
+    Quo consequatur culpa hic quod vitae et soluta quos
+    eos natus omnis. Ad quia asperiores aut beatae et sequi quisquam eos aspernatur
+    nobis ut quia consequuntur est commodi ipsum ad magni quibusdam.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8571,7 +8747,7 @@ GameObject:
   - component: {fileID: 994657402}
   - component: {fileID: 994657401}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Pill_white
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8616,7 +8792,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 607a12cbb45ddb343a24a82c49aab54b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 54f32b4eae72ee2478b2b3e5d1532699, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9670,6 +9846,8 @@ RectTransform:
   m_Children:
   - {fileID: 994657398}
   - {fileID: 1995685023}
+  - {fileID: 479860627}
+  - {fileID: 2060034668}
   - {fileID: 1217460431}
   m_Father: {fileID: 598540264}
   m_RootOrder: 0
@@ -9725,7 +9903,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 69ab3f9dfb578d8478dd198cae09ca80, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 54f32b4eae72ee2478b2b3e5d1532699, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9755,8 +9933,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9ff8ceb54ee59046b264c25821f7520, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newPill: {fileID: 1245758136}
-  pillAsset: {fileID: 1995685022}
+  pillToUse:
+  - {fileID: 1245758136}
+  - {fileID: 182175124}
+  - {fileID: 2017851748}
+  pillAsset:
+  - {fileID: 1995685022}
+  - {fileID: 479860626}
+  - {fileID: 2060034667}
   redPill: 0
   bluePill: 0
   greenPill: 0
@@ -10086,7 +10270,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1143811208}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -10332,7 +10516,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1230288523604253306, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
       propertyPath: m_Name
-      value: Petisco (3)
+      value: Pill_purple
       objectReference: {fileID: 0}
     - target: {fileID: 1230288523604253306, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
       propertyPath: m_IsActive
@@ -10340,23 +10524,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1230288523604253306, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
       propertyPath: m_TagString
-      value: Pills
+      value: PurplePill
       objectReference: {fileID: 0}
     - target: {fileID: 1386256755277596987, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: e795044ebe33d054c87787c7d61a5864, type: 3}
+      objectReference: {fileID: 21300000, guid: 4011c48014c71fe439dee486539ab817, type: 3}
     - target: {fileID: 1386256755277596987, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1386256755277596987, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
       propertyPath: m_Color.g
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1386256755277596987, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
       propertyPath: m_Color.r
-      value: 0.94275093
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1386256755277596987, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
       propertyPath: m_Enabled
@@ -10372,7 +10556,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7547095073067819709, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.75
+      value: 0.34000006
       objectReference: {fileID: 0}
     - target: {fileID: 7547095073067819709, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
       propertyPath: m_LocalPosition.y
@@ -11580,22 +11764,21 @@ MonoBehaviour:
     et perspiciatis sunt et dolores omnis! Est ullam sequi sed temporibus mollitia
     qui rerum rerum.
 
-    
 
-    Et ipsa repellendus non commodi dolore ut unde
-    itaque qui officia voluptatem et maxime eaque 33 aliquam aspernatur non ipsum
-    quia. Sed laudantium quis et repudiandae suscipit est fugiat Quis et galisum
-    nostrum non ratione ducimus cum rerum voluptatem. Aut itaque dolorem ex ipsa
-    saepe non adipisci beatae et voluptas consequatur ut delectus illo quo iusto
-    placeat. Et tempore quia non neque architecto et odit eaque cum nesciunt sunt
-    ab illum blanditiis aut dolores minima.
 
-    
+    Et ipsa repellendus non commodi dolore ut unde itaque
+    qui officia voluptatem et maxime eaque 33 aliquam aspernatur non ipsum quia.
+    Sed laudantium quis et repudiandae suscipit est fugiat Quis et galisum nostrum
+    non ratione ducimus cum rerum voluptatem. Aut itaque dolorem ex ipsa saepe non
+    adipisci beatae et voluptas consequatur ut delectus illo quo iusto placeat. Et
+    tempore quia non neque architecto et odit eaque cum nesciunt sunt ab illum blanditiis
+    aut dolores minima.
 
-    Quo consequatur culpa hic
-    quod vitae et soluta quos eos natus omnis. Ad quia asperiores aut beatae et sequi
-    quisquam eos aspernatur nobis ut quia consequuntur est commodi ipsum ad magni
-    quibusdam.'
+
+
+    Quo consequatur culpa hic quod vitae et soluta quos
+    eos natus omnis. Ad quia asperiores aut beatae et sequi quisquam eos aspernatur
+    nobis ut quia consequuntur est commodi ipsum ad magni quibusdam.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -15344,14 +15527,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9165266, g: 0.0047169924, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 69ab3f9dfb578d8478dd198cae09ca80, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4011c48014c71fe439dee486539ab817, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -15369,6 +15552,100 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1995685022}
   m_CullTransparentMesh: 1
+--- !u!1001 &2017851747
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 115471125}
+    m_Modifications:
+    - target: {fileID: 1230288523604253306, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
+      propertyPath: m_Name
+      value: Pill_Cyan
+      objectReference: {fileID: 0}
+    - target: {fileID: 1230288523604253306, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1230288523604253306, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
+      propertyPath: m_TagString
+      value: CyanPill
+      objectReference: {fileID: 0}
+    - target: {fileID: 1386256755277596987, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 73439837bef0259408ee7bc506bcc856, type: 3}
+    - target: {fileID: 1386256755277596987, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1386256755277596987, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1386256755277596987, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1386256755277596987, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1386256755277596987, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7547095073067819709, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7547095073067819709, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.8700001
+      objectReference: {fileID: 0}
+    - target: {fileID: 7547095073067819709, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 7547095073067819709, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7547095073067819709, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7547095073067819709, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7547095073067819709, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7547095073067819709, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7547095073067819709, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7547095073067819709, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7547095073067819709, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
+--- !u!1 &2017851748 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1230288523604253306, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
+  m_PrefabInstance: {fileID: 2017851747}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2026727732
 GameObject:
   m_ObjectHideFlags: 0
@@ -15502,6 +15779,81 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2026727732}
+  m_CullTransparentMesh: 1
+--- !u!1 &2060034667
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2060034668}
+  - component: {fileID: 2060034670}
+  - component: {fileID: 2060034669}
+  m_Layer: 5
+  m_Name: Cyan
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &2060034668
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2060034667}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1143811208}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 103.2, y: 172}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2060034669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2060034667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 73439837bef0259408ee7bc506bcc856, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2060034670
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2060034667}
   m_CullTransparentMesh: 1
 --- !u!1 &2065198176
 GameObject:
@@ -16339,22 +16691,21 @@ MonoBehaviour:
     et perspiciatis sunt et dolores omnis! Est ullam sequi sed temporibus mollitia
     qui rerum rerum.
 
-    
 
-    Et ipsa repellendus non commodi dolore ut unde
-    itaque qui officia voluptatem et maxime eaque 33 aliquam aspernatur non ipsum
-    quia. Sed laudantium quis et repudiandae suscipit est fugiat Quis et galisum
-    nostrum non ratione ducimus cum rerum voluptatem. Aut itaque dolorem ex ipsa
-    saepe non adipisci beatae et voluptas consequatur ut delectus illo quo iusto
-    placeat. Et tempore quia non neque architecto et odit eaque cum nesciunt sunt
-    ab illum blanditiis aut dolores minima.
 
-    
+    Et ipsa repellendus non commodi dolore ut unde itaque
+    qui officia voluptatem et maxime eaque 33 aliquam aspernatur non ipsum quia.
+    Sed laudantium quis et repudiandae suscipit est fugiat Quis et galisum nostrum
+    non ratione ducimus cum rerum voluptatem. Aut itaque dolorem ex ipsa saepe non
+    adipisci beatae et voluptas consequatur ut delectus illo quo iusto placeat. Et
+    tempore quia non neque architecto et odit eaque cum nesciunt sunt ab illum blanditiis
+    aut dolores minima.
 
-    Quo consequatur culpa hic
-    quod vitae et soluta quos eos natus omnis. Ad quia asperiores aut beatae et sequi
-    quisquam eos aspernatur nobis ut quia consequuntur est commodi ipsum ad magni
-    quibusdam.'
+
+
+    Quo consequatur culpa hic quod vitae et soluta quos
+    eos natus omnis. Ad quia asperiores aut beatae et sequi quisquam eos aspernatur
+    nobis ut quia consequuntur est commodi ipsum ad magni quibusdam.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -16957,7 +17308,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8826688311115220869, guid: 53dcdacc4bc6c2e42957d9b45372e443, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8826688311115220870, guid: 53dcdacc4bc6c2e42957d9b45372e443, type: 3}
       propertyPath: m_RootOrder

@@ -69,10 +69,21 @@ public class Stats : MonoBehaviour
         }
 
 
-        if(collision.CompareTag("Pills"))
+        if(collision.CompareTag("PurplePill"))
         {
-            MixPills.instance.UsedPill();
+            MixPills.instance.PurplePill();
         }
+
+        if(collision.CompareTag("YellowPill"))
+        {
+            MixPills.instance.YellowPill();
+        }
+
+        if (collision.CompareTag("CyanPill"))
+        {
+            MixPills.instance.CyanPill();
+        }
+
     }
 
     private void OnTriggerStay2D(Collider2D collision)
