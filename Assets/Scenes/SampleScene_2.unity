@@ -5180,7 +5180,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &598540264
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9933,14 +9933,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9ff8ceb54ee59046b264c25821f7520, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pillToUse:
-  - {fileID: 1245758136}
-  - {fileID: 182175124}
-  - {fileID: 2017851748}
-  pillAsset:
-  - {fileID: 1995685022}
-  - {fileID: 479860626}
-  - {fileID: 2060034667}
+  purplePillUse: {fileID: 1245758136}
+  yellowPillUse: {fileID: 182175124}
+  cyanPillUse: {fileID: 2017851748}
+  purplePillAsset: {fileID: 1995685022}
+  yellowPillUseAsset: {fileID: 479860626}
+  cyanPillUseAsset: {fileID: 2060034667}
   redPill: 0
   bluePill: 0
   greenPill: 0

@@ -4,12 +4,18 @@ using UnityEngine;
 
 public class MixPills : MonoBehaviour
 {
-    [SerializeField] private GameObject[] pillToUse;
-    [SerializeField] private GameObject[] pillAsset;
+    [SerializeField] private GameObject purplePillUse;
+    [SerializeField] private GameObject yellowPillUse;
+    [SerializeField] private GameObject cyanPillUse;
+    [SerializeField] private GameObject purplePillAsset;
+    [SerializeField] private GameObject yellowPillUseAsset;
+    [SerializeField] private GameObject cyanPillUseAsset;
 
     public bool redPill, bluePill, greenPill;
 
-    private Vector2[]starPosition;
+    private Vector2 purpleStarPosition;
+    private Vector2 yellowStarPosition;
+    private Vector2 cyanStarPosition;
 
     public static MixPills instance;
     private void OnEnable()
@@ -26,9 +32,9 @@ public class MixPills : MonoBehaviour
         bluePill = false;
         greenPill = false;
 
-        starPosition[0]= pillToUse[0].transform.position;
-        starPosition[1] = pillToUse[1].transform.position;
-        starPosition[2] = pillToUse[2].transform.position;
+        purpleStarPosition= purplePillUse.transform.position;
+        yellowStarPosition = yellowPillUse.transform.position;
+        cyanStarPosition = cyanPillUse.transform.position;
     }
     private void Update()
     {
@@ -55,24 +61,24 @@ public class MixPills : MonoBehaviour
     {
         if(redPill == true && bluePill == true)
         {
-            pillToUse[0].SetActive(true);
-            pillAsset[0].SetActive(true);
+            purplePillUse.SetActive(true);
+            purplePillAsset.SetActive(true);
             redPill = false;
             bluePill = false;
         }
 
         if (redPill == true && greenPill == true)
         {
-            pillToUse[1].SetActive(true);
-            pillAsset[1].SetActive(true);
+            yellowPillUse.SetActive(true);
+            yellowPillUseAsset.SetActive(true);
             redPill = false;
             greenPill = false;
         }
 
         if(greenPill == true && bluePill == true)
         {
-            pillToUse[2].SetActive(true);
-            pillAsset[2].SetActive(true);
+            cyanPillUse.SetActive(true);
+            cyanPillUseAsset.SetActive(true);
             greenPill = false;
             bluePill = false;
         }
@@ -80,26 +86,26 @@ public class MixPills : MonoBehaviour
 
     public void PurplePill()
     {
-        pillToUse[0].transform.position = starPosition[0];
-        pillToUse[0].SetActive(false);
+        purplePillUse.transform.position = purpleStarPosition;
+        purplePillUse.SetActive(false);
     }
 
     public void YellowPill()
     {
-        pillToUse[1].transform.position = starPosition[1];
-        pillToUse[1].SetActive(false);
+        yellowPillUse.transform.position = yellowStarPosition;
+        yellowPillUse.SetActive(false);
     }
 
     public void CyanPill()
     {
-        pillToUse[2].transform.position = starPosition[2];
-        pillToUse[2].SetActive(false);
+        cyanPillUse.transform.position = cyanStarPosition;
+        cyanPillUse.SetActive(false);
     }
 
     public void PillAsset()
     {
-        pillAsset[0].SetActive(false);
-        pillAsset[1].SetActive(false);
-        pillAsset[2].SetActive(false);
+        purplePillAsset.SetActive(false);
+        yellowPillUseAsset.SetActive(false);
+        cyanPillUseAsset.SetActive(false);
     }
 }
