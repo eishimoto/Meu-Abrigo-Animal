@@ -13,6 +13,8 @@ public class MixPills : MonoBehaviour
 
     public bool redPill, bluePill, greenPill;
 
+    private bool canMix = true;
+
     private Vector2 purpleStarPosition;
     private Vector2 yellowStarPosition;
     private Vector2 cyanStarPosition;
@@ -59,28 +61,34 @@ public class MixPills : MonoBehaviour
 
     private void CheckMix()
     {
-        if(redPill == true && bluePill == true)
+        if (canMix == true)
         {
-            purplePillUse.SetActive(true);
-            purplePillAsset.SetActive(true);
-            redPill = false;
-            bluePill = false;
-        }
+            if (redPill == true && bluePill == true)
+            {
+                purplePillUse.SetActive(true);
+                purplePillAsset.SetActive(true);
+                redPill = false;
+                bluePill = false;
+                canMix = false;
+            }
 
-        if (redPill == true && greenPill == true)
-        {
-            yellowPillUse.SetActive(true);
-            yellowPillUseAsset.SetActive(true);
-            redPill = false;
-            greenPill = false;
-        }
+            if (redPill == true && greenPill == true)
+            {
+                yellowPillUse.SetActive(true);
+                yellowPillUseAsset.SetActive(true);
+                redPill = false;
+                greenPill = false;
+                canMix = false;
+            }
 
-        if(greenPill == true && bluePill == true)
-        {
-            cyanPillUse.SetActive(true);
-            cyanPillUseAsset.SetActive(true);
-            greenPill = false;
-            bluePill = false;
+            if (greenPill == true && bluePill == true)
+            {
+                cyanPillUse.SetActive(true);
+                cyanPillUseAsset.SetActive(true);
+                greenPill = false;
+                bluePill = false;
+                canMix = false;
+            }
         }
     }
 
@@ -107,5 +115,9 @@ public class MixPills : MonoBehaviour
         purplePillAsset.SetActive(false);
         yellowPillUseAsset.SetActive(false);
         cyanPillUseAsset.SetActive(false);
+        canMix = true;
+        redPill = false;
+        bluePill = false;
+        greenPill = false;
     }
 }
