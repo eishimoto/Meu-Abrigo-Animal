@@ -2163,7 +2163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfa0cb81dd273a241899334c571c1f91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _lineRender: {fileID: 1410493872202251295, guid: 625f07ed629d5d44dac79614ea81648a, type: 3}
+  _linePrefab: {fileID: 1410493872202251295, guid: 625f07ed629d5d44dac79614ea81648a, type: 3}
 --- !u!4 &258905853
 Transform:
   m_ObjectHideFlags: 0

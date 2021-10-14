@@ -12,7 +12,7 @@ public class UICanvas : MonoBehaviour
 
     //Ui and canvas
     [Header("Panels")]
-    [SerializeField] private GameObject social;
+    [SerializeField] private GameObject petsSelection;
     [SerializeField] private GameObject menu;
     [SerializeField] private GameObject adoption;
     [SerializeField] private GameObject store;
@@ -28,6 +28,8 @@ public class UICanvas : MonoBehaviour
 
     private int index = 0;
     private int indexSafe;
+
+    public static bool canUseTool = true;
 
     private void Start()
     {
@@ -93,12 +95,14 @@ public class UICanvas : MonoBehaviour
     {
         menu.SetActive(true);
         Time.timeScale = 0;
+        canUseTool = false;
     }
 
     public void CloseMenu()
     {
         menu.SetActive(false);
         Time.timeScale = 1;
+        canUseTool = true;
     }
 
     public void ExitApplication()
@@ -109,36 +113,43 @@ public class UICanvas : MonoBehaviour
     public void Social()
     {
         index = 3;
-        social.SetActive(true);
+        petsSelection.SetActive(true);
+        canUseTool = false;
     }
 
     public void CloseSocial()
     {
-        social.SetActive(false);
+        petsSelection.SetActive(false);
         index = indexSafe;
+        canUseTool = true;
     }
 
     public void Book()
     {
         book.SetActive(true);
+        canUseTool = false;
     }
     public void CloseBook()
     {
         book.SetActive(false);
+        canUseTool = true;
     }
 
     public void Store()
     {
         store.SetActive(true);
+        canUseTool = false;
     }
     public void CloseStore()
     {
         store.SetActive(false);
+        canUseTool = true;
     }
 
     public void Adoption()
     {
         adoption.SetActive(true);
+        canUseTool = false;
         FillSlot.instance.SpwanAllpet();
     }
 
@@ -146,27 +157,32 @@ public class UICanvas : MonoBehaviour
     {
         FillSlot.instance.DestoyPets();
         adoption.SetActive(false);
+        canUseTool = true;
     }
 
     public void Pill()
     {
         mixPills.SetActive(true);
+        canUseTool = false;
     }
 
     public void ClosePill()
     {
         MixPills.instance.PillAsset();
         mixPills.SetActive(false);
+        canUseTool = true;
     }
 
     public void SocialInsta()
     {
         socialInsta.SetActive(true);
+        canUseTool = false;
     }
 
     public void CloseSocialInsta()
     {
         socialInsta.SetActive(false);
+        canUseTool = true;
     }
 
 
@@ -174,19 +190,19 @@ public class UICanvas : MonoBehaviour
     public void PetOne()
     {
         index = 0;
-        social.SetActive(false);
+        petsSelection.SetActive(false);
     }
 
     public void PetTwo()
     {
         index = 1;
-        social.SetActive(false);
+        petsSelection.SetActive(false);
     }
 
     public void PetTheer()
     {
         index = 2;
-        social.SetActive(false);
+        petsSelection.SetActive(false);
     }
 
     //ChangeRooms

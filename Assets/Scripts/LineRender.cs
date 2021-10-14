@@ -5,12 +5,12 @@ using UnityEngine;
 public class LineRender : MonoBehaviour
 {
     [SerializeField] private LineRenderer _renderer;
-    [SerializeField] private EdgeCollider2D _collider;
+    //[SerializeField] private EdgeCollider2D _collider;
 
     private readonly List<Vector2> _points = new List<Vector2>();
     void Start()
     {
-        _collider.transform.position -= transform.position;
+       // _collider.transform.position -= transform.position;
     }
 
 
@@ -28,7 +28,7 @@ public class LineRender : MonoBehaviour
         _renderer.positionCount++;
         _renderer.SetPosition(_renderer.positionCount - 1, pos);
 
-        _collider.points = _points.ToArray();
+       // _collider.points = _points.ToArray();
     }
 
     private bool CanAppend(Vector2 pos)

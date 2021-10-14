@@ -19,7 +19,10 @@ public class TouchAndDrag : MonoBehaviour
 
     private void Update()
     {
-        MoveTool();
+        if(UICanvas.canUseTool == true)
+        {
+            MoveTool();
+        }
     }
 
     private void MoveTool()
@@ -60,9 +63,12 @@ public class TouchAndDrag : MonoBehaviour
     // Mouse as touch control
     private void OnMouseDrag()
     {
-        Vector3 mouseP = new Vector3(Input.mousePosition.x, Input.mousePosition.y, Input.mousePosition.z + 10f);
-        Vector3 worldP = maincamera.ScreenToWorldPoint(mouseP);
-        transform.position = worldP;
+        if (UICanvas.canUseTool == true)
+        {
+            Vector3 mouseP = new Vector3(Input.mousePosition.x, Input.mousePosition.y, Input.mousePosition.z + 10f);
+            Vector3 worldP = maincamera.ScreenToWorldPoint(mouseP);
+            transform.position = worldP;
+        }
     }
 
     private void OnMouseUp()
