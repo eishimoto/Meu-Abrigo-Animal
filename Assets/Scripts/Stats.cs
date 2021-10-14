@@ -36,6 +36,7 @@ public class Stats : MonoBehaviour
     {
         Diminish();
         GrowFur();
+        IsClean();
     }
 
     private void Diminish()
@@ -100,11 +101,17 @@ public class Stats : MonoBehaviour
     }
 
     private void IsClean()
-    { 
-        hygineStats = hygineStats + 50;
-        if (hygineStats >= 100)
+    {
+        if (CleaningTool.squareClean == true || CleaningTool.triangleClean == true || CleaningTool.circleClean == true)
         {
-            hygineStats = 100;
+            hygineStats = hygineStats + 50;
+            if (hygineStats >= 100)
+            {
+                hygineStats = 100;
+            }
+            CleaningTool.squareClean = false;
+            CleaningTool.triangleClean = false;
+            CleaningTool.circleClean = false;
         }
     }
 
@@ -113,7 +120,7 @@ public class Stats : MonoBehaviour
     private void GrowFur()
     {
         float randomTime;
-        randomTime = Random.Range(0, 6000);
+        randomTime = Random.Range(0, 60000);
 
         if(randomTime == 10)
         {

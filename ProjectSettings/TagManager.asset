@@ -15,6 +15,17 @@ TagManager:
   - YellowPill
   - CyanPill
   - Grooming
+  - Square1
+  - Square2
+  - Square3
+  - Square4
+  - Circle1
+  - Circle2
+  - Circle3
+  - Circle4
+  - Triangle1
+  - Triangle2
+  - Triangle3
   layers:
   - Default
   - TransparentFX
