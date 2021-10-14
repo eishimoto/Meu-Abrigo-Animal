@@ -14,6 +14,7 @@ TagManager:
   - PurplePill
   - YellowPill
   - CyanPill
+  - Grooming
   layers:
   - Default
   - TransparentFX

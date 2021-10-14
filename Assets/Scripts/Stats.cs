@@ -18,6 +18,9 @@ public class Stats : MonoBehaviour
     [SerializeField] private float maxHygine = 100f;
     [SerializeField] private float hyginePorcentage;
 
+    [Header("Fur")]
+    [SerializeField] private GameObject[] fur;
+
     private float hungerStats, affectionStats, hygineStats;
 
     private bool canClean;
@@ -32,7 +35,7 @@ public class Stats : MonoBehaviour
     private void Update()
     {
         Diminish();
-        HoldToClean();
+        GrowFur();
     }
 
     private void Diminish()
@@ -88,22 +91,14 @@ public class Stats : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-
-        if (collision.CompareTag("Clean"))
-        {
-            canClean = true;
-        }
+ 
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if(collision.CompareTag("Clean"))
-        {
-            canClean = false;
-        }
+
     }
 
-    // funcions to Invoke
     private void IsClean()
     { 
         hygineStats = hygineStats + 50;
@@ -113,13 +108,28 @@ public class Stats : MonoBehaviour
         }
     }
 
-    private void HoldToClean()
+
+
+    private void GrowFur()
     {
-        if (canClean)
+        float randomTime;
+        randomTime = Random.Range(0, 6000);
+
+        if(randomTime == 10)
         {
-            Invoke("IsClean", 2f);
+            fur[0].SetActive(true);
         }
-        else
-            CancelInvoke("IsClean");
+        if(randomTime == 20)
+        {
+            fur[1].SetActive(true);
+        }
+        if (randomTime == 30)
+        {
+            fur[2].SetActive(true);
+        }
+        if (randomTime == 40)
+        {
+            fur[3].SetActive(true);
+        }
     }
 }

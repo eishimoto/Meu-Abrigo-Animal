@@ -210,6 +210,7 @@ public class UICanvas : MonoBehaviour
         rooms[1].SetActive(false);
         rooms[2].SetActive(false);
         rooms[3].SetActive(false);
+        rooms[4].SetActive(false);
     }
 
     public void RoomOne()
@@ -218,6 +219,7 @@ public class UICanvas : MonoBehaviour
         rooms[1].SetActive(true);
         rooms[2].SetActive(false);
         rooms[3].SetActive(false);
+        rooms[4].SetActive(false);
     }
 
     public void RoomTwo()
@@ -226,6 +228,7 @@ public class UICanvas : MonoBehaviour
         rooms[1].SetActive(false);
         rooms[2].SetActive(true);
         rooms[3].SetActive(false);
+        rooms[4].SetActive(false);
     }
 
     public void RoomThree()
@@ -234,6 +237,16 @@ public class UICanvas : MonoBehaviour
         rooms[1].SetActive(false);
         rooms[2].SetActive(false);
         rooms[3].SetActive(true);
+        rooms[4].SetActive(false);
+    }
+
+    public void RoomFour()
+    {
+        rooms[0].SetActive(false);
+        rooms[1].SetActive(false);
+        rooms[2].SetActive(false);
+        rooms[3].SetActive(false);
+        rooms[4].SetActive(true);
     }
 }
 
