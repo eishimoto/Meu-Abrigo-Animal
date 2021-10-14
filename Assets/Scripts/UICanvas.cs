@@ -163,14 +163,12 @@ public class UICanvas : MonoBehaviour
     public void Pill()
     {
         mixPills.SetActive(true);
-        canUseTool = false;
     }
 
     public void ClosePill()
     {
         MixPills.instance.PillAsset();
         mixPills.SetActive(false);
-        canUseTool = true;
     }
 
     public void SocialInsta()
