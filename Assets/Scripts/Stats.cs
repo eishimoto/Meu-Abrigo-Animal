@@ -21,12 +21,26 @@ public class Stats : MonoBehaviour
     [Header("Fur")]
     [SerializeField] private GameObject[] fur;
 
+    private Collider2D myCollider;
+
     private float hungerStats, affectionStats, hygineStats;
 
     private bool canClean;
 
+    public static Stats instance;
+
+    public void OnEnable()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+    }
+
+
     private void Start()
     {
+        myCollider = GetComponent<Collider2D>();
         hungerStats = maxHunger;
         affectionStats = maxAffection;
         hygineStats = maxHygine;
@@ -138,5 +152,15 @@ public class Stats : MonoBehaviour
         {
             fur[3].SetActive(true);
         }
+    }
+
+    public void CollisionChange()
+    {
+        myCollider.isTrigger = true;
+    }
+
+    public void CollisonChangeBack()
+    {
+        myCollider.isTrigger = false;
     }
 }
