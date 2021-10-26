@@ -29,6 +29,7 @@ public class UICanvas : MonoBehaviour
     private int index = 0;
     private int indexSafe;
 
+    //static
     public static bool canUseTool = true;
 
     private void Start()
