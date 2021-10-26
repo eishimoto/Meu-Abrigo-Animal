@@ -44,7 +44,7 @@ public class ToyTool : MonoBehaviour
                 if (myCollider == touchedCollider)
                 {
                     _moveAllowed = true;
-                    myRigidbody.bodyType = RigidbodyType2D.Dynamic;
+                    MoveBall();
                 }
             }
             if (touch.phase == TouchPhase.Moved)
@@ -60,7 +60,8 @@ public class ToyTool : MonoBehaviour
                 if (touch.phase == TouchPhase.Ended)
                 {
                     _moveAllowed = false;
-                   // transform.position = _startPosition;
+                    Invoke("SlowBall", 4f);
+                    // transform.position = _startPosition;
                 }
             }
         }
@@ -82,12 +83,16 @@ public class ToyTool : MonoBehaviour
             Vector3 mouseP = new Vector3(Input.mousePosition.x, Input.mousePosition.y, Input.mousePosition.z + 10f);
             Vector3 worldP = maincamera.ScreenToWorldPoint(mouseP);
             transform.position = worldP;
-            myRigidbody.bodyType = RigidbodyType2D.Dynamic;
-
-            int random = Random.Range(10,40);
-            int randomtwo = Random.Range(10, 40);
-            myRigidbody.AddForce(new Vector2(random, randomtwo));
+            MoveBall();
         }
+    }
+
+    private void MoveBall()
+    {
+        myRigidbody.bodyType = RigidbodyType2D.Dynamic;
+        int random = Random.Range(20, 40);
+        int randomtwo = Random.Range(20, 40);
+        myRigidbody.AddForce(new Vector2(random, randomtwo));
     }
 
     private void SlowBall()
