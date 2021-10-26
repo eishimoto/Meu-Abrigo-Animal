@@ -83,13 +83,24 @@ public class ToyTool : MonoBehaviour
             Vector3 worldP = maincamera.ScreenToWorldPoint(mouseP);
             transform.position = worldP;
             myRigidbody.bodyType = RigidbodyType2D.Dynamic;
-            myRigidbody.AddForce(new Vector2(10f, 10f));
-            Stats.instance.CollisionChange();
+
+            int random = Random.Range(10,40);
+            int randomtwo = Random.Range(10, 40);
+            myRigidbody.AddForce(new Vector2(random, randomtwo));
         }
     }
 
+    private void SlowBall()
+    {
+        myRigidbody.velocity = Vector2.zero;
+        myRigidbody.bodyType = RigidbodyType2D.Kinematic;
+        transform.position = _startPosition;
+        Stats.instance.AddAffection();
+    }
+
+
     private void OnMouseUp()
     {
-       // transform.position = _startPosition;
+        Invoke("SlowBall", 4f); 
     }
 }

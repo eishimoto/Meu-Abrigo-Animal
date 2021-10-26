@@ -21,12 +21,14 @@ public class Stats : MonoBehaviour
     [Header("Fur")]
     [SerializeField] private GameObject[] fur;
 
-    private Collider2D myCollider;
-
+    //float
     private float hungerStats, affectionStats, hygineStats;
 
+    //bool
     private bool canClean;
 
+
+    //static
     public static Stats instance;
 
     public void OnEnable()
@@ -40,7 +42,6 @@ public class Stats : MonoBehaviour
 
     private void Start()
     {
-        myCollider = GetComponent<Collider2D>();
         hungerStats = maxHunger;
         affectionStats = maxAffection;
         hygineStats = maxHygine;
@@ -79,11 +80,7 @@ public class Stats : MonoBehaviour
 
         if (collision.CompareTag("Fun"))
         {
-            affectionStats = affectionStats + 50;
-            if (affectionStats >= 100)
-            {
-                affectionStats = 100;
-            }
+
         }
 
 
@@ -113,6 +110,14 @@ public class Stats : MonoBehaviour
     {
 
     }
+    public void AddAffection()
+    {
+        affectionStats = affectionStats + 50;
+        if (affectionStats >= 100)
+        {
+            affectionStats = 100;
+        }
+    }
 
     private void IsClean()
     {
@@ -128,8 +133,6 @@ public class Stats : MonoBehaviour
             CleaningTool.circleClean = false;
         }
     }
-
-
 
     private void GrowFur()
     {
@@ -154,13 +157,4 @@ public class Stats : MonoBehaviour
         }
     }
 
-    public void CollisionChange()
-    {
-        myCollider.isTrigger = true;
-    }
-
-    public void CollisonChangeBack()
-    {
-        myCollider.isTrigger = false;
-    }
 }
