@@ -10,18 +10,16 @@ public class DrawManager : MonoBehaviour
     public const float RESOLUTION = .1f;
 
     private LineRender _currentLine;
+ 
     void Start()
     {
         _cam = Camera.main;
     }
 
-
     void Update()
     {
         Vector2 mousePos = _cam.ScreenToWorldPoint(Input.mousePosition);
-
         if (Input.GetMouseButtonDown(0)) _currentLine = Instantiate(_linePrefab, mousePos, Quaternion.identity);
-
         if (Input.GetMouseButton(0)) _currentLine.SetPosition(mousePos);
     }
 }

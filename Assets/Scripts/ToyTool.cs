@@ -60,8 +60,7 @@ public class ToyTool : MonoBehaviour
                 if (touch.phase == TouchPhase.Ended)
                 {
                     _moveAllowed = false;
-                    Invoke("SlowBall", 4f);
-                    // transform.position = _startPosition;
+                    Invoke("SlowBall", 2f);
                 }
             }
         }
@@ -73,6 +72,20 @@ public class ToyTool : MonoBehaviour
         var direction = Vector3.Reflect(lastVelocity.normalized, collision.contacts[0].normal);
 
         myRigidbody.velocity = direction * Mathf.Max(speed, 0f);
+    }
+
+    private void MoveBall()
+    {
+        myRigidbody.bodyType = RigidbodyType2D.Dynamic;
+        myRigidbody.AddForce(new Vector2((float)Random.Range(-500, 500), (float)Random.Range(-500, 500)));
+    }
+
+    private void SlowBall()
+    {
+        myRigidbody.velocity = Vector2.zero;
+        myRigidbody.bodyType = RigidbodyType2D.Kinematic;
+        transform.position = _startPosition;
+        Stats.instance.AddAffection();
     }
 
     // Mouse as touch control
@@ -87,25 +100,8 @@ public class ToyTool : MonoBehaviour
         }
     }
 
-    private void MoveBall()
-    {
-        myRigidbody.bodyType = RigidbodyType2D.Dynamic;
-        int random = Random.Range(20, 40);
-        int randomtwo = Random.Range(20, 40);
-        myRigidbody.AddForce(new Vector2(random, randomtwo));
-    }
-
-    private void SlowBall()
-    {
-        myRigidbody.velocity = Vector2.zero;
-        myRigidbody.bodyType = RigidbodyType2D.Kinematic;
-        transform.position = _startPosition;
-        Stats.instance.AddAffection();
-    }
-
-
     private void OnMouseUp()
     {
-        Invoke("SlowBall", 4f); 
+        Invoke("SlowBall", 2f); 
     }
 }

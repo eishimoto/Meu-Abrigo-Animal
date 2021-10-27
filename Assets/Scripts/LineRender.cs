@@ -13,10 +13,9 @@ public class LineRender : MonoBehaviour
         _collider.transform.position -= transform.position;
     }
 
-
     void Update()
     {
-       // if (Input.GetMouseButtonUp(0)) Destroy(gameObject);
+       if (Input.GetMouseButtonUp(0)) Destroy(gameObject);
     }
 
     public void SetPosition(Vector2 pos)

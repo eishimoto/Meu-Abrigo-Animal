@@ -17,6 +17,7 @@ public class CleaningTool : MonoBehaviour
     public bool triangle1, triangle2, triangle3;
 
     public static bool squareClean, circleClean, triangleClean;
+
     private void Start()
     {
         myCollider = GetComponent<Collider2D>();
@@ -146,6 +147,8 @@ public class CleaningTool : MonoBehaviour
 
     }
 
+
+
     private void CheckCollisions()
     {
         if(square1 == true && square2 == true && square3 == true && square4 == true)
@@ -183,7 +186,7 @@ public class CleaningTool : MonoBehaviour
     private void SetTrianglesToFalse()
     {
         triangle1 = false;
-        triangle1 = false;
-        triangle1 = false;
+        triangle2 = false;
+        triangle3 = false;
     }
 }
