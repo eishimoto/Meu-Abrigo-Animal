@@ -5,6 +5,8 @@ using TMPro;
 
 public class UseOfTool : MonoBehaviour
 {
+    public bool food1, food2, food3;
+
     //private
     private SpriteRenderer _spriteRender;
     //collection
@@ -15,6 +17,7 @@ public class UseOfTool : MonoBehaviour
 
     //bool
     public static bool cantMove;
+
     //static for function
     public static UseOfTool instance;
     private void OnEnable()

@@ -1032,8 +1032,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbd0f98cf44517e4885a7cfdca309b37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toolsPanel: {fileID: 1330051086}
   foodPanel: {fileID: 982588069}
+  toolsPanel: {fileID: 1330051086}
   accerssoryPanel: {fileID: 670806958}
 --- !u!224 &76148218
 RectTransform:
@@ -3134,19 +3134,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 276900936}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 477564968}
-        m_TargetAssemblyTypeName: Money, Assembly-CSharp
-        m_MethodName: BuyFood
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &276900936
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4761,7 +4749,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &493379146
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4825,19 +4813,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 493379148}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 477564968}
-        m_TargetAssemblyTypeName: Money, Assembly-CSharp
-        m_MethodName: BuyFood
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &493379148
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7186,7 +7162,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Ferramentas
+  m_Text: Comida
 --- !u!222 &756415972
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7485,7 +7461,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f291b14e970fb3142bbe1f9a80b013b1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 70ce2850bb6ca144bb2e9d3d7543fde1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8743,7 +8719,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 966322215}
-  - component: {fileID: 966322216}
   m_Layer: 5
   m_Name: Tools
   m_TagString: Untagged
@@ -8773,30 +8748,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 320}
   m_SizeDelta: {x: 1000, y: 200}
   m_Pivot: {x: 0.5, y: 0}
---- !u!114 &966322216
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 966322214}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Padding:
-    m_Left: 0
-    m_Right: 0
-    m_Top: 0
-    m_Bottom: 0
-  m_ChildAlignment: 4
-  m_StartCorner: 0
-  m_StartAxis: 0
-  m_CellSize: {x: 100, y: 100}
-  m_Spacing: {x: 0, y: 0}
-  m_Constraint: 1
-  m_ConstraintCount: 1
 --- !u!1 &982588069
 GameObject:
   m_ObjectHideFlags: 0
@@ -8813,7 +8764,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &982588070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8854,7 +8805,7 @@ RectTransform:
   - {fileID: 1138543929}
   - {fileID: 493379146}
   m_Father: {fileID: 1919320641}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9891,7 +9842,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f291b14e970fb3142bbe1f9a80b013b1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5c52f33a4a61d9d4692b39f6b5e1358f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10162,7 +10113,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f291b14e970fb3142bbe1f9a80b013b1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 44dbec5b01ebae14b905d02de16d7b50, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10416,19 +10367,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1138543931}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 477564968}
-        m_TargetAssemblyTypeName: Money, Assembly-CSharp
-        m_MethodName: BuyFood
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1138543931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10888,6 +10827,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53a36a28445f74b87ac06173ebf02a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  food1: 0
+  food2: 1
+  food3: 0
   sprite:
   - {fileID: 21300000, guid: f291b14e970fb3142bbe1f9a80b013b1, type: 3}
   - {fileID: 21300000, guid: 5c52f33a4a61d9d4692b39f6b5e1358f, type: 3}
@@ -11578,7 +11520,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1330051087
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11595,7 +11537,7 @@ RectTransform:
   - {fileID: 754640184}
   - {fileID: 145059719}
   m_Father: {fileID: 1919320641}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -13097,9 +13039,9 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: Ferramentas
-      m_Image: {fileID: 0}
     - m_Text: Comida
+      m_Image: {fileID: 0}
+    - m_Text: Ferramentas
       m_Image: {fileID: 0}
     - m_Text: "Rem\xE9dios"
       m_Image: {fileID: 0}
@@ -16605,8 +16547,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1330051087}
   - {fileID: 982588071}
+  - {fileID: 1330051087}
   - {fileID: 670806960}
   m_Father: {fileID: 1129132321}
   m_RootOrder: 1
@@ -17130,11 +17072,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53a36a28445f74b87ac06173ebf02a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  food1: 0
+  food2: 0
+  food3: 1
   sprite:
   - {fileID: 21300000, guid: 44dbec5b01ebae14b905d02de16d7b50, type: 3}
   - {fileID: 21300000, guid: 5da727852f205ac4e9259e736bef0716, type: 3}
   textDisplay: {fileID: 1004410196}
-  quantity: 2
+  quantity: 0
 --- !u!1 &1962619987
 GameObject:
   m_ObjectHideFlags: 0
@@ -18885,11 +18830,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53a36a28445f74b87ac06173ebf02a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  food1: 1
+  food2: 0
+  food3: 0
   sprite:
   - {fileID: 21300000, guid: 70ce2850bb6ca144bb2e9d3d7543fde1, type: 3}
   - {fileID: 21300000, guid: bae0422ba12fa33468a3b9aa0337bf80, type: 3}
   textDisplay: {fileID: 1784603200}
-  quantity: 2
+  quantity: 3
 --- !u!1 &2113343215
 GameObject:
   m_ObjectHideFlags: 0
