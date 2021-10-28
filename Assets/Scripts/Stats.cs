@@ -64,7 +64,6 @@ public class Stats : MonoBehaviour
 
         hygineBar.fillAmount = hygineStats / maxHygine;
         hygineStats -= hyginePorcentage * Time.deltaTime;
-        // Debug.Log(affectionStats); Debug.Log(hungerStats); Debug.Log(hygineStats);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -76,6 +75,9 @@ public class Stats : MonoBehaviour
             {
                 hungerStats = 100;
             }
+
+            UseOfTool.instance.Subtract();
+            UseOfTool.instance.UpdateTextMeshPro();
         }
 
         if (collision.CompareTag("Fun"))

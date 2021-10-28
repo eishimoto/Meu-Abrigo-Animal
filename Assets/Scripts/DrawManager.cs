@@ -10,7 +10,7 @@ public class DrawManager : MonoBehaviour
     public const float RESOLUTION = .1f;
 
     private LineRender _currentLine;
- 
+
     void Start()
     {
         _cam = Camera.main;

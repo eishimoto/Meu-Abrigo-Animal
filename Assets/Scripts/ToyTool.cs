@@ -13,6 +13,7 @@ public class ToyTool : MonoBehaviour
 
     private Camera maincamera;
 
+    [SerializeField] private int stopBall;
     private void Start()
     {
         myCollider = GetComponent<Collider2D>();
@@ -60,7 +61,7 @@ public class ToyTool : MonoBehaviour
                 if (touch.phase == TouchPhase.Ended)
                 {
                     _moveAllowed = false;
-                    Invoke("SlowBall", 2f);
+                    Invoke("SlowBall", stopBall);
                 }
             }
         }
@@ -102,6 +103,6 @@ public class ToyTool : MonoBehaviour
 
     private void OnMouseUp()
     {
-        Invoke("SlowBall", 2f); 
+        Invoke("SlowBall", stopBall); 
     }
 }

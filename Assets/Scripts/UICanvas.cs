@@ -90,7 +90,6 @@ public class UICanvas : MonoBehaviour
         }
     }
 
-
     //UI
     public void Menu()
     {
