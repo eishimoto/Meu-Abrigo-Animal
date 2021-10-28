@@ -10827,9 +10827,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53a36a28445f74b87ac06173ebf02a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  food1: 0
-  food2: 1
-  food3: 0
   sprite:
   - {fileID: 21300000, guid: f291b14e970fb3142bbe1f9a80b013b1, type: 3}
   - {fileID: 21300000, guid: 5c52f33a4a61d9d4692b39f6b5e1358f, type: 3}
@@ -17072,14 +17069,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53a36a28445f74b87ac06173ebf02a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  food1: 0
-  food2: 0
-  food3: 1
   sprite:
   - {fileID: 21300000, guid: 44dbec5b01ebae14b905d02de16d7b50, type: 3}
   - {fileID: 21300000, guid: 5da727852f205ac4e9259e736bef0716, type: 3}
   textDisplay: {fileID: 1004410196}
-  quantity: 0
+  quantity: 2
 --- !u!1 &1962619987
 GameObject:
   m_ObjectHideFlags: 0
@@ -18830,14 +18824,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a53a36a28445f74b87ac06173ebf02a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  food1: 1
-  food2: 0
-  food3: 0
   sprite:
   - {fileID: 21300000, guid: 70ce2850bb6ca144bb2e9d3d7543fde1, type: 3}
   - {fileID: 21300000, guid: bae0422ba12fa33468a3b9aa0337bf80, type: 3}
   textDisplay: {fileID: 1784603200}
-  quantity: 3
+  quantity: 2
 --- !u!1 &2113343215
 GameObject:
   m_ObjectHideFlags: 0
