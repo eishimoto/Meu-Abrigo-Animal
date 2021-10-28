@@ -62,7 +62,12 @@ public class UseOfTool : MonoBehaviour
         {
             cantMove = true;
         }
-        if(quantity > 0)
+    }
+
+    public void AddFood()
+    {
+        quantity++;
+        if (quantity > 0)
         {
             cantMove = false;
         }

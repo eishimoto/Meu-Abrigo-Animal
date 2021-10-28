@@ -7,9 +7,6 @@ public class Money : MonoBehaviour
     [SerializeField] private int money;
     [SerializeField] private TextMeshProUGUI textDisplay;
 
-    //static
-    public static int moneyUse;
-
     //static for funcitons
     public static Money instance;
     private void OnEnable()
@@ -23,12 +20,22 @@ public class Money : MonoBehaviour
     private void Start()
     {
         UpdateMoney();
-        moneyUse = money;
     }
 
     public void UpdateMoney()
     {
         textDisplay.text = null;
         textDisplay.text = money.ToString() + " " + "Reais";
+    }
+
+    public void BuyFood()
+    {
+        if(money > 10)
+        {
+            money -= 10;
+            UseOfTool.instance.AddFood();
+            UseOfTool.instance.UpdateTextMeshPro();
+            textDisplay.text = money.ToString() + " " + "Reais";
+        }
     }
 }
