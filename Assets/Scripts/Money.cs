@@ -38,4 +38,25 @@ public class Money : MonoBehaviour
             textDisplay.text = money.ToString() + " " + "Reais";
         }
     }
+
+    public void BuyFoodTwo()
+    {
+        if(money > 20)
+        {
+            money -= 20;
+            FoodToolTwo.instance.AddFood();
+            FoodToolTwo.instance.UpdateTextMeshPro();
+            textDisplay.text = money.ToString() + " " + "Reais";
+        }
+    }
+    public void BuyFoodThree()
+    {
+        if (money > 30)
+        {
+            money -= 30;
+            FoodToolThree.instance.AddFood();
+            FoodToolThree.instance.UpdateTextMeshPro();
+            textDisplay.text = money.ToString() + " " + "Reais";
+        }
+    }
 }

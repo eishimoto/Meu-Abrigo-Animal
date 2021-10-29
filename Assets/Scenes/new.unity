@@ -3065,7 +3065,7 @@ GameObject:
   - component: {fileID: 276900936}
   - component: {fileID: 276900935}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Food1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10316,7 +10316,7 @@ GameObject:
   - component: {fileID: 1138543931}
   - component: {fileID: 1138543930}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: Food3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10385,7 +10385,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1138543931}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 477564968}
+        m_TargetAssemblyTypeName: Money, Assembly-CSharp
+        m_MethodName: BuyFoodThree
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1138543931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10833,6 +10845,23 @@ PolygonCollider2D:
       - {x: 0.48999998, y: -0.44}
       - {x: 0.5, y: -0.38}
       - {x: 0.5, y: -0.14}
+--- !u!114 &1221231110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1221231108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae9fb28d79e92ef40a689f26d3911d69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite:
+  - {fileID: 21300000, guid: f291b14e970fb3142bbe1f9a80b013b1, type: 3}
+  - {fileID: 21300000, guid: 5c52f33a4a61d9d4692b39f6b5e1358f, type: 3}
+  textDisplay: {fileID: 1694273542}
+  quantity: 2
 --- !u!1 &1252320609
 GameObject:
   m_ObjectHideFlags: 0
@@ -11865,7 +11894,7 @@ GameObject:
   - component: {fileID: 1339852548}
   - component: {fileID: 1339852547}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: Food2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11937,7 +11966,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 477564968}
         m_TargetAssemblyTypeName: Money, Assembly-CSharp
-        m_MethodName: BuyFood
+        m_MethodName: BuyFoodTwo
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17058,6 +17087,23 @@ PolygonCollider2D:
       - {x: 0.19, y: -0.53999996}
       - {x: 0.42999998, y: -0.42}
       - {x: 0.56, y: -0.29999998}
+--- !u!114 &1949324057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1949324054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ff4f5f584f8a8248b1e5370c9dd0540, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite:
+  - {fileID: 21300000, guid: 44dbec5b01ebae14b905d02de16d7b50, type: 3}
+  - {fileID: 21300000, guid: 5da727852f205ac4e9259e736bef0716, type: 3}
+  textDisplay: {fileID: 1004410196}
+  quantity: 3
 --- !u!1 &1962619987
 GameObject:
   m_ObjectHideFlags: 0

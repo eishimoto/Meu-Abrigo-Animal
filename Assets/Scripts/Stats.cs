@@ -70,13 +70,34 @@ public class Stats : MonoBehaviour
     {
         if (collision.CompareTag("Food"))
         {
-            hungerStats = hungerStats + 25;
+            hungerStats = hungerStats + 20;
             if (hungerStats >= 100)
             {
                 hungerStats = 100;
             }
 
             FoodTool.instance.UseInStats();
+        }
+
+        if(collision.CompareTag("Food2"))
+        {
+            hungerStats = hungerStats + 30;
+            if (hungerStats >= 100)
+            {
+                hungerStats = 100;
+            }
+
+            FoodToolTwo.instance.UseInStats();
+        }
+        if (collision.CompareTag("Food3"))
+        {
+            hungerStats = hungerStats + 50;
+            if (hungerStats >= 100)
+            {
+                hungerStats = 100;
+            }
+
+            FoodToolThree.instance.UseInStats();
         }
 
         if (collision.CompareTag("Fun"))
