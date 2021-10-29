@@ -13,8 +13,6 @@ public class UseOfTool : MonoBehaviour
     [SerializeField] private TextMeshProUGUI textDisplay;
     [SerializeField] private int quantity;
 
-    public bool food1,food2,food3;
-
     //bool
     public static bool cantMove;
 

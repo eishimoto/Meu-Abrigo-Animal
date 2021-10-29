@@ -3134,7 +3134,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 276900936}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 477564968}
+        m_TargetAssemblyTypeName: Money, Assembly-CSharp
+        m_MethodName: BuyFoodOne
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &276900936
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4606,6 +4618,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1376502211505895757, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
+    - {fileID: 1452414777368264889, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
 --- !u!4 &474341384 stripped
 Transform:
@@ -7252,6 +7265,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1376502211505895757, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
+    - {fileID: 1452414777368264889, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
 --- !u!1 &808602245
 GameObject:
@@ -10819,23 +10833,6 @@ PolygonCollider2D:
       - {x: 0.48999998, y: -0.44}
       - {x: 0.5, y: -0.38}
       - {x: 0.5, y: -0.14}
---- !u!114 &1221231113
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1221231108}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a53a36a28445f74b87ac06173ebf02a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprite:
-  - {fileID: 21300000, guid: f291b14e970fb3142bbe1f9a80b013b1, type: 3}
-  - {fileID: 21300000, guid: 5c52f33a4a61d9d4692b39f6b5e1358f, type: 3}
-  textDisplay: {fileID: 1694273542}
-  quantity: 1
 --- !u!1 &1252320609
 GameObject:
   m_ObjectHideFlags: 0
@@ -17061,23 +17058,6 @@ PolygonCollider2D:
       - {x: 0.19, y: -0.53999996}
       - {x: 0.42999998, y: -0.42}
       - {x: 0.56, y: -0.29999998}
---- !u!114 &1949324060
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1949324054}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a53a36a28445f74b87ac06173ebf02a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprite:
-  - {fileID: 21300000, guid: 44dbec5b01ebae14b905d02de16d7b50, type: 3}
-  - {fileID: 21300000, guid: 5da727852f205ac4e9259e736bef0716, type: 3}
-  textDisplay: {fileID: 1004410196}
-  quantity: 0
 --- !u!1 &1962619987
 GameObject:
   m_ObjectHideFlags: 0
@@ -18816,7 +18796,7 @@ PolygonCollider2D:
       - {x: -0.19, y: -0.29}
       - {x: -0.17, y: -0.25}
       - {x: 0.24, y: -0.13}
---- !u!114 &2111159526
+--- !u!114 &2111159523
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -18825,14 +18805,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 2111159520}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a53a36a28445f74b87ac06173ebf02a, type: 3}
+  m_Script: {fileID: 11500000, guid: ba69f2a70af82ca47b8ae55671ee3775, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sprite:
   - {fileID: 21300000, guid: 70ce2850bb6ca144bb2e9d3d7543fde1, type: 3}
   - {fileID: 21300000, guid: bae0422ba12fa33468a3b9aa0337bf80, type: 3}
   textDisplay: {fileID: 1784603200}
-  quantity: 2
+  quantity: 3
 --- !u!1 &2113343215
 GameObject:
   m_ObjectHideFlags: 0
@@ -18980,4 +18960,5 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1376502211505895757, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
+    - {fileID: 1452414777368264889, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
