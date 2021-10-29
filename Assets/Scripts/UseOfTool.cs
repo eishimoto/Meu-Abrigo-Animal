@@ -13,6 +13,8 @@ public class UseOfTool : MonoBehaviour
     [SerializeField] private TextMeshProUGUI textDisplay;
     [SerializeField] private int quantity;
 
+    public bool food1,food2,food3;
+
     //bool
     public static bool cantMove;
 
@@ -35,10 +37,17 @@ public class UseOfTool : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ChangeSprite();
+        
     }
 
-    private void ChangeSprite()
+    public void UseInStats()
+    {
+        Subtract();
+        ChangeSprite();
+        UpdateTextMeshPro();
+    }
+
+    public void ChangeSprite()
     {
         if (quantity > 0)
         {

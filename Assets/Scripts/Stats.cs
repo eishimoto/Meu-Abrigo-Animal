@@ -76,8 +76,7 @@ public class Stats : MonoBehaviour
                 hungerStats = 100;
             }
 
-            UseOfTool.instance.Subtract();
-            UseOfTool.instance.UpdateTextMeshPro();
+            UseOfTool.instance.UseInStats();
         }
 
         if (collision.CompareTag("Fun"))

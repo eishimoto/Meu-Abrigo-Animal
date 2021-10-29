@@ -27,6 +27,8 @@ TagManager:
   - Triangle2
   - Triangle3
   - Wall
+  - Food2
+  - Food3
   layers:
   - Default
   - TransparentFX

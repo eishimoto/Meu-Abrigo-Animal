@@ -4536,6 +4536,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1230288523604253306, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
+      propertyPath: m_TagString
+      value: Food2
+      objectReference: {fileID: 0}
     - target: {fileID: 1376502211505895757, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
       propertyPath: m_Radius
       value: 0.5
@@ -10831,7 +10835,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f291b14e970fb3142bbe1f9a80b013b1, type: 3}
   - {fileID: 21300000, guid: 5c52f33a4a61d9d4692b39f6b5e1358f, type: 3}
   textDisplay: {fileID: 1694273542}
-  quantity: 2
+  quantity: 1
 --- !u!1 &1252320609
 GameObject:
   m_ObjectHideFlags: 0
@@ -17073,7 +17077,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 44dbec5b01ebae14b905d02de16d7b50, type: 3}
   - {fileID: 21300000, guid: 5da727852f205ac4e9259e736bef0716, type: 3}
   textDisplay: {fileID: 1004410196}
-  quantity: 2
+  quantity: 0
 --- !u!1 &1962619987
 GameObject:
   m_ObjectHideFlags: 0
@@ -18905,6 +18909,10 @@ PrefabInstance:
     - target: {fileID: 1230288523604253306, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1230288523604253306, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
+      propertyPath: m_TagString
+      value: Food3
       objectReference: {fileID: 0}
     - target: {fileID: 1376502211505895757, guid: d0bdbfc21ac702a49b5285617389f513, type: 3}
       propertyPath: m_Radius
