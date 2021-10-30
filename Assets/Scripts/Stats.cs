@@ -27,7 +27,6 @@ public class Stats : MonoBehaviour
     //bool
     private bool canClean;
 
-
     //static
     public static Stats instance;
 
