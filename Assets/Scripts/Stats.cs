@@ -99,12 +99,6 @@ public class Stats : MonoBehaviour
             FoodToolThree.instance.UseInStats();
         }
 
-        if (collision.CompareTag("Fun"))
-        {
-
-        }
-
-
         if(collision.CompareTag("PurplePill"))
         {
             MixPills.instance.PurplePill();
