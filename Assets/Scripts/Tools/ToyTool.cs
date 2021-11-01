@@ -10,6 +10,12 @@ public class ToyTool : MonoBehaviour
     private Rigidbody2D myRigidbody;
 
     private Vector3 lastVelocity;
+    //
+    private Vector2 startPos, endPos, direction;
+    private Vector3 startMousePos, endMousePos,mouseDirection;
+    private float touchTimeStart, touchTimeFinish, timeInterval;
+    [Range(0.05f, 1f)]
+    public float throwFoser = 0.3f;
 
     private Camera maincamera;
 
@@ -28,7 +34,7 @@ public class ToyTool : MonoBehaviour
         {
             MoveTool();
         }
-
+        Debug.Log(mouseDirection);
         lastVelocity = myRigidbody.velocity;
     }
 
@@ -45,7 +51,8 @@ public class ToyTool : MonoBehaviour
                 if (myCollider == touchedCollider)
                 {
                     _moveAllowed = true;
-                    MoveBall();
+                    touchTimeStart = Time.time;
+                    startPos = Input.GetTouch(0).position;
                 }
             }
             if (touch.phase == TouchPhase.Moved)
@@ -61,7 +68,12 @@ public class ToyTool : MonoBehaviour
                 if (touch.phase == TouchPhase.Ended)
                 {
                     _moveAllowed = false;
-                    Invoke("SlowBall", stopBall);
+                    touchTimeFinish = Time.time;
+                    timeInterval = touchTimeFinish - touchTimeStart;
+                    endPos = Input.GetTouch(0).position;
+                    direction = startPos - endPos;
+                    MoveBall();
+                    
                 }
             }
         }
@@ -78,7 +90,8 @@ public class ToyTool : MonoBehaviour
     private void MoveBall()
     {
         myRigidbody.bodyType = RigidbodyType2D.Dynamic;
-        myRigidbody.AddForce(new Vector2((float)Random.Range(-500, 500), (float)Random.Range(-500, 500)));
+        myRigidbody.AddForce(-direction/timeInterval * throwFoser);
+        Invoke("SlowBall", stopBall);
     }
 
     private void SlowBall()
@@ -97,12 +110,23 @@ public class ToyTool : MonoBehaviour
             Vector3 mouseP = new Vector3(Input.mousePosition.x, Input.mousePosition.y, Input.mousePosition.z + 10f);
             Vector3 worldP = maincamera.ScreenToWorldPoint(mouseP);
             transform.position = worldP;
-            MoveBall();
+            touchTimeStart = Time.time;
+            startMousePos = Input.mousePosition;
         }
     }
 
     private void OnMouseUp()
     {
-        Invoke("SlowBall", stopBall); 
+        touchTimeFinish = Time.time;
+        timeInterval = touchTimeFinish - touchTimeStart;
+        endMousePos = Input.mousePosition;
+        mouseDirection = startMousePos - endMousePos;
+        MoveBallMouse();
+    }
+    private void MoveBallMouse()
+    {
+        myRigidbody.bodyType = RigidbodyType2D.Dynamic;
+        myRigidbody.AddForce(-mouseDirection / timeInterval * throwFoser);
+        Invoke("SlowBall", stopBall);
     }
 }

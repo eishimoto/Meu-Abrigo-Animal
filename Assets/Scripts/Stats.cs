@@ -52,7 +52,6 @@ public class Stats : MonoBehaviour
         Diminish();
         GrowFur();
         IsClean();
-        Debug.Log(count);
     }
 
     private void Diminish()
