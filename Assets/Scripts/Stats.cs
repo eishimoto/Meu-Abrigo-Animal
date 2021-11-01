@@ -51,6 +51,7 @@ public class Stats : MonoBehaviour
         Diminish();
         GrowFur();
         IsClean();
+
     }
 
     private void Diminish()
@@ -58,11 +59,50 @@ public class Stats : MonoBehaviour
         hungerBar.fillAmount = hungerStats / maxHunger;
         hungerStats -= hungerPorcentage * Time.deltaTime;
 
+        if(hungerStats > 50)
+        {
+            ColorFood.instance.FoodColorOne();
+        }
+        if(hungerStats < 50)
+        {
+            ColorFood.instance.FoodColorTwo();
+        }
+        if(hungerStats < 25)
+        {
+            ColorFood.instance.FoodColorThree();
+        }
+
         affectionBar.fillAmount = affectionStats / maxAffection;
         affectionStats -= affectionPorcentage * Time.deltaTime;
 
+        if (affectionStats > 50)
+        {
+            ColorLove.instance.LoveColorOne();
+        }
+        if (affectionStats < 50)
+        {
+            ColorLove.instance.LoveColorTwo();
+        }
+        if (affectionStats < 25)
+        {
+            ColorLove.instance.LoveColorThree();
+        }
+
         hygineBar.fillAmount = hygineStats / maxHygine;
         hygineStats -= hyginePorcentage * Time.deltaTime;
+
+        if (hygineStats > 50)
+        {
+            ColorClean.instance.CleanColorOne();
+        }
+        if (hygineStats < 50)
+        {
+            ColorClean.instance.CleanColorTwo();
+        }
+        if (hygineStats < 25)
+        {
+            ColorClean.instance.CleanColorThree();
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -116,15 +156,6 @@ public class Stats : MonoBehaviour
 
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
-    {
- 
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-
-    }
     public void AddAffection()
     {
         affectionStats = affectionStats + 50;
@@ -171,5 +202,4 @@ public class Stats : MonoBehaviour
             fur[3].SetActive(true);
         }
     }
-
 }
