@@ -7,12 +7,15 @@ public class Grooming : MonoBehaviour
     private bool canTrim;
 
     public GameObject fur;
-    void Start()
+
+    public void OnDisable()
     {
-
+        Stats.count--;
     }
-
-    // Update is called once per frame
+    public void OnEnable()
+    {
+        Stats.count++;
+    }
     void Update()
     {
         HoldToTrim();
@@ -43,7 +46,7 @@ public class Grooming : MonoBehaviour
     {
         if (canTrim == true)
         {
-            Invoke("DesableFur", 2f);
+            Invoke("DesableFur", .5f);
         }
         else
         {

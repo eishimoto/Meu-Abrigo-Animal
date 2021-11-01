@@ -28,6 +28,7 @@ public class Stats : MonoBehaviour
     private bool canClean;
 
     //static
+    public static int count = 0;
     public static Stats instance;
 
     public void OnEnable()
@@ -51,7 +52,7 @@ public class Stats : MonoBehaviour
         Diminish();
         GrowFur();
         IsClean();
-
+        Debug.Log(count);
     }
 
     private void Diminish()
@@ -182,24 +183,41 @@ public class Stats : MonoBehaviour
 
     private void GrowFur()
     {
-        float randomTime;
-        randomTime = Random.Range(0, 60000);
-
+        float randomTime = Random.Range(0, 60000);
         if(randomTime == 10)
         {
             fur[0].SetActive(true);
+
         }
         if(randomTime == 20)
         {
             fur[1].SetActive(true);
+
         }
         if (randomTime == 30)
         {
             fur[2].SetActive(true);
+
         }
         if (randomTime == 40)
         {
             fur[3].SetActive(true);
+
+        }
+
+        if (count > 4) count = 4;
+
+        if (count == 0)
+        {
+            ColorFur.instance.FurColorOne();
+        }
+        if (count == 2)
+        {
+            ColorFur.instance.FurColorTwo();
+        }
+        if (count > 2)
+        {
+            ColorFur.instance.FurColorThree();
         }
     }
 }
