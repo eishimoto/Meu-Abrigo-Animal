@@ -52,6 +52,7 @@ public class ToyTool : MonoBehaviour
                     _moveAllowed = true;
                     touchTimeStart = Time.time;
                     startPos = Input.GetTouch(0).position;
+
                 }
             }
             if (touch.phase == TouchPhase.Moved)
@@ -59,6 +60,7 @@ public class ToyTool : MonoBehaviour
                 if (_moveAllowed)
                 {
                     transform.position = new Vector2(touchPosition.x, touchPosition.y);
+                    MoveBallTemp();
                 }
             }
 
@@ -71,8 +73,6 @@ public class ToyTool : MonoBehaviour
                     timeInterval = touchTimeFinish - touchTimeStart;
                     endPos = Input.GetTouch(0).position;
                     direction = startPos - endPos;
-                    MoveBall();
-                    
                 }
             }
         }
@@ -89,7 +89,14 @@ public class ToyTool : MonoBehaviour
     private void MoveBall()
     {
         myRigidbody.bodyType = RigidbodyType2D.Dynamic;
-        myRigidbody.AddForce(-direction/timeInterval * throwFoser);
+        myRigidbody.AddForce(-direction/timeInterval * throwFoser/10);
+        Invoke("SlowBall", stopBall);
+    }
+    private void MoveBallTemp()
+    {
+        myRigidbody.bodyType = RigidbodyType2D.Dynamic;
+        Vector2 direction = new Vector2((float)Random.Range(-1000, 1000), (float)Random.Range(-1000, 1000));
+        myRigidbody.AddForce(direction);
         Invoke("SlowBall", stopBall);
     }
 
@@ -135,7 +142,7 @@ public class ToyTool : MonoBehaviour
         timeInterval = touchTimeFinish - touchTimeStart;
         endMousePos = Input.mousePosition;
         mouseDirection = startMousePos - endMousePos;
-        MoveBallMouse();
+        MoveBallTemp();
     }
     private void MoveBallMouse()
     {
