@@ -2312,6 +2312,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 149184050}
   m_CullTransparentMesh: 1
+--- !u!1 &152786034 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5809407365802217082, guid: d4ee900c9108afe40acf00c97be4705f, type: 3}
+  m_PrefabInstance: {fileID: 54837787}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &159849100
 GameObject:
   m_ObjectHideFlags: 0
@@ -3212,6 +3217,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 255975484}
   m_CullTransparentMesh: 1
+--- !u!1 &263294598 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7947405939218191012, guid: d4ee900c9108afe40acf00c97be4705f, type: 3}
+  m_PrefabInstance: {fileID: 54837787}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &269810554
 GameObject:
   m_ObjectHideFlags: 0
@@ -3700,7 +3710,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 339998214}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 509557410}
+        m_TargetAssemblyTypeName: UICanvas, Assembly-CSharp
+        m_MethodName: PetTheer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &339998214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3769,7 +3791,7 @@ Transform:
   m_Children:
   - {fileID: 681085831}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &340466691
 MonoBehaviour:
@@ -5277,12 +5299,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 509557408}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &509557410
 MonoBehaviour:
@@ -5302,8 +5324,10 @@ MonoBehaviour:
   - {fileID: 1067078821}
   - {fileID: 1318116979}
   - {fileID: 1710181878}
-  pets: []
-  stats: []
+  pets:
+  - {fileID: 263294598}
+  stats:
+  - {fileID: 152786034}
   petsSelection: {fileID: 1037284643}
   menu: {fileID: 407264703}
   adoption: {fileID: 630634649}
@@ -5313,7 +5337,7 @@ MonoBehaviour:
   socialInsta: {fileID: 121975269}
   onScreen: {x: 0, y: 0}
   onScreenStats: {x: 0, y: 0}
-  offScreen: {x: 30, y: 0}
+  offScreen: {x: 5, y: 0}
 --- !u!1 &513852522
 GameObject:
   m_ObjectHideFlags: 0
@@ -5528,7 +5552,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 519893489}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 509557410}
+        m_TargetAssemblyTypeName: UICanvas, Assembly-CSharp
+        m_MethodName: PetFour
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &519893489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6498,7 +6534,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 651661058}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 509557410}
+        m_TargetAssemblyTypeName: UICanvas, Assembly-CSharp
+        m_MethodName: PetTwo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &651661058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11590,7 +11638,7 @@ RectTransform:
   m_Children:
   - {fileID: 847204483}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -15839,7 +15887,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1785359034}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 509557410}
+        m_TargetAssemblyTypeName: UICanvas, Assembly-CSharp
+        m_MethodName: PetOne
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1785359034
 MonoBehaviour:
   m_ObjectHideFlags: 0

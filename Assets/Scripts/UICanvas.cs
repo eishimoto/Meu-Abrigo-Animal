@@ -202,6 +202,11 @@ public class UICanvas : MonoBehaviour
         index = 2;
         petsSelection.SetActive(false);
     }
+    public void PetFour()
+    {
+        index = 3;
+        petsSelection.SetActive(false);
+    }
 
     //ChangeRooms
     public void RoomZero()
