@@ -133,6 +133,7 @@ public class ToyTool : MonoBehaviour
             transform.position = worldP;
             touchTimeStart = Time.time;
             startMousePos = Input.mousePosition;
+            MoveBallTemp();
         }
     }
 
@@ -142,7 +143,6 @@ public class ToyTool : MonoBehaviour
         timeInterval = touchTimeFinish - touchTimeStart;
         endMousePos = Input.mousePosition;
         mouseDirection = startMousePos - endMousePos;
-        MoveBallTemp();
     }
     private void MoveBallMouse()
     {

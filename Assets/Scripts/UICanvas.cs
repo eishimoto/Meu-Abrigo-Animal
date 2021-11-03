@@ -19,6 +19,7 @@ public class UICanvas : MonoBehaviour
     [SerializeField] private GameObject book;
     [SerializeField] private GameObject mixPills;
     [SerializeField] private GameObject socialInsta;
+    [SerializeField] private GameObject calendar;
 
     //Vectors to move objects out of view
     [Header("Postition change")]
@@ -167,6 +168,18 @@ public class UICanvas : MonoBehaviour
     public void CloseSocialInsta()
     {
         socialInsta.SetActive(false);
+        canUseTool = true;
+    }
+
+    public void Calendar()
+    {
+        calendar.SetActive(true);
+        canUseTool = false;
+    }
+
+    public void CloseCalendar()
+    {
+        calendar.SetActive(false);
         canUseTool = true;
     }
 
