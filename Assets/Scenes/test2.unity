@@ -1191,13 +1191,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hungerBar: {fileID: 2008628819}
   maxHunger: 100
-  hungerPorcentage: 1.5
+  hungerPorcentage: 0.5
   affectionBar: {fileID: 2077595444}
   maxAffection: 100
-  affectionPorcentage: 1.5
+  affectionPorcentage: 0.5
   hygineBar: {fileID: 982555283}
   maxHygine: 100
-  hyginePorcentage: 1.5
+  hyginePorcentage: 0.5
   fur:
   - {fileID: 1505162093}
   - {fileID: 1110338630}
@@ -2230,13 +2230,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hungerBar: {fileID: 1198188825}
   maxHunger: 100
-  hungerPorcentage: 3
+  hungerPorcentage: 0.5
   affectionBar: {fileID: 1190849821}
   maxAffection: 100
-  affectionPorcentage: 3
+  affectionPorcentage: 0.5
   hygineBar: {fileID: 533270212}
   maxHygine: 100
-  hyginePorcentage: 3
+  hyginePorcentage: 0.5
   fur: []
 --- !u!1 &142023790
 GameObject:
@@ -21315,13 +21315,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hungerBar: {fileID: 2068455330}
   maxHunger: 100
-  hungerPorcentage: 2
+  hungerPorcentage: 0.5
   affectionBar: {fileID: 1932694330}
   maxAffection: 100
-  affectionPorcentage: 2
+  affectionPorcentage: 0.5
   hygineBar: {fileID: 327698008}
   maxHygine: 100
-  hyginePorcentage: 2
+  hyginePorcentage: 0.5
   fur:
   - {fileID: 99822658}
   - {fileID: 1691673519}
