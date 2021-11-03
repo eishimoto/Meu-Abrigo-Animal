@@ -6,9 +6,9 @@ public class UICanvas : MonoBehaviour
 {
     //arrays
     [Header("Arrays")]
-    [SerializeField] private GameObject[] rooms;
-    [SerializeField] private GameObject[] pets;
-    [SerializeField] private GameObject[] stats;
+    [SerializeField] private List<GameObject> rooms;
+    [SerializeField] private List<GameObject> pets;
+    [SerializeField] private List<GameObject> stats;
 
     //Ui and canvas
     [Header("Panels")]
@@ -53,40 +53,48 @@ public class UICanvas : MonoBehaviour
             pets[0].transform.position = onScreen;
             pets[1].transform.position = offScreen;
             pets[2].transform.position = offScreen;
+            pets[3].transform.position = offScreen;
 
-            stats[0].transform.position = onScreenStats;
-            stats[1].transform.position = offScreen;
-            stats[2].transform.position = offScreen;
+            stats[0].SetActive(true);
+            stats[1].SetActive(false);
+            stats[2].SetActive(false);
+            stats[4].SetActive(false);
         }
         if (index == 1)
         {
             pets[0].transform.position = offScreen;
             pets[1].transform.position = onScreen;
             pets[2].transform.position = offScreen;
+            pets[3].transform.position = offScreen;
 
-            stats[0].transform.position = offScreen;
-            stats[1].transform.position = onScreenStats;
-            stats[2].transform.position = offScreen;
+            stats[0].SetActive(false);
+            stats[1].SetActive(true);
+            stats[2].SetActive(false);
+            stats[4].SetActive(false);
         }
         if (index == 2)
         {
             pets[0].transform.position = offScreen;
             pets[1].transform.position = offScreen;
             pets[2].transform.position = onScreen;
+            pets[3].transform.position = offScreen;
 
-            stats[0].transform.position = offScreen;
-            stats[1].transform.position = offScreen;
-            stats[2].transform.position = onScreenStats;
+            stats[0].SetActive(false);
+            stats[1].SetActive(false);
+            stats[2].SetActive(true);
+            stats[4].SetActive(false);
         }
         if (index == 3)
         {
             pets[0].transform.position = offScreen;
             pets[1].transform.position = offScreen;
             pets[2].transform.position = offScreen;
+            pets[3].transform.position = onScreen;
 
-            stats[0].transform.position = offScreen;
-            stats[1].transform.position = offScreen;
-            stats[2].transform.position = offScreen;
+            stats[0].SetActive(false);
+            stats[1].SetActive(false);
+            stats[2].SetActive(false);
+            stats[4].SetActive(true);
         }
     }
 
