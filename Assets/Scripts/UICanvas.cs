@@ -5,10 +5,10 @@ using UnityEngine;
 public class UICanvas : MonoBehaviour
 {
     //arrays
-    [Header("Arrays")]
+    [Header("Collections")]
     [SerializeField] private List<GameObject> rooms;
     [SerializeField] private List<GameObject> pets;
-    [SerializeField] private List<GameObject> stats;
+    [SerializeField] private GameObject[] stats;
 
     //Ui and canvas
     [Header("Panels")]
@@ -58,7 +58,7 @@ public class UICanvas : MonoBehaviour
             stats[0].SetActive(true);
             stats[1].SetActive(false);
             stats[2].SetActive(false);
-            stats[4].SetActive(false);
+            stats[3].SetActive(false);
         }
         if (index == 1)
         {
@@ -70,7 +70,7 @@ public class UICanvas : MonoBehaviour
             stats[0].SetActive(false);
             stats[1].SetActive(true);
             stats[2].SetActive(false);
-            stats[4].SetActive(false);
+            stats[3].SetActive(false);
         }
         if (index == 2)
         {
@@ -82,7 +82,7 @@ public class UICanvas : MonoBehaviour
             stats[0].SetActive(false);
             stats[1].SetActive(false);
             stats[2].SetActive(true);
-            stats[4].SetActive(false);
+            stats[3].SetActive(false);
         }
         if (index == 3)
         {
@@ -94,7 +94,7 @@ public class UICanvas : MonoBehaviour
             stats[0].SetActive(false);
             stats[1].SetActive(false);
             stats[2].SetActive(false);
-            stats[4].SetActive(true);
+            stats[3].SetActive(true);
         }
     }
 
@@ -120,7 +120,6 @@ public class UICanvas : MonoBehaviour
 
     public void Social()
     {
-        index = 3;
         petsSelection.SetActive(true);
         canUseTool = false;
     }
@@ -196,23 +195,27 @@ public class UICanvas : MonoBehaviour
     public void PetOne()
     {
         index = 0;
+        canUseTool = true;
         petsSelection.SetActive(false);
     }
 
     public void PetTwo()
     {
         index = 1;
+        canUseTool = true;
         petsSelection.SetActive(false);
     }
 
     public void PetTheer()
     {
         index = 2;
+        canUseTool = true;
         petsSelection.SetActive(false);
     }
     public void PetFour()
     {
         index = 3;
+        canUseTool = true;
         petsSelection.SetActive(false);
     }
 
