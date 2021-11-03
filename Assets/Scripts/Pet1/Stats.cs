@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class StatsTwo : MonoBehaviour
+public class Stats : MonoBehaviour
 {
     [Header("Hunger")]
     [SerializeField] private Image hungerBar;
@@ -29,7 +29,7 @@ public class StatsTwo : MonoBehaviour
 
     //static
     public static int count = 0;
-    public static StatsTwo instance;
+    public static Stats instance;
 
     public void OnEnable()
     {
@@ -54,20 +54,20 @@ public class StatsTwo : MonoBehaviour
         IsClean();
     }
 
-    private void Diminish()
+    public void Diminish()
     {
         hungerBar.fillAmount = hungerStats / maxHunger;
         hungerStats -= hungerPorcentage * Time.deltaTime;
 
-        if (hungerStats > 50)
+        if(hungerStats > 50)
         {
             ColorFood.instance.FoodColorOne();
         }
-        if (hungerStats < 50)
+        if(hungerStats < 50)
         {
             ColorFood.instance.FoodColorTwo();
         }
-        if (hungerStats < 25)
+        if(hungerStats < 25)
         {
             ColorFood.instance.FoodColorThree();
         }
@@ -118,7 +118,7 @@ public class StatsTwo : MonoBehaviour
             FoodTool.instance.UseInStats();
         }
 
-        if (collision.CompareTag("Food2"))
+        if(collision.CompareTag("Food2"))
         {
             hungerStats = hungerStats + 30;
             if (hungerStats >= 100)
@@ -139,12 +139,12 @@ public class StatsTwo : MonoBehaviour
             FoodToolThree.instance.UseInStats();
         }
 
-        if (collision.CompareTag("PurplePill"))
+        if(collision.CompareTag("PurplePill"))
         {
             MixPills.instance.PurplePill();
         }
 
-        if (collision.CompareTag("YellowPill"))
+        if(collision.CompareTag("YellowPill"))
         {
             MixPills.instance.YellowPill();
         }
@@ -183,12 +183,12 @@ public class StatsTwo : MonoBehaviour
     private void GrowFur()
     {
         float randomTime = Random.Range(0, 60000);
-        if (randomTime == 10)
+        if(randomTime == 10)
         {
             fur[0].SetActive(true);
 
         }
-        if (randomTime == 20)
+        if(randomTime == 20)
         {
             fur[1].SetActive(true);
 

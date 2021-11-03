@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Stats : MonoBehaviour
+public class Stats4 : MonoBehaviour
 {
     [Header("Hunger")]
     [SerializeField] private Image hungerBar;
@@ -29,7 +29,7 @@ public class Stats : MonoBehaviour
 
     //static
     public static int count = 0;
-    public static Stats instance;
+    public static Stats4 instance;
 
     public void OnEnable()
     {
@@ -51,25 +51,28 @@ public class Stats : MonoBehaviour
     {
         Diminish();
         GrowFur();
-        IsClean();
+        if (UICanvas.on4 == true)
+        {
+            IsClean();
+        }
     }
 
-    private void Diminish()
+    public void Diminish()
     {
         hungerBar.fillAmount = hungerStats / maxHunger;
         hungerStats -= hungerPorcentage * Time.deltaTime;
 
-        if(hungerStats > 50)
+        if (hungerStats > 50)
         {
-            ColorFood.instance.FoodColorOne();
+            ColorFood4.instance.FoodColorOne();
         }
-        if(hungerStats < 50)
+        if (hungerStats < 50)
         {
-            ColorFood.instance.FoodColorTwo();
+            ColorFood4.instance.FoodColorTwo();
         }
-        if(hungerStats < 25)
+        if (hungerStats < 25)
         {
-            ColorFood.instance.FoodColorThree();
+            ColorFood4.instance.FoodColorThree();
         }
 
         affectionBar.fillAmount = affectionStats / maxAffection;
@@ -77,15 +80,15 @@ public class Stats : MonoBehaviour
 
         if (affectionStats > 50)
         {
-            ColorLove.instance.LoveColorOne();
+            ColorLove4.instance.LoveColorOne();
         }
         if (affectionStats < 50)
         {
-            ColorLove.instance.LoveColorTwo();
+            ColorLove4.instance.LoveColorTwo();
         }
         if (affectionStats < 25)
         {
-            ColorLove.instance.LoveColorThree();
+            ColorLove4.instance.LoveColorThree();
         }
 
         hygineBar.fillAmount = hygineStats / maxHygine;
@@ -93,15 +96,15 @@ public class Stats : MonoBehaviour
 
         if (hygineStats > 50)
         {
-            ColorClean.instance.CleanColorOne();
+            ColorClean4.instance.CleanColorOne();
         }
         if (hygineStats < 50)
         {
-            ColorClean.instance.CleanColorTwo();
+            ColorClean4.instance.CleanColorTwo();
         }
         if (hygineStats < 25)
         {
-            ColorClean.instance.CleanColorThree();
+            ColorClean4.instance.CleanColorThree();
         }
     }
 
@@ -118,7 +121,7 @@ public class Stats : MonoBehaviour
             FoodTool.instance.UseInStats();
         }
 
-        if(collision.CompareTag("Food2"))
+        if (collision.CompareTag("Food2"))
         {
             hungerStats = hungerStats + 30;
             if (hungerStats >= 100)
@@ -139,12 +142,12 @@ public class Stats : MonoBehaviour
             FoodToolThree.instance.UseInStats();
         }
 
-        if(collision.CompareTag("PurplePill"))
+        if (collision.CompareTag("PurplePill"))
         {
             MixPills.instance.PurplePill();
         }
 
-        if(collision.CompareTag("YellowPill"))
+        if (collision.CompareTag("YellowPill"))
         {
             MixPills.instance.YellowPill();
         }
@@ -183,12 +186,12 @@ public class Stats : MonoBehaviour
     private void GrowFur()
     {
         float randomTime = Random.Range(0, 60000);
-        if(randomTime == 10)
+        if (randomTime == 10)
         {
             fur[0].SetActive(true);
 
         }
-        if(randomTime == 20)
+        if (randomTime == 20)
         {
             fur[1].SetActive(true);
 
@@ -208,15 +211,15 @@ public class Stats : MonoBehaviour
 
         if (count == 0)
         {
-            ColorFur.instance.FurColorOne();
+            ColorFur4.instance.FurColorOne();
         }
         if (count == 2)
         {
-            ColorFur.instance.FurColorTwo();
+            ColorFur4.instance.FurColorTwo();
         }
         if (count > 2)
         {
-            ColorFur.instance.FurColorThree();
+            ColorFur4.instance.FurColorThree();
         }
     }
 }

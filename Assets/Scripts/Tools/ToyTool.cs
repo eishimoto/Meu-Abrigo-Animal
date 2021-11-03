@@ -34,7 +34,6 @@ public class ToyTool : MonoBehaviour
         {
             MoveTool();
         }
-        //Debug.Log(mouseDirection);
         lastVelocity = myRigidbody.velocity;
     }
 
@@ -99,7 +98,22 @@ public class ToyTool : MonoBehaviour
         myRigidbody.velocity = Vector2.zero;
         myRigidbody.bodyType = RigidbodyType2D.Kinematic;
         transform.position = _startPosition;
-        Stats.instance.AddAffection();
+        if (UICanvas.on == true)
+        {
+            Stats.instance.AddAffection();
+        }
+        if (UICanvas.on2 == true)
+        {
+            Stats2.instance.AddAffection();
+        }
+        if (UICanvas.on3 == true)
+        {
+            Stats3.instance.AddAffection();
+        }
+        if (UICanvas.on4 == true)
+        {
+            Stats4.instance.AddAffection();
+        }
     }
 
     // Mouse as touch control

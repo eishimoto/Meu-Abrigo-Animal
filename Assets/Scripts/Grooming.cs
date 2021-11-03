@@ -5,16 +5,46 @@ using UnityEngine;
 public class Grooming : MonoBehaviour
 {
     private bool canTrim;
-
     public GameObject fur;
+    public bool pet1, pet2, pet3, pet4;
 
     public void OnDisable()
     {
-        Stats.count--;
+        if(pet1)
+        {
+            Stats.count--;
+        }
+        if(pet2)
+        {
+            Stats2.count--;
+        }
+        if(pet3)
+        {
+            Stats3.count--;
+        }
+        if(pet4)
+        {
+            Stats4.count--;
+        }
     }
     public void OnEnable()
     {
-        Stats.count++;
+        if (pet1)
+        {
+            Stats.count++;
+        }
+        if (pet2)
+        {
+            Stats2.count++;
+        }
+        if (pet3)
+        {
+            Stats3.count++;
+        }
+        if (pet4)
+        {
+            Stats4.count++;
+        }
     }
     void Update()
     {
