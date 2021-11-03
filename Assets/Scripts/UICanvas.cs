@@ -8,7 +8,6 @@ public class UICanvas : MonoBehaviour
     [Header("Arrays")]
     [SerializeField] private GameObject[] rooms;
     [SerializeField] private GameObject[] pets;
-    [SerializeField] private GameObject[] stats;
 
     //Ui and canvas
     [Header("Panels")]
@@ -23,23 +22,21 @@ public class UICanvas : MonoBehaviour
     //Vectors to move objects out of view
     [Header("Postition change")]
     [SerializeField] private Vector2 onScreen;
-    [SerializeField] private Vector2 onScreenStats;
-    [SerializeField] private Vector2 offScreen;
+    [SerializeField] private Vector2 offScreen,offScreen2,offScreen3;
 
     private int index = 0;
     private int indexSafe;
-
     //static
     public static bool canUseTool = true;
+    public static bool on, on2, on3,on4;
 
     private void Start()
     {
-
     }
 
     private void Update()
     {
-        SelectionOfPet();
+        SelectionOfPet(); 
     }
     private void SelectionOfPet()
     {
@@ -52,44 +49,48 @@ public class UICanvas : MonoBehaviour
         {
             pets[0].transform.position = onScreen;
             pets[1].transform.position = offScreen;
-            pets[2].transform.position = offScreen;
-
-            stats[0].transform.position = onScreenStats;
-            stats[1].transform.position = offScreen;
-            stats[2].transform.position = offScreen;
+            pets[2].transform.position = offScreen2;
+            pets[3].transform.position = offScreen3;
+            on = true;
+            on2 = false;
+            on3 = false;
+            on4 = false;
         }
         if (index == 1)
         {
             pets[0].transform.position = offScreen;
             pets[1].transform.position = onScreen;
-            pets[2].transform.position = offScreen;
+            pets[2].transform.position = offScreen2;
+            pets[3].transform.position = offScreen3;
+            on = false;
+            on2 = true;
+            on3 = false;
+            on4 = false;
 
-            stats[0].transform.position = offScreen;
-            stats[1].transform.position = onScreenStats;
-            stats[2].transform.position = offScreen;
         }
         if (index == 2)
         {
             pets[0].transform.position = offScreen;
-            pets[1].transform.position = offScreen;
+            pets[1].transform.position = offScreen2;
             pets[2].transform.position = onScreen;
-
-            stats[0].transform.position = offScreen;
-            stats[1].transform.position = offScreen;
-            stats[2].transform.position = onScreenStats;
+            pets[3].transform.position = offScreen3;
+            on = false;
+            on2 = false;
+            on3 = true;
+            on4 = false;
         }
         if (index == 3)
         {
             pets[0].transform.position = offScreen;
-            pets[1].transform.position = offScreen;
-            pets[2].transform.position = offScreen;
-
-            stats[0].transform.position = offScreen;
-            stats[1].transform.position = offScreen;
-            stats[2].transform.position = offScreen;
+            pets[1].transform.position = offScreen2;
+            pets[2].transform.position = offScreen3;
+            pets[3].transform.position = onScreen;
+            on = false;
+            on2 = false;
+            on3 = false;
+            on4 = true;
         }
     }
-
     //UI
     public void Menu()
     {
@@ -112,7 +113,6 @@ public class UICanvas : MonoBehaviour
 
     public void Social()
     {
-        index = 3;
         petsSelection.SetActive(true);
         canUseTool = false;
     }
@@ -145,21 +145,6 @@ public class UICanvas : MonoBehaviour
         store.SetActive(false);
         canUseTool = true;
     }
-
-    public void Adoption()
-    {
-        adoption.SetActive(true);
-        canUseTool = false;
-        FillSlot.instance.SpwanAllpet();
-    }
-
-    public void CloseAdoption()
-    {
-        FillSlot.instance.DestoyPets();
-        adoption.SetActive(false);
-        canUseTool = true;
-    }
-
     public void Pill()
     {
         mixPills.SetActive(true);
@@ -188,18 +173,27 @@ public class UICanvas : MonoBehaviour
     public void PetOne()
     {
         index = 0;
+        canUseTool = true;
         petsSelection.SetActive(false);
     }
 
     public void PetTwo()
     {
         index = 1;
+        canUseTool = true;
         petsSelection.SetActive(false);
     }
 
     public void PetTheer()
     {
         index = 2;
+        canUseTool = true;
+        petsSelection.SetActive(false);
+    }
+    public void PetFour()
+    {
+        index = 3;
+        canUseTool = true;
         petsSelection.SetActive(false);
     }
 

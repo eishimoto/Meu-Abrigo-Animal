@@ -54,7 +54,7 @@ public class Stats : MonoBehaviour
         IsClean();
     }
 
-    private void Diminish()
+    public void Diminish()
     {
         hungerBar.fillAmount = hungerStats / maxHunger;
         hungerStats -= hungerPorcentage * Time.deltaTime;
