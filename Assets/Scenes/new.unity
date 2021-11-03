@@ -2312,11 +2312,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 149184050}
   m_CullTransparentMesh: 1
---- !u!1 &152786034 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5809407365802217082, guid: d4ee900c9108afe40acf00c97be4705f, type: 3}
-  m_PrefabInstance: {fileID: 54837787}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &159849100
 GameObject:
   m_ObjectHideFlags: 0
@@ -5326,8 +5321,7 @@ MonoBehaviour:
   - {fileID: 1710181878}
   pets:
   - {fileID: 263294598}
-  stats:
-  - {fileID: 152786034}
+  stats: []
   petsSelection: {fileID: 1037284643}
   menu: {fileID: 407264703}
   adoption: {fileID: 630634649}
@@ -5335,7 +5329,7 @@ MonoBehaviour:
   book: {fileID: 708776052}
   mixPills: {fileID: 1312493838}
   socialInsta: {fileID: 121975269}
-  onScreen: {x: 0, y: 0}
+  onScreen: {x: 0, y: -0.5}
   onScreenStats: {x: 0, y: 0}
   offScreen: {x: 5, y: 0}
 --- !u!1 &513852522

@@ -34,7 +34,7 @@ public class ToyTool : MonoBehaviour
         {
             MoveTool();
         }
-        Debug.Log(mouseDirection);
+        //Debug.Log(mouseDirection);
         lastVelocity = myRigidbody.velocity;
     }
 
