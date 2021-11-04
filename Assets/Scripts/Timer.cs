@@ -6,44 +6,40 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
-    [SerializeField] private float _timeValue = 600;
+    [SerializeField] private float _timeValue;
     [SerializeField] private float _timeValueReset;
     [SerializeField] private TextMeshProUGUI timerText;
     [SerializeField] private GameObject Circle;
-    [SerializeField] private List<Vector2> dayPos;
-    [SerializeField] private float division;
+    [SerializeField] private List<Transform> dayPos;
 
-    private int day; 
+    private int day;
 
     private void start()
     {
         day = 0;
     }
 
-   private void Update()
-   {
-        if(_timeValue > 0)
+    private void Update()
+    {
+        if (_timeValue > 0)
         {
-            _timeValue -= Time.deltaTime;
+            _timeValue += Time.deltaTime;
         }
-        else
+        else 
         {
-            _timeValue = 0;
+            _timeValue = 540;
         }
 
         DisplayTime(_timeValue);
-        DayChange();
-   }
+        DayChange(); 
+    }
     private void DisplayTime(float timeToDisplay)
     {
-        if (timeToDisplay < 0)
+        if (timeToDisplay >= 1020f)
         {
-            timeToDisplay = 0;
-        }
-        else if(timeToDisplay == 0)
-        {
-            day++;
             _timeValue = _timeValueReset;
+            day++;
+
         }
 
         float hour = Mathf.FloorToInt(timeToDisplay / 60);
@@ -54,33 +50,40 @@ public class Timer : MonoBehaviour
 
     private void DayChange()
     {
-        if(day == 0)
+        if (day == 0)
         {
-            Circle.transform.position = dayPos[0] / division;
+            Circle.transform.SetParent(dayPos[0]);
+            Circle.transform.localPosition = new Vector3(0, 0, 0f);
         }
         if (day == 1)
         {
-            Circle.transform.position = dayPos[1] / division;
+            Circle.transform.SetParent(dayPos[1]);
+            Circle.transform.localPosition = new Vector3(0, 0, 0f);
         }
         if (day == 2)
         {
-            Circle.transform.position = dayPos[2] / division;
+            Circle.transform.SetParent(dayPos[2]);
+            Circle.transform.localPosition = new Vector3(0, 0, 0f);
         }
         if (day == 3)
         {
-            Circle.transform.position = dayPos[3] / division;
+            Circle.transform.SetParent(dayPos[3]);
+            Circle.transform.localPosition = new Vector3(0, 0, 0f);
         }
         if (day == 4)
         {
-            Circle.transform.position = dayPos[4] / division;
+            Circle.transform.SetParent(dayPos[4]);
+            Circle.transform.localPosition = new Vector3(0, 0, 0f);
         }
         if (day == 5)
         {
-            Circle.transform.position = dayPos[5] / division;
+            Circle.transform.SetParent(dayPos[5]);
+            Circle.transform.localPosition = new Vector3(0, 0, 0f);
         }
         if (day == 6)
         {
-            Circle.transform.position = dayPos[6] / division;
+            Circle.transform.SetParent(dayPos[6]);
+            Circle.transform.localPosition = new Vector3(0, 0, 0f);
         }
     }
 }
