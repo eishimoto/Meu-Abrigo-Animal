@@ -21,7 +21,7 @@ public class UICanvas : MonoBehaviour
 
     //Vectors to move objects out of view
     [Header("Postition change")]
-    [SerializeField] private Vector2 onScreen;
+    [SerializeField] private Vector2 onScreen,onScreen2;
     [SerializeField] private Vector2 offScreen,offScreen2,offScreen3;
 
     private int index = 0;
@@ -59,7 +59,7 @@ public class UICanvas : MonoBehaviour
         if (index == 1)
         {
             pets[0].transform.position = offScreen;
-            pets[1].transform.position = onScreen;
+            pets[1].transform.position = onScreen2;
             pets[2].transform.position = offScreen2;
             pets[3].transform.position = offScreen3;
             on = false;
