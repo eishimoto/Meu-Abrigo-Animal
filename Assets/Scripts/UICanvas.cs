@@ -4,11 +4,9 @@ using UnityEngine;
 
 public class UICanvas : MonoBehaviour
 {
-
     [Header("Collections")]
     [SerializeField] private List<GameObject> rooms;
     [SerializeField] private List<GameObject> pets;
-
 
     //Ui and canvas
     [Header("Panels")]
@@ -258,4 +256,3 @@ public class UICanvas : MonoBehaviour
         rooms[4].SetActive(true);
     }
 }
-
