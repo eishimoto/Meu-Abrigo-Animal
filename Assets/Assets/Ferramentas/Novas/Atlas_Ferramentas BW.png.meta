@@ -1,0 +1,732 @@
+fileFormatVersion: 2
+guid: b1054bc540607c14ebafafc96a3b68bf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2505707560172011883
+    second: Atlas_Ferramentas BW_0
+  - first:
+      213: 8283369701865414884
+    second: Atlas_Ferramentas BW_1
+  - first:
+      213: 2123931329105212807
+    second: Atlas_Ferramentas BW_2
+  - first:
+      213: -1154402363246075326
+    second: Atlas_Ferramentas BW_3
+  - first:
+      213: -4632313190826923671
+    second: Atlas_Ferramentas BW_4
+  - first:
+      213: -1835809027522964055
+    second: Atlas_Ferramentas BW_5
+  - first:
+      213: -8295107407823598371
+    second: Atlas_Ferramentas BW_6
+  - first:
+      213: -8739047421334697087
+    second: Atlas_Ferramentas BW_7
+  - first:
+      213: -1053791552908419559
+    second: Atlas_Ferramentas BW_8
+  - first:
+      213: 7571094533512025487
+    second: Atlas_Ferramentas BW_9
+  - first:
+      213: 1372133375069316292
+    second: Atlas_Ferramentas BW_10
+  - first:
+      213: 3537545700609625496
+    second: Atlas_Ferramentas BW_11
+  - first:
+      213: -2376790619009116071
+    second: Atlas_Ferramentas BW_12
+  - first:
+      213: -7133296977612416138
+    second: Atlas_Ferramentas BW_13
+  - first:
+      213: 8666622442921367167
+    second: Atlas_Ferramentas BW_14
+  - first:
+      213: -4951427827425719756
+    second: Atlas_Ferramentas BW_15
+  - first:
+      213: -8883716518251776590
+    second: Atlas_Ferramentas BW_16
+  - first:
+      213: 7899030729748145382
+    second: Atlas_Ferramentas BW_17
+  - first:
+      213: -7408477745930817728
+    second: Atlas_Ferramentas BW_18
+  - first:
+      213: 9158331108335859571
+    second: Atlas_Ferramentas BW_19
+  - first:
+      213: 7381342203030434858
+    second: Atlas_Ferramentas BW_20
+  - first:
+      213: 7747768360360500253
+    second: Atlas_Ferramentas BW_21
+  - first:
+      213: -7133766337801233671
+    second: Atlas_Ferramentas BW_22
+  - first:
+      213: -8002142785367265939
+    second: Atlas_Ferramentas BW_23
+  - first:
+      213: 7040975904882512170
+    second: Atlas_Ferramentas BW_24
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 170
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Atlas_Ferramentas BW_0
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 1037
+        width: 149
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59ebfe4ff30f93dd0800000000000000
+      internalID: -2505707560172011883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_Ferramentas BW_1
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 1037
+        width: 149
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e0ebee4bd074f270800000000000000
+      internalID: 8283369701865414884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_Ferramentas BW_2
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 1037
+        width: 149
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 785b3ae6a48b97d10800000000000000
+      internalID: 2123931329105212807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_Ferramentas BW_3
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 1037
+        width: 149
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 242a8daba2dbaffe0800000000000000
+      internalID: -1154402363246075326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_Ferramentas BW_4
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 1046
+        width: 118
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 969a76c22b7b6bfb0800000000000000
+      internalID: -4632313190826923671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_Ferramentas BW_5
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 783
+        width: 149
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a5d90f7a65e586e0800000000000000
+      internalID: -1835809027522964055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_Ferramentas BW_6
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 783
+        width: 149
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddc86fe03cbd1ec80800000000000000
+      internalID: -8295107407823598371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_Ferramentas BW_7
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 783
+        width: 149
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18b4d08fbaaa8b680800000000000000
+      internalID: -8739047421334697087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_Ferramentas BW_8
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 783
+        width: 149
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91e16957a2e2061f0800000000000000
+      internalID: -1053791552908419559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_Ferramentas BW_9
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 783
+        width: 149
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f85d2e66d5ee11960800000000000000
+      internalID: 7571094533512025487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_Ferramentas BW_10
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 580
+        width: 207
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c4e675e80cca0310800000000000000
+      internalID: 1372133375069316292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_Ferramentas BW_11
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 551
+        width: 179
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89d0c8d6213e71130800000000000000
+      internalID: 3537545700609625496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_Ferramentas BW_12
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 551
+        width: 179
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9581b785681f30fd0800000000000000
+      internalID: -2376790619009116071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_Ferramentas BW_13
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 539
+        width: 180
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67b5b045130710d90800000000000000
+      internalID: -7133296977612416138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_Ferramentas BW_14
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 542
+        width: 128
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7691c0b137064870800000000000000
+      internalID: 8666622442921367167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_Ferramentas BW_15
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 266
+        width: 201
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43a4e4fef9ef84bb0800000000000000
+      internalID: -4951427827425719756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_Ferramentas BW_16
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 285
+        width: 197
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b5355405e2b6b480800000000000000
+      internalID: -8883716518251776590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_Ferramentas BW_17
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 311
+        width: 174
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e4688c099efe9d60800000000000000
+      internalID: 7899030729748145382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_Ferramentas BW_18
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 302
+        width: 177
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04f286bedbccf2990800000000000000
+      internalID: -7408477745930817728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_Ferramentas BW_19
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 309
+        width: 192
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 377b4cfbe9de81f70800000000000000
+      internalID: 9158331108335859571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_Ferramentas BW_20
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 13
+        width: 171
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a247a3920abcf6660800000000000000
+      internalID: 7381342203030434858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_Ferramentas BW_21
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 0
+        width: 143
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1c5c49364a958b60800000000000000
+      internalID: 7747768360360500253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_Ferramentas BW_22
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 37
+        width: 84
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fad7b4ef45cffc90800000000000000
+      internalID: -7133766337801233671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_Ferramentas BW_23
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 75
+        width: 159
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6daa3ca88da2f090800000000000000
+      internalID: -8002142785367265939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_Ferramentas BW_24
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 24
+        width: 132
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a215b92e74296b160800000000000000
+      internalID: 7040975904882512170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

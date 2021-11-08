@@ -19,6 +19,8 @@ public class MixPills : MonoBehaviour
     private Vector2 yellowStarPosition;
     private Vector2 cyanStarPosition;
 
+    public static bool inMix;
+
     public static MixPills instance;
     private void OnEnable()
     {
@@ -26,6 +28,11 @@ public class MixPills : MonoBehaviour
         {
             instance = this;
         }
+        inMix = true;
+    }
+    private void OnDisable()
+    {
+        inMix = false;
     }
 
     private void Start()
@@ -48,14 +55,17 @@ public class MixPills : MonoBehaviour
         if (collision.gameObject.CompareTag("RedPill"))
         {
             redPill = true;
+           
         }
         if (collision.gameObject.CompareTag("BluePill"))
         {
             bluePill = true;
+           
         }
         if(collision.gameObject.CompareTag("GreenPill"))
         {
             greenPill = true;
+           
         }
     }
 
@@ -67,6 +77,8 @@ public class MixPills : MonoBehaviour
             {
                 purplePillUse.SetActive(true);
                 purplePillAsset.SetActive(true);
+                MedicineTool.instance.UseInStats();
+                MedicineTool3.instance.UseInStats();
                 redPill = false;
                 bluePill = false;
                 canMix = false;
@@ -74,6 +86,8 @@ public class MixPills : MonoBehaviour
 
             if (redPill == true && greenPill == true)
             {
+                MedicineTool.instance.UseInStats();
+                MedicineTool2.instance.UseInStats();
                 yellowPillUse.SetActive(true);
                 yellowPillUseAsset.SetActive(true);
                 redPill = false;
@@ -83,6 +97,8 @@ public class MixPills : MonoBehaviour
 
             if (greenPill == true && bluePill == true)
             {
+                MedicineTool2.instance.UseInStats();
+                MedicineTool3.instance.UseInStats();
                 cyanPillUse.SetActive(true);
                 cyanPillUseAsset.SetActive(true);
                 greenPill = false;

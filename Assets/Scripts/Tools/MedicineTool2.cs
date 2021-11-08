@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class MedicineTool : MonoBehaviour
+public class MedicineTool2 : MonoBehaviour
 {
     private bool _moveAllowed;
     private Collider2D myCollider;
@@ -22,7 +22,7 @@ public class MedicineTool : MonoBehaviour
     //bool
     public static bool cantMove;
 
-    public static MedicineTool instance;
+    public static MedicineTool2 instance;
     private void OnEnable()
     {
         if (instance == null)
@@ -112,7 +112,8 @@ public class MedicineTool : MonoBehaviour
         UpdateTextMeshPro();
         ChangeSprite();
     }
-   
+
+
     public void ChangeSprite()
     {
         if (quantity > 0)

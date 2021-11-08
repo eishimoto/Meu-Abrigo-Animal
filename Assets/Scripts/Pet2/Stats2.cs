@@ -141,6 +141,29 @@ public class Stats2 : MonoBehaviour
 
             FoodToolThree.instance.UseInStats();
         }
+        if (collision.CompareTag("RedPill"))
+        {
+            if (MixPills.inMix == false)
+            {
+                MedicineTool.instance.UseInStats();
+            }
+        }
+
+        if (collision.CompareTag("GreenPill"))
+        {
+            if (MixPills.inMix == false)
+            {
+                MedicineTool2.instance.UseInStats();
+            }
+        }
+
+        if (collision.CompareTag("BluePill"))
+        {
+            if (MixPills.inMix == false)
+            {
+                MedicineTool3.instance.UseInStats();
+            }
+        }
 
         if (collision.CompareTag("PurplePill"))
         {

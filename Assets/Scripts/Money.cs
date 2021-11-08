@@ -7,6 +7,10 @@ public class Money : MonoBehaviour
     [SerializeField] private int money;
     [SerializeField] private TextMeshProUGUI textDisplay;
 
+    //int
+    [SerializeField] private int food1, food2, food3;
+    [SerializeField] private int medicine1, medicine2, medicine3;
+
     //static for funcitons
     public static Money instance;
     private void OnEnable()
@@ -30,9 +34,9 @@ public class Money : MonoBehaviour
 
     public void BuyFoodOne()
     {
-        if(money > 10)
+        if(money > food1)
         {
-            money -= 10;
+            money -= food1;
             FoodTool.instance.AddFood();
             FoodTool.instance.UpdateTextMeshPro();
             textDisplay.text = money.ToString() + " " + "Reais";
@@ -41,9 +45,9 @@ public class Money : MonoBehaviour
 
     public void BuyFoodTwo()
     {
-        if(money > 20)
+        if(money > food2)
         {
-            money -= 20;
+            money -= food2;
             FoodToolTwo.instance.AddFood();
             FoodToolTwo.instance.UpdateTextMeshPro();
             textDisplay.text = money.ToString() + " " + "Reais";
@@ -51,11 +55,42 @@ public class Money : MonoBehaviour
     }
     public void BuyFoodThree()
     {
-        if (money > 30)
+        if (money > food3)
         {
-            money -= 30;
+            money -= food3;
             FoodToolThree.instance.AddFood();
             FoodToolThree.instance.UpdateTextMeshPro();
+            textDisplay.text = money.ToString() + " " + "Reais";
+        }
+    }
+
+    public void BuyMedicineOne()
+    {
+        if (money > medicine1)
+        {
+            money -= medicine1;
+            MedicineTool.instance.AddMedicine();
+            MedicineTool.instance.UpdateTextMeshPro();
+            textDisplay.text = money.ToString() + " " + "Reais";
+        }
+    }
+    public void BuyMedicineTwo()
+    {
+        if (money > medicine1)
+        {
+            money -= medicine1;
+            MedicineTool2.instance.AddMedicine();
+            MedicineTool2.instance.UpdateTextMeshPro();
+            textDisplay.text = money.ToString() + " " + "Reais";
+        }
+    }
+    public void BuyMedicineThree()
+    {
+        if (money > medicine1)
+        {
+            money -= medicine1;
+            MedicineTool3.instance.AddMedicine();
+            MedicineTool3.instance.UpdateTextMeshPro();
             textDisplay.text = money.ToString() + " " + "Reais";
         }
     }
