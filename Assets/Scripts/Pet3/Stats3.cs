@@ -123,7 +123,7 @@ public class Stats3 : MonoBehaviour
 
         if (collision.CompareTag("Food2"))
         {
-            hungerStats = hungerStats + 30;
+            hungerStats = hungerStats + 50;
             if (hungerStats >= 100)
             {
                 hungerStats = 100;
@@ -133,7 +133,7 @@ public class Stats3 : MonoBehaviour
         }
         if (collision.CompareTag("Food3"))
         {
-            hungerStats = hungerStats + 50;
+            hungerStats = hungerStats + 100;
             if (hungerStats >= 100)
             {
                 hungerStats = 100;

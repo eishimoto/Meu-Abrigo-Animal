@@ -95,9 +95,9 @@ public class Money : MonoBehaviour
 
     public void UnlockBeachBall()
     {
-        if (money > 40 && beachBall == false)
+        if (money > 30 && beachBall == false)
         {
-            money -= 40;
+            money -= 30;
             balls[0].SetActive(false);
             balls[1].SetActive(true);
             beachBall = true;
