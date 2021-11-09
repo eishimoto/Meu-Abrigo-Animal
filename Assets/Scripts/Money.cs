@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 public class Money : MonoBehaviour
 {
+    //TMPro
     [SerializeField] private int money;
     [SerializeField] private TextMeshProUGUI textDisplay;
 
@@ -11,6 +13,19 @@ public class Money : MonoBehaviour
     [SerializeField] private int food1, food2, food3;
     [SerializeField] private int medicine1, medicine2, medicine3;
 
+    //List
+    [SerializeField] private List<GameObject> foodUnlock;
+    [SerializeField] private List<GameObject> balls;
+    [SerializeField] private List<GameObject> cutTool;
+    [SerializeField] private List<GameObject> cleaningTools;
+
+    //bool
+    private bool foodBowl = false;
+    private bool foodBag = false;
+    private bool beachBall = false;
+    private bool trimmer = false;
+    private bool shampoo = false;
+    private bool dryer = false;
     //static for funcitons
     public static Money instance;
     private void OnEnable()
@@ -42,10 +57,17 @@ public class Money : MonoBehaviour
             textDisplay.text = money.ToString() + " " + "Reais";
         }
     }
-
-    public void BuyFoodTwo()
+    public void UnlockFoodBowl()
     {
-        if(money > food2)
+        if(money > 15 && foodBowl == false)
+        {
+            money -= 15;
+            foodUnlock[0].SetActive(true);
+            foodBowl = true;
+            UpdateMoney();
+        }
+
+        else if (money > food2)
         {
             money -= food2;
             FoodToolTwo.instance.AddFood();
@@ -53,14 +75,69 @@ public class Money : MonoBehaviour
             textDisplay.text = money.ToString() + " " + "Reais";
         }
     }
-    public void BuyFoodThree()
+    public void UnlockFoodBag()
     {
-        if (money > food3)
+        if (money > 25 && foodBag == false)
+        {
+            money -= 25;
+            foodUnlock[1].SetActive(true);
+            foodBag = true;
+            UpdateMoney();
+        }
+        else if (money > food3)
         {
             money -= food3;
             FoodToolThree.instance.AddFood();
             FoodToolThree.instance.UpdateTextMeshPro();
             textDisplay.text = money.ToString() + " " + "Reais";
+        }
+    }
+
+    public void UnlockBeachBall()
+    {
+        if (money > 40 && beachBall == false)
+        {
+            money -= 40;
+            balls[0].SetActive(false);
+            balls[1].SetActive(true);
+            beachBall = true;
+            UpdateMoney();
+        }
+    }
+
+    public void UnlockTrimmer()
+    {
+        if(money > 50 && trimmer == false)
+        {
+            money -= 50;
+            cutTool[0].SetActive(false);
+            cutTool[1].SetActive(true);
+            trimmer = true;
+            UpdateMoney();
+        }
+    }
+
+    public void UnlockShampoo()
+    {
+        if (money > 50 && shampoo == false)
+        {
+            money -= 50;
+            cleaningTools[0].SetActive(false);
+            cleaningTools[2].SetActive(true);
+            shampoo = true;
+            UpdateMoney();
+        }
+    }
+
+    public void UnlockDryer()
+    {
+        if (money > 100 && dryer == false)
+        {
+            money -= 100;
+            cleaningTools[1].SetActive(false);
+            cleaningTools[3].SetActive(true);
+            dryer = true;
+            UpdateMoney();
         }
     }
 

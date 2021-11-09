@@ -9,8 +9,9 @@ public class CleaningTool : MonoBehaviour
     private Vector2 _startPosition;
 
     private Camera maincamera;
+    private int randomForm;
 
-    [SerializeField] private GameObject areaToDraw;
+    [SerializeField] private List<GameObject> areaToDraw;
 
     public  bool square1, square2, square3, square4;
     public bool circle1, circle2, circle3, circle4;
@@ -18,11 +19,25 @@ public class CleaningTool : MonoBehaviour
 
     public static bool squareClean, circleClean, triangleClean;
 
+    [Header("which Tool")]
+    public bool soapOn, shampooOn, towlOn, dyerOn;
+    private bool usedSoap, usedShampoo, usedTowl, usedDyer;
+    public static bool soap, shampoo, towl, dyer;
+
+    public static CleaningTool instance;
+    public void OnEnable()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+    }
     private void Start()
     {
         myCollider = GetComponent<Collider2D>();
         _startPosition = transform.position;
         maincamera = Camera.main;
+        randomForm = Random.Range(1, 3);
     }
 
     private void Update()
@@ -47,7 +62,7 @@ public class CleaningTool : MonoBehaviour
                 if (myCollider == touchedCollider)
                 {
                     _moveAllowed = true;
-                    areaToDraw.SetActive(true);
+                    areaToDraw[randomForm].SetActive(true);
                     
                 }
             }
@@ -65,10 +80,9 @@ public class CleaningTool : MonoBehaviour
                 {
                     _moveAllowed = false;
                     transform.position = _startPosition;
-                    areaToDraw.SetActive(false);
-                    SetSquarestoFalse();
-                    SetCirclesToFalse();
-                    SetTrianglesToFalse();
+                    areaToDraw[randomForm].SetActive(false);
+                    SetAllToFalse();
+                    randomForm = Random.Range(1, 3);
                 }
             }
         }
@@ -83,19 +97,17 @@ public class CleaningTool : MonoBehaviour
             Vector3 mouseP = new Vector3(Input.mousePosition.x, Input.mousePosition.y, Input.mousePosition.z + 10f);
             Vector3 worldP = maincamera.ScreenToWorldPoint(mouseP);
             transform.position = worldP;
-            areaToDraw.SetActive(true);
+            areaToDraw[randomForm].SetActive(true);
         }
     }
 
     private void OnMouseUp()
     {
-        areaToDraw.SetActive(false);
+        areaToDraw[randomForm].SetActive(false);
         transform.position = _startPosition;
-        SetSquarestoFalse();
-        SetCirclesToFalse();
-        SetTrianglesToFalse();
+        SetAllToFalse();
+        randomForm = Random.Range(1, 3);
     }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Square1"))
@@ -144,10 +156,7 @@ public class CleaningTool : MonoBehaviour
         {
             triangle3 = true;
         }
-
     }
-
-
 
     private void CheckCollisions()
     {
@@ -166,25 +175,18 @@ public class CleaningTool : MonoBehaviour
             triangleClean = true;
         }
     }
-
-    private void SetSquarestoFalse()
+    private void SetAllToFalse()
     {
         square1 = false;
         square2 = false;
         square3 = false;
         square4 = false;
-    }
 
-    private void SetCirclesToFalse()
-    {
         circle1 = false;
         circle2 = false;
         circle3 = false;
         circle4 = false;
-    }
 
-    private void SetTrianglesToFalse()
-    {
         triangle1 = false;
         triangle2 = false;
         triangle3 = false;

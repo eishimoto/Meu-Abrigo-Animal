@@ -30,12 +30,13 @@ public class FoodTool : MonoBehaviour
         {
             instance = this;
         }
+        _startPosition = transform.position;
     }
 
     private void Start()
     {
         myCollider = GetComponent<Collider2D>();
-        _startPosition = transform.position;
+        //_startPosition = transform.position;
         maincamera = Camera.main;
 
         _spriteRender = GetComponent<SpriteRenderer>();
@@ -107,6 +108,7 @@ public class FoodTool : MonoBehaviour
     {
         transform.position = _startPosition;
     }
+
     public void UseInStats()
     {
         Subtract();

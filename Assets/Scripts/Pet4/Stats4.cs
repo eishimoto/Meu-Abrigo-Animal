@@ -183,9 +183,9 @@ public class Stats4 : MonoBehaviour
 
     }
 
-    public void AddAffection()
+    public void AddAffection(int value)
     {
-        affectionStats = affectionStats + 50;
+        affectionStats = affectionStats + value;
         if (affectionStats >= 100)
         {
             affectionStats = 100;

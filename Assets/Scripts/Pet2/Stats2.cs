@@ -182,9 +182,9 @@ public class Stats2 : MonoBehaviour
 
     }
 
-    public void AddAffection()
+    public void AddAffection(int value)
     {
-        affectionStats = affectionStats + 50;
+        affectionStats = affectionStats + value;
         if (affectionStats >= 100)
         {
             affectionStats = 100;
@@ -205,7 +205,6 @@ public class Stats2 : MonoBehaviour
             CleaningTool.circleClean = false;
         }
     }
-
     private void GrowFur()
     {
         float randomTime = Random.Range(0, 60000);

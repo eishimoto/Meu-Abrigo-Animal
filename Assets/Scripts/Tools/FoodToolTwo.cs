@@ -30,12 +30,12 @@ public class FoodToolTwo : MonoBehaviour
         {
             instance = this;
         }
+        _startPosition = transform.position;
     }
 
     private void Start()
     {
         myCollider = GetComponent<Collider2D>();
-        _startPosition = transform.position;
         maincamera = Camera.main;
 
         _spriteRender = GetComponent<SpriteRenderer>();

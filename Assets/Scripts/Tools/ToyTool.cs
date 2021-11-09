@@ -9,8 +9,12 @@ public class ToyTool : MonoBehaviour
     private Vector2 _startPosition;
     private Rigidbody2D myRigidbody;
 
+    public bool tenisBall;
+    public bool beachBall;
+    int value;
+
+    //movement
     private Vector3 lastVelocity;
-    //
     private Vector2 startPos, endPos, direction;
     private Vector3 startMousePos, endMousePos,mouseDirection;
     private float touchTimeStart, touchTimeFinish, timeInterval;
@@ -105,21 +109,30 @@ public class ToyTool : MonoBehaviour
         myRigidbody.velocity = Vector2.zero;
         myRigidbody.bodyType = RigidbodyType2D.Kinematic;
         transform.position = _startPosition;
+
+        if(beachBall)
+        {
+            value = 100;
+        }
+        if(tenisBall)
+        {
+            value = 50;
+        }
         if (UICanvas.on == true)
         {
-            Stats.instance.AddAffection();
+            Stats.instance.AddAffection(value);
         }
         if (UICanvas.on2 == true)
         {
-            Stats2.instance.AddAffection();
+            Stats2.instance.AddAffection(value);
         }
         if (UICanvas.on3 == true)
         {
-            Stats3.instance.AddAffection();
+            Stats3.instance.AddAffection(value);
         }
         if (UICanvas.on4 == true)
         {
-            Stats4.instance.AddAffection();
+            Stats4.instance.AddAffection(value);
         }
     }
 

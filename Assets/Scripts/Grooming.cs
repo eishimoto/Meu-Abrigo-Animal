@@ -76,7 +76,15 @@ public class Grooming : MonoBehaviour
     {
         if (canTrim == true)
         {
-            Invoke("DesableFur", .5f);
+            if (CutTool.scissor)
+            {
+                Invoke("DesableFur", 2f);
+            }
+
+            if(CutTool.trimmer)
+            {
+                Invoke("DesableFur", 0.5f);
+            }
         }
         else
         {

@@ -10,11 +10,24 @@ public class CutTool : MonoBehaviour
 
     private Camera maincamera;
 
+    public bool scissorOn;
+    public bool trimmerOn;
+    public static bool scissor;
+    public static bool trimmer;
+
     private void Start()
     {
         myCollider = GetComponent<Collider2D>();
         _startPosition = transform.position;
         maincamera = Camera.main;
+        if (scissorOn)
+        {
+            scissor = true;
+        }
+        if (trimmerOn)
+        {
+            trimmer = true;
+        }
     }
 
     private void Update()
