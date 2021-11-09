@@ -4,24 +4,22 @@ using UnityEngine;
 
 public class CleaningTool : MonoBehaviour
 {
+    //movement
     private bool _moveAllowed;
     private Collider2D myCollider;
     private Vector2 _startPosition;
-
     private Camera maincamera;
-    private int randomForm;
 
+    //drawing variables
     [SerializeField] private List<GameObject> areaToDraw;
-
-    public  bool square1, square2, square3, square4;
+    public bool square1, square2, square3, square4;
     public bool circle1, circle2, circle3, circle4;
     public bool triangle1, triangle2, triangle3;
-
+    private int randomForm;
     public static bool squareClean, circleClean, triangleClean;
 
     [Header("which Tool")]
     public bool soapOn, shampooOn, towlOn, dyerOn;
-    private bool usedSoap, usedShampoo, usedTowl, usedDyer;
     public static bool soap, shampoo, towl, dyer;
 
     public static CleaningTool instance;
@@ -37,7 +35,7 @@ public class CleaningTool : MonoBehaviour
         myCollider = GetComponent<Collider2D>();
         _startPosition = transform.position;
         maincamera = Camera.main;
-        randomForm = Random.Range(1, 3);
+        randomForm = Random.Range(0, 3);
     }
 
     private void Update()
@@ -82,7 +80,7 @@ public class CleaningTool : MonoBehaviour
                     transform.position = _startPosition;
                     areaToDraw[randomForm].SetActive(false);
                     SetAllToFalse();
-                    randomForm = Random.Range(1, 3);
+                    randomForm = Random.Range(0, 3);
                 }
             }
         }
@@ -106,7 +104,7 @@ public class CleaningTool : MonoBehaviour
         areaToDraw[randomForm].SetActive(false);
         transform.position = _startPosition;
         SetAllToFalse();
-        randomForm = Random.Range(1, 3);
+        randomForm = Random.Range(0, 3);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -175,6 +173,7 @@ public class CleaningTool : MonoBehaviour
             triangleClean = true;
         }
     }
+
     private void SetAllToFalse()
     {
         square1 = false;

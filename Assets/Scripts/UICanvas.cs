@@ -7,6 +7,7 @@ public class UICanvas : MonoBehaviour
     [Header("Collections")]
     [SerializeField] private List<GameObject> rooms;
     [SerializeField] private List<GameObject> pets;
+    [SerializeField] private List<GameObject> stats;
 
     //Ui and canvas
     [Header("Panels")]
@@ -23,8 +24,12 @@ public class UICanvas : MonoBehaviour
     [Header("Postition change")]
     [SerializeField] private Vector2 onScreen;
     [SerializeField] private Vector2 onScreen2;
-     [SerializeField] private Vector2 onScreen3;
-    [SerializeField] private Vector2 offScreen,offScreen2,offScreen3;
+    [SerializeField] private Vector2 onScreen3;
+    [SerializeField] private Vector2 onScreenStats;
+    [SerializeField] private Vector2 offScreen;
+    [SerializeField] private Vector2 offScreen2;
+    [SerializeField] private Vector2 offScreen3;
+
 
     private int index = 0;
     private int indexSafe;
@@ -57,6 +62,7 @@ public class UICanvas : MonoBehaviour
             on2 = false;
             on3 = false;
             on4 = false;
+            stats[0].transform.position = onScreenStats;
         }
         if (index == 1)
         {
@@ -68,6 +74,7 @@ public class UICanvas : MonoBehaviour
             on2 = true;
             on3 = false;
             on4 = false;
+            stats[1].transform.position = onScreenStats;
 
         }
         if (index == 2)
@@ -80,6 +87,7 @@ public class UICanvas : MonoBehaviour
             on2 = false;
             on3 = true;
             on4 = false;
+            stats[2].transform.position = onScreenStats;
         }
         if (index == 3)
         {
@@ -91,6 +99,7 @@ public class UICanvas : MonoBehaviour
             on2 = false;
             on3 = false;
             on4 = true;
+            stats[3].transform.position = onScreenStats;
         }
     }
     //UI

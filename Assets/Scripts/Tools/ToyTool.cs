@@ -112,11 +112,11 @@ public class ToyTool : MonoBehaviour
 
         if(beachBall)
         {
-            value = 100;
+            value = 50;
         }
         if(tenisBall)
         {
-            value = 50;
+            value = 25;
         }
         if (UICanvas.on == true)
         {

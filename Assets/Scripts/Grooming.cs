@@ -83,7 +83,7 @@ public class Grooming : MonoBehaviour
 
             if(CutTool.trimmer)
             {
-                Invoke("DesableFur", 0.5f);
+                Invoke("DesableFur", 1f);
             }
         }
         else

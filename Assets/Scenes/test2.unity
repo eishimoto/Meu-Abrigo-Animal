@@ -6460,6 +6460,11 @@ MonoBehaviour:
   - {fileID: 2508727790446137255}
   - {fileID: 1405553096}
   - {fileID: 1997291177}
+  stats:
+  - {fileID: 3852844413821154080}
+  - {fileID: 1965227268}
+  - {fileID: 615769983}
+  - {fileID: 1716050174}
   petsSelection: {fileID: 1037284643}
   menu: {fileID: 407264703}
   adoption: {fileID: 630634649}
@@ -6471,6 +6476,7 @@ MonoBehaviour:
   onScreen: {x: 0, y: -1.7}
   onScreen2: {x: 0.1, y: -3.5}
   onScreen3: {x: 0, y: -1}
+  onScreenStats: {x: 0, y: 3.6}
   offScreen: {x: 6, y: -2}
   offScreen2: {x: 12, y: 0}
   offScreen3: {x: 17, y: 0}
@@ -10874,7 +10880,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &808602246
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14070,7 +14076,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1067078822
 RectTransform:
   m_ObjectHideFlags: 0
