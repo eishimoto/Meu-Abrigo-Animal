@@ -31,6 +31,8 @@ public class Stats2 : MonoBehaviour
     private bool medecine2;
     private bool medecine3;
     private bool sick;
+    [SerializeField] private List<Color> medecineColor;
+    [SerializeField] private Image diseaseIndicator;
 
     //float
     private float hungerStats, affectionStats, hygineStats;
@@ -267,6 +269,7 @@ public class Stats2 : MonoBehaviour
         if (hungerStats <= 0)
         {
             disease1 = true;
+            diseaseIndicator.color = medecineColor[0];
             if (disease1 == true)
             {
                 diseaseText.text = ("Doença" + " 1 ");
@@ -275,6 +278,7 @@ public class Stats2 : MonoBehaviour
         else if (hungerStats > 0 && medecine1 == true)
         {
             disease1 = false;
+            diseaseIndicator.color = medecineColor[3];
             if (disease1 == false)
             {
                 diseaseText.text = ("Saudável");
@@ -285,6 +289,7 @@ public class Stats2 : MonoBehaviour
         if (hygineStats <= 0)
         {
             disease2 = true;
+            diseaseIndicator.color = medecineColor[1];
             if (disease2 == true)
             {
                 diseaseText.text = ("Doença" + " 2 ");
@@ -293,6 +298,7 @@ public class Stats2 : MonoBehaviour
         else if (hygineStats > 0 && medecine2 == true)
         {
             disease2 = false;
+            diseaseIndicator.color = medecineColor[3];
             if (disease2 == false)
             {
                 diseaseText.text = ("Saudável");
@@ -303,6 +309,7 @@ public class Stats2 : MonoBehaviour
         if (count == 4)
         {
             disease3 = true;
+            diseaseIndicator.color = medecineColor[2];
             if (disease3 == true)
             {
                 diseaseText.text = ("Doença" + " 3 ");
@@ -311,6 +318,7 @@ public class Stats2 : MonoBehaviour
         else if (count == 0 && medecine3 == true)
         {
             disease3 = false;
+            diseaseIndicator.color = medecineColor[3];
             if (disease3 == false)
             {
                 diseaseText.text = ("Saudável");
