@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Stats : MonoBehaviour
 {
@@ -20,6 +21,16 @@ public class Stats : MonoBehaviour
 
     [Header("Fur")]
     [SerializeField] private GameObject[] fur;
+
+    [Header("Disease")]
+    [SerializeField] private TextMeshProUGUI diseaseText;
+    private bool disease1;
+    private bool disease2;
+    private bool disease3;
+    private bool medecine1;
+    private bool medecine2;
+    private bool medecine3;
+    private bool sick;
 
     //float
     private float hungerStats, affectionStats, hygineStats;
@@ -50,13 +61,18 @@ public class Stats : MonoBehaviour
     {
         Diminish();
         GrowFur();
-        IsClean();
+        if (UICanvas.on == true)
+        {
+            IsClean();
+        }
+        CheckIfSick();
     }
 
     public void Diminish()
     {
         hungerBar.fillAmount = hungerStats / maxHunger;
         hungerStats -= hungerPorcentage * Time.deltaTime;
+        if (hungerStats <= 0) hungerStats = 0;
 
         if(hungerStats > 50)
         {
@@ -73,6 +89,7 @@ public class Stats : MonoBehaviour
 
         affectionBar.fillAmount = affectionStats / maxAffection;
         affectionStats -= affectionPorcentage * Time.deltaTime;
+        if (affectionStats <= 0) affectionStats = 0;
 
         if (affectionStats > 50)
         {
@@ -89,6 +106,7 @@ public class Stats : MonoBehaviour
 
         hygineBar.fillAmount = hygineStats / maxHygine;
         hygineStats -= hyginePorcentage * Time.deltaTime;
+        if (hygineStats <= 0) hygineStats = 0;
 
         if (hygineStats > 50)
         {
@@ -109,9 +127,9 @@ public class Stats : MonoBehaviour
         if (collision.CompareTag("Food"))
         {
             hungerStats = hungerStats + 20;
-            if (hungerStats >= 100)
+            if (hungerStats >= maxHunger)
             {
-                hungerStats = 100;
+                hungerStats = maxHunger;
             }
 
             FoodTool.instance.UseInStats();
@@ -120,9 +138,9 @@ public class Stats : MonoBehaviour
         if(collision.CompareTag("Food2"))
         {
             hungerStats = hungerStats + 50;
-            if (hungerStats >= 100)
+            if (hungerStats >= maxHunger)
             {
-                hungerStats = 100;
+                hungerStats = maxHunger;
             }
 
             FoodToolTwo.instance.UseInStats();
@@ -130,9 +148,9 @@ public class Stats : MonoBehaviour
         if (collision.CompareTag("Food3"))
         {
             hungerStats = hungerStats + 100;
-            if (hungerStats >= 100)
+            if (hungerStats >= maxHunger)
             {
-                hungerStats = 100;
+                hungerStats = maxHunger;
             }
 
             FoodToolThree.instance.UseInStats();
@@ -143,6 +161,7 @@ public class Stats : MonoBehaviour
             if (MixPills.inMix == false)
             {
                 MedicineTool.instance.UseInStats();
+                maxAffection += 5;   
             }
         }
 
@@ -151,6 +170,7 @@ public class Stats : MonoBehaviour
             if (MixPills.inMix == false)
             {
                 MedicineTool2.instance.UseInStats();
+                maxHunger += 5;
             }
         }
 
@@ -159,22 +179,26 @@ public class Stats : MonoBehaviour
             if (MixPills.inMix == false)
             {
                 MedicineTool3.instance.UseInStats();
+                maxHygine += 5;
             }
         }
 
         if (collision.CompareTag("PurplePill"))
         {
             MixPills.instance.PurplePill();
+            medecine1 = true;
         }
 
         if(collision.CompareTag("YellowPill"))
         {
             MixPills.instance.YellowPill();
+            medecine2 = true;
         }
 
         if (collision.CompareTag("CyanPill"))
         {
             MixPills.instance.CyanPill();
+            medecine3 = true;
         }
 
     }
@@ -182,9 +206,9 @@ public class Stats : MonoBehaviour
     public void AddAffection(int value)
     {
         affectionStats = affectionStats + value;
-        if (affectionStats >= 100)
+        if (affectionStats >= maxAffection)
         {
-            affectionStats = 100;
+            affectionStats = maxAffection;
         }
     }
 
@@ -193,9 +217,9 @@ public class Stats : MonoBehaviour
         if (CleaningTool.squareClean == true || CleaningTool.triangleClean == true || CleaningTool.circleClean == true)
         {
             hygineStats = hygineStats + 50;
-            if (hygineStats >= 100)
+            if (hygineStats >= maxHygine)
             {
-                hygineStats = 100;
+                hygineStats = maxHygine;
             }
             CleaningTool.squareClean = false;
             CleaningTool.triangleClean = false;
@@ -240,6 +264,72 @@ public class Stats : MonoBehaviour
         if (count > 2)
         {
             ColorFur.instance.FurColorThree();
+        }
+    }
+
+    private void CheckIfSick()
+    {
+        if (hungerStats <= 0)
+        {
+            disease1 = true;
+            if (disease1 == true)
+            {
+                diseaseText.text = ("Doença" + " 1 ");
+            }
+        }
+        else if(hungerStats > 0 && medecine1 == true)
+        {
+            disease1 = false;
+            if (disease1 == false)
+            {
+                diseaseText.text = ("Saudável");
+            }
+            medecine1 = false;
+        }
+
+        if (hygineStats <= 0)
+        {
+            disease2 = true;
+            if (disease2 == true)
+            {
+                diseaseText.text = ("Doença" + " 2 ");
+            }
+        }
+        else if (hygineStats > 0 && medecine2 == true)
+        {
+            disease2 = false;
+            if (disease2 == false)
+            {
+                diseaseText.text = ("Saudável");
+            }
+            medecine2 = false;
+        }
+
+        if (count == 4)
+        {
+            disease3 = true;
+            if (disease3 == true)
+            {
+                diseaseText.text = ("Doença" + " 3 ");
+            }
+        }
+        else if (count == 0 && medecine3 == true)
+        {
+            disease3 = false;
+            if (disease3 == false)
+            {
+                diseaseText.text = ("Saudável");
+            }
+            medecine3 = false;
+        }
+
+        if(disease1 || disease2 || disease3)
+        {
+            sick = true;
+        }
+        else
+        {
+            sick = false;
         }
     }
 }
