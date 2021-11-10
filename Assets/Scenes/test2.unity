@@ -6572,7 +6572,7 @@ MonoBehaviour:
   - {fileID: 3024569459677352292, guid: 794d8ea3de835234dadc386542f236ce, type: 3}
   dog2PhotoPrefab:
   - {fileID: 1316697427657416711, guid: ac334b5e0b5584c48af7bb6289a2697d, type: 3}
-  whitchPet: {fileID: 0}
+  whitchPet: {fileID: 2047265418}
   parent: {fileID: 1050591438}
 --- !u!1 &455097424
 GameObject:
@@ -15025,7 +15025,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 169, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1011338178
@@ -21353,7 +21353,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 452158698}
         m_TargetAssemblyTypeName: TakePhoto, Assembly-CSharp
-        m_MethodName: WhitchPetToTakePhoto
+        m_MethodName: CloseWhitchPetToTakePhoto
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -28656,7 +28656,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -149}
+  m_AnchoredPosition: {x: 0, y: 132}
   m_SizeDelta: {x: 800, y: 800}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2047265420

@@ -52,37 +52,37 @@ public class Timer : MonoBehaviour
     {
         if (day == 0)
         {
-            Circle.transform.SetParent(dayPos[0]);
+            Circle.transform.SetParent(dayPos[1]);
             Circle.transform.localPosition = new Vector3(0, 0, 0f);
         }
         if (day == 1)
         {
-            Circle.transform.SetParent(dayPos[1]);
+            Circle.transform.SetParent(dayPos[2]);
             Circle.transform.localPosition = new Vector3(0, 0, 0f);
         }
         if (day == 2)
         {
-            Circle.transform.SetParent(dayPos[2]);
+            Circle.transform.SetParent(dayPos[3]);
             Circle.transform.localPosition = new Vector3(0, 0, 0f);
         }
         if (day == 3)
         {
-            Circle.transform.SetParent(dayPos[3]);
+            Circle.transform.SetParent(dayPos[4]);
             Circle.transform.localPosition = new Vector3(0, 0, 0f);
         }
         if (day == 4)
         {
-            Circle.transform.SetParent(dayPos[4]);
+            Circle.transform.SetParent(dayPos[5]);
             Circle.transform.localPosition = new Vector3(0, 0, 0f);
         }
         if (day == 5)
         {
-            Circle.transform.SetParent(dayPos[5]);
+            Circle.transform.SetParent(dayPos[6]);
             Circle.transform.localPosition = new Vector3(0, 0, 0f);
         }
         if (day == 6)
         {
-            Circle.transform.SetParent(dayPos[6]);
+            Circle.transform.SetParent(dayPos[0]);
             Circle.transform.localPosition = new Vector3(0, 0, 0f);
         }
     }
