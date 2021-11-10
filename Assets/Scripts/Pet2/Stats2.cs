@@ -75,6 +75,7 @@ public class Stats2 : MonoBehaviour
     {
         hungerBar.fillAmount = hungerStats / maxHunger;
         hungerStats -= hungerPorcentage * Time.deltaTime;
+        if (hungerStats <= 0) hungerStats = 0;
 
         if (hungerStats > 50)
         {
@@ -91,6 +92,7 @@ public class Stats2 : MonoBehaviour
 
         affectionBar.fillAmount = affectionStats / maxAffection;
         affectionStats -= affectionPorcentage * Time.deltaTime;
+        if (affectionStats <= 0) affectionStats = 0;
 
         if (affectionStats > 50)
         {
@@ -107,6 +109,7 @@ public class Stats2 : MonoBehaviour
 
         hygineBar.fillAmount = hygineStats / maxHygine;
         hygineStats -= hyginePorcentage * Time.deltaTime;
+        if (hygineStats <= 0) hygineStats = 0;
 
         if (hygineStats > 50)
         {
