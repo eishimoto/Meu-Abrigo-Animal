@@ -17,6 +17,9 @@ public class CleaningTool : MonoBehaviour
     public bool triangle1, triangle2, triangle3;
     private int randomForm;
     public static bool squareClean, circleClean, triangleClean;
+    [SerializeField] private List<GameObject> trianglePoints;
+    [SerializeField] private List<GameObject> CirclesPoitns;
+    [SerializeField] private List<GameObject> SquarePoins;
 
     [Header("which Tool")]
     public bool soapOn, shampooOn, towlOn, dyerOn;
@@ -45,6 +48,7 @@ public class CleaningTool : MonoBehaviour
             MoveTool();
         }
         CheckCollisions();
+        ActivateFromsPoints();
     }
 
     private void MoveTool()
@@ -189,5 +193,102 @@ public class CleaningTool : MonoBehaviour
         triangle1 = false;
         triangle2 = false;
         triangle3 = false;
+    }
+
+    private void ActivateFromsPoints()
+    {
+        if(triangle1)
+        {
+            trianglePoints[0].SetActive(true);
+        }
+        else if(triangle1 == false)
+        {
+            trianglePoints[0].SetActive(false);
+        }
+        if (triangle2)
+        {
+            trianglePoints[1].SetActive(true);
+        }
+        else if (triangle2 == false)
+        {
+            trianglePoints[1].SetActive(false);
+        }
+        if (triangle3)
+        {
+            trianglePoints[2].SetActive(true);
+        }
+        else if (triangle3 == false)
+        {
+            trianglePoints[2].SetActive(false);
+        }
+
+        if(circle1)
+        {
+            CirclesPoitns[0].SetActive(true);
+        }
+        else if(circle1 == false)
+        {
+            CirclesPoitns[0].SetActive(false);
+        }
+        if (circle2)
+        {
+            CirclesPoitns[1].SetActive(true);
+        }
+        else if (circle2 == false)
+        {
+            CirclesPoitns[1].SetActive(false);
+        }
+        if (circle3)
+        {
+            CirclesPoitns[2].SetActive(true);
+        }
+        else if (circle3 == false)
+        {
+            CirclesPoitns[2].SetActive(false);
+        }
+        if (circle4)
+        {
+            CirclesPoitns[3].SetActive(true);
+        }
+        else if (circle4 == false)
+        {
+            CirclesPoitns[3].SetActive(false);
+        }
+
+        if(square1)
+        {
+            SquarePoins[0].SetActive(true);
+        }
+        else if(square1 == false)
+        {
+            SquarePoins[0].SetActive(false);
+        }
+
+        if (square2)
+        {
+            SquarePoins[1].SetActive(true);
+        }
+        else if (square2 == false)
+        {
+            SquarePoins[1].SetActive(false);
+        }
+
+        if (square3)
+        {
+            SquarePoins[2].SetActive(true);
+        }
+        else if (square3 == false)
+        {
+            SquarePoins[2].SetActive(false);
+        }
+
+        if (square4)
+        {
+            SquarePoins[3].SetActive(true);
+        }
+        else if (square4 == false)
+        {
+            SquarePoins[3].SetActive(false);
+        }
     }
 }
