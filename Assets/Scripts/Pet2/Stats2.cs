@@ -188,19 +188,19 @@ public class Stats2 : MonoBehaviour
         if (collision.CompareTag("PurplePill"))
         {
             MixPills.instance.PurplePill();
-            medecine1 = true;
+            medecine3 = true;
         }
 
         if (collision.CompareTag("YellowPill"))
         {
             MixPills.instance.YellowPill();
-            medecine2 = true;
+            medecine1 = true;
         }
 
         if (collision.CompareTag("CyanPill"))
         {
             MixPills.instance.CyanPill();
-            medecine3 = true;
+            medecine2 = true;
         }
 
     }
@@ -272,10 +272,11 @@ public class Stats2 : MonoBehaviour
         if (hungerStats <= 0)
         {
             disease1 = true;
-            diseaseIndicator.color = medecineColor[0];
+            diseaseIndicator.color = medecineColor[1];
             if (disease1 == true)
             {
                 diseaseText.text = ("Doença" + " 1 ");
+                StatsColor2.instance.ColorChangeTwo();
             }
         }
         else if (hungerStats > 0 && medecine1 == true)
@@ -285,6 +286,7 @@ public class Stats2 : MonoBehaviour
             if (disease1 == false)
             {
                 diseaseText.text = ("Saudável");
+                StatsColor2.instance.ColorChangeOne();
             }
             medecine1 = false;
         }
@@ -292,10 +294,11 @@ public class Stats2 : MonoBehaviour
         if (hygineStats <= 0)
         {
             disease2 = true;
-            diseaseIndicator.color = medecineColor[1];
+            diseaseIndicator.color = medecineColor[2];
             if (disease2 == true)
             {
                 diseaseText.text = ("Doença" + " 2 ");
+                StatsColor2.instance.ColorChangeTwo();
             }
         }
         else if (hygineStats > 0 && medecine2 == true)
@@ -305,6 +308,7 @@ public class Stats2 : MonoBehaviour
             if (disease2 == false)
             {
                 diseaseText.text = ("Saudável");
+                StatsColor2.instance.ColorChangeOne();
             }
             medecine2 = false;
         }
@@ -312,10 +316,11 @@ public class Stats2 : MonoBehaviour
         if (count == 4)
         {
             disease3 = true;
-            diseaseIndicator.color = medecineColor[2];
+            diseaseIndicator.color = medecineColor[0];
             if (disease3 == true)
             {
                 diseaseText.text = ("Doença" + " 3 ");
+                StatsColor2.instance.ColorChangeTwo();
             }
         }
         else if (count == 0 && medecine3 == true)
@@ -325,6 +330,7 @@ public class Stats2 : MonoBehaviour
             if (disease3 == false)
             {
                 diseaseText.text = ("Saudável");
+                StatsColor2.instance.ColorChangeOne();
             }
             medecine3 = false;
         }

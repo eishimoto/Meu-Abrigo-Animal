@@ -6289,7 +6289,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+  m_text: "Esse velho cachorrinho foi encontrado nas margens do rio tentando beber
+    \xE1gua para poder se alimentar. Aparentemente os donos o maltratavam, pois quando
+    tentamos resgatar ele estava bastante receoso de qualquer toque humano, mas com
+    o tempo come\xE7ou a se acostumar. "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -12546,7 +12549,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &808602246
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15020,12 +15023,12 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1579598132}
+  m_Father: {fileID: 1515811055}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 169, y: 0}
+  m_AnchoredPosition: {x: -0.30000305, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1011338178
@@ -18890,7 +18893,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1318116980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20702,7 +20705,7 @@ MonoBehaviour:
   hungerPorcentage: 0.5
   affectionBar: {fileID: 44453457}
   maxAffection: 100
-  affectionPorcentage: 0.2
+  affectionPorcentage: 0.5
   hygineBar: {fileID: 1670061720}
   maxHygine: 100
   hyginePorcentage: 0.5
@@ -21918,7 +21921,8 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1011338177}
   m_Father: {fileID: 640038268}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -22195,8 +22199,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1011338177}
+  m_Children: []
   m_Father: {fileID: 640038268}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -27730,7 +27733,7 @@ MonoBehaviour:
   hungerPorcentage: 0.5
   affectionBar: {fileID: 2112744040}
   maxAffection: 100
-  affectionPorcentage: 0.2
+  affectionPorcentage: 0.5
   hygineBar: {fileID: 392654854}
   maxHygine: 100
   hyginePorcentage: 0.5
@@ -35925,7 +35928,7 @@ MonoBehaviour:
   hungerPorcentage: 0.5
   affectionBar: {fileID: 7947405938552486003}
   maxAffection: 100
-  affectionPorcentage: 0.2
+  affectionPorcentage: 0.5
   hygineBar: {fileID: 7947405938472173419}
   maxHygine: 100
   hyginePorcentage: 0.5

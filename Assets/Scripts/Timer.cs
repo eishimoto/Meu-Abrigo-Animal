@@ -23,7 +23,7 @@ public class Timer : MonoBehaviour
     {
         if (_timeValue > 0)
         {
-            _timeValue += Time.deltaTime;
+            _timeValue += 2 * Time.deltaTime;
         }
         else 
         {
