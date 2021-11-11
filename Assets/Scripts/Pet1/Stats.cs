@@ -33,6 +33,8 @@ public class Stats : MonoBehaviour
     private bool sick;
     [SerializeField] private List<Color> medecineColor;
     [SerializeField] private Image diseaseIndicator;
+    [SerializeField] private Image diseaseIcon;
+    [SerializeField] private List<Sprite> diseaseIconList;
 
     //float
     private float hungerStats, affectionStats, hygineStats;
@@ -275,6 +277,7 @@ public class Stats : MonoBehaviour
         {
             disease1 = true;
             diseaseIndicator.color = medecineColor[1];
+            diseaseIcon.sprite = diseaseIconList[1];
             if (disease1 == true)
             {
                 diseaseText.text = ("Doença" + " 1 ");
@@ -285,6 +288,7 @@ public class Stats : MonoBehaviour
         {
             disease1 = false;
             diseaseIndicator.color = medecineColor[3];
+            diseaseIcon.sprite = null;
             if (disease1 == false)
             {
                 diseaseText.text = ("Saudável");
@@ -297,6 +301,7 @@ public class Stats : MonoBehaviour
         {
             disease2 = true;
             diseaseIndicator.color = medecineColor[2];
+            diseaseIcon.sprite = diseaseIconList[2];
             if (disease2 == true)
             {
                 diseaseText.text = ("Doença" + " 2 ");
@@ -307,6 +312,8 @@ public class Stats : MonoBehaviour
         {
             disease2 = false;
             diseaseIndicator.color = medecineColor[3];
+            diseaseIcon.sprite = null;
+            diseaseIcon.sprite = null;
             if (disease2 == false)
             {
                 diseaseText.text = ("Saudável");
@@ -319,6 +326,7 @@ public class Stats : MonoBehaviour
         {
             disease3 = true;
             diseaseIndicator.color = medecineColor[0];
+            diseaseIcon.sprite = diseaseIconList[0];
             if (disease3 == true)
             {
                 diseaseText.text = ("Doença" + " 3 ");
@@ -329,6 +337,7 @@ public class Stats : MonoBehaviour
         {
             disease3 = false;
             diseaseIndicator.color = medecineColor[3];
+            diseaseIcon.sprite = null;
             if (disease3 == false)
             {
                 diseaseText.text = ("Saudável");

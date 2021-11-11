@@ -33,6 +33,9 @@ public class Stats4 : MonoBehaviour
     private bool sick;
     [SerializeField] private List<Color> medecineColor;
     [SerializeField] private Image diseaseIndicator;
+    [SerializeField] private Image diseaseIcon;
+    [SerializeField] private List<Sprite> diseaseIconList;
+
 
     //float
     private float hungerStats, affectionStats, hygineStats;
@@ -274,20 +277,22 @@ public class Stats4 : MonoBehaviour
         {
             disease1 = true;
             diseaseIndicator.color = medecineColor[1];
+            diseaseIcon.sprite = diseaseIconList[1];
             if (disease1 == true)
             {
                 diseaseText.text = ("Doença" + " 1 ");
-                StatsColor4.instance.ColorChangeTwo();
+                StatsColor.instance.ColorChangeTwo();
             }
         }
         else if (hungerStats > 0 && medecine1 == true)
         {
             disease1 = false;
             diseaseIndicator.color = medecineColor[3];
+            diseaseIcon.sprite = null;
             if (disease1 == false)
             {
                 diseaseText.text = ("Saudável");
-                StatsColor4.instance.ColorChangeOne();
+                StatsColor.instance.ColorChangeOne();
             }
             medecine1 = false;
         }
@@ -296,20 +301,23 @@ public class Stats4 : MonoBehaviour
         {
             disease2 = true;
             diseaseIndicator.color = medecineColor[2];
+            diseaseIcon.sprite = diseaseIconList[2];
             if (disease2 == true)
             {
                 diseaseText.text = ("Doença" + " 2 ");
-                StatsColor4.instance.ColorChangeTwo();
+                StatsColor.instance.ColorChangeTwo();
             }
         }
         else if (hygineStats > 0 && medecine2 == true)
         {
             disease2 = false;
             diseaseIndicator.color = medecineColor[3];
+            diseaseIcon.sprite = null;
+            diseaseIcon.sprite = null;
             if (disease2 == false)
             {
                 diseaseText.text = ("Saudável");
-                StatsColor4.instance.ColorChangeOne();
+                StatsColor.instance.ColorChangeOne();
             }
             medecine2 = false;
         }
@@ -318,20 +326,22 @@ public class Stats4 : MonoBehaviour
         {
             disease3 = true;
             diseaseIndicator.color = medecineColor[0];
+            diseaseIcon.sprite = diseaseIconList[0];
             if (disease3 == true)
             {
                 diseaseText.text = ("Doença" + " 3 ");
-                StatsColor4.instance.ColorChangeTwo();
+                StatsColor.instance.ColorChangeTwo();
             }
         }
         else if (count == 0 && medecine3 == true)
         {
             disease3 = false;
             diseaseIndicator.color = medecineColor[3];
+            diseaseIcon.sprite = null;
             if (disease3 == false)
             {
                 diseaseText.text = ("Saudável");
-                StatsColor4.instance.ColorChangeOne();
+                StatsColor.instance.ColorChangeOne();
             }
             medecine3 = false;
         }
