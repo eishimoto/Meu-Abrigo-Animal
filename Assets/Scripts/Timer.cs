@@ -12,7 +12,7 @@ public class Timer : MonoBehaviour
     [SerializeField] private GameObject Circle;
     [SerializeField] private List<Transform> dayPos;
 
-    private int day;
+    public static int day;
 
     private void start()
     {
@@ -85,5 +85,11 @@ public class Timer : MonoBehaviour
             Circle.transform.SetParent(dayPos[0]);
             Circle.transform.localPosition = new Vector3(0, 0, 0f);
         }
+    }
+
+    public void SkipTime()
+    {
+        day++;
+        _timeValue = _timeValueReset;
     }
 }
