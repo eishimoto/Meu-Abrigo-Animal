@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CleaningTool : MonoBehaviour
+public class CleaningTool2 : MonoBehaviour
 {
     //movement
     private bool _moveAllowed;
@@ -21,12 +21,11 @@ public class CleaningTool : MonoBehaviour
     [SerializeField] private List<GameObject> CirclesPoitns;
     [SerializeField] private List<GameObject> SquarePoins;
 
-    public bool soap, shampoo;
+    public bool towl, dryer;
 
-    public static bool firtstToolUsed;
-    public static bool soapOn = false, shampooOn = false;
+    public static bool towlOn = false, dryerOn = false;
 
-    public static CleaningTool instance;
+    public static CleaningTool2 instance;
     public void OnEnable()
     {
         if (instance == null)
@@ -36,7 +35,8 @@ public class CleaningTool : MonoBehaviour
     }
     private void OnDisable()
     {
-        soapOn = false;
+        towl = false;
+        towlOn = false;
     }
     private void Start()
     {
@@ -45,13 +45,13 @@ public class CleaningTool : MonoBehaviour
         maincamera = Camera.main;
         randomForm = Random.Range(0, 3);
 
-        if (soap)
+        if(towl)
         {
-            soapOn = true;
+            towlOn = true;
         }
-        if (shampoo)
+        if(dryer)
         {
-            shampooOn = true;
+            dryerOn = true;
         }
     }
 
@@ -61,11 +61,14 @@ public class CleaningTool : MonoBehaviour
         {
             MoveTool();
         }
-        CheckCollisions();
-        ActivateFromsPoints();
-    }
+        if (CleaningTool.firtstToolUsed)
+        {
+            CheckCollisions();
+            ActivateFromsPoints();
+        }
+        }
 
-    private void MoveTool()
+        private void MoveTool()
     {
         if (Input.touchCount > 0)
         {
@@ -79,7 +82,7 @@ public class CleaningTool : MonoBehaviour
                 {
                     _moveAllowed = true;
                     areaToDraw[randomForm].SetActive(true);
-                    
+
                 }
             }
             if (touch.phase == TouchPhase.Moved)
@@ -143,7 +146,7 @@ public class CleaningTool : MonoBehaviour
             square4 = true;
         }
 
-        if(collision.CompareTag("Circle1"))
+        if (collision.CompareTag("Circle1"))
         {
             circle1 = true;
         }
@@ -160,7 +163,7 @@ public class CleaningTool : MonoBehaviour
             circle4 = true;
         }
 
-        if(collision.CompareTag("Triangle1"))
+        if (collision.CompareTag("Triangle1"))
         {
             triangle1 = true;
         }
@@ -176,22 +179,19 @@ public class CleaningTool : MonoBehaviour
 
     private void CheckCollisions()
     {
-        if(square1 == true && square2 == true && square3 == true && square4 == true)
+        if (square1 == true && square2 == true && square3 == true && square4 == true)
         {
             squareClean = true;
-            firtstToolUsed = true;
         }
 
-        if(circle1 == true && circle2 == true && circle3 == true && circle4 == true)
+        if (circle1 == true && circle2 == true && circle3 == true && circle4 == true)
         {
             circleClean = true;
-            firtstToolUsed = true;
         }
 
         if (triangle1 == true && triangle2 == true && triangle3 == true)
         {
             triangleClean = true;
-            firtstToolUsed = true;
         }
     }
 
@@ -214,11 +214,11 @@ public class CleaningTool : MonoBehaviour
 
     private void ActivateFromsPoints()
     {
-        if(triangle1)
+        if (triangle1)
         {
             trianglePoints[0].SetActive(true);
         }
-        else if(triangle1 == false)
+        else if (triangle1 == false)
         {
             trianglePoints[0].SetActive(false);
         }
@@ -239,11 +239,11 @@ public class CleaningTool : MonoBehaviour
             trianglePoints[2].SetActive(false);
         }
 
-        if(circle1)
+        if (circle1)
         {
             CirclesPoitns[0].SetActive(true);
         }
-        else if(circle1 == false)
+        else if (circle1 == false)
         {
             CirclesPoitns[0].SetActive(false);
         }
@@ -272,11 +272,11 @@ public class CleaningTool : MonoBehaviour
             CirclesPoitns[3].SetActive(false);
         }
 
-        if(square1)
+        if (square1)
         {
             SquarePoins[0].SetActive(true);
         }
-        else if(square1 == false)
+        else if (square1 == false)
         {
             SquarePoins[0].SetActive(false);
         }

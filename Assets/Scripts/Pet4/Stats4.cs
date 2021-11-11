@@ -216,19 +216,37 @@ public class Stats4 : MonoBehaviour
             affectionStats = maxAffection;
         }
     }
-
     private void IsClean()
     {
-        if (CleaningTool.squareClean == true || CleaningTool.triangleClean == true || CleaningTool.circleClean == true)
+        int valueToadd = 0;
+        if (CleaningTool2.squareClean == true || CleaningTool2.triangleClean == true || CleaningTool2.circleClean == true)
         {
-            hygineStats = hygineStats + 50;
+            if (CleaningTool.soapOn && CleaningTool2.towlOn)
+            {
+                valueToadd = 20;
+            }
+            if (CleaningTool.soapOn && CleaningTool2.dryerOn)
+            {
+                valueToadd = 30;
+            }
+            if (CleaningTool.shampooOn && CleaningTool2.towlOn)
+            {
+                valueToadd = 30;
+            }
+            if (CleaningTool.shampooOn && CleaningTool2.dryerOn)
+            {
+                valueToadd = 50;
+            }
+
+            hygineStats = hygineStats + valueToadd;
             if (hygineStats >= maxHygine)
             {
                 hygineStats = maxHygine;
             }
-            CleaningTool.squareClean = false;
-            CleaningTool.triangleClean = false;
-            CleaningTool.circleClean = false;
+            CleaningTool2.squareClean = false;
+            CleaningTool2.triangleClean = false;
+            CleaningTool2.circleClean = false;
+            CleaningTool.firtstToolUsed = false;
         }
     }
 
