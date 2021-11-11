@@ -52,38 +52,31 @@ public class Timer : MonoBehaviour
     {
         if (day == 0)
         {
-            Circle.transform.SetParent(dayPos[1]);
-            Circle.transform.localPosition = new Vector3(0, 0, 0f);
+            Circle.transform.SetParent(dayPos[1],false);
         }
         if (day == 1)
         {
-            Circle.transform.SetParent(dayPos[2]);
-            Circle.transform.localPosition = new Vector3(0, 0, 0f);
+            Circle.transform.SetParent(dayPos[2], false);
         }
         if (day == 2)
         {
-            Circle.transform.SetParent(dayPos[3]);
-            Circle.transform.localPosition = new Vector3(0, 0, 0f);
+            Circle.transform.SetParent(dayPos[3], false);
         }
         if (day == 3)
         {
-            Circle.transform.SetParent(dayPos[4]);
-            Circle.transform.localPosition = new Vector3(0, 0, 0f);
+            Circle.transform.SetParent(dayPos[4], false);
         }
         if (day == 4)
         {
-            Circle.transform.SetParent(dayPos[5]);
-            Circle.transform.localPosition = new Vector3(0, 0, 0f);
+            Circle.transform.SetParent(dayPos[5], false);
         }
         if (day == 5)
         {
-            Circle.transform.SetParent(dayPos[6]);
-            Circle.transform.localPosition = new Vector3(0, 0, 0f);
+            Circle.transform.SetParent(dayPos[6], false);
         }
         if (day == 6)
         {
-            Circle.transform.SetParent(dayPos[0]);
-            Circle.transform.localPosition = new Vector3(0, 0, 0f);
+            Circle.transform.SetParent(dayPos[0],false);
         }
     }
 
@@ -91,5 +84,10 @@ public class Timer : MonoBehaviour
     {
         day++;
         _timeValue = _timeValueReset;
+
+        if(day > 6)
+        {
+            day = 0;
+        }
     }
 }
