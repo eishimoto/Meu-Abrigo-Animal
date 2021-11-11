@@ -36,6 +36,7 @@ public class CleaningTool : MonoBehaviour
     }
     private void OnDisable()
     {
+        soap = false;
         soapOn = false;
     }
     private void Start()
