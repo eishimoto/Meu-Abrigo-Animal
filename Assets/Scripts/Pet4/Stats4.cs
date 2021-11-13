@@ -299,7 +299,7 @@ public class Stats4 : MonoBehaviour
             if (disease1 == true)
             {
                 diseaseText.text = ("Doença" + " 1 ");
-                StatsColor.instance.ColorChangeTwo();
+                StatsColor4.instance.ColorChangeTwo();
             }
         }
         else if (hungerStats > 0 && medecine1 == true)
@@ -310,7 +310,7 @@ public class Stats4 : MonoBehaviour
             if (disease1 == false)
             {
                 diseaseText.text = ("Saudável");
-                StatsColor.instance.ColorChangeOne();
+                StatsColor4.instance.ColorChangeOne();
             }
             medecine1 = false;
         }
@@ -323,7 +323,7 @@ public class Stats4 : MonoBehaviour
             if (disease2 == true)
             {
                 diseaseText.text = ("Doença" + " 2 ");
-                StatsColor.instance.ColorChangeTwo();
+                StatsColor4.instance.ColorChangeTwo();
             }
         }
         else if (hygineStats > 0 && medecine2 == true)
@@ -335,7 +335,7 @@ public class Stats4 : MonoBehaviour
             if (disease2 == false)
             {
                 diseaseText.text = ("Saudável");
-                StatsColor.instance.ColorChangeOne();
+                StatsColor4.instance.ColorChangeOne();
             }
             medecine2 = false;
         }
@@ -348,7 +348,7 @@ public class Stats4 : MonoBehaviour
             if (disease3 == true)
             {
                 diseaseText.text = ("Doença" + " 3 ");
-                StatsColor.instance.ColorChangeTwo();
+                StatsColor4.instance.ColorChangeTwo();
             }
         }
         else if (count == 0 && medecine3 == true)
@@ -359,7 +359,7 @@ public class Stats4 : MonoBehaviour
             if (disease3 == false)
             {
                 diseaseText.text = ("Saudável");
-                StatsColor.instance.ColorChangeOne();
+                StatsColor4.instance.ColorChangeOne();
             }
             medecine3 = false;
         }
