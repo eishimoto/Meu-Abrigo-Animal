@@ -23,6 +23,16 @@ public class CleaningTool : MonoBehaviour
 
     public bool soap, shampoo;
 
+    //sounds
+    [Header("Tool SFX")] //E
+    public AudioClip Soap_Shampoo_Sound;
+
+    AudioSource ToolSFXSource; //E. Adicionei um AudioSource aos assets de ferramentas
+
+    //sound enabler
+    [Header("Enable SFX")] //E
+    public bool SFX1, SFX2, SFX3, SFX4;
+
     public static bool firtstToolUsed;
     public static bool soapOn = false, shampooOn = false;
 
@@ -42,6 +52,8 @@ public class CleaningTool : MonoBehaviour
     private void Start()
     {
         myCollider = GetComponent<Collider2D>();
+        ToolSFXSource = GetComponent<AudioSource>(); //E
+        SFX1 = true; SFX2 = true; SFX3 = true; SFX4 = true; //E
         _startPosition = transform.position;
         maincamera = Camera.main;
         randomForm = Random.Range(0, 3);
@@ -123,55 +135,156 @@ public class CleaningTool : MonoBehaviour
         areaToDraw[randomForm].SetActive(false);
         transform.position = _startPosition;
         SetAllToFalse();
+        ResetSFXBools(); //E
         randomForm = Random.Range(0, 3);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
+
         if (collision.CompareTag("Square1"))
         {
             square1 = true;
+
+            if (soapOn || shampooOn) //E
+            {
+                if (SFX1 && square1)
+                {
+                    ToolSFXSource.PlayOneShot(Soap_Shampoo_Sound);
+                    SFX1 = false;
+                }
+            }
         }
         if (collision.CompareTag("Square2"))
         {
             square2 = true;
+
+            if (soapOn || shampooOn) //E
+            {
+                if (SFX2 && square2)
+                {
+                    ToolSFXSource.PlayOneShot(Soap_Shampoo_Sound);
+                    SFX2 = false;
+                }
+            }
         }
         if (collision.CompareTag("Square3"))
         {
             square3 = true;
+
+            if (soapOn || shampooOn) //E
+            {
+                if (SFX3 && square3)
+                {
+                    ToolSFXSource.PlayOneShot(Soap_Shampoo_Sound);
+                    SFX3 = false;
+                }
+            }
         }
         if (collision.CompareTag("Square4"))
         {
             square4 = true;
+
+            if (soapOn || shampooOn) //E
+            {
+                if (SFX4 && square4)
+                {
+                    ToolSFXSource.PlayOneShot(Soap_Shampoo_Sound);
+                    SFX4 = false;
+                }
+            }
         }
 
-        if(collision.CompareTag("Circle1"))
+        if (collision.CompareTag("Circle1"))
         {
             circle1 = true;
+
+            if (soapOn || shampooOn) //E
+            {
+                if (SFX1 && circle1)
+                {
+                    ToolSFXSource.PlayOneShot(Soap_Shampoo_Sound);
+                    SFX1 = false;
+                }
+            }
         }
         if (collision.CompareTag("Circle2"))
         {
             circle2 = true;
+
+            if (soapOn || shampooOn) //E
+            {
+                if (SFX2 && circle2)
+                {
+                    ToolSFXSource.PlayOneShot(Soap_Shampoo_Sound);
+                    SFX2 = false;
+                }
+            }
         }
         if (collision.CompareTag("Circle3"))
         {
             circle3 = true;
+
+            if (soapOn || shampooOn) //E
+            {
+                if (SFX3 && circle3)
+                {
+                    ToolSFXSource.PlayOneShot(Soap_Shampoo_Sound);
+                    SFX3 = false;
+                }
+            }
         }
         if (collision.CompareTag("Circle4"))
         {
             circle4 = true;
+
+            if (soapOn || shampooOn) //E
+            {
+                if (SFX1 && circle4)
+                {
+                    ToolSFXSource.PlayOneShot(Soap_Shampoo_Sound);
+                    SFX4 = false;
+                }
+            }
         }
 
-        if(collision.CompareTag("Triangle1"))
+        if (collision.CompareTag("Triangle1"))
         {
             triangle1 = true;
+
+            if (soapOn || shampooOn) //E
+            {
+                if (SFX1 && triangle1)
+                {
+                    ToolSFXSource.PlayOneShot(Soap_Shampoo_Sound);
+                    SFX1 = false;
+                }
+            }
         }
         if (collision.CompareTag("Triangle2"))
         {
             triangle2 = true;
+
+            if (soapOn || shampooOn) //E
+            {
+                if (SFX2 && triangle3)
+                {
+                    ToolSFXSource.PlayOneShot(Soap_Shampoo_Sound);
+                    SFX2 = false;
+                }
+            }
         }
         if (collision.CompareTag("Triangle3"))
         {
             triangle3 = true;
+
+            if (soapOn || shampooOn) //E
+            {
+                if (SFX3 && triangle3)
+                {
+                    ToolSFXSource.PlayOneShot(Soap_Shampoo_Sound);
+                    SFX3 = false;
+                }
+            }
         }
     }
 
@@ -211,6 +324,14 @@ public class CleaningTool : MonoBehaviour
         triangle1 = false;
         triangle2 = false;
         triangle3 = false;
+    }
+
+    private void ResetSFXBools() //E
+    {
+        SFX1 = true;
+        SFX2 = true;
+        SFX3 = true;
+        SFX4 = true;
     }
 
     private void ActivateFromsPoints()

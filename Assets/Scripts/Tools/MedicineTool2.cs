@@ -19,6 +19,12 @@ public class MedicineTool2 : MonoBehaviour
     [SerializeField] private TextMeshProUGUI textDisplay;
     [SerializeField] private int quantity;
 
+    //sounds
+    [Header("Tool SFX")] //E
+    public AudioClip GreenPill_Sound;
+
+    AudioSource ToolSFXSource; //E
+
     //bool
     public static bool cantMove;
 
@@ -36,6 +42,8 @@ public class MedicineTool2 : MonoBehaviour
         myCollider = GetComponent<Collider2D>();
         _startPosition = transform.position;
         maincamera = Camera.main;
+
+        ToolSFXSource = GetComponent<AudioSource>(); //E
 
         _spriteRender = GetComponent<SpriteRenderer>();
         cantMove = false;
@@ -135,6 +143,9 @@ public class MedicineTool2 : MonoBehaviour
     public void Subtract()
     {
         quantity--;
+
+        ToolSFXSource.PlayOneShot(GreenPill_Sound); //E
+
         if (quantity == 0)
         {
             cantMove = true;

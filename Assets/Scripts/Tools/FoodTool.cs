@@ -19,6 +19,12 @@ public class FoodTool : MonoBehaviour
     [SerializeField] private TextMeshProUGUI textDisplay;
     [SerializeField] private int quantity;
 
+    //sounds
+    [Header("Tool SFX")] //E
+    public AudioClip Snack_Sound;
+
+    AudioSource ToolSFXSource; //E
+
     //bool
     public static bool cantMove;
 
@@ -38,6 +44,8 @@ public class FoodTool : MonoBehaviour
         myCollider = GetComponent<Collider2D>();
         //_startPosition = transform.position;
         maincamera = Camera.main;
+
+        ToolSFXSource = GetComponent<AudioSource>(); //E
 
         _spriteRender = GetComponent<SpriteRenderer>();
         cantMove = false;
@@ -137,6 +145,9 @@ public class FoodTool : MonoBehaviour
     public void Subtract()
     {
         quantity--;
+
+        ToolSFXSource.PlayOneShot(Snack_Sound, 2); //E
+
         if (quantity == 0)
         {
             cantMove = true;

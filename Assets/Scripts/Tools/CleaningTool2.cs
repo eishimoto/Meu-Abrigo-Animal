@@ -23,6 +23,18 @@ public class CleaningTool2 : MonoBehaviour
 
     public bool towl, dryer;
 
+    //sounds
+    [Header("Tool SFX")] //E
+    public AudioClip Towel_Sound;
+    public AudioClip Dryer_Sound;
+
+    AudioSource ToolSFXSource; //E. Adicionei um AudioSource aos assets de ferramentas
+
+    //sound enabler
+    [Header("Enable SFX")] //E
+    public bool SFX1, SFX2, SFX3, SFX4;
+    public bool Enable_Dryer_Sound;
+
     public static bool towlOn = false, dryerOn = false;
 
     public static CleaningTool2 instance;
@@ -41,11 +53,14 @@ public class CleaningTool2 : MonoBehaviour
     private void Start()
     {
         myCollider = GetComponent<Collider2D>();
+        ToolSFXSource = GetComponent<AudioSource>(); //E
         _startPosition = transform.position;
         maincamera = Camera.main;
         randomForm = Random.Range(0, 3);
+        SFX1 = true; SFX2 = true; SFX3 = true; SFX4 = true; //E
+        Enable_Dryer_Sound = true; //E
 
-        if(towl)
+        if (towl)
         {
             towlOn = true;
         }
@@ -125,55 +140,224 @@ public class CleaningTool2 : MonoBehaviour
         areaToDraw[randomForm].SetActive(false);
         transform.position = _startPosition;
         SetAllToFalse();
+        ResetSFXBools(); //E
+        ToolSFXSource.Stop(); //E
         randomForm = Random.Range(0, 3);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
+
         if (collision.CompareTag("Square1"))
         {
             square1 = true;
+
+            if (towlOn) //E
+            {
+                if (SFX1 && square1)
+                {
+                    ToolSFXSource.PlayOneShot(Towel_Sound, 15);
+                    SFX1 = false;
+                }
+            }
+
+            if (dryerOn && Enable_Dryer_Sound) //E
+            {
+                ToolSFXSource.Play();
+                Enable_Dryer_Sound = false;
+            }
+
         }
         if (collision.CompareTag("Square2"))
         {
             square2 = true;
+
+            if (towlOn) //E
+            {
+                if (SFX2 && square2)
+                {
+                    ToolSFXSource.PlayOneShot(Towel_Sound, 15);
+                    SFX2 = false;
+                }
+            }
+
+            if (dryerOn && Enable_Dryer_Sound) //E
+            {
+                ToolSFXSource.Play();
+                Enable_Dryer_Sound = false;
+            }
         }
         if (collision.CompareTag("Square3"))
         {
             square3 = true;
+
+            if (towlOn) //E
+            {
+                if (SFX3 && square3)
+                {
+                    ToolSFXSource.PlayOneShot(Towel_Sound, 15);
+                    SFX3 = false;
+                }
+            }
+
+            if (dryerOn && Enable_Dryer_Sound) //E
+            {
+                ToolSFXSource.Play();
+                Enable_Dryer_Sound = false;
+            }
         }
         if (collision.CompareTag("Square4"))
         {
             square4 = true;
+
+            if (towlOn) //E
+            {
+                if (SFX4 && square4)
+                {
+                    ToolSFXSource.PlayOneShot(Towel_Sound, 15);
+                    SFX4 = false;
+                }
+            }
+
+            if (dryerOn && Enable_Dryer_Sound) //E
+            {
+                ToolSFXSource.Play();
+                Enable_Dryer_Sound = false;
+            }
         }
 
         if (collision.CompareTag("Circle1"))
         {
             circle1 = true;
+
+            if (towlOn) //E
+            {
+                if (SFX1 && circle1)
+                {
+                    ToolSFXSource.PlayOneShot(Towel_Sound, 15);
+                    SFX1 = false;
+                }
+            }
+
+            if (dryerOn && Enable_Dryer_Sound) //E
+            {
+                ToolSFXSource.Play();
+                Enable_Dryer_Sound = false;
+            }
         }
         if (collision.CompareTag("Circle2"))
         {
             circle2 = true;
+
+            if (towlOn) //E
+            {
+                if (SFX2 && circle2)
+                {
+                    ToolSFXSource.PlayOneShot(Towel_Sound, 15);
+                    SFX2 = false;
+                }
+            }
+
+            if (dryerOn && Enable_Dryer_Sound) //E
+            {
+                ToolSFXSource.Play();
+                Enable_Dryer_Sound = false;
+            }
         }
         if (collision.CompareTag("Circle3"))
         {
             circle3 = true;
+
+            if (towlOn) //E
+            {
+                if (SFX3 && circle3)
+                {
+                    ToolSFXSource.PlayOneShot(Towel_Sound, 15);
+                    SFX3 = false;
+                }
+            }
+
+            if (dryerOn && Enable_Dryer_Sound) //E
+            {
+                ToolSFXSource.Play();
+                Enable_Dryer_Sound = false;
+            }
         }
         if (collision.CompareTag("Circle4"))
         {
             circle4 = true;
+
+            if (towlOn) //E
+            {
+                if (SFX4 && circle4)
+                {
+                    ToolSFXSource.PlayOneShot(Towel_Sound, 15);
+                    SFX4 = false;
+                }
+            }
+
+            if (dryerOn && Enable_Dryer_Sound) //E
+            {
+                ToolSFXSource.Play();
+                Enable_Dryer_Sound = false;
+            }
         }
 
         if (collision.CompareTag("Triangle1"))
         {
             triangle1 = true;
+
+            if (towlOn) //E
+            {
+                if (SFX1 && triangle1)
+                {
+                    ToolSFXSource.PlayOneShot(Towel_Sound, 15);
+                    SFX1 = false;
+                }
+            }
+
+            if (dryerOn && Enable_Dryer_Sound) //E
+            {
+                ToolSFXSource.Play();
+                Enable_Dryer_Sound = false;
+            }
         }
         if (collision.CompareTag("Triangle2"))
         {
             triangle2 = true;
+
+            if (towlOn) //E
+            {
+                if (SFX2 && triangle2)
+                {
+                    ToolSFXSource.PlayOneShot(Towel_Sound, 15);
+                    SFX2 = false;
+                }
+            }
+
+            if (dryerOn && Enable_Dryer_Sound) //E
+            {
+                ToolSFXSource.Play();
+                Enable_Dryer_Sound = false;
+            }
         }
         if (collision.CompareTag("Triangle3"))
         {
             triangle3 = true;
+
+            if (towlOn) //E
+            {
+                if (SFX3 && triangle3)
+                {
+                    ToolSFXSource.PlayOneShot(Towel_Sound, 15);
+                    SFX3 = false;
+                }
+            }
+
+            if (dryerOn && Enable_Dryer_Sound) //E
+            {
+                ToolSFXSource.Play();
+                Enable_Dryer_Sound = false;
+            }
         }
     }
 
@@ -210,6 +394,15 @@ public class CleaningTool2 : MonoBehaviour
         triangle1 = false;
         triangle2 = false;
         triangle3 = false;
+    }
+
+    private void ResetSFXBools() //E
+    {
+        SFX1 = true;
+        SFX2 = true;
+        SFX3 = true;
+        SFX4 = true;
+        Enable_Dryer_Sound = true;
     }
 
     private void ActivateFromsPoints()
