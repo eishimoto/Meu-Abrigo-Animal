@@ -15,9 +15,12 @@ public class CutTool : MonoBehaviour
     public static bool scissor;
     public static bool trimmer;
 
+    AudioSource ToolSFXSource; //E
+
     private void Start()
     {
         myCollider = GetComponent<Collider2D>();
+        ToolSFXSource = GetComponent<AudioSource>();
         _startPosition = transform.position;
         maincamera = Camera.main;
         if (scissorOn)
@@ -87,5 +90,31 @@ public class CutTool : MonoBehaviour
     private void OnMouseUp()
     {
         transform.position = _startPosition;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.CompareTag("Fur")) //E
+        {
+            if (scissorOn)
+                ToolSFXSource.Play();
+
+            if (trimmerOn)
+                ToolSFXSource.Play();
+
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Fur")) //E
+        {
+            if (scissorOn)
+                ToolSFXSource.Stop();
+
+            if (trimmerOn)
+                ToolSFXSource.Stop();
+
+        }
     }
 }

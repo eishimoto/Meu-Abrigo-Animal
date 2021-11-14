@@ -29,6 +29,7 @@ TagManager:
   - Wall
   - Food2
   - Food3
+  - Fur
   layers:
   - Default
   - TransparentFX
