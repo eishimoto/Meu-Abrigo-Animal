@@ -13,36 +13,71 @@ public class TakePhoto : MonoBehaviour
     [SerializeField] private GameObject whitchPet;
     [SerializeField] private Transform parent;
 
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    public static int catValue1, catValue2, dogValue1, dogValue2;
+    public static TakePhoto instance;
+    private void OnEnable()
     {
-        
+        if(instance = null)
+        {
+            instance = this;
+        }
     }
-
+    private void Update()
+    {
+        RestPetValue();
+    }
     public void CatPostPhoto()
     {
-        GameObject cat = Instantiate(catPhotoPrefab[0], new Vector3(0, 0, 0), Quaternion.identity);
-        cat.transform.SetParent(parent, false);
+        if (catValue1 <= 2)
+        {
+            GameObject cat = Instantiate(catPhotoPrefab[0], new Vector3(0, 0, 0), Quaternion.identity);
+            cat.transform.SetParent(parent, false);
+            catValue1++;
+            Money.instance.AddMoneyPhoto(10);
+        }
     }
     public void Cat2PostPhoto()
     {
-        GameObject cat2 = Instantiate(cat2PhotoPrefab[0], new Vector3(0, 0, 0), Quaternion.identity);
-        cat2.transform.SetParent(parent, false);
+        if (catValue2 <= 2)
+        {
+            GameObject cat2 = Instantiate(cat2PhotoPrefab[0], new Vector3(0, 0, 0), Quaternion.identity);
+            cat2.transform.SetParent(parent, false);
+            catValue2++;
+            Money.instance.AddMoneyPhoto(10);
+        }
     }
     public void DogPostPhoto()
     {
-        GameObject dog = Instantiate(dogPhotoPrefab[0], new Vector3(0, 0, 0), Quaternion.identity);
-        dog.transform.SetParent(parent, false);
+        if (dogValue1 <= 2)
+        {
+            GameObject dog = Instantiate(dogPhotoPrefab[0], new Vector3(0, 0, 0), Quaternion.identity);
+            dog.transform.SetParent(parent, false);
+            dogValue1++;
+            Money.instance.AddMoneyPhoto(10);
+        }
     }
     public void Dog2PostPhoto()
     {
-        GameObject dog2 = Instantiate(dog2PhotoPrefab[0], new Vector3(0, 0, 0), Quaternion.identity);
-        dog2.transform.SetParent(parent, false);
+        if(dogValue2 <= 2)
+        {
+            GameObject dog2 = Instantiate(dog2PhotoPrefab[0], new Vector3(0, 0, 0), Quaternion.identity);
+            dog2.transform.SetParent(parent, false);
+            dogValue2++;
+            Money.instance.AddMoneyPhoto(10);
+        }
+    }
+
+    public void RestPetValue()
+    {
+        if(Timer.resetPhotoValue)
+        {
+            catValue1 = 0;
+            catValue2 = 0;
+            dogValue1 = 0;
+            dogValue2 = 0;
+            Timer.resetPhotoValue = false;
+        }
     }
 
     public void WhitchPetToTakePhoto()

@@ -1934,7 +1934,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 210
+  m_SortingOrder: 220
   m_TargetDisplay: 0
 --- !u!224 &106359148
 RectTransform:
@@ -2362,7 +2362,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 210
+  m_SortingOrder: 220
   m_TargetDisplay: 0
 --- !u!224 &121975273
 RectTransform:
@@ -6798,7 +6798,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 210
+  m_SortingOrder: 230
   m_TargetDisplay: 0
 --- !u!224 &407264707
 RectTransform:
@@ -12867,7 +12867,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 210
+  m_SortingOrder: 220
   m_TargetDisplay: 0
 --- !u!224 &708776056
 RectTransform:
@@ -17889,7 +17889,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 210
+  m_SortingOrder: 220
   m_TargetDisplay: 0
 --- !u!224 &1037284647
 RectTransform:
@@ -26990,7 +26990,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 210
+  m_SortingOrder: 220
   m_TargetDisplay: 0
 --- !u!224 &1606669480
 RectTransform:

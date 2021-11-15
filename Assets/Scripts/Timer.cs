@@ -13,7 +13,7 @@ public class Timer : MonoBehaviour
     [SerializeField] private List<Transform> dayPos;
 
     public static int day;
-
+    public static bool resetPhotoValue = false;
     private void start()
     {
         day = 0;
@@ -39,7 +39,8 @@ public class Timer : MonoBehaviour
         {
             _timeValue = _timeValueReset;
             day++;
-
+            resetPhotoValue = true;
+            Money.instance.AddMoneyPhoto(100);
         }
 
         float hour = Mathf.FloorToInt(timeToDisplay / 60);
@@ -83,8 +84,9 @@ public class Timer : MonoBehaviour
     {
         day++;
         _timeValue = _timeValueReset;
-
-        if(day > 6)
+        resetPhotoValue = true;
+        Money.instance.AddMoneyPhoto(100);
+        if (day > 6)
         {
             day = 0;
         }

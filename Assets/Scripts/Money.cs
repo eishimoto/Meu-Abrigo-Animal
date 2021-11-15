@@ -47,6 +47,13 @@ public class Money : MonoBehaviour
         textDisplay.text = money.ToString() + " " + "Reais";
     }
 
+    public void AddMoneyPhoto(int valueToAddInMoney)
+    {
+        textDisplay.text = null;
+        money += valueToAddInMoney;
+        textDisplay.text = money.ToString() + " " + "Reais";
+    }
+
     public void BuyFoodOne()
     {
         if(money > food1)
