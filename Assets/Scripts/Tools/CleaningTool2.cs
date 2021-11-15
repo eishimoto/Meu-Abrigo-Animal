@@ -45,11 +45,6 @@ public class CleaningTool2 : MonoBehaviour
             instance = this;
         }
     }
-    private void OnDisable()
-    {
-        towl = false;
-        towlOn = false;
-    }
     private void Start()
     {
         myCollider = GetComponent<Collider2D>();
@@ -67,6 +62,7 @@ public class CleaningTool2 : MonoBehaviour
         if(dryer)
         {
             dryerOn = true;
+            towlOn = false;
         }
     }
 

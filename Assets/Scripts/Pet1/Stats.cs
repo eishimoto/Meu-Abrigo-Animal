@@ -186,25 +186,26 @@ public class Stats : MonoBehaviour
                 maxHygine += 5;
             }
         }
-
         if (collision.CompareTag("PurplePill"))
         {
             MixPills.instance.PurplePill();
+            MedicineTool.instance.PlayMedecineSound();
             medecine3 = true;
         }
 
         if(collision.CompareTag("YellowPill"))
         {
             MixPills.instance.YellowPill();
+            MedicineTool.instance.PlayMedecineSound();
             medecine1 = true;
         }
 
         if (collision.CompareTag("CyanPill"))
         {
             MixPills.instance.CyanPill();
+            MedicineTool.instance.PlayMedecineSound();
             medecine2 = true;
         }
-
     }
 
     public void AddAffection(int value)
@@ -233,7 +234,7 @@ public class Stats : MonoBehaviour
             {
                 valueToadd = 30;
             }
-            if (CleaningTool.shampooOn && CleaningTool2.dryerOn)
+            if (CleaningTool.shampooOn && CleaningTool2.dryerOn && !CleaningTool.soapOn && !CleaningTool2.towlOn)
             {
                 valueToadd = 50;
             }

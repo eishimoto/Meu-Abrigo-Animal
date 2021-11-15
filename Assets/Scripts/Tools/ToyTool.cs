@@ -8,10 +8,14 @@ public class ToyTool : MonoBehaviour
     private Collider2D myCollider;
     private Vector2 _startPosition;
     private Rigidbody2D myRigidbody;
-
+    //whichBall
     public bool tenisBall;
     public bool beachBall;
     int value;
+    //Sound
+    private AudioSource audioSource;
+    [SerializeField] private AudioClip ball;
+
 
     //movement
     private Vector3 lastVelocity;
@@ -25,6 +29,7 @@ public class ToyTool : MonoBehaviour
         myRigidbody = GetComponent<Rigidbody2D>();
         _startPosition = transform.position;
         maincamera = Camera.main;
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -77,6 +82,10 @@ public class ToyTool : MonoBehaviour
         var direction = Vector3.Reflect(lastVelocity.normalized, collision.contacts[0].normal);
 
         myRigidbody.velocity = direction * Mathf.Max(speed, 0f);
+        if (collision.gameObject.CompareTag("Wall"))
+        {
+            audioSource.PlayOneShot(ball);
+        }
     }
     private void MoveBall()
     {

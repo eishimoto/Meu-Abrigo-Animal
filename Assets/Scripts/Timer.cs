@@ -47,12 +47,11 @@ public class Timer : MonoBehaviour
 
         timerText.text = string.Format("{0:00}:{1:00}", hour, minute);
     }
-
     private void DayChange()
     {
         if (day == 0)
         {
-            Circle.transform.SetParent(dayPos[1],false);
+            Circle.transform.SetParent(dayPos[1], false);
         }
         if (day == 1)
         {
@@ -76,7 +75,7 @@ public class Timer : MonoBehaviour
         }
         if (day == 6)
         {
-            Circle.transform.SetParent(dayPos[0],false);
+            Circle.transform.SetParent(dayPos[0], false);
         }
     }
 

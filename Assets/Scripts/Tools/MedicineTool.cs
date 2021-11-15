@@ -160,4 +160,9 @@ public class MedicineTool : MonoBehaviour
         }
         ChangeSprite();
     }
+
+    public void PlayMedecineSound()
+    {
+        ToolSFXSource.PlayOneShot(RedPill_N_MixPills_Sound);
+    }
 }

@@ -44,11 +44,6 @@ public class CleaningTool : MonoBehaviour
             instance = this;
         }
     }
-    private void OnDisable()
-    {
-        soap = false;
-        soapOn = false;
-    }
     private void Start()
     {
         myCollider = GetComponent<Collider2D>();
@@ -65,6 +60,7 @@ public class CleaningTool : MonoBehaviour
         if (shampoo)
         {
             shampooOn = true;
+            soapOn = false;
         }
     }
 

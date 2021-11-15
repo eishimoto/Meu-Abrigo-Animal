@@ -13,12 +13,12 @@ public class UICanvas : MonoBehaviour
     [Header("Panels")]
     [SerializeField] private GameObject petsSelection;
     [SerializeField] private GameObject menu;
-    [SerializeField] private GameObject adoption;
     [SerializeField] private GameObject store;
     [SerializeField] private GameObject book;
     [SerializeField] private GameObject mixPills;
     [SerializeField] private GameObject socialInsta;
     [SerializeField] private GameObject calendar;
+    [SerializeField] private GameObject ConfirmExit;
 
     //Vectors to move objects out of view
     [Header("Postition change")]
@@ -121,6 +121,15 @@ public class UICanvas : MonoBehaviour
     {
         Application.Quit();
     }
+    public void ConfirmExitPanel()
+    {
+        ConfirmExit.SetActive(true);
+    }
+    public void CloseConfirmExitPanel()
+    {
+        ConfirmExit.SetActive(false);
+    }
+
 
     public void Social()
     {

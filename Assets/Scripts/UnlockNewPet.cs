@@ -7,7 +7,7 @@ public class UnlockNewPet : MonoBehaviour
     [SerializeField] private List<GameObject> catOne;
     [SerializeField] private List<GameObject> catTwo;
     [SerializeField] private List<GameObject> dogTwo;
-    [SerializeField] private GameObject newPet;
+    [SerializeField] private List<GameObject> newPet;
 
     private void Update()
     {
@@ -22,22 +22,38 @@ public class UnlockNewPet : MonoBehaviour
             {
                 catOne[i].SetActive(true);
             }
+            newPet[0].SetActive(true);
         }
 
         if (Timer.day == 2)
         {
             for (int i = 0; i < catOne.Count; i++)
             {
-                catTwo[i].SetActive(true);
+                dogTwo[i].SetActive(true);
             }
+            newPet[2].SetActive(true);
         }
 
         if (Timer.day == 3)
         {
             for (int i = 0; i < catOne.Count; i++)
             {
-                dogTwo[i].SetActive(true);
+                catTwo[i].SetActive(true);
             }
+            newPet[1].SetActive(true);
         }
+    }
+
+    public void DestoryNewPet()
+    {
+        Destroy(newPet[0]);
+    }
+    public void DestoryNewPet2()
+    {
+        Destroy(newPet[1]);
+    }
+    public void DestoryNewPet3()
+    {
+        Destroy(newPet[2]);
     }
 }
