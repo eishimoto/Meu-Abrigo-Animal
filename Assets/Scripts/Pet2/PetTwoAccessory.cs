@@ -2,16 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PetOneAccessory : MonoBehaviour
+public class PetTwoAccessory : MonoBehaviour
 {
     [SerializeField] private List<GameObject> accessories;
     private void Update()
     {
-        
+
     }
     public void Ballon()
     {
-        if (Adoption.DogOnScene)
+        if (Adoption.Dog2OnScene)
         {
             if (accessories[0].activeInHierarchy == false)
             {
@@ -25,7 +25,7 @@ public class PetOneAccessory : MonoBehaviour
     }
     public void Tie()
     {
-        if (Adoption.DogOnScene)
+        if (Adoption.Dog2OnScene)
         {
             if (accessories[1].activeInHierarchy == false)
             {
@@ -47,7 +47,7 @@ public class PetOneAccessory : MonoBehaviour
     }
     public void TieYellow()
     {
-        if (Adoption.DogOnScene)
+        if (Adoption.Dog2OnScene)
         {
             if (accessories[2].activeInHierarchy == false)
             {
@@ -69,7 +69,7 @@ public class PetOneAccessory : MonoBehaviour
     }
     public void TieBlue()
     {
-        if (Adoption.DogOnScene)
+        if (Adoption.Dog2OnScene)
         {
             if (accessories[3].activeInHierarchy == false)
             {
@@ -91,7 +91,7 @@ public class PetOneAccessory : MonoBehaviour
     }
     public void TieRed()
     {
-        if (Adoption.DogOnScene)
+        if (Adoption.Dog2OnScene)
         {
             if (accessories[4].activeInHierarchy == false)
             {
@@ -113,7 +113,7 @@ public class PetOneAccessory : MonoBehaviour
     }
     public void TiePurple()
     {
-        if (Adoption.DogOnScene)
+        if (Adoption.Dog2OnScene)
         {
             if (accessories[5].activeInHierarchy == false)
             {
@@ -135,7 +135,7 @@ public class PetOneAccessory : MonoBehaviour
     }
     public void Hat()
     {
-        if (Adoption.DogOnScene)
+        if (Adoption.Dog2OnScene)
         {
             if (accessories[6].activeInHierarchy == false)
             {
@@ -149,7 +149,7 @@ public class PetOneAccessory : MonoBehaviour
     }
     public void Monacle()
     {
-        if (Adoption.DogOnScene)
+        if (Adoption.Dog2OnScene)
         {
             if (accessories[7].activeInHierarchy == false)
             {
@@ -163,7 +163,7 @@ public class PetOneAccessory : MonoBehaviour
     }
     public void Teeth()
     {
-        if (Adoption.DogOnScene)
+        if (Adoption.Dog2OnScene)
         {
             if (accessories[8].activeInHierarchy == false)
             {
@@ -177,7 +177,7 @@ public class PetOneAccessory : MonoBehaviour
     }
     public void EyePatch()
     {
-        if (Adoption.DogOnScene)
+        if (Adoption.Dog2OnScene)
         {
             if (accessories[9].activeInHierarchy == false)
             {
@@ -191,7 +191,7 @@ public class PetOneAccessory : MonoBehaviour
     }
     public void Collar()
     {
-        if (Adoption.DogOnScene)
+        if (Adoption.Dog2OnScene)
         {
             if (accessories[10].activeInHierarchy == false)
             {
@@ -205,7 +205,7 @@ public class PetOneAccessory : MonoBehaviour
     }
     public void Walker()
     {
-        if (Adoption.DogOnScene)
+        if (Adoption.Dog2OnScene)
         {
             if (accessories[11].activeInHierarchy == false)
             {
