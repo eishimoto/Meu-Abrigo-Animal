@@ -19,6 +19,7 @@ public class UICanvas : MonoBehaviour
     [SerializeField] private GameObject socialInsta;
     [SerializeField] private GameObject calendar;
     [SerializeField] private GameObject ConfirmExit;
+    [SerializeField] private GameObject adoptionPanel;
 
     //Vectors to move objects out of view
     [Header("Postition change")]
@@ -198,6 +199,15 @@ public class UICanvas : MonoBehaviour
     {
         calendar.SetActive(false);
         canUseTool = true;
+    }
+
+    public void AdoptionPanel()
+    {
+        adoptionPanel.SetActive(true);
+    }
+    public void CloseAdoptionPanel()
+    {
+        adoptionPanel.SetActive(false);
     }
 
 
