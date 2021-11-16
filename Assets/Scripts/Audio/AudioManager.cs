@@ -30,7 +30,8 @@ public class AudioManager : MonoBehaviour
 
     public void ChangeMasterVolume(float value)
     {
-        AudioListener.volume = value;
+        _musicSource.volume = value; // music
+        //AudioListener.volume = value; //all sound
     }
 
     public void ToggleEffects()
