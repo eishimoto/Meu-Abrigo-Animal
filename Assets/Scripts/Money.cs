@@ -18,6 +18,7 @@ public class Money : MonoBehaviour
     [SerializeField] private List<GameObject> balls;
     [SerializeField] private List<GameObject> cutTool;
     [SerializeField] private List<GameObject> cleaningTools;
+    [SerializeField] private List<GameObject> accessorysToAdoption;
 
     //bool
     private bool foodBowl = false;

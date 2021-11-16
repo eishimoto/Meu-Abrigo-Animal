@@ -11,6 +11,8 @@ public class Timer : MonoBehaviour
     [SerializeField] private TextMeshProUGUI timerText;
     [SerializeField] private GameObject Circle;
     [SerializeField] private List<Transform> dayPos;
+    [SerializeField] private GameObject loadForDayChange;
+    [SerializeField] private GameObject AdopitionCanvas;
 
     public static int day;
     public static bool resetPhotoValue = false;
@@ -40,6 +42,7 @@ public class Timer : MonoBehaviour
             _timeValue = _timeValueReset;
             day++;
             resetPhotoValue = true;
+            loadForDayChange.SetActive(true);
             Money.instance.AddMoneyPhoto(100);
         }
 
@@ -86,6 +89,7 @@ public class Timer : MonoBehaviour
         _timeValue = _timeValueReset;
         resetPhotoValue = true;
         Money.instance.AddMoneyPhoto(100);
+        loadForDayChange.SetActive(true);
         if (day > 6)
         {
             day = 0;
