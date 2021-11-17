@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class Tutorial : MonoBehaviour
 {
@@ -11,10 +12,13 @@ public class Tutorial : MonoBehaviour
     [SerializeField] private float typingSpeed;
     [SerializeField] private GameObject continueButton;
     [SerializeField] private GameObject grup;
+    [SerializeField] private Image panelImage;
+    [SerializeField] private List<GameObject> particles;
 
     private void OnEnable()
     {
         index = 0;
+        panelImage.enabled = true;
         StartCoroutine(Type());
     }
     private void Start()
@@ -52,6 +56,8 @@ public class Tutorial : MonoBehaviour
         {
             textBox.text = null;
             grup.SetActive(false);
+            panelImage.enabled = false;
+            particles[0].SetActive(true);
         }
     }
 }
