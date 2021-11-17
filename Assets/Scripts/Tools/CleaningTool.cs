@@ -21,6 +21,9 @@ public class CleaningTool : MonoBehaviour
     [SerializeField] private List<GameObject> CirclesPoitns;
     [SerializeField] private List<GameObject> SquarePoins;
 
+    //particles
+    [SerializeField] List<GameObject> particles;
+
     public bool soap, shampoo;
 
     //sounds
@@ -31,7 +34,7 @@ public class CleaningTool : MonoBehaviour
 
     //sound enabler
     [Header("Enable SFX")] //E
-    public bool SFX1, SFX2, SFX3, SFX4;
+    private bool SFX1, SFX2, SFX3, SFX4;
 
     public static bool firtstToolUsed;
     public static bool soapOn = false, shampooOn = false;
@@ -72,6 +75,7 @@ public class CleaningTool : MonoBehaviour
         }
         CheckCollisions();
         ActivateFromsPoints();
+        ActiveBubbleParticles();
     }
 
     private void MoveTool()
@@ -284,6 +288,23 @@ public class CleaningTool : MonoBehaviour
         }
     }
 
+    private void ActiveBubbleParticles()
+    {
+        if(firtstToolUsed)
+        {
+            if(UICanvas.on)
+            {
+                particles[0].SetActive(true);
+            }
+        }
+        else if(!firtstToolUsed)
+        {
+            if (UICanvas.on)
+            {
+                particles[0].SetActive(false);
+            }
+        }
+    }
     private void CheckCollisions()
     {
         if(square1 == true && square2 == true && square3 == true && square4 == true)

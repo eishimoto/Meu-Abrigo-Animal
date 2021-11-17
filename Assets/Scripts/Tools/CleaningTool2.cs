@@ -32,7 +32,7 @@ public class CleaningTool2 : MonoBehaviour
 
     //sound enabler
     [Header("Enable SFX")] //E
-    public bool SFX1, SFX2, SFX3, SFX4;
+    private bool SFX1, SFX2, SFX3, SFX4;
     public bool Enable_Dryer_Sound;
 
     public static bool towlOn = false, dryerOn = false;

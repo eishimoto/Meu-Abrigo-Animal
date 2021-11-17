@@ -244,7 +244,6 @@ public class Stats : MonoBehaviour
             {
                 hygineStats = maxHygine;
             }
-
             CleaningTool2.squareClean = false;
             CleaningTool2.triangleClean = false;
             CleaningTool2.circleClean = false;
