@@ -47877,8 +47877,8 @@ MonoBehaviour:
   - {fileID: 4729840777393883189}
   - {fileID: 6790121755710559499}
   m_Bounds:
-    m_Center: {x: -9.297062, y: -6.253172, z: 0}
-    m_Extent: {x: 0.22967768, y: 0.21665287, z: 0}
+    m_Center: {x: -9.252796, y: -6.26546, z: 0}
+    m_Extent: {x: 0.23239756, y: 0.22286177, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!4 &793349091459129023
@@ -48580,6 +48580,7 @@ GameObject:
   - component: {fileID: 6862711954401039727}
   - component: {fileID: 1788414032308109659}
   - component: {fileID: 1788414032308109658}
+  - component: {fileID: 1788414032308109660}
   m_Layer: 0
   m_Name: GatoPreto_definitivo 1
   m_TagString: Untagged
@@ -48641,6 +48642,18 @@ MonoBehaviour:
   - {fileID: 21300000, guid: fadf0e1b255d7b44f80451bb1436c48e, type: 3}
   - {fileID: 21300000, guid: 54f754b8c5389d1409ee7c17440174e6, type: 3}
   - {fileID: 21300000, guid: bfbaa17bd0b8d9144b8a3191cbb16e0f, type: 3}
+--- !u!114 &1788414032308109660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1788414032308109657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8b3d3ee40be83c45992317f6744a876, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &1807168102422173387
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -48999,7 +49012,7 @@ MonoBehaviour:
   - {fileID: 4729840777393883189}
   - {fileID: 6790121755710559499}
   m_Bounds:
-    m_Center: {x: -9.424486, y: -6.2175493, z: 0}
+    m_Center: {x: -9.434958, y: -6.1087418, z: 0}
     m_Extent: {x: 0.21500015, y: 0.3125, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -50063,8 +50076,8 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 6263571025223224477}
   m_Bounds:
-    m_Center: {x: -9.4239435, y: -6.223186, z: 0}
-    m_Extent: {x: 0.28999996, y: 0.22749996, z: 0}
+    m_Center: {x: -9.428059, y: -6.1749773, z: 0}
+    m_Extent: {x: 0.28999996, y: 0.2275002, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!224 &3772145007750207625
@@ -51769,7 +51782,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &5896554431888457538
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -53428,7 +53441,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!58 &7406843931820959276
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -55592,8 +55605,8 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 6263571025223224477}
   m_Bounds:
-    m_Center: {x: -9.4239435, y: -6.223186, z: 0}
-    m_Extent: {x: 0.28999996, y: 0.22749996, z: 0}
+    m_Center: {x: -9.42806, y: -6.174976, z: 0}
+    m_Extent: {x: 0.28999996, y: 0.22750044, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!4 &8528695725964983133
@@ -55683,8 +55696,8 @@ MonoBehaviour:
   - {fileID: 4729840777393883189}
   - {fileID: 6790121755710559499}
   m_Bounds:
-    m_Center: {x: -9.423943, y: -6.223185, z: 0}
-    m_Extent: {x: 0.21500015, y: 0.28499985, z: 0}
+    m_Center: {x: -9.42804, y: -6.1740904, z: 0}
+    m_Extent: {x: 0.21526527, y: 0.30373693, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!4 &8611538261603265720

@@ -36,6 +36,8 @@ public class Stats2 : MonoBehaviour
     [SerializeField] private Image diseaseIcon;
     [SerializeField] private List<Sprite> diseaseIconList;
 
+    //animation
+    private Animator myAnimator;
 
     //float
     private float hungerStats, affectionStats, hygineStats;
@@ -58,12 +60,13 @@ public class Stats2 : MonoBehaviour
 
     private void Start()
     {
+        myAnimator = GetComponent<Animator>();
         hungerStats = maxHunger;
         affectionStats = maxAffection;
         hygineStats = maxHygine;
         hungerStats = 50;
-        affectionStats = 60;
-        hygineStats = 50;
+        affectionStats = 70;
+        hygineStats = 70;
     }
 
     private void Update()
@@ -75,6 +78,7 @@ public class Stats2 : MonoBehaviour
             IsClean();
         }
         CheckIfSick();
+        Animations();
     }
 
     public void Diminish()
@@ -211,7 +215,6 @@ public class Stats2 : MonoBehaviour
             medecine2 = true;
         }
     }
-
     public void AddAffection(int value)
     {
         affectionStats = affectionStats + value;
@@ -282,10 +285,12 @@ public class Stats2 : MonoBehaviour
         if (count == 0)
         {
             ColorFur2.instance.FurColorOne();
+            myAnimator.SetBool("isFur", false);
         }
         if (count == 2)
         {
             ColorFur2.instance.FurColorTwo();
+            myAnimator.SetBool("isFur", true);
         }
         if (count > 2)
         {
@@ -376,4 +381,43 @@ public class Stats2 : MonoBehaviour
             sick = false;
         }
     }
+    private void Animations()
+    {
+        if(hungerStats < 50)
+        {
+            myAnimator.SetBool("isHungry", true);
+        }
+        else if(hungerStats > 50)
+        {
+            myAnimator.SetBool("isHungry", false);
+        }
+
+        if (affectionStats < 50)
+        {
+            myAnimator.SetBool("isSad", true);
+        }
+        else if (affectionStats > 50)
+        {
+            myAnimator.SetBool("isSad", false);
+        }
+
+        if (hygineStats < 50)
+        {
+            myAnimator.SetBool("isDirty", true);
+        }
+        else if (hygineStats > 50)
+        {
+            myAnimator.SetBool("isDirty", false);
+        }
+
+        if (sick)
+        {
+            myAnimator.SetBool("isSick", true);
+        }
+        else if(!sick)
+        {
+            myAnimator.SetBool("isSick", false);
+        }
+    }
+
 }
