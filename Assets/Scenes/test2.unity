@@ -964,9 +964,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myColors:
-  - {r: 0.25490198, g: 0.87843144, b: 0.61960787, a: 1}
-  - {r: 0.8784314, g: 0.8240633, b: 0.25490195, a: 1}
-  - {r: 0.8784314, g: 0.25490195, b: 0.26100713, a: 1}
+  - {r: 0.098039225, g: 0.7019608, b: 0.43921572, a: 1}
+  - {r: 0.8235294, g: 0.6666667, b: 0.11764706, a: 1}
+  - {r: 0.85882354, g: 0.22352941, b: 0.27450982, a: 1}
 --- !u!1 &37871160
 GameObject:
   m_ObjectHideFlags: 0
@@ -1057,6 +1057,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 340466691}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: f082b0f73ad1f45439f4de120cb42786, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2616,6 +2628,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 340466691}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: f082b0f73ad1f45439f4de120cb42786, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -24443,7 +24467,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9012e742288bb56429d16b3df37ca17f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6154817b9a3447c44b4d19392d175e67, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -29404,6 +29428,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 340466691}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: f082b0f73ad1f45439f4de120cb42786, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1061210115
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29905,9 +29941,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myColors:
-  - {r: 0.25490198, g: 0.87843144, b: 0.61960787, a: 1}
-  - {r: 0.8784314, g: 0.8240633, b: 0.25490195, a: 1}
-  - {r: 0.8784314, g: 0.25490195, b: 0.26100713, a: 1}
+  - {r: 0.098039225, g: 0.7019608, b: 0.43921572, a: 1}
+  - {r: 0.8235294, g: 0.6666667, b: 0.11764706, a: 1}
+  - {r: 0.85882354, g: 0.22352941, b: 0.27450982, a: 1}
 --- !u!1 &1099352139
 GameObject:
   m_ObjectHideFlags: 0
@@ -30130,9 +30166,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myColors:
-  - {r: 0.25490198, g: 0.87843144, b: 0.61960787, a: 1}
-  - {r: 0.8784314, g: 0.8240633, b: 0.25490195, a: 1}
-  - {r: 0.8784314, g: 0.25490195, b: 0.26100713, a: 1}
+  - {r: 0.098039225, g: 0.7019608, b: 0.43921572, a: 1}
+  - {r: 0.8235294, g: 0.6666667, b: 0.11764706, a: 1}
+  - {r: 0.85882354, g: 0.22352941, b: 0.27450982, a: 1}
 --- !u!1 &1102598299
 GameObject:
   m_ObjectHideFlags: 0
@@ -33797,6 +33833,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 340466691}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: f082b0f73ad1f45439f4de120cb42786, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1274599280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35408,8 +35456,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myColors:
-  - {r: 0.25490198, g: 0.87843144, b: 0.61960787, a: 1}
-  - {r: 0.8784314, g: 0.25490198, b: 0.2627451, a: 1}
+  - {r: 0.098039225, g: 0.7019608, b: 0.43921572, a: 1}
+  - {r: 0.85882354, g: 0.22352941, b: 0.27450982, a: 1}
 --- !u!1 &1337749816
 GameObject:
   m_ObjectHideFlags: 0
@@ -37164,9 +37212,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myColors:
-  - {r: 0.25490198, g: 0.87843144, b: 0.61960787, a: 1}
-  - {r: 0.8784314, g: 0.8240633, b: 0.25490195, a: 1}
-  - {r: 0.8784314, g: 0.25490195, b: 0.26100713, a: 1}
+  - {r: 0.098039225, g: 0.7019608, b: 0.43921572, a: 1}
+  - {r: 0.8235294, g: 0.6666667, b: 0.11764706, a: 1}
+  - {r: 0.85882354, g: 0.22352941, b: 0.27450982, a: 1}
 --- !u!1 &1403003172
 GameObject:
   m_ObjectHideFlags: 0
@@ -42000,6 +42048,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 340466691}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: f082b0f73ad1f45439f4de120cb42786, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1701727605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42381,6 +42441,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 340466691}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: f082b0f73ad1f45439f4de120cb42786, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -52737,14 +52809,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.26666668, g: 0.9137255, b: 0.6431373, a: 1}
+  m_Color: {r: 0.09803922, g: 0.7019608, b: 0.4392157, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 89bc1774681a6ce498ab680d5dad8fbb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 88486a4ac64ddef44b1b64fcce2177b0, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -54783,14 +54855,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.26666668, g: 0.9137255, b: 0.6431373, a: 1}
+  m_Color: {r: 0.09803922, g: 0.7019608, b: 0.4392157, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 89bc1774681a6ce498ab680d5dad8fbb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 88486a4ac64ddef44b1b64fcce2177b0, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -54991,7 +55063,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 89bc1774681a6ce498ab680d5dad8fbb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0f30bad4a4121794b96b00bfc2732d4d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -56779,7 +56851,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 89bc1774681a6ce498ab680d5dad8fbb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0f30bad4a4121794b96b00bfc2732d4d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -59116,14 +59188,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.26666668, g: 0.9137255, b: 0.6431373, a: 1}
+  m_Color: {r: 0.09803922, g: 0.7019608, b: 0.4392157, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 89bc1774681a6ce498ab680d5dad8fbb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 88486a4ac64ddef44b1b64fcce2177b0, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -59262,14 +59334,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.26666668, g: 0.9137255, b: 0.6431373, a: 1}
+  m_Color: {r: 0.09803922, g: 0.7019608, b: 0.4392157, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 89bc1774681a6ce498ab680d5dad8fbb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 88486a4ac64ddef44b1b64fcce2177b0, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -59425,7 +59497,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 89bc1774681a6ce498ab680d5dad8fbb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0f30bad4a4121794b96b00bfc2732d4d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -59627,7 +59699,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 89bc1774681a6ce498ab680d5dad8fbb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0f30bad4a4121794b96b00bfc2732d4d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -59804,14 +59876,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.26666668, g: 0.9137255, b: 0.6431373, a: 1}
+  m_Color: {r: 0.09803922, g: 0.7019608, b: 0.4392157, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 89bc1774681a6ce498ab680d5dad8fbb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 88486a4ac64ddef44b1b64fcce2177b0, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -59887,7 +59959,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 89bc1774681a6ce498ab680d5dad8fbb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0f30bad4a4121794b96b00bfc2732d4d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
