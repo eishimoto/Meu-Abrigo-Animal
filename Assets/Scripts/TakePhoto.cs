@@ -12,7 +12,7 @@ public class TakePhoto : MonoBehaviour
 
     [SerializeField] private GameObject whitchPet;
     [SerializeField] private Transform parent;
-
+    [SerializeField] private GameObject flashGameObject;
 
     public static int catValue1, catValue2, dogValue1, dogValue2;
     public static TakePhoto instance;
@@ -22,6 +22,13 @@ public class TakePhoto : MonoBehaviour
         {
             instance = this;
         }
+    }
+    private void Start()
+    {
+        catValue1 = 0;
+        catValue2 = 0;
+        dogValue1 = 0;
+        dogValue2 = 0;
     }
     private void Update()
     {
@@ -35,6 +42,7 @@ public class TakePhoto : MonoBehaviour
             cat.transform.SetParent(parent, false);
             catValue1++;
             Money.instance.AddMoneyPhoto(10);
+            flashGameObject.SetActive(true);
         }
     }
     public void Cat2PostPhoto()
@@ -45,6 +53,7 @@ public class TakePhoto : MonoBehaviour
             cat2.transform.SetParent(parent, false);
             catValue2++;
             Money.instance.AddMoneyPhoto(10);
+            flashGameObject.SetActive(true);
         }
     }
     public void DogPostPhoto()
@@ -55,6 +64,7 @@ public class TakePhoto : MonoBehaviour
             dog.transform.SetParent(parent, false);
             dogValue1++;
             Money.instance.AddMoneyPhoto(10);
+            flashGameObject.SetActive(true);
         }
     }
     public void Dog2PostPhoto()
@@ -65,6 +75,7 @@ public class TakePhoto : MonoBehaviour
             dog2.transform.SetParent(parent, false);
             dogValue2++;
             Money.instance.AddMoneyPhoto(10);
+            flashGameObject.SetActive(true);
         }
     }
 

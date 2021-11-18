@@ -19,6 +19,7 @@ public class Timer : MonoBehaviour
     private void start()
     {
         day = 0;
+        DayChange();
     }
 
     private void Update()

@@ -5,16 +5,11 @@ using UnityEngine;
 public class LoadGameObject : MonoBehaviour
 {
     [SerializeField] private int timeToReturn;
-    void Start()
-    {
-
-    }
-    // Update is called once per frame
     void Update()
     {
-        StartCoroutine(DisableGameObject());
+        StartCoroutine(LoadScreenOFF());
     }
-    IEnumerator DisableGameObject()
+    IEnumerator LoadScreenOFF()
     {
         yield return new WaitForSeconds(timeToReturn);
         gameObject.SetActive(false);
