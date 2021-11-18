@@ -10709,8 +10709,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 665730202}
-        m_TargetAssemblyTypeName: PetTwoAccessory, Assembly-CSharp
+      - m_Target: {fileID: 340466691}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: a243cdb9ad0640841a767f7d9ea8f161, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2040133986}
+        m_TargetAssemblyTypeName: PetThreeAccesorry, Assembly-CSharp
         m_MethodName: Collar
         m_Mode: 1
         m_Arguments:
@@ -10721,8 +10733,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2040133986}
-        m_TargetAssemblyTypeName: PetThreeAccesorry, Assembly-CSharp
+      - m_Target: {fileID: 1302074585}
+        m_TargetAssemblyTypeName: PetFourAccessory, Assembly-CSharp
         m_MethodName: Collar
         m_Mode: 1
         m_Arguments:
@@ -10953,8 +10965,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 665730202}
-        m_TargetAssemblyTypeName: PetTwoAccessory, Assembly-CSharp
+      - m_Target: {fileID: 340466691}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: a243cdb9ad0640841a767f7d9ea8f161, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2040133986}
+        m_TargetAssemblyTypeName: PetThreeAccesorry, Assembly-CSharp
         m_MethodName: Ballon
         m_Mode: 1
         m_Arguments:
@@ -10965,8 +10989,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2040133986}
-        m_TargetAssemblyTypeName: PetThreeAccesorry, Assembly-CSharp
+      - m_Target: {fileID: 1302074585}
+        m_TargetAssemblyTypeName: PetFourAccessory, Assembly-CSharp
         m_MethodName: Ballon
         m_Mode: 1
         m_Arguments:
@@ -17821,8 +17845,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 665730202}
-        m_TargetAssemblyTypeName: PetTwoAccessory, Assembly-CSharp
+      - m_Target: {fileID: 340466691}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: a243cdb9ad0640841a767f7d9ea8f161, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2040133986}
+        m_TargetAssemblyTypeName: PetThreeAccesorry, Assembly-CSharp
         m_MethodName: TieBlue
         m_Mode: 1
         m_Arguments:
@@ -17833,8 +17869,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2040133986}
-        m_TargetAssemblyTypeName: PetThreeAccesorry, Assembly-CSharp
+      - m_Target: {fileID: 1302074585}
+        m_TargetAssemblyTypeName: PetFourAccessory, Assembly-CSharp
         m_MethodName: TieBlue
         m_Mode: 1
         m_Arguments:
@@ -20083,8 +20119,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 665730202}
-        m_TargetAssemblyTypeName: PetTwoAccessory, Assembly-CSharp
+      - m_Target: {fileID: 340466691}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: a243cdb9ad0640841a767f7d9ea8f161, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2040133986}
+        m_TargetAssemblyTypeName: PetThreeAccesorry, Assembly-CSharp
         m_MethodName: Teeth
         m_Mode: 1
         m_Arguments:
@@ -20095,8 +20143,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2040133986}
-        m_TargetAssemblyTypeName: PetThreeAccesorry, Assembly-CSharp
+      - m_Target: {fileID: 1302074585}
+        m_TargetAssemblyTypeName: PetFourAccessory, Assembly-CSharp
         m_MethodName: Teeth
         m_Mode: 1
         m_Arguments:
@@ -20818,6 +20866,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 340466691}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: a243cdb9ad0640841a767f7d9ea8f161, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -24513,6 +24573,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 340466691}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: a243cdb9ad0640841a767f7d9ea8f161, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &631855040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28038,8 +28110,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 665730202}
-        m_TargetAssemblyTypeName: PetTwoAccessory, Assembly-CSharp
+      - m_Target: {fileID: 340466691}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: a243cdb9ad0640841a767f7d9ea8f161, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2040133986}
+        m_TargetAssemblyTypeName: PetThreeAccesorry, Assembly-CSharp
         m_MethodName: Monacle
         m_Mode: 1
         m_Arguments:
@@ -28050,8 +28134,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2040133986}
-        m_TargetAssemblyTypeName: PetThreeAccesorry, Assembly-CSharp
+      - m_Target: {fileID: 1302074585}
+        m_TargetAssemblyTypeName: PetFourAccessory, Assembly-CSharp
         m_MethodName: Monacle
         m_Mode: 1
         m_Arguments:
@@ -30503,8 +30587,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 665730202}
-        m_TargetAssemblyTypeName: PetTwoAccessory, Assembly-CSharp
+      - m_Target: {fileID: 340466691}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: a243cdb9ad0640841a767f7d9ea8f161, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2040133986}
+        m_TargetAssemblyTypeName: PetThreeAccesorry, Assembly-CSharp
         m_MethodName: Tie
         m_Mode: 1
         m_Arguments:
@@ -30515,8 +30611,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2040133986}
-        m_TargetAssemblyTypeName: PetThreeAccesorry, Assembly-CSharp
+      - m_Target: {fileID: 1302074585}
+        m_TargetAssemblyTypeName: PetFourAccessory, Assembly-CSharp
         m_MethodName: Tie
         m_Mode: 1
         m_Arguments:
@@ -30672,8 +30768,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 665730202}
-        m_TargetAssemblyTypeName: PetTwoAccessory, Assembly-CSharp
+      - m_Target: {fileID: 340466691}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: a243cdb9ad0640841a767f7d9ea8f161, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2040133986}
+        m_TargetAssemblyTypeName: PetThreeAccesorry, Assembly-CSharp
         m_MethodName: TiePurple
         m_Mode: 1
         m_Arguments:
@@ -30684,8 +30792,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2040133986}
-        m_TargetAssemblyTypeName: PetThreeAccesorry, Assembly-CSharp
+      - m_Target: {fileID: 1302074585}
+        m_TargetAssemblyTypeName: PetFourAccessory, Assembly-CSharp
         m_MethodName: TiePurple
         m_Mode: 1
         m_Arguments:
@@ -31639,8 +31747,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 665730202}
-        m_TargetAssemblyTypeName: PetTwoAccessory, Assembly-CSharp
+      - m_Target: {fileID: 340466691}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: a243cdb9ad0640841a767f7d9ea8f161, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2040133986}
+        m_TargetAssemblyTypeName: PetThreeAccesorry, Assembly-CSharp
         m_MethodName: TieRed
         m_Mode: 1
         m_Arguments:
@@ -31651,8 +31771,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2040133986}
-        m_TargetAssemblyTypeName: PetThreeAccesorry, Assembly-CSharp
+      - m_Target: {fileID: 1302074585}
+        m_TargetAssemblyTypeName: PetFourAccessory, Assembly-CSharp
         m_MethodName: TieRed
         m_Mode: 1
         m_Arguments:
@@ -32358,8 +32478,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 665730202}
-        m_TargetAssemblyTypeName: PetTwoAccessory, Assembly-CSharp
+      - m_Target: {fileID: 340466691}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: a243cdb9ad0640841a767f7d9ea8f161, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2040133986}
+        m_TargetAssemblyTypeName: PetThreeAccesorry, Assembly-CSharp
         m_MethodName: Hat
         m_Mode: 1
         m_Arguments:
@@ -32370,8 +32502,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2040133986}
-        m_TargetAssemblyTypeName: PetThreeAccesorry, Assembly-CSharp
+      - m_Target: {fileID: 1302074585}
+        m_TargetAssemblyTypeName: PetFourAccessory, Assembly-CSharp
         m_MethodName: Hat
         m_Mode: 1
         m_Arguments:
@@ -32564,7 +32696,7 @@ MonoBehaviour:
   tenisBall: 0
   beachBall: 1
   ball: {fileID: 8300000, guid: f924426472347fe4d85d083fe23ec448, type: 3}
-  stopBall: 5
+  stopBall: 4
 --- !u!60 &976219334
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -43089,6 +43221,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 340466691}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: a243cdb9ad0640841a767f7d9ea8f161, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1227907849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44233,6 +44377,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 340466691}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: a243cdb9ad0640841a767f7d9ea8f161, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -47831,8 +47987,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 665730202}
-        m_TargetAssemblyTypeName: PetTwoAccessory, Assembly-CSharp
+      - m_Target: {fileID: 340466691}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: a243cdb9ad0640841a767f7d9ea8f161, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2040133986}
+        m_TargetAssemblyTypeName: PetThreeAccesorry, Assembly-CSharp
         m_MethodName: EyePatch
         m_Mode: 1
         m_Arguments:
@@ -47843,8 +48011,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2040133986}
-        m_TargetAssemblyTypeName: PetThreeAccesorry, Assembly-CSharp
+      - m_Target: {fileID: 1302074585}
+        m_TargetAssemblyTypeName: PetFourAccessory, Assembly-CSharp
         m_MethodName: EyePatch
         m_Mode: 1
         m_Arguments:
@@ -49525,6 +49693,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 340466691}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: a243cdb9ad0640841a767f7d9ea8f161, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1511047452
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50395,6 +50575,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 340466691}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: a243cdb9ad0640841a767f7d9ea8f161, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -54046,8 +54238,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 665730202}
-        m_TargetAssemblyTypeName: PetTwoAccessory, Assembly-CSharp
+      - m_Target: {fileID: 340466691}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: a243cdb9ad0640841a767f7d9ea8f161, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2040133986}
+        m_TargetAssemblyTypeName: PetThreeAccesorry, Assembly-CSharp
         m_MethodName: Walker
         m_Mode: 1
         m_Arguments:
@@ -54058,8 +54262,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2040133986}
-        m_TargetAssemblyTypeName: PetThreeAccesorry, Assembly-CSharp
+      - m_Target: {fileID: 1302074585}
+        m_TargetAssemblyTypeName: PetFourAccessory, Assembly-CSharp
         m_MethodName: Walker
         m_Mode: 1
         m_Arguments:
@@ -55525,8 +55729,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 665730202}
-        m_TargetAssemblyTypeName: PetTwoAccessory, Assembly-CSharp
+      - m_Target: {fileID: 340466691}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: a243cdb9ad0640841a767f7d9ea8f161, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2040133986}
+        m_TargetAssemblyTypeName: PetThreeAccesorry, Assembly-CSharp
         m_MethodName: TieYellow
         m_Mode: 1
         m_Arguments:
@@ -55537,8 +55753,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2040133986}
-        m_TargetAssemblyTypeName: PetThreeAccesorry, Assembly-CSharp
+      - m_Target: {fileID: 1302074585}
+        m_TargetAssemblyTypeName: PetFourAccessory, Assembly-CSharp
         m_MethodName: TieYellow
         m_Mode: 1
         m_Arguments:
@@ -56502,6 +56718,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 340466691}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: a243cdb9ad0640841a767f7d9ea8f161, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -65621,7 +65849,7 @@ MonoBehaviour:
   tenisBall: 1
   beachBall: 0
   ball: {fileID: 8300000, guid: f924426472347fe4d85d083fe23ec448, type: 3}
-  stopBall: 5
+  stopBall: 4
 --- !u!82 &2067873417
 AudioSource:
   m_ObjectHideFlags: 0

@@ -30,6 +30,15 @@ public class ToyTool : MonoBehaviour
         _startPosition = transform.position;
         maincamera = Camera.main;
         audioSource = GetComponent<AudioSource>();
+
+        if (beachBall)
+        {
+            value = 50;
+        }
+        if (tenisBall)
+        {
+            value = 25;
+        }
     }
 
     private void Update()
@@ -54,8 +63,6 @@ public class ToyTool : MonoBehaviour
                 if (myCollider == touchedCollider)
                 {
                     _moveAllowed = true;
-
-
                 }
             }
             if (touch.phase == TouchPhase.Moved)
@@ -71,6 +78,7 @@ public class ToyTool : MonoBehaviour
                 if (touch.phase == TouchPhase.Ended)
                 {
                     _moveAllowed = false;
+                    StartCoroutine(SlowBallDown());
                 }
             }
         }
@@ -80,7 +88,6 @@ public class ToyTool : MonoBehaviour
     {
         var speed = lastVelocity.magnitude;
         var direction = Vector3.Reflect(lastVelocity.normalized, collision.contacts[0].normal);
-
         myRigidbody.velocity = direction * Mathf.Max(speed, 0f);
         if (collision.gameObject.CompareTag("Wall"))
         {
@@ -90,25 +97,18 @@ public class ToyTool : MonoBehaviour
     private void MoveBall()
     {
         myRigidbody.bodyType = RigidbodyType2D.Dynamic;
-        Vector2 direction = new Vector2((float)Random.Range(-500, 500), (float)Random.Range(-500, 500));
+        Vector2 direction = new Vector2((float)Random.Range(-500, 500), (float)Random.Range(-1000, 1000));
         myRigidbody.AddForce(direction);
-        Invoke("SlowBall", stopBall);
     }
 
-    private void SlowBall()
+    IEnumerator SlowBallDown()
     {
+        yield return new WaitForSeconds(stopBall);
+
         myRigidbody.velocity = Vector2.zero;
         myRigidbody.bodyType = RigidbodyType2D.Kinematic;
         transform.position = _startPosition;
 
-        if(beachBall)
-        {
-            value = 50;
-        }
-        if(tenisBall)
-        {
-            value = 25;
-        }
         if (UICanvas.on == true)
         {
             Stats.instance.AddAffection(value);
@@ -126,7 +126,6 @@ public class ToyTool : MonoBehaviour
             Stats4.instance.AddAffection(value);
         }
     }
-
     // Mouse as touch control
     private void OnMouseDrag()
     {
@@ -141,6 +140,6 @@ public class ToyTool : MonoBehaviour
 
     private void OnMouseUp()
     {
-        Invoke("SlowBall", stopBall);
+        StartCoroutine(SlowBallDown());
     }
 }
