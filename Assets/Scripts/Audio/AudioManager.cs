@@ -1,15 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance;
 
     [SerializeField] private AudioSource _musicSource, _effectsSource;
+    [SerializeField] private Slider sliderForEffects;
 
+    
     public static bool changeSound;
-
     private void Awake()
     {
         if(Instance == null)
@@ -41,10 +43,12 @@ public class AudioManager : MonoBehaviour
         if(_effectsSource.mute)
         {
             changeSound = true;
+            sliderForEffects.value = 0;
         }
         else
         {
             changeSound = false;
+            sliderForEffects.value = 1;
         }
     }
 
@@ -54,7 +58,7 @@ public class AudioManager : MonoBehaviour
 
         if (_musicSource.mute)
         {
-            changeSound = true;
+            changeSound = true;           
         }
         else
         {

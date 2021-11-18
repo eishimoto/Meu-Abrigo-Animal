@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class Adoption : MonoBehaviour
 {
+    //list for decoretion
     [SerializeField] private List<GameObject> pets;
     [SerializeField] private List<GameObject> petsButtons;
 
-    public static bool DogOnScene = true, Dog2OnScene, CatOnScene, Cat2OnScene;
+    //list for Final Panel
+    [SerializeField] private GameObject lasPanel;
+    [SerializeField] private List<Transform> postitions;
+
+    public static bool DogOnScene, Dog2OnScene, CatOnScene, Cat2OnScene;
     private void Update()
     {
         CheckIfIsSick();
@@ -96,5 +101,20 @@ public class Adoption : MonoBehaviour
         Dog2OnScene = false;
         CatOnScene = false;
         Cat2OnScene = true;
+    }
+
+    public void LastAction()
+    {
+        lasPanel.SetActive(true);
+
+        for (int i = 0; i < pets.Count; i++)
+        {
+            pets[i].SetActive(true);
+        }
+
+        pets[0].transform.SetParent(postitions[0],false);
+        pets[3].transform.SetParent(postitions[1], false);
+        pets[2].transform.SetParent(postitions[2], false);
+        pets[1].transform.SetParent(postitions[3], false);
     }
 }
