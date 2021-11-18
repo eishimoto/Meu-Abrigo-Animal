@@ -82,7 +82,7 @@ public class Money : MonoBehaviour
     }
     public void UnlockFoodBowl()
     {
-        if(money > 15 && foodBowl == false)
+        if(money > 25 && foodBowl == false)
         {
             money -= 15;
             foodUnlock[0].SetActive(true);
@@ -100,7 +100,7 @@ public class Money : MonoBehaviour
     }
     public void UnlockFoodBag()
     {
-        if (money > 25 && foodBag == false)
+        if (money > 35 && foodBag == false)
         {
             money -= 25;
             foodUnlock[1].SetActive(true);

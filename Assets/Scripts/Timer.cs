@@ -32,8 +32,11 @@ public class Timer : MonoBehaviour
             _timeValue = 540;
         }
 
-        DisplayTime(_timeValue);
-        DayChange(); 
+        if (day < 6)
+        {
+            DisplayTime(_timeValue);
+        }
+        DayChange();
     }
     private void DisplayTime(float timeToDisplay)
     {
@@ -80,6 +83,7 @@ public class Timer : MonoBehaviour
         if (day == 6)
         {
             Circle.transform.SetParent(dayPos[0], false);
+            AdopitionCanvas.SetActive(true);
         }
     }
 

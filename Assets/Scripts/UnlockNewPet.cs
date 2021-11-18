@@ -11,11 +11,12 @@ public class UnlockNewPet : MonoBehaviour
 
     private void Update()
     {
-        UnlockPets();
+        StartCoroutine(UnlockPets());
     }
 
-    private void UnlockPets()
+    IEnumerator UnlockPets()
     {
+        yield return new WaitForSeconds(6f);
         if (Timer.day == 1)
         {
             for (int i = 0; i < catOne.Count; i++)

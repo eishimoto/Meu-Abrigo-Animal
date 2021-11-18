@@ -30,7 +30,7 @@ public class Stats2 : MonoBehaviour
     private bool medecine1;
     private bool medecine2;
     private bool medecine3;
-    private bool sick;
+    public static bool sick;
     [SerializeField] private List<Color> medecineColor;
     [SerializeField] private Image diseaseIndicator;
     [SerializeField] private Image diseaseIcon;
@@ -64,20 +64,23 @@ public class Stats2 : MonoBehaviour
         hungerStats = maxHunger;
         affectionStats = maxAffection;
         hygineStats = maxHygine;
-        hungerStats = 50;
-        affectionStats = 70;
-        hygineStats = 70;
+        //hungerStats = 50;
+        //affectionStats = 70;
+        //hygineStats = 70;
     }
 
     private void Update()
     {
-        Diminish();
-        GrowFur();
+        if (Timer.day < 6)
+        {
+            Diminish();
+            GrowFur();
+            CheckIfSick();
+        }
         if (UICanvas.on2 == true)
         {
             IsClean();
         }
-        CheckIfSick();
         Animations();
     }
 

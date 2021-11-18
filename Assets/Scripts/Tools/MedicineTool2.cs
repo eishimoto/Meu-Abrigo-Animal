@@ -48,6 +48,8 @@ public class MedicineTool2 : MonoBehaviour
         _spriteRender = GetComponent<SpriteRenderer>();
         cantMove = false;
         UpdateTextMeshPro();
+        ChangeSprite();
+        cantMove = true;
     }
 
     private void Update()

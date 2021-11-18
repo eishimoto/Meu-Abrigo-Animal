@@ -472,7 +472,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -16.500023, y: 42.29998}
+  m_AnchoredPosition: {x: -2.1999974, y: -25.299953}
   m_SizeDelta: {x: 125.24, y: 168.91}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &26073243
@@ -3081,6 +3081,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0119cb92bc65a645a38ca6c4e69f5fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeToReturn: 3
 --- !u!1 &133813988
 GameObject:
   m_ObjectHideFlags: 0
@@ -3228,7 +3229,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -16.500023, y: 42.29998}
+  m_AnchoredPosition: {x: -2.2, y: -25.3}
   m_SizeDelta: {x: 125.24, y: 168.91}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &143471042
@@ -9963,7 +9964,7 @@ MonoBehaviour:
   - {fileID: -7703735091131915777, guid: c913013441e13184ea5fcbf5421f7064, type: 3}
   - {fileID: -8295107407823598371, guid: b1054bc540607c14ebafafc96a3b68bf, type: 3}
   textDisplay: {fileID: 681450149}
-  quantity: 3
+  quantity: 0
   RedPill_N_MixPills_Sound: {fileID: 8300000, guid: cb4279d870f41984ab83741704e67a3c, type: 3}
 --- !u!60 &227762512
 PolygonCollider2D:
@@ -10745,8 +10746,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1302074585}
-        m_TargetAssemblyTypeName: PetFourAccessory, Assembly-CSharp
+      - m_Target: {fileID: 665730202}
+        m_TargetAssemblyTypeName: PetTwoAccessory, Assembly-CSharp
         m_MethodName: Collar
         m_Mode: 1
         m_Arguments:
@@ -11001,8 +11002,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1302074585}
-        m_TargetAssemblyTypeName: PetFourAccessory, Assembly-CSharp
+      - m_Target: {fileID: 665730202}
+        m_TargetAssemblyTypeName: PetTwoAccessory, Assembly-CSharp
         m_MethodName: Ballon
         m_Mode: 1
         m_Arguments:
@@ -11997,7 +11998,7 @@ MonoBehaviour:
   - {fileID: 532898773}
   - {fileID: 676384348}
   loadForDayChange: {fileID: 130967617}
-  AdopitionCanvas: {fileID: 2074152898}
+  AdopitionCanvas: {fileID: 489197725}
 --- !u!4 &301712190
 Transform:
   m_ObjectHideFlags: 0
@@ -17881,8 +17882,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1302074585}
-        m_TargetAssemblyTypeName: PetFourAccessory, Assembly-CSharp
+      - m_Target: {fileID: 665730202}
+        m_TargetAssemblyTypeName: PetTwoAccessory, Assembly-CSharp
         m_MethodName: TieBlue
         m_Mode: 1
         m_Arguments:
@@ -19255,7 +19256,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -16.5, y: 42.3}
+  m_AnchoredPosition: {x: -2.1999745, y: -25.299934}
   m_SizeDelta: {x: 125.24, y: 168.91}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &438329620
@@ -20155,8 +20156,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1302074585}
-        m_TargetAssemblyTypeName: PetFourAccessory, Assembly-CSharp
+      - m_Target: {fileID: 665730202}
+        m_TargetAssemblyTypeName: PetTwoAccessory, Assembly-CSharp
         m_MethodName: Teeth
         m_Mode: 1
         m_Arguments:
@@ -20481,8 +20482,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -12.8, y: 112.9}
-  m_SizeDelta: {x: 144.07, y: 179.01}
+  m_AnchoredPosition: {x: 0.00000095367, y: 54.1}
+  m_SizeDelta: {x: 132.08, y: 175.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &468170057
 GameObject:
@@ -20789,12 +20790,12 @@ GameObject:
   - component: {fileID: 473044212}
   - component: {fileID: 473044211}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: Button_Dog2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &473044210
 RectTransform:
   m_ObjectHideFlags: 0
@@ -21108,7 +21109,7 @@ MonoBehaviour:
   food1: 10
   food2: 20
   food3: 30
-  medicine1: 10
+  medicine1: 50
   foodUnlock:
   - {fileID: 1221231108}
   - {fileID: 1949324054}
@@ -21339,7 +21340,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &489197726
 RectTransform:
   m_ObjectHideFlags: 0
@@ -22330,7 +22331,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -16.500023, y: 42.29998}
+  m_AnchoredPosition: {x: -2.1999974, y: -25.299953}
   m_SizeDelta: {x: 125.24, y: 168.91}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &532898772
@@ -24331,7 +24332,7 @@ MonoBehaviour:
   - {fileID: 9217019228271292516, guid: c913013441e13184ea5fcbf5421f7064, type: 3}
   - {fileID: -1053791552908419559, guid: b1054bc540607c14ebafafc96a3b68bf, type: 3}
   textDisplay: {fileID: 2019939535}
-  quantity: 3
+  quantity: 0
   BluePill_Sound: {fileID: 8300000, guid: cb4279d870f41984ab83741704e67a3c, type: 3}
 --- !u!60 &627026519
 PolygonCollider2D:
@@ -24491,12 +24492,12 @@ GameObject:
   - component: {fileID: 631855040}
   - component: {fileID: 631855039}
   m_Layer: 5
-  m_Name: Button (3)
+  m_Name: Button_Cat2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &631855038
 RectTransform:
   m_ObjectHideFlags: 0
@@ -25176,7 +25177,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7.295, y: 311.5}
+  m_AnchoredPosition: {x: 2.8, y: 225.6}
   m_SizeDelta: {x: 228.3, y: 156.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &651661055
@@ -25729,8 +25730,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.99, y: 237.12}
-  m_SizeDelta: {x: 145.3, y: 194.81}
+  m_AnchoredPosition: {x: 14.07, y: 163.52}
+  m_SizeDelta: {x: 133.45, y: 173.68}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &676384347
 GameObject:
@@ -28146,8 +28147,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1302074585}
-        m_TargetAssemblyTypeName: PetFourAccessory, Assembly-CSharp
+      - m_Target: {fileID: 665730202}
+        m_TargetAssemblyTypeName: PetTwoAccessory, Assembly-CSharp
         m_MethodName: Monacle
         m_Mode: 1
         m_Arguments:
@@ -29016,7 +29017,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -16.5, y: 79}
+  m_AnchoredPosition: {x: -2.1999745, y: 11.400066}
   m_SizeDelta: {x: 209.89, y: 179.58}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &784701267
@@ -30623,8 +30624,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1302074585}
-        m_TargetAssemblyTypeName: PetFourAccessory, Assembly-CSharp
+      - m_Target: {fileID: 665730202}
+        m_TargetAssemblyTypeName: PetTwoAccessory, Assembly-CSharp
         m_MethodName: Tie
         m_Mode: 1
         m_Arguments:
@@ -30804,8 +30805,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1302074585}
-        m_TargetAssemblyTypeName: PetFourAccessory, Assembly-CSharp
+      - m_Target: {fileID: 665730202}
+        m_TargetAssemblyTypeName: PetTwoAccessory, Assembly-CSharp
         m_MethodName: TiePurple
         m_Mode: 1
         m_Arguments:
@@ -31783,8 +31784,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1302074585}
-        m_TargetAssemblyTypeName: PetFourAccessory, Assembly-CSharp
+      - m_Target: {fileID: 665730202}
+        m_TargetAssemblyTypeName: PetTwoAccessory, Assembly-CSharp
         m_MethodName: TieRed
         m_Mode: 1
         m_Arguments:
@@ -32514,8 +32515,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1302074585}
-        m_TargetAssemblyTypeName: PetFourAccessory, Assembly-CSharp
+      - m_Target: {fileID: 665730202}
+        m_TargetAssemblyTypeName: PetTwoAccessory, Assembly-CSharp
         m_MethodName: Hat
         m_Mode: 1
         m_Arguments:
@@ -39143,7 +39144,7 @@ MonoBehaviour:
   - {fileID: 5073255789115955503, guid: c913013441e13184ea5fcbf5421f7064, type: 3}
   - {fileID: -1835809027522964055, guid: b1054bc540607c14ebafafc96a3b68bf, type: 3}
   textDisplay: {fileID: 1720921515}
-  quantity: 3
+  quantity: 0
   GreenPill_Sound: {fileID: 8300000, guid: cb4279d870f41984ab83741704e67a3c, type: 3}
 --- !u!60 &1058203287
 PolygonCollider2D:
@@ -40957,6 +40958,11 @@ MonoBehaviour:
   - {fileID: 665730201}
   - {fileID: 2040133985}
   - {fileID: 1302074584}
+  petsButtons:
+  - {fileID: 1585240398}
+  - {fileID: 473044209}
+  - {fileID: 1511047449}
+  - {fileID: 631855037}
 --- !u!1 &1124259013
 GameObject:
   m_ObjectHideFlags: 0
@@ -43138,6 +43144,7 @@ GameObject:
   - component: {fileID: 1227907850}
   - component: {fileID: 1227907849}
   - component: {fileID: 1227907848}
+  - component: {fileID: 1227907851}
   m_Layer: 5
   m_Name: New pet 3
   m_TagString: Untagged
@@ -43271,6 +43278,102 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1227907846}
   m_CullTransparentMesh: 1
+--- !u!82 &1227907851
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1227907846}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 4cc8c000b66eb8648a49a8bdec4ba50b, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1249698546
 GameObject:
   m_ObjectHideFlags: 0
@@ -44299,6 +44402,7 @@ GameObject:
   - component: {fileID: 1280739572}
   - component: {fileID: 1280739571}
   - component: {fileID: 1280739570}
+  - component: {fileID: 1280739573}
   m_Layer: 5
   m_Name: New pet 1
   m_TagString: Untagged
@@ -44432,6 +44536,102 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1280739568}
   m_CullTransparentMesh: 1
+--- !u!82 &1280739573
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1280739568}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 4cc8c000b66eb8648a49a8bdec4ba50b, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1285016062
 GameObject:
   m_ObjectHideFlags: 0
@@ -48023,8 +48223,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1302074585}
-        m_TargetAssemblyTypeName: PetFourAccessory, Assembly-CSharp
+      - m_Target: {fileID: 665730202}
+        m_TargetAssemblyTypeName: PetTwoAccessory, Assembly-CSharp
         m_MethodName: EyePatch
         m_Mode: 1
         m_Arguments:
@@ -49611,12 +49811,12 @@ GameObject:
   - component: {fileID: 1511047452}
   - component: {fileID: 1511047451}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: Button_Cat1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1511047450
 RectTransform:
   m_ObjectHideFlags: 0
@@ -50182,7 +50382,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -50.6, y: 199.31}
+  m_AnchoredPosition: {x: -34.5, y: 126.5}
   m_SizeDelta: {x: 117.71, y: 119.18}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1566845463
@@ -50498,12 +50698,12 @@ GameObject:
   - component: {fileID: 1585240401}
   - component: {fileID: 1585240400}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Button_Dog1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1585240399
 RectTransform:
   m_ObjectHideFlags: 0
@@ -54274,8 +54474,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1302074585}
-        m_TargetAssemblyTypeName: PetFourAccessory, Assembly-CSharp
+      - m_Target: {fileID: 665730202}
+        m_TargetAssemblyTypeName: PetTwoAccessory, Assembly-CSharp
         m_MethodName: Walker
         m_Mode: 1
         m_Arguments:
@@ -55765,8 +55965,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1302074585}
-        m_TargetAssemblyTypeName: PetFourAccessory, Assembly-CSharp
+      - m_Target: {fileID: 665730202}
+        m_TargetAssemblyTypeName: PetTwoAccessory, Assembly-CSharp
         m_MethodName: TieYellow
         m_Mode: 1
         m_Arguments:
@@ -56640,6 +56840,7 @@ GameObject:
   - component: {fileID: 1900095201}
   - component: {fileID: 1900095200}
   - component: {fileID: 1900095199}
+  - component: {fileID: 1900095202}
   m_Layer: 5
   m_Name: New pet 2
   m_TagString: Untagged
@@ -56773,6 +56974,102 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1900095197}
   m_CullTransparentMesh: 1
+--- !u!82 &1900095202
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1900095197}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 4cc8c000b66eb8648a49a8bdec4ba50b, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1904867619
 GameObject:
   m_ObjectHideFlags: 0
@@ -64148,7 +64445,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2010230932
 RectTransform:
   m_ObjectHideFlags: 0

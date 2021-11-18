@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class LoadGameObject : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] private int timeToReturn;
     void Start()
     {
-        
-    }
 
+    }
     // Update is called once per frame
     void Update()
     {
-        Invoke("DisableGameObject", 1f);
+        StartCoroutine(DisableGameObject());
     }
-    private void DisableGameObject()
+    IEnumerator DisableGameObject()
     {
+        yield return new WaitForSeconds(timeToReturn);
         gameObject.SetActive(false);
     }
 }
