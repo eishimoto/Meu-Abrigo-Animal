@@ -23,6 +23,7 @@ public class CleaningTool : MonoBehaviour
 
     //particles
     [SerializeField] List<GameObject> particles;
+    private bool bubbles;
 
     public bool soap, shampoo;
 
@@ -46,6 +47,12 @@ public class CleaningTool : MonoBehaviour
         {
             instance = this;
         }
+        bubbles = true;
+    }
+    public void OnDisable()
+    {
+        bubbles = false;
+        DisableBubbles();
     }
     private void Start()
     {
@@ -290,12 +297,25 @@ public class CleaningTool : MonoBehaviour
 
     private void ActiveBubbleParticles()
     {
-        if(firtstToolUsed)
+        if(firtstToolUsed && bubbles)
         {
             if(UICanvas.on)
             {
                 particles[0].SetActive(true);
             }
+            if (UICanvas.on2)
+            {
+                particles[1].SetActive(true);
+            }
+            if (UICanvas.on3)
+            {
+                particles[2].SetActive(true);
+            }
+            if (UICanvas.on4)
+            {
+                particles[3].SetActive(true);
+            }
+
         }
         else if(!firtstToolUsed)
         {
@@ -303,6 +323,27 @@ public class CleaningTool : MonoBehaviour
             {
                 particles[0].SetActive(false);
             }
+            if (UICanvas.on2)
+            {
+                particles[1].SetActive(false);
+            }
+            if (UICanvas.on3)
+            {
+                particles[2].SetActive(false);
+            }
+            if (UICanvas.on4)
+            {
+                particles[3].SetActive(false);
+            }
+        }
+    }
+
+    public void DisableBubbles()
+    {
+        firtstToolUsed = false;
+        for (int i = 0; i < particles.Count; i++)
+        {
+            particles[i].SetActive(false);
         }
     }
     private void CheckCollisions()
