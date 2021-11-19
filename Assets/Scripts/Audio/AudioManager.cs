@@ -43,7 +43,7 @@ public class AudioManager : MonoBehaviour
         if(_effectsSource.mute)
         {
             changeSound = true;
-            sliderForEffects.value = 0;
+            sliderForEffects.value = 0.318f;
         }
         else
         {
