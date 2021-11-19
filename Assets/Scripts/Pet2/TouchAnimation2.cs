@@ -8,8 +8,6 @@ public class TouchAnimation2 : MonoBehaviour
     private Collider2D myCollider;
     private Animator animator;
 
-    [SerializeField] private List<Animation> Gestures;
-
     private Camera maincamera;
 
     [System.Obsolete]
@@ -38,6 +36,7 @@ public class TouchAnimation2 : MonoBehaviour
                 Collider2D touchedCollider = Physics2D.OverlapPoint(touchPosition);
                 if (myCollider == touchedCollider)
                 {
+                    animator.SetInteger("TouchIndex",Random.Range(0,4));
                     animator.SetTrigger("Touch");
                 }
             }
@@ -46,6 +45,7 @@ public class TouchAnimation2 : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Animation.Play(Gestures[Random.Range(0, Mathf.RoundToInt(Gestures.Count));
+        animator.SetInteger("TouchIndex", Random.Range(0, 4));
+        animator.SetTrigger("Touch");
     }
 }
