@@ -47,7 +47,7 @@ public class Timer : MonoBehaviour
             day++;
             resetPhotoValue = true;
             loadForDayChange.SetActive(true);
-            Money.instance.AddMoneyPhoto(100);
+            Money.instance.AddMoneyPhoto(5);
         }
 
         float hour = Mathf.FloorToInt(timeToDisplay / 60);
@@ -93,7 +93,7 @@ public class Timer : MonoBehaviour
         day++;
         _timeValue = _timeValueReset;
         resetPhotoValue = true;
-        Money.instance.AddMoneyPhoto(100);
+        Money.instance.AddMoneyPhoto(5);
         loadForDayChange.SetActive(true);
         if (day > 6)
         {

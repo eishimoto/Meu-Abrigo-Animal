@@ -40,6 +40,7 @@ public class UICanvas : MonoBehaviour
 
     private void Start()
     {
+        RoomZero();
     }
 
     private void Update()

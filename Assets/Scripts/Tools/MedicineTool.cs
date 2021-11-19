@@ -44,7 +44,6 @@ public class MedicineTool : MonoBehaviour
         maincamera = Camera.main;
 
         ToolSFXSource = GetComponent<AudioSource>(); //E
-
         _spriteRender = GetComponent<SpriteRenderer>();
         cantMove = false;
         UpdateTextMeshPro();
@@ -161,6 +160,7 @@ public class MedicineTool : MonoBehaviour
             cantMove = false;
         }
         ChangeSprite();
+        UpdateTextMeshPro();
     }
 
     public void PlayMedecineSound()
