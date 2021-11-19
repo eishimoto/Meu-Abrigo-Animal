@@ -43,12 +43,14 @@ public class AudioManager : MonoBehaviour
         if(_effectsSource.mute)
         {
             changeSound = true;
+            AudioListener.volume = 0;
             sliderForEffects.value = 0.318f;
         }
         else
         {
             changeSound = false;
             sliderForEffects.value = 1;
+            AudioListener.volume = 0.5f;
         }
     }
 
