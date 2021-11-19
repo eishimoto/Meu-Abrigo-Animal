@@ -67,6 +67,7 @@ public class Stats2 : MonoBehaviour
         //hungerStats = 50;
         //affectionStats = 70;
         //hygineStats = 70;
+        
     }
 
     private void Update()

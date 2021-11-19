@@ -10,13 +10,13 @@ public class TouchAnimation2 : MonoBehaviour
 
     private Camera maincamera;
 
-    [System.Obsolete]
+    private int random = Random.Range(0, 4);
+
     private void Start()
     {
         myCollider = GetComponent<Collider2D>();
         animator = GetComponent<Animator>();
         maincamera = Camera.main;
-        Random.seed = (int)System.DateTime.Now.Ticks;
     }
 
     private void Update()
@@ -36,8 +36,7 @@ public class TouchAnimation2 : MonoBehaviour
                 Collider2D touchedCollider = Physics2D.OverlapPoint(touchPosition);
                 if (myCollider == touchedCollider)
                 {
-                    animator.SetInteger("TouchIndex",Random.Range(0,4));
-                    animator.SetTrigger("Touch");
+                    RandomAction();
                 }
             }
         }
@@ -45,7 +44,22 @@ public class TouchAnimation2 : MonoBehaviour
 
     private void OnMouseDown()
     {
-        animator.SetInteger("TouchIndex", Random.Range(0, 4));
-        animator.SetTrigger("Touch");
+        RandomAction();
     }
+
+    private void RandomAction()
+    {
+        random = Random.Range(0, 4);
+        animator.SetInteger("TouchIndex", random);
+        animator.SetTrigger("Touch");
+        if (random == 0)
+        {
+            StartCoroutine(gameObject.GetComponent<PetSounds2>().CatMeow());
+        }
+        if(random == 2)
+        {
+            StartCoroutine(gameObject.GetComponent<PetSounds2>().CatAngry());
+        }
+    }
+        
 }
