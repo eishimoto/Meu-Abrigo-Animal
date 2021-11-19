@@ -8,13 +8,17 @@ public class TouchAnimation2 : MonoBehaviour
     private Collider2D myCollider;
     private Animator animator;
 
+    [SerializeField] private List<Animation> Gestures;
+
     private Camera maincamera;
 
+    [System.Obsolete]
     private void Start()
     {
         myCollider = GetComponent<Collider2D>();
         animator = GetComponent<Animator>();
         maincamera = Camera.main;
+        Random.seed = (int)System.DateTime.Now.Ticks;
     }
 
     private void Update()
@@ -38,5 +42,10 @@ public class TouchAnimation2 : MonoBehaviour
                 }
             }
         }
+    }
+
+    private void OnMouseDown()
+    {
+        Animation.Play(Gestures[Random.Range(0, Mathf.RoundToInt(Gestures.Count));
     }
 }
