@@ -143,7 +143,7 @@ public class Stats4 : MonoBehaviour
             {
                 hungerStats = maxHunger;
             }
-
+            Money.instance.AddMoneyPhoto(10);
             FoodTool.instance.UseInStats();
         }
 
@@ -154,7 +154,7 @@ public class Stats4 : MonoBehaviour
             {
                 hungerStats = maxHunger;
             }
-
+            Money.instance.AddMoneyPhoto(10);
             FoodToolTwo.instance.UseInStats();
         }
         if (collision.CompareTag("Food3"))
@@ -164,7 +164,7 @@ public class Stats4 : MonoBehaviour
             {
                 hungerStats = maxHunger;
             }
-
+            Money.instance.AddMoneyPhoto(10);
             FoodToolThree.instance.UseInStats();
         }
 
@@ -174,6 +174,7 @@ public class Stats4 : MonoBehaviour
             {
                 MedicineTool.instance.UseInStats();
                 maxAffection += 5;
+                Money.instance.AddMoneyPhoto(20);
             }
         }
 
@@ -183,6 +184,7 @@ public class Stats4 : MonoBehaviour
             {
                 MedicineTool2.instance.UseInStats();
                 maxHunger -= 5;
+                Money.instance.AddMoneyPhoto(20);
             }
         }
 
@@ -192,6 +194,7 @@ public class Stats4 : MonoBehaviour
             {
                 MedicineTool3.instance.UseInStats();
                 maxHygine += 5;
+                Money.instance.AddMoneyPhoto(20);
             }
         }
         if (collision.CompareTag("PurplePill"))
@@ -199,6 +202,7 @@ public class Stats4 : MonoBehaviour
             MixPills.instance.PurplePill();
             MedicineTool.instance.PlayMedecineSound();
             medecine3 = true;
+            Money.instance.AddMoneyPhoto(20);
         }
 
         if (collision.CompareTag("YellowPill"))
@@ -206,6 +210,7 @@ public class Stats4 : MonoBehaviour
             MixPills.instance.YellowPill();
             MedicineTool.instance.PlayMedecineSound();
             medecine1 = true;
+            Money.instance.AddMoneyPhoto(20);
         }
 
         if (collision.CompareTag("CyanPill"))
@@ -213,6 +218,7 @@ public class Stats4 : MonoBehaviour
             MixPills.instance.CyanPill();
             MedicineTool.instance.PlayMedecineSound();
             medecine2 = true;
+            Money.instance.AddMoneyPhoto(20);
         }
     }
 
@@ -255,6 +261,7 @@ public class Stats4 : MonoBehaviour
             CleaningTool2.triangleClean = false;
             CleaningTool2.circleClean = false;
             CleaningTool.firtstToolUsed = false;
+            Money.instance.AddMoneyPhoto(10);
         }
     }
 

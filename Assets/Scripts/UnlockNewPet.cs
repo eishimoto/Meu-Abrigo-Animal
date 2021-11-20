@@ -26,7 +26,7 @@ public class UnlockNewPet : MonoBehaviour
             newPet[0].SetActive(true);
         }
 
-        if (Timer.day == 2)
+        if (Timer.day == 3)
         {
             for (int i = 0; i < catOne.Count; i++)
             {
@@ -35,7 +35,7 @@ public class UnlockNewPet : MonoBehaviour
             newPet[2].SetActive(true);
         }
 
-        if (Timer.day == 3)
+        if (Timer.day == 4)
         {
             for (int i = 0; i < catOne.Count; i++)
             {

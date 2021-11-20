@@ -26,6 +26,7 @@ public class Grooming : MonoBehaviour
         {
             Stats4.count--;
         }
+        Money.instance.AddMoneyPhoto(2);
     }
     public void OnEnable()
     {

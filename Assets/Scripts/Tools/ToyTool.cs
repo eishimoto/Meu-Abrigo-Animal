@@ -108,6 +108,7 @@ public class ToyTool : MonoBehaviour
         myRigidbody.velocity = Vector2.zero;
         myRigidbody.bodyType = RigidbodyType2D.Kinematic;
         transform.position = _startPosition;
+        Money.instance.AddMoneyPhoto(10);
 
         if (UICanvas.on == true)
         {

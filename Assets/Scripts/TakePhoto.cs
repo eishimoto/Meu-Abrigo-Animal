@@ -14,7 +14,10 @@ public class TakePhoto : MonoBehaviour
     [SerializeField] private Transform parent;
     [SerializeField] private GameObject flashGameObject;
 
-    public static int catValue1, catValue2, dogValue1, dogValue2;
+    //private
+    private int random;
+
+    public static int petValue;
     public static TakePhoto instance;
     private void OnEnable()
     {
@@ -25,10 +28,7 @@ public class TakePhoto : MonoBehaviour
     }
     private void Start()
     {
-        catValue1 = 0;
-        catValue2 = 0;
-        dogValue1 = 0;
-        dogValue2 = 0;
+        petValue = 0;
     }
     private void Update()
     {
@@ -36,44 +36,48 @@ public class TakePhoto : MonoBehaviour
     }
     public void CatPostPhoto()
     {
-        if (catValue1 <= 2)
+        if (petValue <= 3)
         {
-            GameObject cat = Instantiate(catPhotoPrefab[0], new Vector3(0, 0, 0), Quaternion.identity);
+            random = Random.Range(0, 6);
+            GameObject cat = Instantiate(catPhotoPrefab[random], new Vector3(0, 0, 0), Quaternion.identity);
             cat.transform.SetParent(parent, false);
-            catValue1++;
+            petValue++;
             Money.instance.AddMoneyPhoto(10);
             flashGameObject.SetActive(true);
         }
     }
     public void Cat2PostPhoto()
     {
-        if (catValue2 <= 2)
+        if (petValue <= 3)
         {
-            GameObject cat2 = Instantiate(cat2PhotoPrefab[0], new Vector3(0, 0, 0), Quaternion.identity);
+            random = Random.Range(0, 6);
+            GameObject cat2 = Instantiate(cat2PhotoPrefab[random], new Vector3(0, 0, 0), Quaternion.identity);
             cat2.transform.SetParent(parent, false);
-            catValue2++;
+            petValue++;
             Money.instance.AddMoneyPhoto(10);
             flashGameObject.SetActive(true);
         }
     }
     public void DogPostPhoto()
     {
-        if (dogValue1 <= 2)
+        if (petValue <= 3)
         {
-            GameObject dog = Instantiate(dogPhotoPrefab[0], new Vector3(0, 0, 0), Quaternion.identity);
+            random = Random.Range(0, 6);
+            GameObject dog = Instantiate(dogPhotoPrefab[random], new Vector3(0, 0, 0), Quaternion.identity);
             dog.transform.SetParent(parent, false);
-            dogValue1++;
+            petValue++;
             Money.instance.AddMoneyPhoto(10);
             flashGameObject.SetActive(true);
         }
     }
     public void Dog2PostPhoto()
     {
-        if(dogValue2 <= 2)
+        if(petValue <= 3)
         {
-            GameObject dog2 = Instantiate(dog2PhotoPrefab[0], new Vector3(0, 0, 0), Quaternion.identity);
+            random = Random.Range(0, 6);
+            GameObject dog2 = Instantiate(dog2PhotoPrefab[random], new Vector3(0, 0, 0), Quaternion.identity);
             dog2.transform.SetParent(parent, false);
-            dogValue2++;
+            petValue++;
             Money.instance.AddMoneyPhoto(10);
             flashGameObject.SetActive(true);
         }
@@ -83,10 +87,7 @@ public class TakePhoto : MonoBehaviour
     {
         if(Timer.resetPhotoValue)
         {
-            catValue1 = 0;
-            catValue2 = 0;
-            dogValue1 = 0;
-            dogValue2 = 0;
+            petValue = 0;
             Timer.resetPhotoValue = false;
         }
     }

@@ -10,13 +10,14 @@ public class TouchAnimation2 : MonoBehaviour
 
     private Camera maincamera;
 
-    private int random = Random.Range(0, 4);
+    private int random;
 
     private void Start()
     {
         myCollider = GetComponent<Collider2D>();
         animator = GetComponent<Animator>();
         maincamera = Camera.main;
+        random = Random.Range(0, 4);
     }
 
     private void Update()
