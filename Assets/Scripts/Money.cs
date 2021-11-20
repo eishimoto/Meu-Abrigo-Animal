@@ -55,6 +55,14 @@ public class Money : MonoBehaviour
     private void Start()
     {
         UpdateMoney();
+        StartCoroutine(CheckHowMuchMoney());
+    }
+
+    IEnumerator CheckHowMuchMoney()
+    {
+        yield return new WaitForSeconds(1);
+        textDisplay.text = null;
+        textDisplay.text = money.ToString();
     }
 
     public void UpdateMoney()
@@ -72,7 +80,7 @@ public class Money : MonoBehaviour
 
     public void BuyFoodOne()
     {
-        if(money > food1)
+        if(money >= food1)
         {
             money -= food1;
             FoodTool.instance.AddFood();
@@ -82,15 +90,15 @@ public class Money : MonoBehaviour
     }
     public void UnlockFoodBowl()
     {
-        if(money > 25 && foodBowl == false)
+        if(money >= 20 && foodBowl == false)
         {
-            money -= 15;
+            money -= 20;
             foodUnlock[0].SetActive(true);
             foodBowl = true;
             UpdateMoney();
         }
 
-        else if (money > food2)
+        else if (money >= food2)
         {
             money -= food2;
             FoodToolTwo.instance.AddFood();
@@ -100,14 +108,14 @@ public class Money : MonoBehaviour
     }
     public void UnlockFoodBag()
     {
-        if (money > 35 && foodBag == false)
+        if (money >= 30 && foodBag == false)
         {
-            money -= 25;
+            money -= 30;
             foodUnlock[1].SetActive(true);
             foodBag = true;
             UpdateMoney();
         }
-        else if (money > food3)
+        else if (money >= food3)
         {
             money -= food3;
             FoodToolThree.instance.AddFood();
@@ -118,7 +126,7 @@ public class Money : MonoBehaviour
 
     public void UnlockBeachBall()
     {
-        if (money > 30 && beachBall == false)
+        if (money >= 30 && beachBall == false)
         {
             money -= 30;
             balls[0].SetActive(false);
@@ -130,7 +138,7 @@ public class Money : MonoBehaviour
 
     public void UnlockTrimmer()
     {
-        if(money > 50 && trimmer == false)
+        if(money >= 50 && trimmer == false)
         {
             money -= 50;
             cutTool[0].SetActive(false);
@@ -142,7 +150,7 @@ public class Money : MonoBehaviour
 
     public void UnlockShampoo()
     {
-        if (money > 50 && shampoo == false)
+        if (money >= 50 && shampoo == false)
         {
             money -= 50;
             cleaningTools[0].SetActive(false);
@@ -154,7 +162,7 @@ public class Money : MonoBehaviour
 
     public void UnlockDryer()
     {
-        if (money > 100 && dryer == false)
+        if (money >= 100 && dryer == false)
         {
             money -= 100;
             cleaningTools[1].SetActive(false);
@@ -166,7 +174,7 @@ public class Money : MonoBehaviour
 
     public void BuyMedicineOne()
     {
-        if (money > medicine1)
+        if (money >= medicine1)
         {
             money -= medicine1;
             MedicineTool.instance.AddMedicine();
@@ -176,7 +184,7 @@ public class Money : MonoBehaviour
     }
     public void BuyMedicineTwo()
     {
-        if (money > medicine1)
+        if (money >= medicine1)
         {
             money -= medicine1;
             MedicineTool2.instance.AddMedicine();
@@ -186,7 +194,7 @@ public class Money : MonoBehaviour
     }
     public void BuyMedicineThree()
     {
-        if (money > medicine1)
+        if (money >= medicine1)
         {
             money -= medicine1;
             MedicineTool3.instance.AddMedicine();
@@ -196,7 +204,7 @@ public class Money : MonoBehaviour
     }
     public void ActivateBallon()
     {
-        if(money > 10 && !ballon)
+        if(money >= 10 && !ballon)
         {
             money -= 10;
             accessorysToAdoption[0].SetActive(true);
@@ -206,7 +214,7 @@ public class Money : MonoBehaviour
     }
     public void ActivateHat()
     {
-        if (money > 10 && !hat)
+        if (money >= 10 && !hat)
         {
             money -= 10;
             accessorysToAdoption[1].SetActive(true);
@@ -216,7 +224,7 @@ public class Money : MonoBehaviour
     }
     public void ActivateYellowTie()
     {
-        if (money > 10 && !yellowTie)
+        if (money >= 10 && !yellowTie)
         {
             money -= 10;
             accessorysToAdoption[2].SetActive(true);
@@ -226,7 +234,7 @@ public class Money : MonoBehaviour
     }
     public void ActivateBlueTie()
     {
-        if (money > 10 && !blueTie)
+        if (money >= 10 && !blueTie)
         {
             money -= 10;
             accessorysToAdoption[3].SetActive(true);
@@ -236,7 +244,7 @@ public class Money : MonoBehaviour
     }
     public void ActivateRedTie()
     {
-        if (money > 10 && !redTie)
+        if (money >= 10 && !redTie)
         {
             money -= 10;
             accessorysToAdoption[4].SetActive(true);
@@ -246,7 +254,7 @@ public class Money : MonoBehaviour
     }
     public void ActivatePurpleTie()
     {
-        if (money > 10 && !purpleTie)
+        if (money >= 10 && !purpleTie)
         {
             money -= 10;
             accessorysToAdoption[5].SetActive(true);
@@ -256,7 +264,7 @@ public class Money : MonoBehaviour
     }
     public void ActivateTie()
     {
-        if (money > 10 && !tie)
+        if (money >= 10 && !tie)
         {
             money -= 10;
             accessorysToAdoption[6].SetActive(true);
@@ -266,7 +274,7 @@ public class Money : MonoBehaviour
     }
     public void ActivateMonacle()
     {
-        if (money > 10 && !monacle)
+        if (money >= 10 && !monacle)
         {
             money -= 10;
             accessorysToAdoption[7].SetActive(true);
@@ -276,7 +284,7 @@ public class Money : MonoBehaviour
     }
     public void ActivateTeeth()
     {
-        if (money > 10 && !teeth)
+        if (money >= 10 && !teeth)
         {
             money -= 10;
             accessorysToAdoption[8].SetActive(true);
@@ -286,7 +294,7 @@ public class Money : MonoBehaviour
     }
     public void ActivateEyePatch()
     {
-        if (money > 10 && !eyePatch)
+        if (money >= 10 && !eyePatch)
         {
             money -= 10;
             accessorysToAdoption[9].SetActive(true);
@@ -296,7 +304,7 @@ public class Money : MonoBehaviour
     }
     public void ActivateCollar()
     {
-        if (money > 10 && !collar)
+        if (money >= 10 && !collar)
         {
             money -= 10;
             accessorysToAdoption[10].SetActive(true);
@@ -306,7 +314,7 @@ public class Money : MonoBehaviour
     }
     public void ActivateWalker()
     {
-        if (money > 10 && !walker)
+        if (money >= 10 && !walker)
         {
             money -= 10;
             accessorysToAdoption[11].SetActive(true);
