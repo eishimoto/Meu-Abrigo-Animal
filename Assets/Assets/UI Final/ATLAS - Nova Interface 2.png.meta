@@ -1,0 +1,660 @@
+fileFormatVersion: 2
+guid: f27ea81716694ad4f84d4b98d6f4f321
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2541396165382929640
+    second: SHOP_Petisco
+  - first:
+      213: 3455025437611254932
+    second: SHOP_PoteRacao
+  - first:
+      213: 7306978804934637693
+    second: SHOP_Bola
+  - first:
+      213: 8579713177887654280
+    second: SHOP_Tosador
+  - first:
+      213: 3546587491793785595
+    second: SHOP_SacoRacao
+  - first:
+      213: 9024600959187509934
+    second: SHOP_Xampu
+  - first:
+      213: -373084835160623239
+    second: SHOP_Secador
+  - first:
+      213: -6535990084053384751
+    second: SHOP_Vermelho
+  - first:
+      213: -1304447087509851035
+    second: SHOP_Verde
+  - first:
+      213: -3792121320897150057
+    second: SHOP_GravataV
+  - first:
+      213: 695662216954532500
+    second: SHOP_Balao
+  - first:
+      213: 2133876011374233155
+    second: SHOP_Azul
+  - first:
+      213: -7124656454357048266
+    second: SHOP_GravataR
+  - first:
+      213: 6854182908493544045
+    second: SHOP_Chapeu
+  - first:
+      213: -5862792718595238789
+    second: SHOP_GravataAmarela
+  - first:
+      213: -4963136366365523837
+    second: SHOP_Dentes
+  - first:
+      213: 4241444403355862804
+    second: SHOP_Lenco
+  - first:
+      213: 4778941313344821099
+    second: SHOP_Monoculo
+  - first:
+      213: 438410113324910639
+    second: SHOP_GravataBlue
+  - first:
+      213: 7176060071666456323
+    second: SHOP_Coleira
+  - first:
+      213: -2057275584934424569
+    second: SHOP_TapaOlho
+  - first:
+      213: 4450600578700513668
+    second: SHOP_Guia
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 195
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SHOP_Petisco
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1835
+        width: 317
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ec7037f85ad44320800000000000000
+      internalID: 2541396165382929640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SHOP_PoteRacao
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 1835
+        width: 317
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 494e1ca7457b2ff20800000000000000
+      internalID: 3455025437611254932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SHOP_Bola
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 1835
+        width: 317
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d78ff61528a976560800000000000000
+      internalID: 7306978804934637693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SHOP_Tosador
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 1835
+        width: 317
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8814bb29da3411770800000000000000
+      internalID: 8579713177887654280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SHOP_SacoRacao
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1470
+        width: 317
+        height: 319
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf2563d7882083130800000000000000
+      internalID: 3546587491793785595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SHOP_Xampu
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 1470
+        width: 317
+        height: 319
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea2650c02c2dd3d70800000000000000
+      internalID: 9024600959187509934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SHOP_Secador
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 1470
+        width: 317
+        height: 319
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9777a21b15982daf0800000000000000
+      internalID: -373084835160623239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SHOP_Vermelho
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1104
+        width: 317
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d1c580d5af7b45a0800000000000000
+      internalID: -6535990084053384751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SHOP_Verde
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 1104
+        width: 317
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 564bea0094ca5ede0800000000000000
+      internalID: -1304447087509851035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SHOP_GravataV
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 1104
+        width: 317
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7938dba00cdaf5bc0800000000000000
+      internalID: -3792121320897150057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SHOP_Balao
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 1104
+        width: 317
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4925c3db91d77a900800000000000000
+      internalID: 695662216954532500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SHOP_Azul
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 739
+        width: 317
+        height: 317
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34640b43dec0d9d10800000000000000
+      internalID: 2133876011374233155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SHOP_GravataR
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 739
+        width: 317
+        height: 317
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 634aa5be3b2202d90800000000000000
+      internalID: -7124656454357048266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SHOP_Chapeu
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 739
+        width: 317
+        height: 317
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6abf4e4a03fe1f50800000000000000
+      internalID: 6854182908493544045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SHOP_GravataAmarela
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 383
+        width: 317
+        height: 319
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b745268b51d23aea0800000000000000
+      internalID: -5862792718595238789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SHOP_Dentes
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 383
+        width: 317
+        height: 319
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 380c5f645c56f1bb0800000000000000
+      internalID: -4963136366365523837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SHOP_Lenco
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 383
+        width: 317
+        height: 319
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41748947633acda30800000000000000
+      internalID: 4241444403355862804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SHOP_Monoculo
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 383
+        width: 317
+        height: 319
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b675b58fdc5325240800000000000000
+      internalID: 4778941313344821099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SHOP_GravataBlue
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 19
+        width: 317
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f288baedcab851600800000000000000
+      internalID: 438410113324910639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SHOP_Coleira
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 19
+        width: 317
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3071b826d9c769360800000000000000
+      internalID: 7176060071666456323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SHOP_TapaOlho
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 19
+        width: 317
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70056e261c61373e0800000000000000
+      internalID: -2057275584934424569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SHOP_Guia
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 19
+        width: 317
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 481979265a5b3cd30800000000000000
+      internalID: 4450600578700513668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
