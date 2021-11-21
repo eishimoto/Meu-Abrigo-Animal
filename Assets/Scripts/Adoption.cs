@@ -22,34 +22,33 @@ public class Adoption : MonoBehaviour
     {
         if (Stats.sick)
         {
-            //pets[0].SetActive(false);
             petsButtons[0].SetActive(false);
         }
         else if(!Stats.sick)
         {
             petsButtons[0].SetActive(true);
         }
+
         if (Stats2.sick)
         {
-           //pets[2].SetActive(false);
             petsButtons[2].SetActive(false);
         }
         else if (!Stats2.sick)
         {
             petsButtons[2].SetActive(true);
         }
+
         if (Stats3.sick)
         {
-            //pets[1].SetActive(false);
             petsButtons[1].SetActive(false);
         }
         else if (!Stats3.sick)
         {
             petsButtons[1].SetActive(true);
         }
+
         if (Stats4.sick)
         {
-            //pets[3].SetActive(false);
             petsButtons[3].SetActive(false);
         }
         else if (!Stats4.sick)
