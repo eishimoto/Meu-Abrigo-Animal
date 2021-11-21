@@ -45,7 +45,6 @@ public class MedicineTool : MonoBehaviour
 
         ToolSFXSource = GetComponent<AudioSource>(); //E
         _spriteRender = GetComponent<SpriteRenderer>();
-        cantMove = false;
         UpdateTextMeshPro();
         ChangeSprite();
         cantMove = true;
