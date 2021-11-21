@@ -178,8 +178,7 @@ public class Money : MonoBehaviour
         {
             money -= medicine1;
             MedicineTool.instance.AddMedicine();
-            MedicineTool.instance.UpdateTextMeshPro();
-            textDisplay.text = money.ToString();
+            UpdateMoney();
         }
     }
     public void BuyMedicineTwo()
@@ -188,8 +187,7 @@ public class Money : MonoBehaviour
         {
             money -= medicine1;
             MedicineTool2.instance.AddMedicine();
-            MedicineTool2.instance.UpdateTextMeshPro();
-            textDisplay.text = money.ToString();
+            UpdateMoney();
         }
     }
     public void BuyMedicineThree()
@@ -198,8 +196,7 @@ public class Money : MonoBehaviour
         {
             money -= medicine1;
             MedicineTool3.instance.AddMedicine();
-            MedicineTool3.instance.UpdateTextMeshPro();
-            textDisplay.text = money.ToString();
+            UpdateMoney();
         }
     }
     public void ActivateBallon()
