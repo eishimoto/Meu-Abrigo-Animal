@@ -46,6 +46,7 @@ public class Stats4 : MonoBehaviour
     //static
     public static int count = 0;
     public static Stats4 instance;
+    public static bool petNecessity;
 
     public void OnEnable()
     {
@@ -78,6 +79,7 @@ public class Stats4 : MonoBehaviour
         {
             IsClean();
         }
+        PlayButtonAnimation();
     }
 
     public void Diminish()
@@ -386,6 +388,17 @@ public class Stats4 : MonoBehaviour
         else
         {
             sick = false;
+        }
+    }
+    public void PlayButtonAnimation()
+    {
+        if (hungerStats < 50 || hygineStats < 50 || affectionStats < 50 || count >= 2 || sick)
+        {
+            petNecessity = true;
+        }
+        else if (hungerStats > 50 || hygineStats > 50 || affectionStats > 50 || count == 2 || !sick)
+        {
+            petNecessity = false;
         }
     }
 }

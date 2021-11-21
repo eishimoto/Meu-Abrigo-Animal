@@ -29,11 +29,11 @@ public class SelectPet : MonoBehaviour
 
     private void ButtonAnim()
     {
-        if (Stats.petNecessity)
+        if (Stats.petNecessity || Stats2.petNecessity || Stats3.petNecessity || Stats4.petNecessity)
         {
             animator.SetBool("Shake", true);
         }
-        else if (!Stats.petNecessity)
+        else if (!Stats.petNecessity || !Stats2.petNecessity || !Stats3.petNecessity || !Stats4.petNecessity)
         {
             animator.SetBool("Shake", false);
         }

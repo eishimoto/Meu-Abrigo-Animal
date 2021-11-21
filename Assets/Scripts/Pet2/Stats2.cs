@@ -48,6 +48,7 @@ public class Stats2 : MonoBehaviour
     //static
     public static int count = 0;
     public static Stats2 instance;
+    public static bool petNecessity;
 
     public void OnEnable()
     {
@@ -83,6 +84,7 @@ public class Stats2 : MonoBehaviour
             IsClean();
         }
         Animations();
+        PlayButtonAnimation();
     }
 
     public void Diminish()
@@ -428,6 +430,17 @@ public class Stats2 : MonoBehaviour
         else if(!sick)
         {
             myAnimator.SetBool("isSick", false);
+        }
+    }
+    public void PlayButtonAnimation()
+    {
+        if (hungerStats < 50 || hygineStats < 50 || affectionStats < 50 || count >= 2 || sick)
+        {
+            petNecessity = true;
+        }
+        else if (hungerStats > 50 || hygineStats > 50 || affectionStats > 50 || count == 2 || !sick)
+        {
+            petNecessity = false;
         }
     }
 }
