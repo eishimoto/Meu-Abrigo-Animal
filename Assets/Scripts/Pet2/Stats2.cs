@@ -430,5 +430,4 @@ public class Stats2 : MonoBehaviour
             myAnimator.SetBool("isSick", false);
         }
     }
-
 }
