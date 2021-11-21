@@ -17,6 +17,10 @@ public class Timer : MonoBehaviour
 
     public static int day;
     public static bool resetPhotoValue = false;
+    private void OnEnable()
+    {
+        day = 0;
+    }
     private void start()
     {
         day = 0;

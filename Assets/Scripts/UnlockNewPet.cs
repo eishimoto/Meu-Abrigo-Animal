@@ -43,6 +43,11 @@ public class UnlockNewPet : MonoBehaviour
             }
             newPet[1].SetActive(true);
         }
+
+        if (Timer.day == 5)
+        {
+            newPet[3].SetActive(true);
+        }
     }
 
     public void DestoryNewPet()
@@ -56,5 +61,9 @@ public class UnlockNewPet : MonoBehaviour
     public void DestoryNewPet3()
     {
         Destroy(newPet[2]);
+    }
+    public void DetoryLasdDay()
+    {
+        Destroy(newPet[3]);
     }
 }
