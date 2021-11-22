@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 12117684}
   - component: {fileID: 12117683}
   m_Layer: 5
-  m_Name: End
+  m_Name: Credy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -824,7 +824,7 @@ GameObject:
   - component: {fileID: 1753968675}
   - component: {fileID: 1753968674}
   m_Layer: 5
-  m_Name: End
+  m_Name: start
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -974,6 +974,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneNumber: 1
+  audio: {fileID: 1955485677}
 --- !u!224 &1955485676
 RectTransform:
   m_ObjectHideFlags: 0

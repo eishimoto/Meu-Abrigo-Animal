@@ -37,6 +37,7 @@ public class UICanvas : MonoBehaviour
     //static
     public static bool canUseTool = true;
     public static bool on, on2, on3,on4;
+    public static bool runTime;
 
     private void Start()
     {
@@ -108,14 +109,14 @@ public class UICanvas : MonoBehaviour
     public void Menu()
     {
         menu.SetActive(true);
-        Time.timeScale = 0;
+        runTime = false;
         canUseTool = false;
     }
 
     public void CloseMenu()
     {
         menu.SetActive(false);
-        Time.timeScale = 1;
+        runTime = true;
         canUseTool = true;
     }
 

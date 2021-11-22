@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class SceneLoad : MonoBehaviour
 {
     [SerializeField] private int sceneNumber;
+    public AudioSource audio;
     void Start()
     {
         
@@ -20,5 +21,6 @@ public class SceneLoad : MonoBehaviour
     public void ChangeToGame()
     {
         SceneManager.LoadScene(sceneNumber);
+        audio.mute = true;
     }
 }
