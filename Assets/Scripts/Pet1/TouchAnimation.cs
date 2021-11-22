@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TouchAnimation2 : MonoBehaviour
+public class TouchAnimation : MonoBehaviour
 {
     private bool _moveAllowed;
     private Collider2D myCollider;
@@ -12,6 +12,14 @@ public class TouchAnimation2 : MonoBehaviour
 
     private int random;
 
+    public static TouchAnimation instance;
+    private void OnEnable()
+    {
+        if (instance = null)
+        {
+            instance = this;
+        }
+    }
     private void Start()
     {
         myCollider = GetComponent<Collider2D>();
@@ -23,10 +31,10 @@ public class TouchAnimation2 : MonoBehaviour
     private void Update()
     {
         //MoveTool();
-        if(Stats2.action)
+        if(Stats.action)
         {
             PlayAction();
-            Stats2.action = false;
+            Stats.action = false;
         }
     }
 
@@ -42,7 +50,7 @@ public class TouchAnimation2 : MonoBehaviour
                 Collider2D touchedCollider = Physics2D.OverlapPoint(touchPosition);
                 if (myCollider == touchedCollider)
                 {
-                    RandomAction();
+                    PlayAction();
                 }
             }
         }
@@ -50,29 +58,13 @@ public class TouchAnimation2 : MonoBehaviour
 
     private void OnMouseDown()
     {
-        //RandomAction();
+        //PlayAction();
     }
 
-    private void RandomAction()
+    public void PlayAction()
     {
-        random = Random.Range(0, 4);
-        animator.SetInteger("TouchIndex", random);
         animator.SetTrigger("Touch");
-
-        if (random == 0)
-        {
-            StartCoroutine(gameObject.GetComponent<PetSounds2>().CatMeow());
-        }
-        if(random == 2)
-        {
-            StartCoroutine(gameObject.GetComponent<PetSounds2>().CatAngry());
-        }
-    }    
-
-    private void PlayAction()
-    {
-        animator.SetInteger("TouchIndex", 0);
-        animator.SetTrigger("Touch");
-        StartCoroutine(gameObject.GetComponent<PetSounds2>().CatMeow());
+        StartCoroutine(gameObject.GetComponent<PetSounds>().DogBark());
     }
 }
+

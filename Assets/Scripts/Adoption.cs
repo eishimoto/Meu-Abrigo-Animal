@@ -68,7 +68,7 @@ public class Adoption : MonoBehaviour
         CatOnScene = false;
         Cat2OnScene = false;
     }
-    public void SelectDogTow()
+    public void SelectDogTwo()
     {
         pets[0].SetActive(false);
         pets[1].SetActive(true);
@@ -111,9 +111,9 @@ public class Adoption : MonoBehaviour
             pets[i].SetActive(true);
         }
 
-        pets[0].transform.SetParent(postitions[0],false);
+        pets[2].transform.SetParent(postitions[0],false);
         pets[3].transform.SetParent(postitions[1], false);
-        pets[2].transform.SetParent(postitions[2], false);
+        pets[0].transform.SetParent(postitions[2], false);
         pets[1].transform.SetParent(postitions[3], false);
     }
 }

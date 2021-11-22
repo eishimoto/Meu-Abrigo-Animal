@@ -42,13 +42,11 @@ public class Stats : MonoBehaviour
     //animation
     private Animator myAnimator;
 
-    //bool
-    private bool canClean;
-
     //static
     public static int count = 0;
     public static Stats instance;
     public static bool petNecessity;
+    public static bool action;
 
     public void OnEnable()
     {
@@ -147,6 +145,7 @@ public class Stats : MonoBehaviour
             }
             Money.instance.AddMoneyPhoto(10);
             FoodTool.instance.UseInStats();
+            action = true;
         }
 
         if(collision.CompareTag("Food2"))
@@ -158,6 +157,7 @@ public class Stats : MonoBehaviour
             }
             Money.instance.AddMoneyPhoto(10);
             FoodToolTwo.instance.UseInStats();
+            action = true;
         }
         if (collision.CompareTag("Food3"))
         {
@@ -168,6 +168,7 @@ public class Stats : MonoBehaviour
             }
             Money.instance.AddMoneyPhoto(10);
             FoodToolThree.instance.UseInStats();
+            action = true;
         }
 
         if(collision.CompareTag("RedPill"))
@@ -178,6 +179,7 @@ public class Stats : MonoBehaviour
                 maxAffection += 5;
                 Money.instance.AddMoneyPhoto(20);
             }
+            action = true;
         }
 
         if (collision.CompareTag("GreenPill"))
@@ -188,6 +190,7 @@ public class Stats : MonoBehaviour
                 maxHunger += 5;
                 Money.instance.AddMoneyPhoto(20);
             }
+            action = true;
         }
 
         if (collision.CompareTag("BluePill"))
@@ -198,6 +201,7 @@ public class Stats : MonoBehaviour
                 maxHygine += 5;
                 Money.instance.AddMoneyPhoto(20);
             }
+            action = true;
         }
         if (collision.CompareTag("PurplePill"))
         {
@@ -205,6 +209,7 @@ public class Stats : MonoBehaviour
             MedicineTool.instance.PlayMedecineSound();
             medecine3 = true;
             Money.instance.AddMoneyPhoto(20);
+            action = true;
         }
 
         if(collision.CompareTag("YellowPill"))
@@ -213,6 +218,7 @@ public class Stats : MonoBehaviour
             MedicineTool.instance.PlayMedecineSound();
             medecine1 = true;
             Money.instance.AddMoneyPhoto(20);
+            action = true;
         }
 
         if (collision.CompareTag("CyanPill"))
@@ -221,6 +227,7 @@ public class Stats : MonoBehaviour
             MedicineTool.instance.PlayMedecineSound();
             medecine2 = true;
             Money.instance.AddMoneyPhoto(20);
+            action = true;
         }
     }
 
@@ -230,6 +237,7 @@ public class Stats : MonoBehaviour
         if (affectionStats >= maxAffection)
         {
             affectionStats = maxAffection;
+            action = true;
         }
     }
 
@@ -254,6 +262,7 @@ public class Stats : MonoBehaviour
             {
                 valueToadd = 50;
             }
+            action = true;
 
             hygineStats = hygineStats + valueToadd;
             if (hygineStats >= maxHygine)
@@ -434,11 +443,11 @@ public class Stats : MonoBehaviour
 
     public void PlayButtonAnimation()
     {
-        if(hungerStats < 50 || hygineStats < 50 || affectionStats < 50 || count >=2 || sick)
+        if(hungerStats < 50 || hygineStats < 50 || affectionStats < 50 || count >= 2 || sick)
         {
             petNecessity = true;
         }
-        else if(hungerStats > 50 || hygineStats > 50 || affectionStats > 50 || count == 2 || !sick)
+        else if(hungerStats > 50 || hygineStats > 50 || affectionStats > 50 || count < 2 || !sick)
         {
             petNecessity = false;
         }

@@ -396,7 +396,7 @@ public class Stats3 : MonoBehaviour
         {
             petNecessity = true;
         }
-        else if (hungerStats > 50 || hygineStats > 50 || affectionStats > 50 || count == 2 || !sick)
+        else if (hungerStats > 50 || hygineStats > 50 || affectionStats > 50 || count < 2 || !sick)
         {
             petNecessity = false;
         }
