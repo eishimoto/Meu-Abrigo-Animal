@@ -17,6 +17,8 @@ public class ToyTool : MonoBehaviour
     [SerializeField] private AudioClip ball;
 
 
+    private float postion1, postiton2;
+
     //movement
     private Vector3 lastVelocity;
 
@@ -63,6 +65,7 @@ public class ToyTool : MonoBehaviour
                 if (myCollider == touchedCollider)
                 {
                     _moveAllowed = true;
+                    postion1 = Input.GetTouch(0).position.x;
                 }
             }
             if (touch.phase == TouchPhase.Moved)
@@ -75,29 +78,27 @@ public class ToyTool : MonoBehaviour
 
             if (touch.phase == TouchPhase.Ended)
             {
-                if (touch.phase == TouchPhase.Ended)
-                {
-                    _moveAllowed = false;
-                    StartCoroutine(SlowBallDown());
-                }
+                postiton2 = Input.GetTouch(0).position.y;
+                _moveAllowed = false;
+                StartCoroutine(SlowBallDown());
             }
         }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        var speed = lastVelocity.magnitude;
-        var direction = Vector3.Reflect(lastVelocity.normalized, collision.contacts[0].normal);
-        myRigidbody.velocity = direction * Mathf.Max(speed, 0f);
         if (collision.gameObject.CompareTag("Wall"))
         {
+            var speed = lastVelocity.magnitude;
+            var direction = Vector3.Reflect(lastVelocity.normalized, collision.contacts[0].normal);
+            myRigidbody.velocity = direction * Mathf.Max(speed, 0f);
             audioSource.PlayOneShot(ball);
         }
     }
     private void MoveBall()
     {
         myRigidbody.bodyType = RigidbodyType2D.Dynamic;
-        Vector2 direction = new Vector2((float)Random.Range(-500, 500), (float)Random.Range(-1000, 1000));
+        Vector2 direction = new Vector2(postion1 / 10, postiton2 / 10);
         myRigidbody.AddForce(direction);
     }
 
