@@ -74,7 +74,7 @@ public class Stats2 : MonoBehaviour
 
     private void Update()
     {
-        if (Timer.day < 6)
+        if (Timer.day < 6 || UICanvas.runTime)
         {
             Diminish();
             GrowFur();

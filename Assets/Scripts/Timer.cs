@@ -29,20 +29,23 @@ public class Timer : MonoBehaviour
 
     private void Update()
     {
-        if (_timeValue > 0)
+        if(UICanvas.runTime)
         {
-            _timeValue += 2 * Time.deltaTime;
-        }
-        else 
-        {
-            _timeValue = 540;
-        }
+            if (_timeValue > 0)
+            {
+                _timeValue += 2 * Time.deltaTime;
+            }
+            else
+            {
+                _timeValue = 540;
+            }
 
-        if (day < 6)
-        {
-            DisplayTime(_timeValue);
+            if (day < 6)
+            {
+                DisplayTime(_timeValue);
+            }
+            DayChange();
         }
-        DayChange();
     }
     private void DisplayTime(float timeToDisplay)
     {
