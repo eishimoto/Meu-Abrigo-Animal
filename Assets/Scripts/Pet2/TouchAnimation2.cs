@@ -61,6 +61,5 @@ public class TouchAnimation2 : MonoBehaviour
         {
             StartCoroutine(gameObject.GetComponent<PetSounds2>().CatAngry());
         }
-    }
-        
+    }    
 }

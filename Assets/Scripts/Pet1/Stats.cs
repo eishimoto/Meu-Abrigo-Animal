@@ -40,6 +40,7 @@ public class Stats : MonoBehaviour
     private float hungerStats, affectionStats, hygineStats;
 
     //animation
+    private Animator myAnimator;
 
     //bool
     private bool canClean;
@@ -59,6 +60,7 @@ public class Stats : MonoBehaviour
 
     private void Start()
     {
+        myAnimator = GetComponent<Animator>();
         hungerStats = maxHunger;
         affectionStats = maxAffection;
         hygineStats = maxHygine;
@@ -76,6 +78,7 @@ public class Stats : MonoBehaviour
         {
             IsClean();
         }
+        Animations();
         PlayButtonAnimation();
     }
 
@@ -388,6 +391,44 @@ public class Stats : MonoBehaviour
         else
         {
             sick = false;
+        }
+    }
+    private void Animations()
+    {
+        if (hungerStats < 50)
+        {
+            myAnimator.SetBool("isHungry", true);
+        }
+        else if (hungerStats > 50)
+        {
+            myAnimator.SetBool("isHungry", false);
+        }
+
+        if (affectionStats < 50)
+        {
+            myAnimator.SetBool("isSad", true);
+        }
+        else if (affectionStats > 50)
+        {
+            myAnimator.SetBool("isSad", false);
+        }
+
+        if (hygineStats < 50)
+        {
+            myAnimator.SetBool("isDirty", true);
+        }
+        else if (hygineStats > 50)
+        {
+            myAnimator.SetBool("isDirty", false);
+        }
+
+        if (sick)
+        {
+            myAnimator.SetBool("isSick", true);
+        }
+        else if (!sick)
+        {
+            myAnimator.SetBool("isSick", false);
         }
     }
 
