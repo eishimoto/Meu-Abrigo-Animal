@@ -106,7 +106,6 @@ public class ToyTool : MonoBehaviour
     IEnumerator SlowBallDown()
     {
         yield return new WaitForSeconds(stopBall);
-
         myRigidbody.freezeRotation = true;
         myRigidbody.velocity = Vector2.zero;
         myRigidbody.bodyType = RigidbodyType2D.Kinematic;
@@ -138,10 +137,8 @@ public class ToyTool : MonoBehaviour
             Vector3 mouseP = new Vector3(Input.mousePosition.x, Input.mousePosition.y, Input.mousePosition.z + 10f);
             Vector3 worldP = maincamera.ScreenToWorldPoint(mouseP);
             transform.position = worldP;
-            MoveBall();
         }
     }
-
     private void OnMouseUp()
     {
         StartCoroutine(SlowBallDown());

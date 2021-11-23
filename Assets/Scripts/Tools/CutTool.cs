@@ -57,7 +57,7 @@ public class CutTool : MonoBehaviour
                 if (myCollider == touchedCollider)
                 {
                     _moveAllowed = true;
-                    myAnimator.SetBool("move", true);
+                    AnimationCheck();
                 }
             }
             if (touch.phase == TouchPhase.Moved)
@@ -74,7 +74,7 @@ public class CutTool : MonoBehaviour
                 {
                     _moveAllowed = false;
                     transform.position = _startPosition;
-                    myAnimator.SetBool("move", false);
+                    StopAnimationCheck();
                 }
             }
         }
@@ -89,14 +89,38 @@ public class CutTool : MonoBehaviour
            Vector3 mouseP = new Vector3(Input.mousePosition.x, Input.mousePosition.y, Input.mousePosition.z + 10f);
            Vector3 worldP = maincamera.ScreenToWorldPoint(mouseP);
            transform.position = worldP;
-            myAnimator.SetBool("move", true);
+           AnimationCheck();
         }
     }
 
     private void OnMouseUp()
     {
         transform.position = _startPosition;
-        myAnimator.SetBool("move", false);
+        StopAnimationCheck();
+    }
+
+    private void AnimationCheck()
+    {
+        if (scissorOn)
+        {
+            myAnimator.SetBool("move", true);
+        }
+        if(trimmerOn)
+        {
+            myAnimator.SetBool("Trimmer", true);
+        }
+    }
+
+    private void StopAnimationCheck()
+    {
+        if (scissorOn)
+        {
+            myAnimator.SetBool("move", false);
+        }
+        if (trimmerOn)
+        {
+            myAnimator.SetBool("Trimmer", false);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

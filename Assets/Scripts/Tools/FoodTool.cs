@@ -22,8 +22,10 @@ public class FoodTool : MonoBehaviour
     //sounds
     [Header("Tool SFX")] //E
     public AudioClip Snack_Sound;
-
     AudioSource ToolSFXSource; //E
+
+    //animation
+    private Animator myAnimator;
 
     //bool
     public static bool cantMove;
@@ -42,11 +44,11 @@ public class FoodTool : MonoBehaviour
     private void Start()
     {
         myCollider = GetComponent<Collider2D>();
-        //_startPosition = transform.position;
         maincamera = Camera.main;
 
         ToolSFXSource = GetComponent<AudioSource>(); //E
 
+        myAnimator = GetComponent<Animator>();
         _spriteRender = GetComponent<SpriteRenderer>();
         cantMove = false;
         UpdateTextMeshPro();
@@ -76,6 +78,7 @@ public class FoodTool : MonoBehaviour
                 if (myCollider == touchedCollider)
                 {
                     _moveAllowed = true;
+                    myAnimator.SetBool("move", true);
                 }
             }
             if (touch.phase == TouchPhase.Moved)
@@ -92,6 +95,7 @@ public class FoodTool : MonoBehaviour
                 {
                     _moveAllowed = false;
                     transform.position = _startPosition;
+                    myAnimator.SetBool("move", false);
                 }
             }
         }
@@ -108,6 +112,7 @@ public class FoodTool : MonoBehaviour
                 Vector3 mouseP = new Vector3(Input.mousePosition.x, Input.mousePosition.y, Input.mousePosition.z + 10f);
                 Vector3 worldP = maincamera.ScreenToWorldPoint(mouseP);
                 transform.position = worldP;
+                myAnimator.SetBool("move", true);
             }
         }
     }
@@ -115,6 +120,7 @@ public class FoodTool : MonoBehaviour
     private void OnMouseUp()
     {
         transform.position = _startPosition;
+        myAnimator.SetBool("move", false);
     }
 
     public void UseInStats()
