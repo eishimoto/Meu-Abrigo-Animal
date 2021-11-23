@@ -100,16 +100,18 @@ public class ToyTool : MonoBehaviour
         myRigidbody.bodyType = RigidbodyType2D.Dynamic;
         Vector2 direction = new Vector2(postion1 / 10, postiton2 / 10);
         myRigidbody.AddForce(direction);
+        myRigidbody.freezeRotation = false;
     }
 
     IEnumerator SlowBallDown()
     {
         yield return new WaitForSeconds(stopBall);
 
+        myRigidbody.freezeRotation = true;
         myRigidbody.velocity = Vector2.zero;
         myRigidbody.bodyType = RigidbodyType2D.Kinematic;
         transform.position = _startPosition;
-        Money.instance.AddMoneyPhoto(10);
+        Money.instance.AddMoneyPhoto(5);
 
         if (UICanvas.on == true)
         {
