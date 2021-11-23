@@ -72,11 +72,14 @@ public class Stats2 : MonoBehaviour
 
     private void Update()
     {
-        if (Timer.day < 6 || UICanvas.runTime)
+        if (Timer.day < 6)
         {
-            Diminish();
-            GrowFur();
-            CheckIfSick();
+            if (UICanvas.runTime)
+            {
+                Diminish();
+                GrowFur();
+                CheckIfSick();
+            }
         }
         if (UICanvas.on2 == true)
         {
