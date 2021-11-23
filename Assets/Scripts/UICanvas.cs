@@ -26,6 +26,7 @@ public class UICanvas : MonoBehaviour
     [SerializeField] private Vector2 onScreen;
     [SerializeField] private Vector2 onScreen2;
     [SerializeField] private Vector2 onScreen3;
+    [SerializeField] private Vector2 onScreen4;
     [SerializeField] private Vector2 onScreenStats;
     [SerializeField] private Vector2 offScreen;
     [SerializeField] private Vector2 offScreen2;
@@ -97,7 +98,7 @@ public class UICanvas : MonoBehaviour
             pets[0].transform.position = offScreen;
             pets[1].transform.position = offScreen2;
             pets[2].transform.position = offScreen3;
-            pets[3].transform.position = onScreen;
+            pets[3].transform.position = onScreen4;
             on = false;
             on2 = false;
             on3 = false;
