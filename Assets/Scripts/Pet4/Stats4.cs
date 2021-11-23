@@ -40,13 +40,11 @@ public class Stats4 : MonoBehaviour
     //float
     private float hungerStats, affectionStats, hygineStats;
 
-    //bool
-    private bool canClean;
-
     //static
     public static int count = 0;
     public static Stats4 instance;
     public static bool petNecessity;
+    public static bool action;
 
     public void OnEnable()
     {

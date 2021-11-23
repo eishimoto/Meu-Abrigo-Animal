@@ -42,8 +42,6 @@ public class Stats2 : MonoBehaviour
     //float
     private float hungerStats, affectionStats, hygineStats;
 
-    //bool
-    private bool canClean;
 
     //static
     public static int count = 0;
