@@ -11,9 +11,7 @@ public class Tutorial : MonoBehaviour
     private int index;
     [SerializeField] private float typingSpeed;
     [SerializeField] private GameObject continueButton;
-    [SerializeField] private GameObject grup;
     [SerializeField] private Image panelImage;
-    [SerializeField] private List<GameObject> particles;
 
     private void OnEnable()
     {
@@ -55,9 +53,14 @@ public class Tutorial : MonoBehaviour
         else
         {
             textBox.text = null;
-            grup.SetActive(false);
+            StartCoroutine(CloseTextBox());
             panelImage.enabled = false;
-            particles[0].SetActive(true);
         }
+    }
+
+    IEnumerator CloseTextBox()
+    {
+        yield return new WaitForSeconds(0.02f);
+        gameObject.SetActive(false);
     }
 }
