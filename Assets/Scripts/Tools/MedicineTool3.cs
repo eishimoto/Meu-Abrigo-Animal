@@ -18,11 +18,12 @@ public class MedicineTool3 : MonoBehaviour
     //text
     [SerializeField] private TextMeshProUGUI textDisplay;
     [SerializeField] private int quantity;
+    //animation
+    private Animator myAnimator;
 
     //sounds
     [Header("Tool SFX")] //E
     public AudioClip BluePill_Sound;
-
     AudioSource ToolSFXSource; //E
 
     //bool
@@ -39,6 +40,7 @@ public class MedicineTool3 : MonoBehaviour
 
     private void Start()
     {
+        myAnimator = GetComponent<Animator>();
         myCollider = GetComponent<Collider2D>();
         _startPosition = transform.position;
         maincamera = Camera.main;
@@ -75,6 +77,7 @@ public class MedicineTool3 : MonoBehaviour
                 if (myCollider == touchedCollider)
                 {
                     _moveAllowed = true;
+                    myAnimator.SetBool("blue", true);
                 }
             }
             if (touch.phase == TouchPhase.Moved)
@@ -91,6 +94,7 @@ public class MedicineTool3 : MonoBehaviour
                 {
                     _moveAllowed = false;
                     transform.position = _startPosition;
+                    myAnimator.SetBool("blue", false);
                 }
             }
         }
@@ -107,6 +111,7 @@ public class MedicineTool3 : MonoBehaviour
                 Vector3 mouseP = new Vector3(Input.mousePosition.x, Input.mousePosition.y, Input.mousePosition.z + 10f);
                 Vector3 worldP = maincamera.ScreenToWorldPoint(mouseP);
                 transform.position = worldP;
+                myAnimator.SetBool("blue", true);
             }
         }
     }
@@ -114,6 +119,7 @@ public class MedicineTool3 : MonoBehaviour
     private void OnMouseUp()
     {
         transform.position = _startPosition;
+        myAnimator.SetBool("blue", false);
     }
     public void UseInStats()
     {

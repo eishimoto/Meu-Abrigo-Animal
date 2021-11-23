@@ -27,8 +27,10 @@ public class CleaningTool2 : MonoBehaviour
     [Header("Tool SFX")] //E
     public AudioClip Towel_Sound;
     public AudioClip Dryer_Sound;
-
     AudioSource ToolSFXSource; //E. Adicionei um AudioSource aos assets de ferramentas
+
+    //Animation
+    private Animator myAnimator;
 
     //sound enabler
     [Header("Enable SFX")] //E
@@ -47,6 +49,7 @@ public class CleaningTool2 : MonoBehaviour
     }
     private void Start()
     {
+        myAnimator = GetComponent<Animator>();
         myCollider = GetComponent<Collider2D>();
         ToolSFXSource = GetComponent<AudioSource>(); //E
         _startPosition = transform.position;
@@ -93,7 +96,7 @@ public class CleaningTool2 : MonoBehaviour
                 {
                     _moveAllowed = true;
                     areaToDraw[randomForm].SetActive(true);
-
+                    AnimationCheck();
                 }
             }
             if (touch.phase == TouchPhase.Moved)
@@ -113,6 +116,7 @@ public class CleaningTool2 : MonoBehaviour
                     areaToDraw[randomForm].SetActive(false);
                     SetAllToFalse();
                     randomForm = Random.Range(0, 3);
+                    StopAnimationCheck();
                 }
             }
         }
@@ -128,6 +132,7 @@ public class CleaningTool2 : MonoBehaviour
             Vector3 worldP = maincamera.ScreenToWorldPoint(mouseP);
             transform.position = worldP;
             areaToDraw[randomForm].SetActive(true);
+            AnimationCheck();
         }
     }
 
@@ -139,6 +144,30 @@ public class CleaningTool2 : MonoBehaviour
         ResetSFXBools(); //E
         ToolSFXSource.Stop(); //E
         randomForm = Random.Range(0, 3);
+        StopAnimationCheck();
+    }
+    private void AnimationCheck()
+    {
+        if (towl)
+        {
+            myAnimator.SetBool("towl", true);
+        }
+        if (dryer)
+        {
+            myAnimator.SetBool("dryer", true);
+        }
+    }
+
+    private void StopAnimationCheck()
+    {
+        if (towl)
+        {
+            myAnimator.SetBool("towl", false);
+        }
+        if (dryer)
+        {
+            myAnimator.SetBool("dryer", false);
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

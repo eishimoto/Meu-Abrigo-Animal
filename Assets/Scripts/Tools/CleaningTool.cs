@@ -30,8 +30,10 @@ public class CleaningTool : MonoBehaviour
     //sounds
     [Header("Tool SFX")] //E
     public AudioClip Soap_Shampoo_Sound;
-
     AudioSource ToolSFXSource; //E. Adicionei um AudioSource aos assets de ferramentas
+
+    //Animation
+    private Animator myAnimator;
 
     //sound enabler
     [Header("Enable SFX")] //E
@@ -56,6 +58,7 @@ public class CleaningTool : MonoBehaviour
     }
     private void Start()
     {
+        myAnimator = GetComponent<Animator>();
         myCollider = GetComponent<Collider2D>();
         ToolSFXSource = GetComponent<AudioSource>(); //E
         SFX1 = true; SFX2 = true; SFX3 = true; SFX4 = true; //E
@@ -99,7 +102,9 @@ public class CleaningTool : MonoBehaviour
                 {
                     _moveAllowed = true;
                     areaToDraw[randomForm].SetActive(true);
-                    
+                    AnimationCheck();
+
+
                 }
             }
             if (touch.phase == TouchPhase.Moved)
@@ -119,6 +124,7 @@ public class CleaningTool : MonoBehaviour
                     areaToDraw[randomForm].SetActive(false);
                     SetAllToFalse();
                     randomForm = Random.Range(0, 3);
+                    StopAnimationCheck();
                 }
             }
         }
@@ -134,6 +140,7 @@ public class CleaningTool : MonoBehaviour
             Vector3 worldP = maincamera.ScreenToWorldPoint(mouseP);
             transform.position = worldP;
             areaToDraw[randomForm].SetActive(true);
+            AnimationCheck();
         }
     }
 
@@ -144,6 +151,30 @@ public class CleaningTool : MonoBehaviour
         SetAllToFalse();
         ResetSFXBools(); //E
         randomForm = Random.Range(0, 3);
+        StopAnimationCheck();
+    }
+    private void AnimationCheck()
+    {
+        if (soapOn)
+        {
+            myAnimator.SetBool("soap", true);
+        }
+        if (shampooOn)
+        {
+            myAnimator.SetBool("shampoo", true);
+        }
+    }
+
+    private void StopAnimationCheck()
+    {
+        if (soapOn)
+        {
+            myAnimator.SetBool("soap", false);
+        }
+        if (shampooOn)
+        {
+            myAnimator.SetBool("shampoo", false);
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
