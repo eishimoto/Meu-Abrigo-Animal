@@ -44,12 +44,12 @@ public class AudioManager : MonoBehaviour
         {
             changeSound = true;
             AudioListener.volume = 0;
-            sliderForEffects.value = 0.318f;
+            sliderForEffects.value = 0.35f;
         }
         else
         {
             changeSound = false;
-            sliderForEffects.value = 1;
+            sliderForEffects.value = 0.916f;
             AudioListener.volume = 0.5f;
         }
     }
