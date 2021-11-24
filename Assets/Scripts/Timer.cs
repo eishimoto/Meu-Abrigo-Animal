@@ -13,6 +13,7 @@ public class Timer : MonoBehaviour
     [SerializeField] private List<Transform> dayPos;
     [SerializeField] private GameObject loadForDayChange;
     [SerializeField] private GameObject AdopitionCanvas;
+    [SerializeField] private GameObject LosePanel;
     [SerializeField] private GameObject skipButton;
 
     public static int day;
@@ -98,7 +99,7 @@ public class Timer : MonoBehaviour
         if (day == 6)
         {
             Circle.transform.SetParent(dayPos[6], false);
-            AdopitionCanvas.SetActive(true);
+            FinalScene();
         }
     }
 
@@ -113,6 +114,18 @@ public class Timer : MonoBehaviour
         if (day > 6)
         {
             day = 0;
+        }
+    }
+
+    private void FinalScene()
+    {
+        if(!Stats.sick || !Stats2.sick || !Stats3.sick || !Stats4.sick)
+        {
+            AdopitionCanvas.SetActive(true);
+        }
+        if(Stats.sick && Stats2.sick && Stats3.sick && Stats4.sick )
+        {
+            LosePanel.SetActive(true);
         }
     }
 }

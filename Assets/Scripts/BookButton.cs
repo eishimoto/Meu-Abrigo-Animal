@@ -14,6 +14,7 @@ public class BookButton : MonoBehaviour
         {
             instance = this;
         }
+        animator.SetBool("Shake", false);
     }
     private void Start()
     {
