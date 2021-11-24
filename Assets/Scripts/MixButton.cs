@@ -2,15 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SelectPet : MonoBehaviour
+public class MixButton : MonoBehaviour
 {
     //animation
     private Animator animator;
 
-    public static SelectPet instance;
+    public static MixButton instance;
     private void OnEnable()
     {
-        if(instance = null)
+        if (instance = null)
         {
             instance = this;
         }
@@ -26,11 +26,11 @@ public class SelectPet : MonoBehaviour
 
     private void ButtonAnim()
     {
-        if (Stats.petNecessity || Stats2.petNecessity || Stats3.petNecessity || Stats4.petNecessity)
+        if (Stats.sick || Stats2.sick || Stats3.sick || Stats4.sick)
         {
             animator.SetBool("Shake", true);
         }
-        else if (!Stats.petNecessity || !Stats2.petNecessity || !Stats3.petNecessity || !Stats4.petNecessity)
+        else if (!Stats.sick || !Stats2.sick || !Stats3.sick || !Stats4.sick)
         {
             animator.SetBool("Shake", false);
         }
