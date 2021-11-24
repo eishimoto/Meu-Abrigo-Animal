@@ -323,7 +323,7 @@ public class Stats2 : MonoBehaviour
     }
     private void CheckIfSick()
     {
-        if (hungerStats <= 0)
+        if (hungerStats <= 0 && !disease2 && !disease3)
         {
             disease1 = true;
             diseaseIndicator.color = medecineColor[1];
@@ -347,7 +347,7 @@ public class Stats2 : MonoBehaviour
             medecine1 = false;
         }
 
-        if (hygineStats <= 0)
+        if (hygineStats <= 0 && !disease1 && !disease3)
         {
             disease2 = true;
             diseaseIndicator.color = medecineColor[2];
@@ -372,7 +372,7 @@ public class Stats2 : MonoBehaviour
             medecine2 = false;
         }
 
-        if (count == 4)
+        if (count == 4 && !disease1 && !disease2)
         {
             disease3 = true;
             diseaseIndicator.color = medecineColor[0];
