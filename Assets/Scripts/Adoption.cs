@@ -104,102 +104,29 @@ public class Adoption : MonoBehaviour
 
     public void LastAction()
     {
-        //all
-        if (!Stats.sick && !Stats2.sick && !Stats3.sick && !Stats4.sick)
+        lasPanel.SetActive(true);
+
+        for (int i = 0; i < pets.Count; i++)
         {
-            lasPanel.SetActive(true);
+            pets[i].SetActive(true);
+        }
 
-            for (int i = 0; i < pets.Count; i++)
-            {
-                pets[i].SetActive(true);
-            }
-
-            pets[2].transform.SetParent(postitions[0], false); // cat 1
-            pets[3].transform.SetParent(postitions[1], false); // cat 2
+        if (petsButtons[0].activeInHierarchy)
+        {
             pets[0].transform.SetParent(postitions[2], false); // dog 1
+        }
+
+        if (petsButtons[1].activeInHierarchy)
+        {
             pets[1].transform.SetParent(postitions[3], false); // dog 2
         }
-
-        //none
-        if(Stats.sick && Stats2.sick && Stats3.sick && Stats4.sick)
+        if (petsButtons[2].activeInHierarchy)
         {
-            lasPanel.SetActive(true);
+            pets[2].transform.SetParent(postitions[0], false); // cat 1
         }
-
-        //singles
-        if(!Stats.sick && Stats2.sick && Stats3.sick && Stats4.sick)
+        if (petsButtons[3].activeInHierarchy)
         {
-            pets[0].transform.SetParent(postitions[2], false);
-        }
-        if (!Stats2.sick && Stats2.sick && Stats3.sick && Stats4.sick)
-        {
-            pets[2].transform.SetParent(postitions[0], false);
-        }
-        if (!Stats3.sick && Stats2.sick && Stats3.sick && Stats4.sick)
-        {
-            pets[1].transform.SetParent(postitions[3], false);
-        }
-        if (!Stats4.sick && Stats2.sick && Stats3.sick && Stats4.sick)
-        {
-            pets[3].transform.SetParent(postitions[1], false);
-        }
-
-        //Duble
-        if(!Stats.sick && !Stats2.sick && Stats3.sick && Stats4.sick)
-        {
-            pets[0].transform.SetParent(postitions[2], false);
-            pets[2].transform.SetParent(postitions[0], false);
-        }
-        if (!Stats.sick && Stats2.sick && !Stats3.sick && Stats4.sick)
-        {
-            pets[0].transform.SetParent(postitions[2], false);
-            pets[1].transform.SetParent(postitions[3], false);
-        }
-        if (!Stats.sick && Stats2.sick && Stats3.sick && !Stats4.sick)
-        {
-            pets[0].transform.SetParent(postitions[2], false);
-            pets[3].transform.SetParent(postitions[1], false);
-        }
-        if (Stats.sick && !Stats2.sick && !Stats3.sick && Stats4.sick)
-        {
-            pets[1].transform.SetParent(postitions[3], false);
-            pets[2].transform.SetParent(postitions[1], false);
-        }
-        if (Stats.sick && !Stats2.sick && Stats3.sick && !Stats4.sick)
-        {
-            pets[1].transform.SetParent(postitions[3], false);
-            pets[3].transform.SetParent(postitions[1], false);
-        }
-        if (Stats.sick && Stats2.sick && !Stats3.sick && !Stats4.sick)
-        {
-            pets[2].transform.SetParent(postitions[0], false);
-            pets[3].transform.SetParent(postitions[1], false);
-        }
-
-        //triple
-        if (!Stats.sick && !Stats2.sick && !Stats3.sick && Stats4.sick)
-        {
-            pets[0].transform.SetParent(postitions[2], false);
-            pets[1].transform.SetParent(postitions[3], false);
-            pets[2].transform.SetParent(postitions[0], false);
-        }
-        if (!Stats.sick && !Stats2.sick && Stats3.sick && !Stats4.sick)
-        {
-            pets[0].transform.SetParent(postitions[2], false);
-            pets[2].transform.SetParent(postitions[0], false);
-            pets[3].transform.SetParent(postitions[1], false);
-        }
-        if (!Stats.sick && Stats2.sick && !Stats3.sick && !Stats4.sick)
-        {
-            pets[0].transform.SetParent(postitions[2], false);
-            pets[3].transform.SetParent(postitions[1], false);
-            pets[2].transform.SetParent(postitions[0], false);
-        }
-        if (Stats.sick && !Stats2.sick && !Stats3.sick && !Stats4.sick)
-        {
-            pets[1].transform.SetParent(postitions[3], false);
-            pets[3].transform.SetParent(postitions[1], false);
-            pets[2].transform.SetParent(postitions[0], false);
+            pets[3].transform.SetParent(postitions[1], false); // cat 2
         }
     }
 }
