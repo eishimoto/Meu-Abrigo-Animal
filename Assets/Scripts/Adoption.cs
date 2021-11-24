@@ -104,16 +104,84 @@ public class Adoption : MonoBehaviour
 
     public void LastAction()
     {
-        lasPanel.SetActive(true);
-
-        for (int i = 0; i < pets.Count; i++)
+        //all
+        if (!Stats.sick && !Stats2.sick && !Stats3.sick && !Stats4.sick)
         {
-            pets[i].SetActive(true);
+            lasPanel.SetActive(true);
+
+            for (int i = 0; i < pets.Count; i++)
+            {
+                pets[i].SetActive(true);
+            }
+
+            pets[2].transform.SetParent(postitions[0], false); // cat 1
+            pets[3].transform.SetParent(postitions[1], false); // cat 2
+            pets[0].transform.SetParent(postitions[2], false); // dog 1
+            pets[1].transform.SetParent(postitions[3], false); // dog 2
         }
 
-        pets[2].transform.SetParent(postitions[0],false);
-        pets[3].transform.SetParent(postitions[1], false);
-        pets[0].transform.SetParent(postitions[2], false);
-        pets[1].transform.SetParent(postitions[3], false);
+        //none
+        if(Stats.sick && Stats2.sick && Stats3.sick && Stats4.sick)
+        {
+            lasPanel.SetActive(true);
+        }
+
+        //singles
+        if(!Stats.sick && Stats2.sick && Stats3.sick && Stats4.sick)
+        {
+            pets[0].transform.SetParent(postitions[2], false);
+        }
+        if (!Stats2.sick && Stats2.sick && Stats3.sick && Stats4.sick)
+        {
+            pets[2].transform.SetParent(postitions[0], false);
+        }
+        if (!Stats3.sick && Stats2.sick && Stats3.sick && Stats4.sick)
+        {
+            pets[1].transform.SetParent(postitions[3], false);
+        }
+        if (!Stats4.sick && Stats2.sick && Stats3.sick && Stats4.sick)
+        {
+            pets[3].transform.SetParent(postitions[1], false);
+        }
+
+        //Duble
+        if(!Stats.sick && !Stats2.sick && Stats3.sick && Stats4.sick)
+        {
+            pets[0].transform.SetParent(postitions[2], false);
+            pets[2].transform.SetParent(postitions[0], false);
+        }
+        if (!Stats.sick && Stats2.sick && !Stats3.sick && Stats4.sick)
+        {
+            pets[0].transform.SetParent(postitions[2], false);
+            pets[1].transform.SetParent(postitions[3], false);
+        }
+        if (!Stats.sick && Stats2.sick && Stats3.sick && !Stats4.sick)
+        {
+            pets[0].transform.SetParent(postitions[2], false);
+            pets[3].transform.SetParent(postitions[1], false);
+        }
+        if (Stats.sick && !Stats2.sick && !Stats3.sick && Stats4.sick)
+        {
+            pets[1].transform.SetParent(postitions[3], false);
+            pets[2].transform.SetParent(postitions[1], false);
+        }
+        if (Stats.sick && !Stats2.sick && Stats3.sick && !Stats4.sick)
+        {
+            pets[1].transform.SetParent(postitions[3], false);
+            pets[3].transform.SetParent(postitions[1], false);
+        }
+        if (Stats.sick && Stats2.sick && !Stats3.sick && !Stats4.sick)
+        {
+            pets[2].transform.SetParent(postitions[0], false);
+            pets[3].transform.SetParent(postitions[1], false);
+        }
+
+        //triple
+        if (!Stats.sick && !Stats2.sick && !Stats3.sick && Stats4.sick)
+        {
+            pets[0].transform.SetParent(postitions[2], false);
+            pets[1].transform.SetParent(postitions[3], false);
+            pets[2].transform.SetParent(postitions[0], false);
+        }
     }
 }
