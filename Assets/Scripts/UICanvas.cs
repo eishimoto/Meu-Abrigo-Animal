@@ -52,7 +52,7 @@ public class UICanvas : MonoBehaviour
     }
     private void SelectionOfPet()
     {
-        if (index < 3)
+        if (index < 4)
         {
             indexSafe = index;
         }
