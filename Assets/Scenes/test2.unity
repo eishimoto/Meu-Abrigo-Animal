@@ -23967,7 +23967,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &384279345
 RectTransform:
   m_ObjectHideFlags: 0
@@ -25994,29 +25994,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   catPhotoPrefab:
-  - {fileID: 4175630113594979221, guid: 3fbb66691be34724b900e03302505b1a, type: 3}
-  - {fileID: 1829737836499867530, guid: e8a2e925aceede14f9e3131ed018a47b, type: 3}
-  - {fileID: 2964455438342306079, guid: 404d519283d3114479ce9d66ed33dd0f, type: 3}
-  - {fileID: 6053313759608583504, guid: fbc5ee16f7e7ca44faf42772beed6e86, type: 3}
-  - {fileID: 8640499895943274839, guid: 2d1a5203b8807284fa080d481bd954ca, type: 3}
+  - {fileID: 6825129802758216197, guid: 419ab9460ca599343afa7267b94ca094, type: 3}
+  - {fileID: 149086788366895101, guid: 3ab9db5ebf93ae84cb18817635df00b8, type: 3}
+  - {fileID: 5882775245688197206, guid: 43ec9fbb5768b4e4d9c59dcc8d0bcc3c, type: 3}
+  - {fileID: 1059912662950394564, guid: b5c133b3f8a37ab48849a5ed8031485e, type: 3}
+  - {fileID: 5856418460048144077, guid: 6e87faafb1fe97c42a8cd4e0d670fe28, type: 3}
   cat2PhotoPrefab:
-  - {fileID: 4175630113594979221, guid: 3fbb66691be34724b900e03302505b1a, type: 3}
-  - {fileID: 1829737836499867530, guid: e8a2e925aceede14f9e3131ed018a47b, type: 3}
-  - {fileID: 2964455438342306079, guid: 404d519283d3114479ce9d66ed33dd0f, type: 3}
-  - {fileID: 6053313759608583504, guid: fbc5ee16f7e7ca44faf42772beed6e86, type: 3}
-  - {fileID: 8640499895943274839, guid: 2d1a5203b8807284fa080d481bd954ca, type: 3}
+  - {fileID: 6372125770983633517, guid: 9a4cc79577ebec0478e6e99656b107ed, type: 3}
+  - {fileID: 9137103195129495642, guid: ff5d9c2c4b4af4644a1dfa97b2e4f7b5, type: 3}
+  - {fileID: 9107369378628997865, guid: b11c12715892ccb48bf59b41c2b47961, type: 3}
+  - {fileID: 5434643014375426520, guid: f70ecb4a2ff3ca7498654a39b7fcf796, type: 3}
+  - {fileID: 8621753510334639983, guid: d6afa8fe572f79a4ba149cfb661033ee, type: 3}
   dogPhotoPrefab:
-  - {fileID: 7908336654575303751, guid: 6776e232823867541a72ec9eae605016, type: 3}
-  - {fileID: 465788559742692312, guid: dbdd783beaedc3a40a2c631e43798ab8, type: 3}
-  - {fileID: 5968913699122185529, guid: 26872cf584c697b4f8a44639bda3b4d6, type: 3}
-  - {fileID: 1058598021636380296, guid: c31355bf78f0cde428ef55dcc21227f4, type: 3}
-  - {fileID: 4428134489855731289, guid: 0c89dfd00fcdcfa44b2f902fcac84743, type: 3}
+  - {fileID: 7408629848531861281, guid: f2d337653b457ad4e8ec8a3a45b753bd, type: 3}
+  - {fileID: 8449228142227656730, guid: d2fc187f21ff4db43a89516119afb52e, type: 3}
+  - {fileID: 9016204659423441350, guid: a490ee46a04096241bc66d3c4afe0691, type: 3}
+  - {fileID: 5014393807137196640, guid: 420cb59309ca3fc48b71a099920fa413, type: 3}
+  - {fileID: 1562746800120544704, guid: 2b68566752cf0f24a89417595c0f07ce, type: 3}
   dog2PhotoPrefab:
-  - {fileID: 7984570961392943731, guid: 74b57ec2cc8dfaa45aafb46d86406e68, type: 3}
-  - {fileID: 1944979253065072939, guid: d4f58846f35cf3f4c97d2743a432f330, type: 3}
-  - {fileID: 5817878815453842778, guid: 1ec76029b2a753e409cf20871172bc5a, type: 3}
-  - {fileID: 3945268766059764397, guid: fa26920f09f87d443b67f2cd5ce1e272, type: 3}
-  - {fileID: 1816971731650767942, guid: f96f204e75eeb3a4884f886d26d79644, type: 3}
+  - {fileID: 2151756994581732791, guid: 06b97de8f04621b41bd725df0b7bff52, type: 3}
+  - {fileID: 5237121734658541226, guid: 59f4d585eaef29f4fb34f8252344b227, type: 3}
+  - {fileID: 2048675595146542909, guid: a80eaf81818f41944b8a5b58b2fe1f5f, type: 3}
+  - {fileID: 8118551883739803764, guid: a478704cb37882741ab46d1a21610cd6, type: 3}
+  - {fileID: 5993604653731367115, guid: 9d561ef8a666908449743b44997b807e, type: 3}
   whitchPet: {fileID: 2047265418}
   parent: {fileID: 1050591438}
   flashGameObject: {fileID: 2097389528}
@@ -27116,7 +27116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d20434c4a25a3f249a0d634bb0e8c49d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  money: 5000
+  money: 50
   textDisplay: {fileID: 144124289}
   food1: 10
   food2: 20
