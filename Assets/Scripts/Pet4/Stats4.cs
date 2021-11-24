@@ -36,6 +36,8 @@ public class Stats4 : MonoBehaviour
     [SerializeField] private Image diseaseIcon;
     [SerializeField] private List<Sprite> diseaseIconList;
 
+    //animation
+    private Animator myAnimator;
 
     //float
     private float hungerStats, affectionStats, hygineStats;
@@ -57,6 +59,7 @@ public class Stats4 : MonoBehaviour
 
     private void Start()
     {
+        myAnimator = GetComponent<Animator>();
         hungerStats = maxHunger;
         affectionStats = maxAffection;
         hygineStats = maxHygine;
@@ -80,6 +83,7 @@ public class Stats4 : MonoBehaviour
         {
             IsClean();
         }
+        Animations();
         PlayButtonAnimation();
     }
 
@@ -148,6 +152,7 @@ public class Stats4 : MonoBehaviour
             }
             Money.instance.AddMoneyPhoto(10);
             FoodTool.instance.UseInStats();
+            action = true;
         }
 
         if (collision.CompareTag("Food2"))
@@ -159,6 +164,7 @@ public class Stats4 : MonoBehaviour
             }
             Money.instance.AddMoneyPhoto(10);
             FoodToolTwo.instance.UseInStats();
+            action = true;
         }
         if (collision.CompareTag("Food3"))
         {
@@ -169,6 +175,7 @@ public class Stats4 : MonoBehaviour
             }
             Money.instance.AddMoneyPhoto(10);
             FoodToolThree.instance.UseInStats();
+            action = true;
         }
 
         if (collision.CompareTag("RedPill"))
@@ -179,6 +186,7 @@ public class Stats4 : MonoBehaviour
                 maxAffection += 5;
                 Money.instance.AddMoneyPhoto(20);
             }
+            action = true;
         }
 
         if (collision.CompareTag("GreenPill"))
@@ -189,6 +197,7 @@ public class Stats4 : MonoBehaviour
                 maxHunger -= 5;
                 Money.instance.AddMoneyPhoto(20);
             }
+            action = true;
         }
 
         if (collision.CompareTag("BluePill"))
@@ -199,6 +208,7 @@ public class Stats4 : MonoBehaviour
                 maxHygine += 5;
                 Money.instance.AddMoneyPhoto(20);
             }
+            action = true;
         }
         if (collision.CompareTag("PurplePill"))
         {
@@ -206,6 +216,7 @@ public class Stats4 : MonoBehaviour
             MedicineTool.instance.PlayMedecineSound();
             medecine3 = true;
             Money.instance.AddMoneyPhoto(20);
+            action = true;
         }
 
         if (collision.CompareTag("YellowPill"))
@@ -214,6 +225,7 @@ public class Stats4 : MonoBehaviour
             MedicineTool.instance.PlayMedecineSound();
             medecine1 = true;
             Money.instance.AddMoneyPhoto(20);
+            action = true;
         }
 
         if (collision.CompareTag("CyanPill"))
@@ -222,6 +234,7 @@ public class Stats4 : MonoBehaviour
             MedicineTool.instance.PlayMedecineSound();
             medecine2 = true;
             Money.instance.AddMoneyPhoto(20);
+            action = true;
         }
     }
 
@@ -231,6 +244,7 @@ public class Stats4 : MonoBehaviour
         if (affectionStats >= maxAffection)
         {
             affectionStats = maxAffection;
+            action = true;
         }
     }
     private void IsClean()
@@ -260,6 +274,7 @@ public class Stats4 : MonoBehaviour
             {
                 hygineStats = maxHygine;
             }
+            action = true;
             CleaningTool2.squareClean = false;
             CleaningTool2.triangleClean = false;
             CleaningTool2.circleClean = false;
@@ -389,6 +404,44 @@ public class Stats4 : MonoBehaviour
         else
         {
             sick = false;
+        }
+    }
+    private void Animations()
+    {
+        if (hungerStats < 50)
+        {
+            myAnimator.SetBool("isHungry", true);
+        }
+        else if (hungerStats > 50)
+        {
+            myAnimator.SetBool("isHungry", false);
+        }
+
+        if (affectionStats < 50)
+        {
+            myAnimator.SetBool("isSad", true);
+        }
+        else if (affectionStats > 50)
+        {
+            myAnimator.SetBool("isSad", false);
+        }
+
+        if (hygineStats < 50)
+        {
+            myAnimator.SetBool("isDirty", true);
+        }
+        else if (hygineStats > 50)
+        {
+            myAnimator.SetBool("isDirty", false);
+        }
+
+        if (sick)
+        {
+            myAnimator.SetBool("isSick", true);
+        }
+        else if (!sick)
+        {
+            myAnimator.SetBool("isSick", false);
         }
     }
     public void PlayButtonAnimation()
