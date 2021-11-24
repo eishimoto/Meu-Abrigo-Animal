@@ -1245,6 +1245,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   foodPanel: {fileID: 982588069}
   toolsPanel: {fileID: 1330051086}
+  medecinePanel: {fileID: 0}
   accerssoryPanel: {fileID: 670806958}
 --- !u!224 &76148218
 RectTransform:
@@ -1714,7 +1715,7 @@ RectTransform:
   m_Children:
   - {fileID: 1927013147}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2010,7 +2011,7 @@ RectTransform:
   - {fileID: 1776590717}
   - {fileID: 87549586}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2600,6 +2601,7 @@ MonoBehaviour:
   sprite: []
   textDisplay: {fileID: 0}
   quantity: 0
+  RedPill_N_MixPills_Sound: {fileID: 0}
 --- !u!60 &164736625
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3291,6 +3293,7 @@ MonoBehaviour:
   sprite: []
   textDisplay: {fileID: 0}
   quantity: 0
+  RedPill_N_MixPills_Sound: {fileID: 0}
 --- !u!60 &227762512
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3657,9 +3660,9 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 106.79, y: 135.56}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -125, y: 0}
+  m_SizeDelta: {x: -143.20999, y: 135.56}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &255975486
 MonoBehaviour:
@@ -4110,6 +4113,8 @@ MonoBehaviour:
   - {fileID: 411094447}
   - {fileID: 532898773}
   - {fileID: 676384348}
+  loadForDayChange: {fileID: 0}
+  AdopitionCanvas: {fileID: 0}
 --- !u!4 &301712190
 Transform:
   m_ObjectHideFlags: 0
@@ -4122,7 +4127,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &317681638
 GameObject:
@@ -4456,7 +4461,7 @@ Transform:
   m_Children:
   - {fileID: 681085831}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &340466691
 MonoBehaviour:
@@ -4553,7 +4558,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &347121666
 GameObject:
@@ -5269,7 +5274,7 @@ RectTransform:
   m_Children:
   - {fileID: 1404393057}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -6226,12 +6231,11 @@ MonoBehaviour:
   food2: 0
   food3: 0
   medicine1: 0
-  medicine2: 0
-  medicine3: 0
   foodUnlock: []
   balls: []
   cutTool: []
   cleaningTools: []
+  accessorysToAdoption: []
 --- !u!1 &484529182
 GameObject:
   m_ObjectHideFlags: 0
@@ -6264,7 +6268,7 @@ Transform:
   - {fileID: 1405553097}
   - {fileID: 1997291178}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &487237445
 GameObject:
@@ -6554,7 +6558,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &509557410
 MonoBehaviour:
@@ -6582,12 +6586,13 @@ MonoBehaviour:
   stats: []
   petsSelection: {fileID: 1037284643}
   menu: {fileID: 407264703}
-  adoption: {fileID: 630634649}
   store: {fileID: 1606669476}
   book: {fileID: 708776052}
   mixPills: {fileID: 1312493838}
   socialInsta: {fileID: 121975269}
   calendar: {fileID: 106359144}
+  ConfirmExit: {fileID: 0}
+  adoptionPanel: {fileID: 0}
   onScreen: {x: 0, y: -0.7}
   onScreen2: {x: 0, y: 0}
   onScreen3: {x: 0, y: 0}
@@ -7095,6 +7100,8 @@ MonoBehaviour:
   diseaseText: {fileID: 0}
   medecineColor: []
   diseaseIndicator: {fileID: 0}
+  diseaseIcon: {fileID: 0}
+  diseaseIconList: []
 --- !u!212 &532490467
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8263,6 +8270,7 @@ MonoBehaviour:
   sprite: []
   textDisplay: {fileID: 0}
   quantity: 0
+  RedPill_N_MixPills_Sound: {fileID: 0}
 --- !u!60 &627026519
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -8405,7 +8413,7 @@ RectTransform:
   m_Children:
   - {fileID: 1701033982}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -9528,7 +9536,7 @@ RectTransform:
   m_Children:
   - {fileID: 1337749817}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -13236,7 +13244,7 @@ RectTransform:
   - {fileID: 941468508}
   - {fileID: 587762481}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -13355,6 +13363,7 @@ MonoBehaviour:
   sprite: []
   textDisplay: {fileID: 0}
   quantity: 0
+  RedPill_N_MixPills_Sound: {fileID: 0}
 --- !u!60 &1058203287
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -15447,6 +15456,7 @@ MonoBehaviour:
   sprite: []
   textDisplay: {fileID: 0}
   quantity: 0
+  RedPill_N_MixPills_Sound: {fileID: 0}
 --- !u!60 &1219807674
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -15580,6 +15590,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 5c52f33a4a61d9d4692b39f6b5e1358f, type: 3}
   textDisplay: {fileID: 1694273542}
   quantity: 99
+  Bowl_Sound: {fileID: 0}
 --- !u!1 &1249698546
 GameObject:
   m_ObjectHideFlags: 0
@@ -15827,6 +15838,7 @@ MonoBehaviour:
   sprite: []
   textDisplay: {fileID: 0}
   quantity: 0
+  RedPill_N_MixPills_Sound: {fileID: 0}
 --- !u!60 &1254724933
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -15968,7 +15980,7 @@ RectTransform:
   m_Children:
   - {fileID: 847204483}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -16352,21 +16364,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   areaToDraw:
   - {fileID: 0}
-  square1: 0
-  square2: 0
-  square3: 0
-  square4: 0
-  circle1: 0
-  circle2: 0
-  circle3: 0
-  circle4: 0
-  triangle1: 0
-  triangle2: 0
-  triangle3: 0
-  soapOn: 0
-  shampooOn: 0
-  towlOn: 0
-  dyerOn: 0
+  trianglePoints: []
+  CirclesPoitns: []
+  SquarePoins: []
+  soap: 0
+  shampoo: 0
+  Soap_Shampoo_Sound: {fileID: 0}
+  SFX1: 0
+  SFX2: 0
+  SFX3: 0
+  SFX4: 0
 --- !u!1 &1312493838
 GameObject:
   m_ObjectHideFlags: 0
@@ -16407,7 +16414,7 @@ RectTransform:
   - {fileID: 192519748}
   - {fileID: 513852523}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -18383,6 +18390,8 @@ MonoBehaviour:
   diseaseText: {fileID: 0}
   medecineColor: []
   diseaseIndicator: {fileID: 0}
+  diseaseIcon: {fileID: 0}
+  diseaseIconList: []
 --- !u!212 &1405553100
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19681,7 +19690,7 @@ RectTransform:
   m_Children:
   - {fileID: 1129132321}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -20207,21 +20216,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   areaToDraw:
   - {fileID: 0}
-  square1: 0
-  square2: 0
-  square3: 0
-  square4: 0
-  circle1: 0
-  circle2: 0
-  circle3: 0
-  circle4: 0
-  triangle1: 0
-  triangle2: 0
-  triangle3: 0
-  soapOn: 0
-  shampooOn: 0
-  towlOn: 0
-  dyerOn: 0
+  trianglePoints: []
+  CirclesPoitns: []
+  SquarePoins: []
+  soap: 0
+  shampoo: 0
+  Soap_Shampoo_Sound: {fileID: 0}
+  SFX1: 0
+  SFX2: 0
+  SFX3: 0
+  SFX4: 0
 --- !u!1 &1692851401
 GameObject:
   m_ObjectHideFlags: 0
@@ -21612,7 +21616,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1776590716
 GameObject:
@@ -23478,21 +23482,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   areaToDraw:
   - {fileID: 0}
-  square1: 0
-  square2: 0
-  square3: 0
-  square4: 0
-  circle1: 0
-  circle2: 0
-  circle3: 0
-  circle4: 0
-  triangle1: 0
-  triangle2: 0
-  triangle3: 0
-  soapOn: 0
-  shampooOn: 0
-  towlOn: 0
-  dyerOn: 0
+  trianglePoints: []
+  CirclesPoitns: []
+  SquarePoins: []
+  soap: 0
+  shampoo: 0
+  Soap_Shampoo_Sound: {fileID: 0}
+  SFX1: 0
+  SFX2: 0
+  SFX3: 0
+  SFX4: 0
 --- !u!1 &1939240006
 GameObject:
   m_ObjectHideFlags: 0
@@ -23954,6 +23953,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 5da727852f205ac4e9259e736bef0716, type: 3}
   textDisplay: {fileID: 1004410196}
   quantity: 99
+  Bag_Sound: {fileID: 0}
 --- !u!1 &1957765947
 GameObject:
   m_ObjectHideFlags: 0
@@ -24440,6 +24440,8 @@ MonoBehaviour:
   diseaseText: {fileID: 0}
   medecineColor: []
   diseaseIndicator: {fileID: 0}
+  diseaseIcon: {fileID: 0}
+  diseaseIconList: []
 --- !u!212 &1997291181
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24585,7 +24587,7 @@ RectTransform:
   - {fileID: 921212740}
   - {fileID: 149184051}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -25732,6 +25734,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tenisBall: 0
   beachBall: 0
+  ball: {fileID: 0}
   stopBall: 5
 --- !u!1 &2069220188
 GameObject:
@@ -26270,6 +26273,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: bae0422ba12fa33468a3b9aa0337bf80, type: 3}
   textDisplay: {fileID: 1784603200}
   quantity: 99
+  Snack_Sound: {fileID: 0}
 --- !u!1 &2112744035
 GameObject:
   m_ObjectHideFlags: 0
@@ -29299,6 +29303,8 @@ MonoBehaviour:
   diseaseText: {fileID: 0}
   medecineColor: []
   diseaseIndicator: {fileID: 0}
+  diseaseIcon: {fileID: 0}
+  diseaseIconList: []
 --- !u!212 &7947405939264114877
 SpriteRenderer:
   m_ObjectHideFlags: 0
