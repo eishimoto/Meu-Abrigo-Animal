@@ -331,7 +331,7 @@ public class Stats4 : MonoBehaviour
             diseaseIcon.sprite = diseaseIconList[1];
             if (disease1 == true)
             {
-                diseaseText.text = ("Dor" + " de " + " barriga ");
+                diseaseText.text = ("Dor" + " de " + "barriga");
                 StatsColor4.instance.ColorChangeTwo();
             }
         }
@@ -380,7 +380,7 @@ public class Stats4 : MonoBehaviour
             diseaseIcon.sprite = diseaseIconList[0];
             if (disease3 == true)
             {
-                diseaseText.text = ("Queda " + " de " + " pelo ");
+                diseaseText.text = ("Queda" + " de " + "pelo");
                 StatsColor4.instance.ColorChangeTwo();
             }
         }
