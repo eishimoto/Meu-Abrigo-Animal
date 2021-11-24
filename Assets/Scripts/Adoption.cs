@@ -183,5 +183,23 @@ public class Adoption : MonoBehaviour
             pets[1].transform.SetParent(postitions[3], false);
             pets[2].transform.SetParent(postitions[0], false);
         }
+        if (!Stats.sick && !Stats2.sick && Stats3.sick && !Stats4.sick)
+        {
+            pets[0].transform.SetParent(postitions[2], false);
+            pets[2].transform.SetParent(postitions[0], false);
+            pets[3].transform.SetParent(postitions[1], false);
+        }
+        if (!Stats.sick && Stats2.sick && !Stats3.sick && !Stats4.sick)
+        {
+            pets[0].transform.SetParent(postitions[2], false);
+            pets[3].transform.SetParent(postitions[1], false);
+            pets[2].transform.SetParent(postitions[0], false);
+        }
+        if (Stats.sick && !Stats2.sick && !Stats3.sick && !Stats4.sick)
+        {
+            pets[1].transform.SetParent(postitions[3], false);
+            pets[3].transform.SetParent(postitions[1], false);
+            pets[2].transform.SetParent(postitions[0], false);
+        }
     }
 }

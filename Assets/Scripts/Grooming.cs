@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Grooming : MonoBehaviour
 {
-    private bool canTrim;
     public GameObject fur;
     public bool pet1, pet2, pet3, pet4;
 
@@ -47,27 +46,18 @@ public class Grooming : MonoBehaviour
             Stats4.count++;
         }
     }
-    void Update()
-    {
-        HoldToTrim();
-    }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Grooming"))
+        {
+            HoldToTrim();
+        }
+    }
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if(collision.CompareTag("Grooming"))
-        {
-            canTrim = true;
-        }
-    }
 
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if(collision.CompareTag("Grooming"))
-        {
-            canTrim = false;
-        }
     }
-
     private void DesableFur()
     {
         fur.SetActive(false);
@@ -75,21 +65,14 @@ public class Grooming : MonoBehaviour
 
     private void HoldToTrim()
     {
-        if (canTrim == true)
+        if (CutTool.scissor)
         {
-            if (CutTool.scissor)
-            {
-                Invoke("DesableFur", 2f);
-            }
-
-            if(CutTool.trimmer)
-            {
-                Invoke("DesableFur", 1f);
-            }
+            Invoke("DesableFur", 2f);
         }
-        else
+
+        else if (CutTool.trimmer)
         {
-            CancelInvoke("DesableFur");
+            Invoke("DesableFur", 1f);
         }
     }
 }
