@@ -1,0 +1,660 @@
+fileFormatVersion: 2
+guid: e01e745a99100c045bc474e2863a480e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7919985012182776759
+    second: ATLAS - Nova Interface 2 BW_0
+  - first:
+      213: -8876307133761802605
+    second: ATLAS - Nova Interface 2 BW_1
+  - first:
+      213: -712548079111428929
+    second: ATLAS - Nova Interface 2 BW_2
+  - first:
+      213: -861226759587310094
+    second: ATLAS - Nova Interface 2 BW_3
+  - first:
+      213: -8571457727590062402
+    second: ATLAS - Nova Interface 2 BW_4
+  - first:
+      213: -2509848486034754002
+    second: ATLAS - Nova Interface 2 BW_5
+  - first:
+      213: -7211646150191541314
+    second: ATLAS - Nova Interface 2 BW_6
+  - first:
+      213: -7208470382004912298
+    second: ATLAS - Nova Interface 2 BW_7
+  - first:
+      213: -9001675884332568544
+    second: ATLAS - Nova Interface 2 BW_8
+  - first:
+      213: 925408418931860224
+    second: ATLAS - Nova Interface 2 BW_9
+  - first:
+      213: 2534122025179419043
+    second: ATLAS - Nova Interface 2 BW_10
+  - first:
+      213: -727950736264398993
+    second: ATLAS - Nova Interface 2 BW_11
+  - first:
+      213: 8491902668150539165
+    second: ATLAS - Nova Interface 2 BW_12
+  - first:
+      213: -1477163510658295753
+    second: ATLAS - Nova Interface 2 BW_13
+  - first:
+      213: -5158385839861221311
+    second: ATLAS - Nova Interface 2 BW_14
+  - first:
+      213: -7321405095166462305
+    second: ATLAS - Nova Interface 2 BW_15
+  - first:
+      213: -3213877252236797202
+    second: ATLAS - Nova Interface 2 BW_16
+  - first:
+      213: 758137777835407366
+    second: ATLAS - Nova Interface 2 BW_17
+  - first:
+      213: 8939603776434352555
+    second: ATLAS - Nova Interface 2 BW_18
+  - first:
+      213: -2259320926662985742
+    second: ATLAS - Nova Interface 2 BW_19
+  - first:
+      213: -7896783062011472416
+    second: ATLAS - Nova Interface 2 BW_20
+  - first:
+      213: 6382098220480958740
+    second: ATLAS - Nova Interface 2 BW_21
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ATLAS - Nova Interface 2 BW_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1835
+        width: 317
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9448d62e79f861290800000000000000
+      internalID: -7919985012182776759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS - Nova Interface 2 BW_1
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 1835
+        width: 317
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39eacd6c0b501d480800000000000000
+      internalID: -8876307133761802605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS - Nova Interface 2 BW_2
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 1835
+        width: 317
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb42d2b1c458c16f0800000000000000
+      internalID: -712548079111428929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS - Nova Interface 2 BW_3
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 1835
+        width: 317
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f5dcbb33de4c04f0800000000000000
+      internalID: -861226759587310094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS - Nova Interface 2 BW_4
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1470
+        width: 317
+        height: 319
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb6a7bb3c901c0980800000000000000
+      internalID: -8571457727590062402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS - Nova Interface 2 BW_5
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 1470
+        width: 317
+        height: 319
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e26b8d5891a3b2dd0800000000000000
+      internalID: -2509848486034754002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS - Nova Interface 2 BW_6
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 1470
+        width: 317
+        height: 319
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb3150c09061beb90800000000000000
+      internalID: -7211646150191541314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS - Nova Interface 2 BW_7
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1104
+        width: 317
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65f3ca2316e56fb90800000000000000
+      internalID: -7208470382004912298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS - Nova Interface 2 BW_8
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 1104
+        width: 317
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0203823e97f931380800000000000000
+      internalID: -9001675884332568544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS - Nova Interface 2 BW_9
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 1104
+        width: 317
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 003e692dd06b7dc00800000000000000
+      internalID: 925408418931860224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS - Nova Interface 2 BW_10
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 1104
+        width: 317
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a110583e820b2320800000000000000
+      internalID: 2534122025179419043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS - Nova Interface 2 BW_11
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 739
+        width: 317
+        height: 317
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f67f9f689acc5e5f0800000000000000
+      internalID: -727950736264398993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS - Nova Interface 2 BW_12
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 739
+        width: 317
+        height: 317
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d930e421c7c49d570800000000000000
+      internalID: 8491902668150539165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS - Nova Interface 2 BW_13
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 739
+        width: 317
+        height: 317
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7381b080d9f008be0800000000000000
+      internalID: -1477163510658295753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS - Nova Interface 2 BW_14
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 383
+        width: 317
+        height: 319
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 148baa0b86bb968b0800000000000000
+      internalID: -5158385839861221311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS - Nova Interface 2 BW_15
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 383
+        width: 317
+        height: 319
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f963edd3bd4256a90800000000000000
+      internalID: -7321405095166462305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS - Nova Interface 2 BW_16
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 383
+        width: 317
+        height: 319
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eea97bcbaa30663d0800000000000000
+      internalID: -3213877252236797202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS - Nova Interface 2 BW_17
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 383
+        width: 317
+        height: 319
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 608feaaca42758a00800000000000000
+      internalID: 758137777835407366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS - Nova Interface 2 BW_18
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 19
+        width: 317
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba13c17454adf0c70800000000000000
+      internalID: 8939603776434352555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS - Nova Interface 2 BW_19
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 19
+        width: 317
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f775ac669745a0e0800000000000000
+      internalID: -2259320926662985742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS - Nova Interface 2 BW_20
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 19
+        width: 317
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e51c70e4adf86290800000000000000
+      internalID: -7896783062011472416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS - Nova Interface 2 BW_21
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 19
+        width: 317
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4119b698484c19850800000000000000
+      internalID: 6382098220480958740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

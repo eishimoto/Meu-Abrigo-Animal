@@ -30,7 +30,10 @@ public class TouchAnimation3 : MonoBehaviour
 
     private void Update()
     {
-        MoveTool();
+        if (UICanvas.touchInteraction == true)
+        {
+            MoveTool();
+        }
         if (Stats3.action)
         {
             PlayAction();

@@ -22,8 +22,11 @@ public class TouchAnimation2 : MonoBehaviour
 
     private void Update()
     {
-        MoveTool();
-        if(Stats2.action)
+        if (UICanvas.touchInteraction == true)
+        {
+            MoveTool();
+        }
+        if (Stats2.action)
         {
             PlayAction();
             Stats2.action = false;

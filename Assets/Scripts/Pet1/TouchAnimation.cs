@@ -30,7 +30,10 @@ public class TouchAnimation : MonoBehaviour
 
     private void Update()
     {
-        MoveTool();
+        if (UICanvas.touchInteraction == true)
+        {
+            MoveTool();
+        }
         if(Stats.action)
         {
             PlayAction();
@@ -58,7 +61,10 @@ public class TouchAnimation : MonoBehaviour
 
     private void OnMouseDown()
     {
-        //PlayAction();
+        if (UICanvas.touchInteraction == true)
+        {
+            PlayAction();
+        }
     }
 
     public void PlayAction()

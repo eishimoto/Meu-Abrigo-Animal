@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+
 public class Money : MonoBehaviour
 {
     //TMPro
@@ -20,6 +21,13 @@ public class Money : MonoBehaviour
     [SerializeField] private List<GameObject> cleaningTools;
     [SerializeField] private List<GameObject> accessorysToAdoption;
 
+    [SerializeField] private List<Image> toolsImage;
+    [SerializeField] private List<Button> toolsButtons;
+    [SerializeField] private List<Sprite> toolsSprites;
+
+    [SerializeField] private List<Image> AccessoryImage;
+    [SerializeField] private List<Button> AccessoryButtons;
+    [SerializeField] private List<Sprite> AccessorySprites;
     //bool
     private bool foodBowl = false;
     private bool foodBag = false;
@@ -133,6 +141,8 @@ public class Money : MonoBehaviour
             balls[1].SetActive(true);
             beachBall = true;
             UpdateMoney();
+            toolsImage[0].sprite = toolsSprites[0];
+            toolsButtons[0].interactable = false;
         }
     }
 
@@ -145,18 +155,22 @@ public class Money : MonoBehaviour
             cutTool[1].SetActive(true);
             trimmer = true;
             UpdateMoney();
+            toolsImage[1].sprite = toolsSprites[1];
+            toolsButtons[1].interactable = false;
         }
     }
 
     public void UnlockShampoo()
     {
-        if (money >= 50 && shampoo == false)
+        if (money >= 20 && shampoo == false)
         {
-            money -= 50;
+            money -= 20;
             cleaningTools[0].SetActive(false);
             cleaningTools[2].SetActive(true);
             shampoo = true;
             UpdateMoney();
+            toolsImage[2].sprite = toolsSprites[2];
+            toolsButtons[2].interactable = false;
         }
     }
 
@@ -169,6 +183,8 @@ public class Money : MonoBehaviour
             cleaningTools[3].SetActive(true);
             dryer = true;
             UpdateMoney();
+            toolsImage[3].sprite = toolsSprites[3];
+            toolsButtons[3].interactable = false;
         }
     }
 
@@ -217,6 +233,8 @@ public class Money : MonoBehaviour
             accessorysToAdoption[1].SetActive(true);
             textDisplay.text = money.ToString();
             hat = true;
+            AccessoryImage[0].sprite = AccessorySprites[0];
+            AccessoryButtons[0].interactable = false;
         }
     }
     public void ActivateYellowTie()
@@ -227,6 +245,8 @@ public class Money : MonoBehaviour
             accessorysToAdoption[2].SetActive(true);
             textDisplay.text = money.ToString();
             yellowTie = true;
+            AccessoryImage[4].sprite = AccessorySprites[4];
+            AccessoryButtons[4].interactable = false;
         }
     }
     public void ActivateBlueTie()
@@ -237,6 +257,8 @@ public class Money : MonoBehaviour
             accessorysToAdoption[3].SetActive(true);
             textDisplay.text = money.ToString();
             blueTie = true;
+            AccessoryImage[6].sprite = AccessorySprites[6];
+            AccessoryButtons[6].interactable = false;
         }
     }
     public void ActivateRedTie()
@@ -247,6 +269,8 @@ public class Money : MonoBehaviour
             accessorysToAdoption[4].SetActive(true);
             textDisplay.text = money.ToString();
             redTie = true;
+            AccessoryImage[3].sprite = AccessorySprites[3];
+            AccessoryButtons[3].interactable = false;
         }
     }
     public void ActivatePurpleTie()
@@ -257,6 +281,8 @@ public class Money : MonoBehaviour
             accessorysToAdoption[5].SetActive(true);
             textDisplay.text = money.ToString();
             purpleTie = true;
+            AccessoryImage[5].sprite = AccessorySprites[5];
+            AccessoryButtons[5].interactable = false;
         }
     }
     public void ActivateTie()
@@ -267,6 +293,8 @@ public class Money : MonoBehaviour
             accessorysToAdoption[6].SetActive(true);
             textDisplay.text = money.ToString();
             tie = true;
+            AccessoryImage[7].sprite = AccessorySprites[7];
+            AccessoryButtons[7].interactable = false;
         }
     }
     public void ActivateMonacle()
@@ -277,6 +305,8 @@ public class Money : MonoBehaviour
             accessorysToAdoption[7].SetActive(true);
             textDisplay.text = money.ToString();
             monacle = true;
+            AccessoryImage[2].sprite = AccessorySprites[2];
+            AccessoryButtons[2].interactable = false;
         }
     }
     public void ActivateTeeth()
@@ -287,6 +317,8 @@ public class Money : MonoBehaviour
             accessorysToAdoption[8].SetActive(true);
             textDisplay.text = money.ToString();
             teeth = true;
+            AccessoryImage[1].sprite = AccessorySprites[1];
+            AccessoryButtons[1].interactable = false;
         }
     }
     public void ActivateEyePatch()
@@ -297,6 +329,8 @@ public class Money : MonoBehaviour
             accessorysToAdoption[9].SetActive(true);
             textDisplay.text = money.ToString();
             eyePatch = true;
+            AccessoryImage[8].sprite = AccessorySprites[8];
+            AccessoryButtons[8].interactable = false;
         }
     }
     public void ActivateCollar()

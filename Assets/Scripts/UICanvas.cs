@@ -39,11 +39,13 @@ public class UICanvas : MonoBehaviour
     public static bool canUseTool = true;
     public static bool on, on2, on3,on4;
     public static bool runTime;
+    public static bool touchInteraction;
 
     private void Start()
     {
         RoomZero();
         runTime = true;
+        touchInteraction = true;
     }
 
     private void Update()
@@ -113,6 +115,7 @@ public class UICanvas : MonoBehaviour
         menu.SetActive(true);
         runTime = false;
         canUseTool = false;
+        touchInteraction = false;
     }
 
     public void CloseMenu()
@@ -120,6 +123,7 @@ public class UICanvas : MonoBehaviour
         menu.SetActive(false);
         runTime = true;
         canUseTool = true;
+        touchInteraction = true;
     }
 
     public void ExitApplication()
@@ -129,10 +133,12 @@ public class UICanvas : MonoBehaviour
     public void ConfirmExitPanel()
     {
         ConfirmExit.SetActive(true);
+        touchInteraction = false;
     }
     public void CloseConfirmExitPanel()
     {
         ConfirmExit.SetActive(false);
+        touchInteraction = true;
     }
 
 
@@ -140,6 +146,7 @@ public class UICanvas : MonoBehaviour
     {
         petsSelection.SetActive(true);
         canUseTool = false;
+        touchInteraction = false;
     }
 
     public void CloseSocial()
@@ -147,67 +154,79 @@ public class UICanvas : MonoBehaviour
         petsSelection.SetActive(false);
         index = indexSafe;
         canUseTool = true;
+        touchInteraction = true;
     }
 
     public void Book()
     {
         book.SetActive(true);
         canUseTool = false;
+        touchInteraction = false;
     }
     public void CloseBook()
     {
         book.SetActive(false);
         canUseTool = true;
+        touchInteraction = true;
     }
 
     public void Store()
     {
         store.SetActive(true);
         canUseTool = false;
+        touchInteraction = false;
     }
     public void CloseStore()
     {
         store.SetActive(false);
         canUseTool = true;
+        touchInteraction = true;
     }
     public void Pill()
     {
         mixPills.SetActive(true);
+        touchInteraction = false;
     }
 
     public void ClosePill()
     {
         MixPills.instance.PillAsset();
         mixPills.SetActive(false);
+        touchInteraction = true;
     }
 
     public void SocialInsta()
     {
         socialInsta.SetActive(true);
         canUseTool = false;
+        touchInteraction = false;
     }
 
     public void CloseSocialInsta()
     {
         socialInsta.SetActive(false);
         canUseTool = true;
+        touchInteraction = true;
     }
 
     public void Calendar()
     {
         calendar.SetActive(true);
         canUseTool = false;
+        touchInteraction = false;
     }
 
     public void CloseCalendar()
     {
         calendar.SetActive(false);
         canUseTool = true;
+        touchInteraction = true;
     }
 
     public void AdoptionPanel()
     {
         adoptionPanel.SetActive(true);
+
     }
     public void CloseAdoptionPanel()
     {
@@ -221,6 +240,7 @@ public class UICanvas : MonoBehaviour
         index = 0;
         canUseTool = true;
         petsSelection.SetActive(false);
+        touchInteraction = true;
     }
 
     public void PetTwo()
@@ -228,6 +248,7 @@ public class UICanvas : MonoBehaviour
         index = 1;
         canUseTool = true;
         petsSelection.SetActive(false);
+        touchInteraction = true;
     }
 
     public void PetTheer()
@@ -235,12 +256,14 @@ public class UICanvas : MonoBehaviour
         index = 2;
         canUseTool = true;
         petsSelection.SetActive(false);
+        touchInteraction = true;
     }
     public void PetFour()
     {
         index = 3;
         canUseTool = true;
         petsSelection.SetActive(false);
+        touchInteraction = true;
     }
 
     //ChangeRooms
