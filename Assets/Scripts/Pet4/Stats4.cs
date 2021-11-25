@@ -63,9 +63,9 @@ public class Stats4 : MonoBehaviour
         hungerStats = maxHunger;
         affectionStats = maxAffection;
         hygineStats = maxHygine;
-        //hungerStats = 0;
-        //affectionStats = 40;
-        //hygineStats = 50;
+        hungerStats = 0;
+        affectionStats = 40;
+        hygineStats = 50;
     }
 
     private void Update()

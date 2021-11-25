@@ -16980,14 +16980,14 @@ MonoBehaviour:
   - {fileID: 775095764}
   catTwo:
   - {fileID: 6216207962626634103}
-  - {fileID: 1374154777}
+  - {fileID: 1610696480}
   - {fileID: 519893486}
   - {fileID: 1434247416}
   dogTwo:
   - {fileID: 339998211}
   - {fileID: 99460295}
   - {fileID: 1871083614796774693}
-  - {fileID: 1610696480}
+  - {fileID: 1374154777}
   newPet:
   - {fileID: 1280739568}
   - {fileID: 238400548}
@@ -23736,7 +23736,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &384279345
 RectTransform:
   m_ObjectHideFlags: 0
@@ -29583,7 +29583,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 10, y: 805}
+  m_AnchoredPosition: {x: 10, y: 824}
   m_SizeDelta: {x: 200, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &565152671
@@ -29641,6 +29641,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 130967617}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &565152672
 MonoBehaviour:
@@ -41836,13 +41848,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hungerBar: {fileID: 726266195}
   maxHunger: 100
-  hungerPorcentage: 1.5
+  hungerPorcentage: 0.8
   affectionBar: {fileID: 715529224}
   maxAffection: 100
-  affectionPorcentage: 1.5
+  affectionPorcentage: 0.8
   hygineBar: {fileID: 858400674}
   maxHygine: 100
-  hyginePorcentage: 1.5
+  hyginePorcentage: 0.8
   fur:
   - {fileID: 517742932552225595}
   - {fileID: 7849011108396376806}
@@ -42626,7 +42638,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneNumber: 2
-  timeToWait: 3
+  timeToWait: 8
 --- !u!1 &1065175503
 GameObject:
   m_ObjectHideFlags: 0
@@ -46125,13 +46137,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hungerBar: {fileID: 1830523991}
   maxHunger: 100
-  hungerPorcentage: 1.5
+  hungerPorcentage: 1.3
   affectionBar: {fileID: 2112744040}
   maxAffection: 100
-  affectionPorcentage: 1.5
+  affectionPorcentage: 1.3
   hygineBar: {fileID: 392654854}
   maxHygine: 100
-  hyginePorcentage: 1.5
+  hyginePorcentage: 1.3
   fur:
   - {fileID: 2139496113}
   - {fileID: 821332833}
@@ -52159,13 +52171,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hungerBar: {fileID: 7947405940328604783}
   maxHunger: 100
-  hungerPorcentage: 1.64
+  hungerPorcentage: 0.8
   affectionBar: {fileID: 7947405938552486003}
   maxAffection: 100
-  affectionPorcentage: 1.64
+  affectionPorcentage: 0.8
   hygineBar: {fileID: 7947405938472173419}
   maxHygine: 100
-  hyginePorcentage: 1.64
+  hyginePorcentage: 0.8
   fur:
   - {fileID: 6726284939824221289}
   - {fileID: 6726284938168757750}
@@ -52859,6 +52871,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: Timer, Assembly-CSharp
         m_MethodName: SetStopAllToTrue
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 130967617}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -63693,13 +63717,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hungerBar: {fileID: 1355892285}
   maxHunger: 100
-  hungerPorcentage: 1.5
+  hungerPorcentage: 0.8
   affectionBar: {fileID: 44453457}
   maxAffection: 100
-  affectionPorcentage: 1.5
+  affectionPorcentage: 0.8
   hygineBar: {fileID: 1670061720}
   maxHygine: 100
-  hyginePorcentage: 1.5
+  hyginePorcentage: 0.8
   fur:
   - {fileID: 1779188115}
   - {fileID: 1576775}
@@ -76895,7 +76919,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!61 &517742932552225596
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -93962,7 +93986,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!61 &5807957998365313817
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -100230,7 +100254,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!61 &7459266467015512691
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -101634,7 +101658,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!61 &7849011108396376807
 BoxCollider2D:
   m_ObjectHideFlags: 0

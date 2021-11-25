@@ -137,6 +137,8 @@ public class ToyTool : MonoBehaviour
             Vector3 mouseP = new Vector3(Input.mousePosition.x, Input.mousePosition.y, Input.mousePosition.z + 10f);
             Vector3 worldP = maincamera.ScreenToWorldPoint(mouseP);
             transform.position = worldP;
+            Vector2 direction = new Vector2(100, 200);
+            myRigidbody.AddForce(direction);
         }
     }
     private void OnMouseUp()
