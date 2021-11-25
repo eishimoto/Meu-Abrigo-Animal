@@ -1,0 +1,612 @@
+fileFormatVersion: 2
+guid: e8aa4485cab955a4ab5f1f55dae0e68e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1412526881844573602
+    second: PontosDeFama_Destaque
+  - first:
+      213: 8671126982198167841
+    second: Calendario_Destaque
+  - first:
+      213: -5121798030799425122
+    second: Compras_Destaque
+  - first:
+      213: 560115077370870449
+    second: Menu_Destaque
+  - first:
+      213: 1960129714666189361
+    second: PularCalendario_Destaque
+  - first:
+      213: 6274793977498480647
+    second: AcessoriosShop_Destaque
+  - first:
+      213: -2492685559720531000
+    second: AjudaMenu_Destaque
+  - first:
+      213: -8293007084452527828
+    second: Saude_Destaque
+  - first:
+      213: 4869696718066563706
+    second: Tosa_Destaque
+  - first:
+      213: -2055283399816284126
+    second: Banho_Destaque
+  - first:
+      213: 6325760966018387189
+    second: Lazer_Destaque
+  - first:
+      213: 3549483620641612094
+    second: Comida_Destaque
+  - first:
+      213: 7834654575844895536
+    second: Mix_Destaque
+  - first:
+      213: 709398117139293971
+    second: AjudaMix_Destaque
+  - first:
+      213: -7559240121485160202
+    second: Album_Destaque
+  - first:
+      213: 1623825209665778230
+    second: Prontuario_Destaque
+  - first:
+      213: -2144642181205766549
+    second: RedeSocial_Destaque
+  - first:
+      213: 3575783282807659202
+    second: FotoBidu_Destaque
+  - first:
+      213: 1139323643086113306
+    second: BolinhaProntuario_Destaque
+  - first:
+      213: -6067240095997077721
+    second: BotaoCelular_Destaque
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 195
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PontosDeFama_Destaque
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 5643
+        width: 1517
+        height: 2588
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5ac6fbe842b56ce0800000000000000
+      internalID: -1412526881844573602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Calendario_Destaque
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 5643
+        width: 1511
+        height: 2588
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1290a387c08065870800000000000000
+      internalID: 8671126982198167841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Compras_Destaque
+      rect:
+        serializedVersion: 2
+        x: 3187
+        y: 5643
+        width: 1510
+        height: 2588
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e91b7e2d3d7bbe8b0800000000000000
+      internalID: -5121798030799425122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu_Destaque
+      rect:
+        serializedVersion: 2
+        x: 4734
+        y: 5643
+        width: 1518
+        height: 2588
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1baf70cf1bde5c700800000000000000
+      internalID: 560115077370870449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PularCalendario_Destaque
+      rect:
+        serializedVersion: 2
+        x: 10257
+        y: 5614
+        width: 1517
+        height: 2589
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 132bd5c1797c33b10800000000000000
+      internalID: 1960129714666189361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AcessoriosShop_Destaque
+      rect:
+        serializedVersion: 2
+        x: 11826
+        y: 5614
+        width: 1511
+        height: 2589
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 700be8390eb841750800000000000000
+      internalID: 6274793977498480647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AjudaMenu_Destaque
+      rect:
+        serializedVersion: 2
+        x: 13425
+        y: 5614
+        width: 1517
+        height: 2589
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cbac14b0b3386dd0800000000000000
+      internalID: -2492685559720531000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saude_Destaque
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 2952
+        width: 1517
+        height: 2588
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c21c863bef159ec80800000000000000
+      internalID: -8293007084452527828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tosa_Destaque
+      rect:
+        serializedVersion: 2
+        x: 1647
+        y: 2952
+        width: 1517
+        height: 2588
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7a3e344d53a49340800000000000000
+      internalID: 4869696718066563706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Banho_Destaque
+      rect:
+        serializedVersion: 2
+        x: 3231
+        y: 2952
+        width: 1517
+        height: 2588
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 228713123aa2a73e0800000000000000
+      internalID: -2055283399816284126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lazer_Destaque
+      rect:
+        serializedVersion: 2
+        x: 4771
+        y: 2952
+        width: 1510
+        height: 2588
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fcce81551e99c750800000000000000
+      internalID: 6325760966018387189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Comida_Destaque
+      rect:
+        serializedVersion: 2
+        x: 6296
+        y: 2952
+        width: 1511
+        height: 2588
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3129680c8c424130800000000000000
+      internalID: 3549483620641612094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mix_Destaque
+      rect:
+        serializedVersion: 2
+        x: 10836
+        y: 2930
+        width: 1511
+        height: 2581
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03baf13b3d84abc60800000000000000
+      internalID: 7834654575844895536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AjudaMix_Destaque
+      rect:
+        serializedVersion: 2
+        x: 12560
+        y: 2930
+        width: 1517
+        height: 2581
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3172b6834d948d900800000000000000
+      internalID: 709398117139293971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Album_Destaque
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 180
+        width: 1510
+        height: 2581
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f01ffaf82f281790800000000000000
+      internalID: -7559240121485160202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prontuario_Destaque
+      rect:
+        serializedVersion: 2
+        x: 1749
+        y: 180
+        width: 1511
+        height: 2581
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 632f37fbc6cf88610800000000000000
+      internalID: 1623825209665778230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedeSocial_Destaque
+      rect:
+        serializedVersion: 2
+        x: 3377
+        y: 180
+        width: 1515
+        height: 2581
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6e49ea8c43bc32e0800000000000000
+      internalID: -2144642181205766549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FotoBidu_Destaque
+      rect:
+        serializedVersion: 2
+        x: 10037
+        y: 78
+        width: 1510
+        height: 2588
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cad78d43fbbf9130800000000000000
+      internalID: 3575783282807659202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BolinhaProntuario_Destaque
+      rect:
+        serializedVersion: 2
+        x: 11701
+        y: 78
+        width: 1511
+        height: 2588
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1a0a5621d0bfcf00800000000000000
+      internalID: 1139323643086113306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BotaoCelular_Destaque
+      rect:
+        serializedVersion: 2
+        x: 13330
+        y: 78
+        width: 1510
+        height: 2588
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 727561f3745dccba0800000000000000
+      internalID: -6067240095997077721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
