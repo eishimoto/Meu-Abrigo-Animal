@@ -283,7 +283,7 @@ public class Stats : MonoBehaviour
 
     private void GrowFur()
     {
-        float randomTime = Random.Range(0, 60000);
+        float randomTime = Random.Range(0, 6000);
         if(randomTime == 10)
         {
             fur[0].SetActive(true);

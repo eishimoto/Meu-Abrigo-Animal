@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class TakePhoto : MonoBehaviour
 {
@@ -13,6 +14,11 @@ public class TakePhoto : MonoBehaviour
     [SerializeField] private GameObject whitchPet;
     [SerializeField] private Transform parent;
     [SerializeField] private GameObject flashGameObject;
+    [SerializeField] private List<Button> flashSound;
+
+    //text
+    [SerializeField] private TextMeshProUGUI text;
+    private int followers;
 
     //private
     private int random;
@@ -25,6 +31,8 @@ public class TakePhoto : MonoBehaviour
         {
             instance = this;
         }
+        followers = 50;
+        text.text = (followers.ToString() + " Seguidores");
     }
     private void Start()
     {
@@ -33,6 +41,7 @@ public class TakePhoto : MonoBehaviour
     private void Update()
     {
         RestPetValue();
+        Debug.Log(petValue);
     }
     public void CatPostPhoto()
     {
@@ -86,7 +95,14 @@ public class TakePhoto : MonoBehaviour
     public void RestPetValue()
     {
         if(Timer.resetPhotoValue)
-        {
+        { 
+            if(petValue == 4)
+            {
+                Timer.value += 5;
+                followers += 10;
+                text.text = (followers.ToString() + " Seguidores");
+            }
+
             petValue = 0;
             Timer.resetPhotoValue = false;
         }

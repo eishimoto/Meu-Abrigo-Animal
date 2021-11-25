@@ -17,14 +17,17 @@ public class Timer : MonoBehaviour
     [SerializeField] private GameObject skipButton;
 
     public static int day;
+    public static int value;
     public static bool resetPhotoValue = false;
     private void OnEnable()
     {
         day = 0;
+        value = 5;
     }
     private void start()
     {
         day = 0;
+        value = 5;
         DayChange();
     }
 
@@ -34,7 +37,7 @@ public class Timer : MonoBehaviour
         {
             if (_timeValue > 0)
             {
-                _timeValue += 2 * Time.deltaTime;
+                _timeValue += 3.5f * Time.deltaTime;
             }
             else
             {
@@ -62,7 +65,7 @@ public class Timer : MonoBehaviour
             resetPhotoValue = true;
             loadForDayChange.SetActive(true);
             skipButton.SetActive(false);
-            Money.instance.AddMoneyPhoto(5);
+            Money.instance.AddMoneyPhoto(value);
         }
 
         float hour = Mathf.FloorToInt(timeToDisplay / 60);
@@ -108,7 +111,7 @@ public class Timer : MonoBehaviour
         day++;
         _timeValue = _timeValueReset;
         resetPhotoValue = true;
-        Money.instance.AddMoneyPhoto(5);
+        Money.instance.AddMoneyPhoto(value);
         loadForDayChange.SetActive(true);
         skipButton.SetActive(false);
         if (day > 6)
