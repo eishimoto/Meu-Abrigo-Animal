@@ -31,8 +31,8 @@ public class TakePhoto : MonoBehaviour
         {
             instance = this;
         }
-        followers = 50;
-        text.text = (followers.ToString() + " Seguidores");
+        followers = 10;
+        text.text = followers.ToString();
     }
     private void Start()
     {
@@ -99,6 +99,8 @@ public class TakePhoto : MonoBehaviour
             if(petValue == 4)
             {
                 Timer.value += 5;
+                followers += 10;
+                text.text = followers.ToString();
             }
             petValue = 0;
             Timer.resetPhotoValue = false;
