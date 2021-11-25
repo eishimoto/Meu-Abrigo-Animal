@@ -19,15 +19,18 @@ public class Timer : MonoBehaviour
     public static int day;
     public static int value;
     public static bool resetPhotoValue = false;
+    public static bool stopAll;
     private void OnEnable()
     {
         day = 0;
         value = 5;
+        stopAll = false;
     }
     private void start()
     {
         day = 0;
         value = 5;
+        stopAll = false;
         DayChange();
     }
 
@@ -131,6 +134,11 @@ public class Timer : MonoBehaviour
         {
             day = 0;
         }
+    }
+
+    public void SetStopAllToTrue()
+    {
+        stopAll = true;
     }
 
 }

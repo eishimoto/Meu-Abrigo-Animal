@@ -72,7 +72,7 @@ public class Stats2 : MonoBehaviour
 
     private void Update()
     {
-        if (Timer.day < 6)
+        if (!Timer.stopAll)
         {
             if (UICanvas.runTime)
             {

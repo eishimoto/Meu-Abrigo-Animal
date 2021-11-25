@@ -12,7 +12,7 @@ public class Tutorial : MonoBehaviour
     [SerializeField] private float typingSpeed;
     [SerializeField] private GameObject continueButton;
     [SerializeField] private Image panelImage;
-
+    [SerializeField] private GameObject finalButton;
     private void OnEnable()
     {
         index = 0;
@@ -79,6 +79,23 @@ public class Tutorial : MonoBehaviour
             StartCoroutine(CloseTextBox());
             panelImage.enabled = false;
             UICanvas.runTime = true;
+        }
+    }
+
+    public void FinalTextPanel()
+    {
+        continueButton.SetActive(false);
+
+        if (index < textToWrite.Count - 1)
+        {
+            index++;
+            textBox.text = null;
+            StartCoroutine(Type());
+        }
+        else
+        {
+            finalButton.SetActive(true);
+            Destroy(gameObject);
         }
     }
 }
