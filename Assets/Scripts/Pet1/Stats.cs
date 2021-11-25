@@ -73,14 +73,15 @@ public class Stats : MonoBehaviour
                 Diminish();
                 GrowFur();
                 CheckIfSick();
+                Animations();
+                PlayButtonAnimation();
             }
         }
         if (UICanvas.on == true)
         {
             IsClean();
         }
-        Animations();
-        PlayButtonAnimation();
+
     }
 
     public void Diminish()
@@ -283,7 +284,7 @@ public class Stats : MonoBehaviour
 
     private void GrowFur()
     {
-        float randomTime = Random.Range(0, 6000);
+        float randomTime = Random.Range(0, 10000);
         if(randomTime == 10)
         {
             fur[0].SetActive(true);

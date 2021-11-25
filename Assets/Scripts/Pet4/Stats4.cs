@@ -77,14 +77,14 @@ public class Stats4 : MonoBehaviour
                 Diminish();
                 GrowFur();
                 CheckIfSick();
+                Animations();
+                PlayButtonAnimation();
             }
         }
         if (UICanvas.on4 == true)
         {
             IsClean();
         }
-        Animations();
-        PlayButtonAnimation();
     }
 
     public void Diminish()

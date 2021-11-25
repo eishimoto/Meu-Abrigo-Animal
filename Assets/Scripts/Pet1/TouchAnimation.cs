@@ -30,7 +30,7 @@ public class TouchAnimation : MonoBehaviour
 
     private void Update()
     {
-        //MoveTool();
+        MoveTool();
         if(Stats.action)
         {
             PlayAction();

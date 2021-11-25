@@ -60,12 +60,7 @@ public class Timer : MonoBehaviour
 
         if (timeToDisplay >= 1020f)
         {
-            _timeValue = _timeValueReset;
-            day++;
-            resetPhotoValue = true;
-            loadForDayChange.SetActive(true);
-            skipButton.SetActive(false);
-            Money.instance.AddMoneyPhoto(value);
+            NewDay();
         }
 
         float hour = Mathf.FloorToInt(timeToDisplay / 60);
@@ -108,16 +103,7 @@ public class Timer : MonoBehaviour
 
     public void SkipTime()
     {
-        day++;
-        _timeValue = _timeValueReset;
-        resetPhotoValue = true;
-        Money.instance.AddMoneyPhoto(value);
-        loadForDayChange.SetActive(true);
-        skipButton.SetActive(false);
-        if (day > 6)
-        {
-            day = 0;
-        }
+        NewDay();
     }
 
     private void FinalScene()
@@ -131,4 +117,20 @@ public class Timer : MonoBehaviour
             LosePanel.SetActive(true);
         }
     }
+
+    public void NewDay()
+    {
+        day++;
+        _timeValue = _timeValueReset;
+        resetPhotoValue = true;
+        Money.instance.AddMoneyPhoto(value);
+        loadForDayChange.SetActive(true);
+        skipButton.SetActive(false);
+
+        if (day > 6)
+        {
+            day = 0;
+        }
+    }
+
 }

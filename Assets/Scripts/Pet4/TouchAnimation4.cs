@@ -22,6 +22,7 @@ public class TouchAnimation4 : MonoBehaviour
 
     private void Update()
     {
+        MoveTool();
         if (Stats4.action)
         {
             PlayAction();
@@ -41,7 +42,7 @@ public class TouchAnimation4 : MonoBehaviour
                 Collider2D touchedCollider = Physics2D.OverlapPoint(touchPosition);
                 if (myCollider == touchedCollider)
                 {
-
+                    PlayAction();
                 }
             }
         }

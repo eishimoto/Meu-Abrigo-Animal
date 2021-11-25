@@ -41,7 +41,6 @@ public class TakePhoto : MonoBehaviour
     private void Update()
     {
         RestPetValue();
-        Debug.Log(petValue);
     }
     public void CatPostPhoto()
     {
@@ -99,10 +98,7 @@ public class TakePhoto : MonoBehaviour
             if(petValue == 4)
             {
                 Timer.value += 5;
-                followers += 10;
-                text.text = (followers.ToString() + " Seguidores");
             }
-
             petValue = 0;
             Timer.resetPhotoValue = false;
         }
@@ -115,6 +111,12 @@ public class TakePhoto : MonoBehaviour
     public void CloseWhitchPetToTakePhoto()
     {
         whitchPet.SetActive(false);
+    }
+
+    private void AddFollowers()
+    {
+        followers += 10;
+        text.text = (followers.ToString() + " Seguidores");
     }
 }
 
