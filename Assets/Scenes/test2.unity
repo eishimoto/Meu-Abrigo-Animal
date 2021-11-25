@@ -3451,7 +3451,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &121975270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25840,29 +25840,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   catPhotoPrefab:
-  - {fileID: 6825129802758216197, guid: 419ab9460ca599343afa7267b94ca094, type: 3}
-  - {fileID: 149086788366895101, guid: 3ab9db5ebf93ae84cb18817635df00b8, type: 3}
-  - {fileID: 5882775245688197206, guid: 43ec9fbb5768b4e4d9c59dcc8d0bcc3c, type: 3}
-  - {fileID: 1059912662950394564, guid: b5c133b3f8a37ab48849a5ed8031485e, type: 3}
-  - {fileID: 5856418460048144077, guid: 6e87faafb1fe97c42a8cd4e0d670fe28, type: 3}
+  - {fileID: 9098359788215484359, guid: 79a1c022bffaea346aa1ae6a53827ee1, type: 3}
+  - {fileID: 7283930504881516878, guid: 4d5e3e388ed954640bbe76557e600d0c, type: 3}
+  - {fileID: 6690976689960617610, guid: 7f4983f153843ec489556388c4e56605, type: 3}
+  - {fileID: 8878972497728760771, guid: cfcfe024a7dee404bad041bf6c18725e, type: 3}
+  - {fileID: 6298925115868398077, guid: 396cfbcb1cc340c4da2ba487fb4b76b2, type: 3}
   cat2PhotoPrefab:
-  - {fileID: 6372125770983633517, guid: 9a4cc79577ebec0478e6e99656b107ed, type: 3}
-  - {fileID: 9137103195129495642, guid: ff5d9c2c4b4af4644a1dfa97b2e4f7b5, type: 3}
-  - {fileID: 9107369378628997865, guid: b11c12715892ccb48bf59b41c2b47961, type: 3}
-  - {fileID: 5434643014375426520, guid: f70ecb4a2ff3ca7498654a39b7fcf796, type: 3}
-  - {fileID: 8621753510334639983, guid: d6afa8fe572f79a4ba149cfb661033ee, type: 3}
+  - {fileID: 1329586893372256946, guid: b7e27c15b1449e642bdde942e816ce49, type: 3}
+  - {fileID: 3826668463819429174, guid: f3bcb2b1c115c5d4ca306a9fd8d67253, type: 3}
+  - {fileID: 6390034676043077650, guid: bb8b0e90bd188d544a6ff53e03a0a4e9, type: 3}
+  - {fileID: 7902090960022158204, guid: b769a0f09d8d1d5458c9b6d60d3004d9, type: 3}
+  - {fileID: 9043889748509216022, guid: 91250ca19d026634b985ee3360052f18, type: 3}
   dogPhotoPrefab:
-  - {fileID: 7408629848531861281, guid: f2d337653b457ad4e8ec8a3a45b753bd, type: 3}
-  - {fileID: 8449228142227656730, guid: d2fc187f21ff4db43a89516119afb52e, type: 3}
-  - {fileID: 9016204659423441350, guid: a490ee46a04096241bc66d3c4afe0691, type: 3}
-  - {fileID: 5014393807137196640, guid: 420cb59309ca3fc48b71a099920fa413, type: 3}
-  - {fileID: 1562746800120544704, guid: 2b68566752cf0f24a89417595c0f07ce, type: 3}
+  - {fileID: 6285638559857707690, guid: 47d603eb57bdc4a4685037c4173a35ea, type: 3}
+  - {fileID: 8565737427307394918, guid: 4aae8410888068447a5940ca54cf1f92, type: 3}
+  - {fileID: 4758115339809540941, guid: 3d7908ab23adb97428ce3efd8b6fcf84, type: 3}
+  - {fileID: 7024614796911861018, guid: 457cec1a4d0d3cd49ba0f0a12018a8b2, type: 3}
+  - {fileID: 235199843418240186, guid: ad2958521b352a945b54c4c3e1eab1dd, type: 3}
   dog2PhotoPrefab:
-  - {fileID: 2151756994581732791, guid: 06b97de8f04621b41bd725df0b7bff52, type: 3}
-  - {fileID: 5237121734658541226, guid: 59f4d585eaef29f4fb34f8252344b227, type: 3}
-  - {fileID: 2048675595146542909, guid: a80eaf81818f41944b8a5b58b2fe1f5f, type: 3}
-  - {fileID: 8118551883739803764, guid: a478704cb37882741ab46d1a21610cd6, type: 3}
-  - {fileID: 5993604653731367115, guid: 9d561ef8a666908449743b44997b807e, type: 3}
+  - {fileID: 1286282903264300483, guid: 81718f7889b46cc48b6bc51bea2cd3f3, type: 3}
+  - {fileID: 2452962659651177246, guid: 77e65255261a8a54db48c391a53842a1, type: 3}
+  - {fileID: 134369061357990762, guid: a779b622003c26846b72907918de095b, type: 3}
+  - {fileID: 1859352736542503338, guid: 491282053adf690489a3e30b8fc36235, type: 3}
+  - {fileID: 6487695452864013950, guid: a122f17048690af41a86b1943dc5deef, type: 3}
   whitchPet: {fileID: 2047265418}
   parent: {fileID: 1050591438}
   flashGameObject: {fileID: 2097389528}
@@ -41419,10 +41419,10 @@ MonoBehaviour:
   m_Padding:
     m_Left: 0
     m_Right: 0
-    m_Top: 0
-    m_Bottom: 0
+    m_Top: -20
+    m_Bottom: -20
   m_ChildAlignment: 4
-  m_Spacing: 0
+  m_Spacing: -20
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0

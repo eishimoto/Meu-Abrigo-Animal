@@ -41,6 +41,7 @@ public class TakePhoto : MonoBehaviour
     private void Update()
     {
         RestPetValue();
+        TurnOffButton();
     }
     public void CatPostPhoto()
     {
@@ -113,10 +114,23 @@ public class TakePhoto : MonoBehaviour
         whitchPet.SetActive(false);
     }
 
-    private void AddFollowers()
+    private void TurnOffButton()
     {
-        followers += 10;
-        text.text = (followers.ToString() + " Seguidores");
+        if(petValue == 4)
+        {
+            for (int i = 0; i < flashSound.Count; i++)
+            {
+                flashSound[i].interactable = false;
+            }
+        }
+
+        else if(petValue <= 3)
+        {
+            for (int i = 0; i < flashSound.Count; i++)
+            {
+                flashSound[i].interactable = true;
+            }
+        }
     }
 }
 
