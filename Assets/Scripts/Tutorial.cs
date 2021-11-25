@@ -63,4 +63,22 @@ public class Tutorial : MonoBehaviour
         yield return new WaitForSeconds(0.02f);
         gameObject.SetActive(false);
     }
+    public void NextSentenceIntro()
+    {
+        continueButton.SetActive(false);
+
+        if (index < textToWrite.Count - 1)
+        {
+            index++;
+            textBox.text = null;
+            StartCoroutine(Type());
+        }
+        else
+        {
+            textBox.text = null;
+            StartCoroutine(CloseTextBox());
+            panelImage.enabled = false;
+            UICanvas.runTime = true;
+        }
+    }
 }

@@ -31,12 +31,13 @@ public class TakePhoto : MonoBehaviour
         {
             instance = this;
         }
-        followers = 10;
-        text.text = followers.ToString();
+
     }
     private void Start()
     {
         petValue = 0;
+        followers = 20;
+        text.text = followers.ToString();
     }
     private void Update()
     {
@@ -99,7 +100,7 @@ public class TakePhoto : MonoBehaviour
             if(petValue == 4)
             {
                 Timer.value += 5;
-                followers += 10;
+                followers += 20;
                 text.text = followers.ToString();
             }
             petValue = 0;

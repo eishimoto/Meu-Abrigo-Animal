@@ -44,7 +44,7 @@ public class UICanvas : MonoBehaviour
     private void Start()
     {
         RoomZero();
-        runTime = true;
+        runTime = false;
         touchInteraction = true;
     }
 
@@ -232,8 +232,6 @@ public class UICanvas : MonoBehaviour
     {
         adoptionPanel.SetActive(false);
     }
-
-
     //PETS
     public void PetOne()
     {
