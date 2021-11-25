@@ -1,0 +1,1884 @@
+fileFormatVersion: 2
+guid: 00d152b0ee93a4649972852bc3e73f9c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5440519195473805756
+    second: Foto_QualBicho
+  - first:
+      213: 9055767058261655847
+    second: GP_FotoQualBicho
+  - first:
+      213: 7791780414170759275
+    second: 1CP_Foto
+  - first:
+      213: 4439944294027974381
+    second: 2CP_Foto
+  - first:
+      213: 1631927502324039342
+    second: 3CP_Foto
+  - first:
+      213: -4608057329818737581
+    second: 4CP_Foto
+  - first:
+      213: -4641116049340479085
+    second: 5CP_Foto
+  - first:
+      213: 5175880027097008292
+    second: 1CC_Foto
+  - first:
+      213: 3604029414134691455
+    second: 2CC_Foto
+  - first:
+      213: -2688594678951184322
+    second: GR_FotoQualBicho
+  - first:
+      213: -1658745626518376642
+    second: CC_FotoQualBicho
+  - first:
+      213: -9047904727534213975
+    second: X_Foto_QualBicho
+  - first:
+      213: -3285317868504228259
+    second: CP_FotoQualBicho
+  - first:
+      213: -1576000164694214329
+    second: Celular_Foto
+  - first:
+      213: 6435223171973597034
+    second: 1GP_Foto
+  - first:
+      213: -4945734661050141836
+    second: 2GP_Foto
+  - first:
+      213: -7595599592178700454
+    second: 3GP_Foto
+  - first:
+      213: 8567931877896956878
+    second: 4GP_Foto
+  - first:
+      213: 5005105200279603503
+    second: 5GP_Foto
+  - first:
+      213: -8558788434224639386
+    second: 1GR_Foto
+  - first:
+      213: 2836268405524584728
+    second: 2GR_Foto
+  - first:
+      213: -6595360574654179754
+    second: Botao_CelularFoto
+  - first:
+      213: 6620201095163220105
+    second: Bolinha_Prontuario
+  - first:
+      213: 6806005109244287122
+    second: CC_Prontuario
+  - first:
+      213: -597866165337753217
+    second: GP_Prontuario
+  - first:
+      213: 5097821579101348436
+    second: 1Polaroid_Album
+  - first:
+      213: 1966266236191923938
+    second: 2Polaroid_Album
+  - first:
+      213: -2120843929454854624
+    second: 3CC_Foto
+  - first:
+      213: -3462632369059738348
+    second: 4CC_Foto
+  - first:
+      213: -1393998301341825101
+    second: 5CC_Foto
+  - first:
+      213: 1650871059587175899
+    second: Ajuda_Aba
+  - first:
+      213: 4674714075993539992
+    second: 1Ajuda
+  - first:
+      213: -2036653271358614945
+    second: 2Ajuda
+  - first:
+      213: 7188717771055446756
+    second: 3Ajuda
+  - first:
+      213: 4499662950491985146
+    second: 4Ajuda
+  - first:
+      213: -944150900870834900
+    second: 1_Album
+  - first:
+      213: 4818302187985001532
+    second: 2_Album
+  - first:
+      213: -902118787234733445
+    second: 5Ajuda
+  - first:
+      213: 5169171030870196887
+    second: 6Ajuda
+  - first:
+      213: 7795689558521729645
+    second: 7Ajuda
+  - first:
+      213: 1394429680710168814
+    second: 3Polaroid_Album
+  - first:
+      213: -2816949581136948857
+    second: 4Polaroid_Album
+  - first:
+      213: -462074827179553490
+    second: 3_Album
+  - first:
+      213: 1305810521310535308
+    second: 4_Album
+  - first:
+      213: 3633047155564815780
+    second: 9Ajuda
+  - first:
+      213: 8780809644164195472
+    second: Texto_AjudaAba
+  - first:
+      213: 8070689952047173403
+    second: X_TextoAjuda
+  - first:
+      213: 7403789084927495637
+    second: CP_Prontuario
+  - first:
+      213: -2387050018802250208
+    second: GR_Prontuario
+  - first:
+      213: 9138792691944425232
+    second: Album
+  - first:
+      213: 7854588993997769882
+    second: 3GR_Foto
+  - first:
+      213: -7614977421836684530
+    second: 4GR_Foto
+  - first:
+      213: 1270849433078592830
+    second: 5GR_Foto
+  - first:
+      213: -5924266292798687795
+    second: PetNovo_Aba
+  - first:
+      213: 5333793324078322656
+    second: CC_Album
+  - first:
+      213: 3642366391379338807
+    second: GP_Album
+  - first:
+      213: -7598914845796533942
+    second: CP_PetNovo
+  - first:
+      213: -6158688623894429993
+    second: GP_PetNovo
+  - first:
+      213: -9075410681964229499
+    second: CP_Album
+  - first:
+      213: 4453258144735655907
+    second: GR_Album
+  - first:
+      213: 4912596600983517683
+    second: GR_PetNovo
+  - first:
+      213: 8204956835331608884
+    second: CC_PetNovo
+  - first:
+      213: -1536458310407433293
+    second: _Mix
+  - first:
+      213: 4972724565161797637
+    second: _Menu
+  - first:
+      213: -6435668368173750061
+    second: X_DicaMix
+  - first:
+      213: -5017844532787342449
+    second: Play_Tutorial
+  - first:
+      213: 5742867106483063768
+    second: Creditos_Aba
+  - first:
+      213: -8920964687667119142
+    second: Mix_Aba
+  - first:
+      213: 9064690630028568864
+    second: Dica_Mix
+  - first:
+      213: -3280325299076012576
+    second: Tutorial_Aba
+  - first:
+      213: 6712650947827488042
+    second: 10Ajuda
+  - first:
+      213: -2974248423878413941
+    second: 11Ajuda
+  - first:
+      213: 3790774137739421149
+    second: 8Ajuda
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 195
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Foto_QualBicho
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 4926
+        width: 691
+        height: 573
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44ef618ed946f74b0800000000000000
+      internalID: -5440519195473805756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GP_FotoQualBicho
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 5337
+        width: 156
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 721ce54f82c8cad70800000000000000
+      internalID: 9055767058261655847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1CP_Foto
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 4352
+        width: 775
+        height: 1144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b608e7a0107f12c60800000000000000
+      internalID: 7791780414170759275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2CP_Foto
+      rect:
+        serializedVersion: 2
+        x: 1688
+        y: 4352
+        width: 774
+        height: 1144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de65f04cfc9dd9d30800000000000000
+      internalID: 4439944294027974381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3CP_Foto
+      rect:
+        serializedVersion: 2
+        x: 2486
+        y: 4352
+        width: 774
+        height: 1144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaef633ca65c5a610800000000000000
+      internalID: 1631927502324039342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4CP_Foto
+      rect:
+        serializedVersion: 2
+        x: 3296
+        y: 4352
+        width: 774
+        height: 1144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 354e487e544ec00c0800000000000000
+      internalID: -4608057329818737581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5CP_Foto
+      rect:
+        serializedVersion: 2
+        x: 4094
+        y: 4352
+        width: 774
+        height: 1144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39942b5fa81779fb0800000000000000
+      internalID: -4641116049340479085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1CC_Foto
+      rect:
+        serializedVersion: 2
+        x: 4907
+        y: 4352
+        width: 775
+        height: 1144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a8082f267b64d740800000000000000
+      internalID: 5175880027097008292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2CC_Foto
+      rect:
+        serializedVersion: 2
+        x: 5702
+        y: 4352
+        width: 774
+        height: 1144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f76be8d38a5140230800000000000000
+      internalID: 3604029414134691455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GR_FotoQualBicho
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 5165
+        width: 156
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e38fb10626130bad0800000000000000
+      internalID: -2688594678951184322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CC_FotoQualBicho
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 4997
+        width: 156
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3fa3ae14a3faf8e0800000000000000
+      internalID: -1658745626518376642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_Foto_QualBicho
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 4831
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a4eeb196926f6280800000000000000
+      internalID: -9047904727534213975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CP_FotoQualBicho
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 4828
+        width: 156
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5edf811ec43862d0800000000000000
+      internalID: -3285317868504228259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Celular_Foto
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 3266
+        width: 836
+        height: 1526
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 749b171433ce02ae0800000000000000
+      internalID: -1576000164694214329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1GP_Foto
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 3179
+        width: 775
+        height: 1143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6749df21618e4950800000000000000
+      internalID: 6435223171973597034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2GP_Foto
+      rect:
+        serializedVersion: 2
+        x: 1688
+        y: 3179
+        width: 774
+        height: 1143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 473f4c687883d5bb0800000000000000
+      internalID: -4945734661050141836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3GP_Foto
+      rect:
+        serializedVersion: 2
+        x: 2486
+        y: 3179
+        width: 774
+        height: 1143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5f26140a62079690800000000000000
+      internalID: -7595599592178700454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4GP_Foto
+      rect:
+        serializedVersion: 2
+        x: 3296
+        y: 3179
+        width: 774
+        height: 1143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecb2bc9e5a867e670800000000000000
+      internalID: 8567931877896956878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5GP_Foto
+      rect:
+        serializedVersion: 2
+        x: 4094
+        y: 3179
+        width: 774
+        height: 1143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f29402659a4b57540800000000000000
+      internalID: 5005105200279603503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1GR_Foto
+      rect:
+        serializedVersion: 2
+        x: 4907
+        y: 3179
+        width: 775
+        height: 1143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6629156f343193980800000000000000
+      internalID: -8558788434224639386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2GR_Foto
+      rect:
+        serializedVersion: 2
+        x: 5702
+        y: 3179
+        width: 774
+        height: 1143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 819d4fe66137c5720800000000000000
+      internalID: 2836268405524584728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Botao_CelularFoto
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 3165
+        width: 162
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6561f1640829874a0800000000000000
+      internalID: -6595360574654179754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bolinha_Prontuario
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 3162
+        width: 103
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9801bda12ddafdb50800000000000000
+      internalID: 6620201095163220105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CC_Prontuario
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 1742
+        width: 836
+        height: 1404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 298dffb4699c37e50800000000000000
+      internalID: 6806005109244287122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GP_Prontuario
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 1742
+        width: 836
+        height: 1404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7971d7e3e3f3b7f0800000000000000
+      internalID: -597866165337753217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1Polaroid_Album
+      rect:
+        serializedVersion: 2
+        x: 1863
+        y: 2705
+        width: 291
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45228ae77b91fb640800000000000000
+      internalID: 5097821579101348436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Polaroid_Album
+      rect:
+        serializedVersion: 2
+        x: 2252
+        y: 2702
+        width: 291
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ee501e59b4994b10800000000000000
+      internalID: 1966266236191923938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3CC_Foto
+      rect:
+        serializedVersion: 2
+        x: 2920
+        y: 1983
+        width: 774
+        height: 1143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02ebcc0deaf3192e0800000000000000
+      internalID: -2120843929454854624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4CC_Foto
+      rect:
+        serializedVersion: 2
+        x: 3727
+        y: 1983
+        width: 775
+        height: 1143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41dcc66c43242ffc0800000000000000
+      internalID: -3462632369059738348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5CC_Foto
+      rect:
+        serializedVersion: 2
+        x: 4528
+        y: 1983
+        width: 774
+        height: 1143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b7c50f3ee587ace0800000000000000
+      internalID: -1393998301341825101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ajuda_Aba
+      rect:
+        serializedVersion: 2
+        x: 5329
+        y: 2553
+        width: 690
+        height: 570
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd59aa46b7219e610800000000000000
+      internalID: 1650871059587175899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1Ajuda
+      rect:
+        serializedVersion: 2
+        x: 6039
+        y: 2857
+        width: 129
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8950d163fabefd040800000000000000
+      internalID: 4674714075993539992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2Ajuda
+      rect:
+        serializedVersion: 2
+        x: 6169
+        y: 2857
+        width: 129
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f52580ee3aa5cb3e0800000000000000
+      internalID: -2036653271358614945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3Ajuda
+      rect:
+        serializedVersion: 2
+        x: 6301
+        y: 2857
+        width: 127
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ea3c4ea9b473c360800000000000000
+      internalID: 7188717771055446756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Ajuda
+      rect:
+        serializedVersion: 2
+        x: 6431
+        y: 2856
+        width: 126
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af49f0dfc93027e30800000000000000
+      internalID: 4499662950491985146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_Album
+      rect:
+        serializedVersion: 2
+        x: 2592
+        y: 2679
+        width: 62
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c259a3b02c3b5e2f0800000000000000
+      internalID: -944150900870834900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_Album
+      rect:
+        serializedVersion: 2
+        x: 2683
+        y: 2673
+        width: 68
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3c555fbf4c0ed240800000000000000
+      internalID: 4818302187985001532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5Ajuda
+      rect:
+        serializedVersion: 2
+        x: 6039
+        y: 2731
+        width: 129
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b72eaad1eb70b73f0800000000000000
+      internalID: -902118787234733445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 6Ajuda
+      rect:
+        serializedVersion: 2
+        x: 6169
+        y: 2731
+        width: 129
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79202464aa59cb740800000000000000
+      internalID: 5169171030870196887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 7Ajuda
+      rect:
+        serializedVersion: 2
+        x: 6304
+        y: 2731
+        width: 122
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d62d8e2a95adf2c60800000000000000
+      internalID: 7795689558521729645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3Polaroid_Album
+      rect:
+        serializedVersion: 2
+        x: 1869
+        y: 2332
+        width: 292
+        height: 339
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee0bdf618620a5310800000000000000
+      internalID: 1394429680710168814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Polaroid_Album
+      rect:
+        serializedVersion: 2
+        x: 2232
+        y: 2332
+        width: 298
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7819522e74f28e8d0800000000000000
+      internalID: -2816949581136948857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3_Album
+      rect:
+        serializedVersion: 2
+        x: 2620
+        y: 2559
+        width: 66
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2d005294616699f0800000000000000
+      internalID: -462074827179553490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4_Album
+      rect:
+        serializedVersion: 2
+        x: 2726
+        y: 2562
+        width: 64
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8e9eaa20cb2f1210800000000000000
+      internalID: 1305810521310535308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 9Ajuda
+      rect:
+        serializedVersion: 2
+        x: 6110
+        y: 2605
+        width: 120
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a52fa7a32d2b6230800000000000000
+      internalID: 3633047155564815780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Texto_AjudaAba
+      rect:
+        serializedVersion: 2
+        x: 5345
+        y: 1973
+        width: 658
+        height: 534
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0942bb049d3bbd970800000000000000
+      internalID: 8780809644164195472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_TextoAjuda
+      rect:
+        serializedVersion: 2
+        x: 6009
+        y: 2413
+        width: 72
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1f061440c9d00070800000000000000
+      internalID: 8070689952047173403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CP_Prontuario
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 326
+        width: 836
+        height: 1406
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dd840f12fa8fb660800000000000000
+      internalID: 7403789084927495637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GR_Prontuario
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 326
+        width: 836
+        height: 1406
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02ec330b7ae7fded0800000000000000
+      internalID: -2387050018802250208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Album
+      rect:
+        serializedVersion: 2
+        x: 1765
+        y: 1464
+        width: 860
+        height: 852
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 017884fa88383de70800000000000000
+      internalID: 9138792691944425232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3GR_Foto
+      rect:
+        serializedVersion: 2
+        x: 2920
+        y: 812
+        width: 774
+        height: 1144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9c0eeb131b110d60800000000000000
+      internalID: 7854588993997769882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4GR_Foto
+      rect:
+        serializedVersion: 2
+        x: 3727
+        y: 812
+        width: 775
+        height: 1144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e03fdc6716a225690800000000000000
+      internalID: -7614977421836684530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5GR_Foto
+      rect:
+        serializedVersion: 2
+        x: 4528
+        y: 812
+        width: 774
+        height: 1144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e35f7ad73d6f2a110800000000000000
+      internalID: 1270849433078592830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PetNovo_Aba
+      rect:
+        serializedVersion: 2
+        x: 5348
+        y: 1406
+        width: 622
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc5f9eed137c8cda0800000000000000
+      internalID: -5924266292798687795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CC_Album
+      rect:
+        serializedVersion: 2
+        x: 1863
+        y: 1100
+        width: 291
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e3d903c4c0750a40800000000000000
+      internalID: 5333793324078322656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GP_Album
+      rect:
+        serializedVersion: 2
+        x: 2252
+        y: 1094
+        width: 291
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 736acf35fe84c8230800000000000000
+      internalID: 3642366391379338807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CP_PetNovo
+      rect:
+        serializedVersion: 2
+        x: 5413
+        y: 1165
+        width: 240
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a49fad1653b3b8690800000000000000
+      internalID: -7598914845796533942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GP_PetNovo
+      rect:
+        serializedVersion: 2
+        x: 5659
+        y: 1165
+        width: 237
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7de7882a351f78aa0800000000000000
+      internalID: -6158688623894429993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CP_Album
+      rect:
+        serializedVersion: 2
+        x: 1869
+        y: 725
+        width: 292
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58c8cbe711aad0280800000000000000
+      internalID: -9075410681964229499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GR_Album
+      rect:
+        serializedVersion: 2
+        x: 2232
+        y: 728
+        width: 298
+        height: 343
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e7751230b62dcd30800000000000000
+      internalID: 4453258144735655907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GR_PetNovo
+      rect:
+        serializedVersion: 2
+        x: 5413
+        y: 922
+        width: 240
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f9f96e949c0d2440800000000000000
+      internalID: 4912596600983517683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CC_PetNovo
+      rect:
+        serializedVersion: 2
+        x: 5659
+        y: 922
+        width: 237
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4319a5f15ccddd170800000000000000
+      internalID: 8204956835331608884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Mix
+      rect:
+        serializedVersion: 2
+        x: 1892
+        y: 618
+        width: 93
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b3d7f3ae476daae0800000000000000
+      internalID: -1536458310407433293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Menu
+      rect:
+        serializedVersion: 2
+        x: 1993
+        y: 615
+        width: 93
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 508e35835aaa20540800000000000000
+      internalID: 4972724565161797637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_DicaMix
+      rect:
+        serializedVersion: 2
+        x: 3065
+        y: 579
+        width: 65
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d829ce77b9efa6a0800000000000000
+      internalID: -6435668368173750061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play_Tutorial
+      rect:
+        serializedVersion: 2
+        x: 3682
+        y: 559
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f83131dabf80d5ab0800000000000000
+      internalID: -5017844532787342449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Creditos_Aba
+      rect:
+        serializedVersion: 2
+        x: 5325
+        y: 44
+        width: 808
+        height: 816
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dbc232d433c2bf40800000000000000
+      internalID: 5742867106483063768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mix_Aba
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 41
+        width: 691
+        height: 573
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adb3cc1c1ed523480800000000000000
+      internalID: -8920964687667119142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dica_Mix
+      rect:
+        serializedVersion: 2
+        x: 2534
+        y: 76
+        width: 619
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0292aa9e9104ccd70800000000000000
+      internalID: 9064690630028568864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tutorial_Aba
+      rect:
+        serializedVersion: 2
+        x: 3163
+        y: 86
+        width: 690
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e5e8d83581f972d0800000000000000
+      internalID: -3280325299076012576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 10Ajuda
+      rect:
+        serializedVersion: 2
+        x: 6232
+        y: 2606
+        width: 117
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a25527ec870282d50800000000000000
+      internalID: 6712650947827488042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 11Ajuda
+      rect:
+        serializedVersion: 2
+        x: 6351
+        y: 2607
+        width: 124
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8136f411d859b6d0800000000000000
+      internalID: -2974248423878413941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 8Ajuda
+      rect:
+        serializedVersion: 2
+        x: 6428
+        y: 2731
+        width: 121
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd522bf6ef88b9430800000000000000
+      internalID: 3790774137739421149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
