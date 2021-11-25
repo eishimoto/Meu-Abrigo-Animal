@@ -37,7 +37,7 @@ public class Timer : MonoBehaviour
         {
             if (_timeValue > 0)
             {
-                _timeValue += 3.5f * Time.deltaTime;
+                _timeValue += 3.9f * Time.deltaTime;
             }
             else
             {
