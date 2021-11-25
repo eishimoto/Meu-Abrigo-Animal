@@ -66,4 +66,9 @@ public class UnlockNewPet : MonoBehaviour
     {
         Destroy(newPet[3]);
     }
+
+    public void DestoryShopWarning()
+    {
+        Destroy(newPet[4]);
+    }
 }
