@@ -45170,7 +45170,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneNumber: 1
-  audio: {fileID: 0}
 --- !u!60 &1219807674
 PolygonCollider2D:
   m_ObjectHideFlags: 0
