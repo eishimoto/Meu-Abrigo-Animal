@@ -1,0 +1,660 @@
+fileFormatVersion: 2
+guid: 2d77862a6399e8549b55f0df7d3be405
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8572535203709346611
+    second: CC_IconDress
+  - first:
+      213: 4392039141079960656
+    second: GP_IconDress
+  - first:
+      213: -5419792424632848035
+    second: CP_IconDress
+  - first:
+      213: -4805308392304486078
+    second: GR_IconDress
+  - first:
+      213: 2709049647765113955
+    second: AceitarBotao_Dress
+  - first:
+      213: 4987894363897559242
+    second: CP_Dress
+  - first:
+      213: -4976354357138688013
+    second: ATLAS - Nova Interface 5_6
+  - first:
+      213: -8950749843477885293
+    second: AbaPet_Dress
+  - first:
+      213: -2589825650681081083
+    second: CC_Dress
+  - first:
+      213: 4866962802809012572
+    second: AbaIconPet_Dress
+  - first:
+      213: 5442948887019065713
+    second: GR_Dress
+  - first:
+      213: 3367393614310273074
+    second: AbaIconAcessorio_Dress
+  - first:
+      213: 7725898061194457361
+    second: GP_Dress
+  - first:
+      213: 6619957558424269620
+    second: GAzul_AcessorioDress
+  - first:
+      213: -7890986004177888466
+    second: GRosa_AcessorioDress
+  - first:
+      213: -2614500978752815454
+    second: Monoculo_AcessorioDress
+  - first:
+      213: 4635456660146380093
+    second: Chapeu_AcessorioDress
+  - first:
+      213: 7589161979016945161
+    second: TapaOlho_AcessorioDress
+  - first:
+      213: -8893101715249481117
+    second: GV_AcessorioDress
+  - first:
+      213: 5020046994344432484
+    second: Presa_AcessorioDress
+  - first:
+      213: -3296961971210008309
+    second: Lenco_AcessorioDress
+  - first:
+      213: 2781536496079547905
+    second: GAmarela_AcessorioDress
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 195
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CC_IconDress
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 1739
+        width: 134
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcc9f56c6ac380980800000000000000
+      internalID: -8572535203709346611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GP_IconDress
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 1739
+        width: 134
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05cceab2458a3fc30800000000000000
+      internalID: 4392039141079960656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CP_IconDress
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 1739
+        width: 134
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d51f76d418709c4b0800000000000000
+      internalID: -5419792424632848035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GR_IconDress
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 1739
+        width: 134
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 249dc701a7d105db0800000000000000
+      internalID: -4805308392304486078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AceitarBotao_Dress
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 1751
+        width: 83
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36ccfed2d4a789520800000000000000
+      internalID: 2709049647765113955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CP_Dress
+      rect:
+        serializedVersion: 2
+        x: 1738
+        y: 1374
+        width: 231
+        height: 510
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac879493f7f883540800000000000000
+      internalID: 4987894363897559242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ATLAS - Nova Interface 5_6
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 269
+        width: 842
+        height: 1456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f7f74af31070fab0800000000000000
+      internalID: -4976354357138688013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AbaPet_Dress
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 762
+        width: 743
+        height: 659
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39e0e12c07c88c380800000000000000
+      internalID: -8950749843477885293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CC_Dress
+      rect:
+        serializedVersion: 2
+        x: 1738
+        y: 842
+        width: 231
+        height: 510
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50395fcca471f0cd0800000000000000
+      internalID: -2589825650681081083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AbaIconPet_Dress
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 558
+        width: 743
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c51887402ecea8340800000000000000
+      internalID: 4866962802809012572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GR_Dress
+      rect:
+        serializedVersion: 2
+        x: 1756
+        y: 464
+        width: 232
+        height: 363
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 171116dbc2d398b40800000000000000
+      internalID: 5442948887019065713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AbaIconAcessorio_Dress
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 336
+        width: 743
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 230f1e7a6a26bbe20800000000000000
+      internalID: 3367393614310273074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GP_Dress
+      rect:
+        serializedVersion: 2
+        x: 1757
+        y: 92
+        width: 241
+        height: 364
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 111ff546a57e73b60800000000000000
+      internalID: 7725898061194457361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAzul_AcessorioDress
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 78
+        width: 147
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4337a0a4350dedb50800000000000000
+      internalID: 6619957558424269620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GRosa_AcessorioDress
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 78
+        width: 147
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2bd56599069d7290800000000000000
+      internalID: -7890986004177888466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monoculo_AcessorioDress
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 78
+        width: 147
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aef688463d67bbd0800000000000000
+      internalID: -2614500978752815454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chapeu_AcessorioDress
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 78
+        width: 147
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3d5ebfc543745040800000000000000
+      internalID: 4635456660146380093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TapaOlho_AcessorioDress
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 78
+        width: 147
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90e943e5c9e125960800000000000000
+      internalID: 7589161979016945161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GV_AcessorioDress
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 78
+        width: 147
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36a332f8b1b559480800000000000000
+      internalID: -8893101715249481117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Presa_AcessorioDress
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 78
+        width: 147
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 463daadd42acaa540800000000000000
+      internalID: 5020046994344432484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lenco_AcessorioDress
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 78
+        width: 147
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b094e042e86de32d0800000000000000
+      internalID: -3296961971210008309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAmarela_AcessorioDress
+      rect:
+        serializedVersion: 2
+        x: 1562
+        y: 78
+        width: 147
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10e2b9ab4b00a9620800000000000000
+      internalID: 2781536496079547905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
