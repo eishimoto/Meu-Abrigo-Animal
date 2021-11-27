@@ -26381,7 +26381,7 @@ MonoBehaviour:
   textToWrite:
   - "O calend\xE1rio serve para ficares atento no hor\xE1rio, tens at\xE9 17h para
     conseguir de todos os animais, mas se achar que o trabalho est\xE1 feito, podes
-    prosseguir depois de 2h. "
+    prosseguir depois das 14h. "
   typingSpeed: 0.02
   continueButton: {fileID: 418104532}
   panelImage: {fileID: 369394313}
