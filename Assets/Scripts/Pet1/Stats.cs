@@ -380,7 +380,7 @@ public class Stats : MonoBehaviour
             diseaseIcon.sprite = diseaseIconList[0];
             if (disease3 == true)
             {
-                diseaseText.text = ("Queda" + " de " + "pelo");
+                diseaseText.text = ("Pulgas");
                 StatsColor.instance.ColorChangeTwo();
             }
         }

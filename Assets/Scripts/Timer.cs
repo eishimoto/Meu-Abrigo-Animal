@@ -56,7 +56,7 @@ public class Timer : MonoBehaviour
     }
     private void DisplayTime(float timeToDisplay)
     {
-        if(timeToDisplay >= 660)
+        if(timeToDisplay >= 840)
         {
             skipButton.SetActive(true);
         }
