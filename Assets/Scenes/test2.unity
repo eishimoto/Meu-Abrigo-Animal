@@ -1401,7 +1401,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &51674328
 RectTransform:
   m_ObjectHideFlags: 0
@@ -26784,7 +26784,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d20434c4a25a3f249a0d634bb0e8c49d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  money: 50
+  money: 99999
   textDisplay: {fileID: 144124289}
   food1: 10
   food2: 20
@@ -30731,7 +30731,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 622031783}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -729.00006, z: -19980}
+  m_LocalPosition: {x: 0, y: -750, z: -19980}
   m_LocalScale: {x: 222, y: 222, z: 222}
   m_Children: []
   m_Father: {fileID: 1318116982}
@@ -36160,7 +36160,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 807041576}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -723.06006, z: -19980}
+  m_LocalPosition: {x: 0, y: -750, z: -19980}
   m_LocalScale: {x: 222, y: 222, z: 222}
   m_Children: []
   m_Father: {fileID: 641654572}
@@ -43150,7 +43150,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1122651658}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -723.06006, z: -19980}
+  m_LocalPosition: {x: 0, y: -750, z: -19980}
   m_LocalScale: {x: 222, y: 222, z: 222}
   m_Children: []
   m_Father: {fileID: 808602246}
@@ -45173,7 +45173,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1203064087}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -729, z: -19980}
+  m_LocalPosition: {x: 0, y: -750, z: -19980}
   m_LocalScale: {x: 222, y: 222, z: 222}
   m_Children: []
   m_Father: {fileID: 1067078822}
@@ -47237,7 +47237,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You Lose
+  m_text: Perdeu
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cdf1ef8ea32c8444ba1075bbd06fb6e3, type: 2}
   m_sharedMaterial: {fileID: 6634837561633677672, guid: cdf1ef8ea32c8444ba1075bbd06fb6e3, type: 2}
@@ -47271,8 +47271,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 32
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
