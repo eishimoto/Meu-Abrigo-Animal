@@ -6,7 +6,8 @@ public class MenuButton : MonoBehaviour
 {
     //animation
     private Animator animator;
-
+    
+    
     private void Start()
     {
         animator = GetComponent<Animator>();

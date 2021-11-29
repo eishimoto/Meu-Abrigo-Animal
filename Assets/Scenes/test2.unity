@@ -1401,7 +1401,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &51674328
 RectTransform:
   m_ObjectHideFlags: 0
@@ -26859,7 +26859,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d20434c4a25a3f249a0d634bb0e8c49d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  money: 50
+  money: 99999
   textDisplay: {fileID: 144124289}
   food1: 10
   food2: 20
@@ -45884,7 +45884,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b70998d75b849e4caaca85dc810eaa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneNumber: 1
+  sceneNumber: 0
 --- !u!60 &1219807674
 PolygonCollider2D:
   m_ObjectHideFlags: 0
