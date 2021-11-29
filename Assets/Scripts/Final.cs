@@ -7,6 +7,7 @@ public class Final : MonoBehaviour
 {
     [SerializeField] private int sceneNumber;
     [SerializeField] private int timeToWait;
+    [SerializeField] private GameObject finalText;
     private void OnEnable()
     {
         StartCoroutine(LoadFinal());
@@ -15,6 +16,6 @@ public class Final : MonoBehaviour
     IEnumerator LoadFinal()
     {
         yield return new WaitForSeconds(timeToWait);
-        SceneManager.LoadScene(sceneNumber);
+        finalText.SetActive(true);
     }
 }

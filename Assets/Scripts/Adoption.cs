@@ -6,6 +6,7 @@ public class Adoption : MonoBehaviour
 {
     //list for decoretion
     [SerializeField] private List<GameObject> pets;
+    [SerializeField] private List<GameObject> shadows;
     [SerializeField] private List<GameObject> petsButtons;
 
     //list for Final Panel
@@ -114,19 +115,23 @@ public class Adoption : MonoBehaviour
         if (petsButtons[0].activeInHierarchy)
         {
             pets[0].transform.SetParent(postitions[2], false); // dog 1
+            shadows[1].SetActive(true);
         }
 
         if (petsButtons[1].activeInHierarchy)
         {
             pets[1].transform.SetParent(postitions[3], false); // dog 2
+            shadows[0].SetActive(true);
         }
         if (petsButtons[2].activeInHierarchy)
         {
             pets[2].transform.SetParent(postitions[0], false); // cat 1
+            shadows[2].SetActive(true);
         }
         if (petsButtons[3].activeInHierarchy)
         {
             pets[3].transform.SetParent(postitions[1], false); // cat 2
+            shadows[3].SetActive(true);
         }
     }
 }
